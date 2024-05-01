@@ -77,22 +77,34 @@ class train_callback(pl.Callback):
         lr_period = self.args.lr_step_period if self.args.lr_step_period != -1 else args.steps_per_epoch
 
         # LR schedule
-        w_step = args.warmup_steps + real_step
-        if args.lr_final == args.lr_init or args.epoch_count == 0:
+        if args.lr_final == args.lr_init:
+            # If lr_final == lr_init, use lr_init as the learning rate
             lr = args.lr_init
         else:
-            decay_step = real_step - args.my_pile_edecay * lr_period
-            decay_total = lr_period
-            progress = (decay_step - w_step + 1) / ((decay_total - w_step) if (decay_total - w_step) > 0 else 1)
-            progress = min(1, max(0, progress))
-
-
-            lr = args.lr_init * math.exp(math.log(args.lr_final / args.lr_init) * pow(progress, 1))
-            # if trainer.is_global_zero:
-            #     print(trainer.global_step, decay_step, decay_total, w_step, progress, lr)
-
-        if trainer.global_step < w_step:
-            lr = lr * (0.2 + 0.8 * trainer.global_step / w_step)
+            if lr_period == -1:
+                # If lr_period is -1, treat the whole training as one learning rate period
+                step_in_period = real_step
+                total_steps = args.total_steps
+            else:
+                # Calculate the current step within the learning rate period
+                step_in_period = real_step % lr_period
+                total_steps = lr_period
+        
+            if args.is_resuming or step_in_period < args.warmup_steps:
+                # Warmup phase
+                w_step = min(step_in_period, args.warmup_steps)
+                if w_step < args.warmup_steps:
+                    lr = args.lr_init * (0.2 + 0.8 * w_step / args.warmup_steps)
+                else:
+                    lr = args.lr_init
+                args.is_resuming = False
+            else:
+                # Cosine annealing phase
+                decay_step = step_in_period - args.warmup_steps
+                decay_total = total_steps - args.warmup_steps
+                progress = decay_step / max(1, decay_total)
+                progress = max(0, min(1, progress))
+                lr = args.lr_final + 0.5 * (args.lr_init - args.lr_final) * (1 + math.cos(math.pi * progress))
 
         if args.weight_decay_final > 0:
             wd_now = args.weight_decay * math.exp(math.log(args.weight_decay_final / args.weight_decay) * progress)
