@@ -83,13 +83,11 @@ class train_callback(pl.Callback):
         else:
             decay_step = real_step - args.my_pile_edecay * lr_period
             decay_total = lr_period
-            progress = (decay_step - w_step + 1) / (decay_total - w_step)
+            progress = (decay_step - w_step + 1) / ((decay_total - w_step) if (decay_total - w_step) > 0 else 1)
             progress = min(1, max(0, progress))
 
-            if args.lr_final == 0 or args.lr_init == 0:  # linear decay
-                lr = args.lr_init + (args.lr_final - args.lr_init) * progress
-            else:  # exp decay
-                lr = args.lr_init * math.exp(math.log(args.lr_final / args.lr_init) * pow(progress, 1))
+
+            lr = args.lr_init * math.exp(math.log(args.lr_final / args.lr_init) * pow(progress, 1))
             # if trainer.is_global_zero:
             #     print(trainer.global_step, decay_step, decay_total, w_step, progress, lr)
 
