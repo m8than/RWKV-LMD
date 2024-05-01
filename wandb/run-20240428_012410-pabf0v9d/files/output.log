@@ -1,0 +1,9 @@
+
+Loading model on rank 0
+Found parameter emb.weight in 0
+Found parameter blocks.0.ln1.weight in 0
+Found parameter blocks.0.ln1.bias in 0
+Found parameter blocks.0.ln2.weight in 0
+Found parameter blocks.0.ln2.bias in 0
+Found parameter blocks.0.ln0.weight in 0
+Found parameter blocks.0.ln0.bias in 0

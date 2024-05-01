@@ -1,0 +1,42 @@
+
+INFO:pytorch_lightning.strategies.deepspeed:initializing deepspeed distributed: GLOBAL_RANK: 8, MEMBER: 9/16
+INFO:pytorch_lightning.accelerators.cuda:LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Using /root/.cache/torch_extensions/py310_cu121 as PyTorch extensions root...
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.10142350196838379 seconds
+Traceback (most recent call last):
+  File "/workspace/nathan/RWKV-LM/RWKV-v5/train.py", line 323, in <module>
+    trainer.fit(model, data_loader)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 544, in fit
+    call._call_and_handle_interrupt(
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/call.py", line 43, in _call_and_handle_interrupt
+    return trainer.strategy.launcher.launch(trainer_fn, *args, trainer=trainer, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/strategies/launchers/subprocess_script.py", line 105, in launch
+    return function(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 580, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 968, in _run
+    call._call_lightning_module_hook(self, "on_fit_start")
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/call.py", line 157, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+  File "/workspace/nathan/RWKV-LM/RWKV-v5/src/model.py", line 957, in on_fit_start
+    self.trainer.global_step = self.args.start_step % self.args.steps_per_epoch
+AttributeError: can't set attribute 'global_step'
+Traceback (most recent call last):
+  File "/workspace/nathan/RWKV-LM/RWKV-v5/train.py", line 323, in <module>
+    trainer.fit(model, data_loader)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 544, in fit
+    call._call_and_handle_interrupt(
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/call.py", line 43, in _call_and_handle_interrupt
+    return trainer.strategy.launcher.launch(trainer_fn, *args, trainer=trainer, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/strategies/launchers/subprocess_script.py", line 105, in launch
+    return function(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 580, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 968, in _run
+    call._call_lightning_module_hook(self, "on_fit_start")
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/call.py", line 157, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+  File "/workspace/nathan/RWKV-LM/RWKV-v5/src/model.py", line 957, in on_fit_start
+    self.trainer.global_step = self.args.start_step % self.args.steps_per_epoch
+AttributeError: can't set attribute 'global_step'

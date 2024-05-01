@@ -1,0 +1,8 @@
+
+INFO:pytorch_lightning.strategies.deepspeed:initializing deepspeed distributed: GLOBAL_RANK: 8, MEMBER: 9/16
+INFO:pytorch_lightning.accelerators.cuda:LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Using /root/.cache/torch_extensions/py310_cu121 as PyTorch extensions root...
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.10174274444580078 seconds
+Broadcasted tensor sizes list length: 902 rank: 8
+Updated 902 keys on 8

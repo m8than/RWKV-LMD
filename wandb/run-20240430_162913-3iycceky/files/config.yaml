@@ -1,0 +1,55 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.12
+    cli_version: 0.16.6
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1714494553.0
+    t:
+      1:
+      - 1
+      - 9
+      - 55
+      - 103
+      2:
+      - 1
+      - 9
+      - 55
+      - 103
+      3:
+      - 7
+      - 13
+      - 23
+      4: 3.10.12
+      5: 0.16.6
+      8:
+      - 5
+      13: linux-x86_64
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+args:
+  desc: null
+  value: Namespace(load_model='0', init_model=0, wandb='70B-RUN-NEW', proj_dir='/checkpoint/70B/L20-D8192-x060',
+    random_seed=-1, train_type='', data_file='/checkpoint/moe-dataset/1.5a/dataset_chunk_0_text_document',
+    data_type='binidx', vocab_size=65536, ctx_len=1024, lr_step_period=3500, step_begin=0,
+    epoch_count=1, epoch_step_save=500, micro_bsz=6, n_layer=20, n_embd=8192, log_freq=500,
+    dim_att=8192, dim_ffn=28672, pre_ffn=0, head_qk=0, tiny_att_dim=0, tiny_att_layer=-999,
+    lr_init=9e-05, lr_final=5e-05, warmup_steps=30, beta1=0.9, beta2=0.95, adam_eps=1e-08,
+    grad_cp=1, dropout=0, weight_decay=0.0001, weight_decay_final=-1, my_pile_version=1,
+    my_pile_stage=0, my_pile_shift=-1, my_pile_edecay=0, layerwise_lr=1, ds_bucket_mb=300,
+    my_sample_len=0, my_ffn_shift=1, my_att_shift=1, head_size_a=64, head_size_divisor=8,
+    my_pos_emb=0, load_partial=0, magic_prime=0, my_qa_mask=0, my_random_steps=0,
+    my_testing='x060', my_exit=99999999, my_exit_tokens=0, accelerator='gpu', strategy='deepspeed_stage_2',
+    devices=8, num_nodes=4, precision='bf16-mixed', accumulate_grad_batches=1, my_timestamp='2024-04-30-16-29-12',
+    enable_checkpointing=False, replace_sampler_ddp=False, gradient_clip_val=1.0,
+    num_sanity_val_steps=0, check_val_every_n_epoch=100000000000000000000, log_every_n_steps=100000000000000000000,
+    max_epochs=1, betas=(0.9, 0.95), real_bsz=192, run_name='65536 ctx1024 L20 D8192',
+    start_step=1500, actual_model_path='/checkpoint/70B/L20-D8192-x060/rwkv-1500.pth',
+    dataset_len=129620769, trainer=<pytorch_lightning.trainer.trainer.Trainer object
+    at 0x7ec0f8393220>)

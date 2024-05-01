@@ -1,0 +1,1008 @@
+INFO: GPU available: True (cuda), used: True
+INFO:lightning.pytorch.utilities.rank_zero:GPU available: True (cuda), used: True
+INFO: TPU available: False, using: 0 TPU cores
+INFO:lightning.pytorch.utilities.rank_zero:TPU available: False, using: 0 TPU cores
+INFO: IPU available: False, using: 0 IPUs
+INFO:lightning.pytorch.utilities.rank_zero:IPU available: False, using: 0 IPUs
+INFO: HPU available: False, using: 0 HPUs
+INFO:lightning.pytorch.utilities.rank_zero:HPU available: False, using: 0 HPUs
+/usr/local/lib/python3.10/dist-packages/pytorch_lightning/utilities/parsing.py:44: attribute 'args' removed from hparams because it cannot be pickled
+INFO:pytorch_lightning.strategies.deepspeed:initializing deepspeed distributed: GLOBAL_RANK: 0, MEMBER: 1/16
+[<src.trainer.train_callback object at 0x7f66922517e0>, <pytorch_lightning.callbacks.progress.rich_progress.RichProgressBar object at 0x7f66922d4a30>, <pytorch_lightning.callbacks.rich_model_summary.RichModelSummary object at 0x7f6691767580>]
+INFO: Enabling DeepSpeed BF16. Model parameters and inputs will be cast to `bfloat16`.
+INFO:lightning.pytorch.utilities.rank_zero:Enabling DeepSpeed BF16. Model parameters and inputs will be cast to `bfloat16`.
+INFO:pytorch_lightning.accelerators.cuda:LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Using /root/.cache/torch_extensions/py310_cu121 as PyTorch extensions root...
+Loading extension module fused_adam...
+decay []
+1x ['blocks.0.att.gate.weight', 'blocks.0.att.key.weight', 'blocks.0.att.ln_x.bias', 'blocks.0.att.ln_x.weight', 'blocks.0.att.output.weight', 'blocks.0.att.receptance.weight', 'blocks.0.att.time_decay_w1', 'blocks.0.att.time_decay_w2', 'blocks.0.att.time_faaaa', 'blocks.0.att.time_maa_g', 'blocks.0.att.time_maa_k', 'blocks.0.att.time_maa_r', 'blocks.0.att.time_maa_v', 'blocks.0.att.time_maa_w', 'blocks.0.att.time_maa_w1', 'blocks.0.att.time_maa_w2', 'blocks.0.att.time_maa_x', 'blocks.0.att.value.weight', 'blocks.0.ffn.key.weight', 'blocks.0.ffn.receptance.weight', 'blocks.0.ffn.time_maa_k', 'blocks.0.ffn.time_maa_r', 'blocks.0.ffn.value.weight', 'blocks.0.ln0.bias', 'blocks.0.ln0.weight', 'blocks.0.ln1.bias', 'blocks.0.ln1.weight', 'blocks.0.ln2.bias', 'blocks.0.ln2.weight', 'blocks.1.att.gate.weight', 'blocks.1.att.key.weight', 'blocks.1.att.ln_x.bias', 'blocks.1.att.ln_x.weight', 'blocks.1.att.output.weight', 'blocks.1.att.receptance.weight', 'blocks.1.att.time_decay_w1', 'blocks.1.att.time_decay_w2', 'blocks.1.att.time_faaaa', 'blocks.1.att.time_maa_g', 'blocks.1.att.time_maa_k', 'blocks.1.att.time_maa_r', 'blocks.1.att.time_maa_v', 'blocks.1.att.time_maa_w', 'blocks.1.att.time_maa_w1', 'blocks.1.att.time_maa_w2', 'blocks.1.att.time_maa_x', 'blocks.1.att.value.weight', 'blocks.1.ffn.key.weight', 'blocks.1.ffn.receptance.weight', 'blocks.1.ffn.time_maa_k', 'blocks.1.ffn.time_maa_r', 'blocks.1.ffn.value.weight', 'blocks.1.ln1.bias', 'blocks.1.ln1.weight', 'blocks.1.ln2.bias', 'blocks.1.ln2.weight', 'blocks.10.att.gate.weight', 'blocks.10.att.key.weight', 'blocks.10.att.ln_x.bias', 'blocks.10.att.ln_x.weight', 'blocks.10.att.output.weight', 'blocks.10.att.receptance.weight', 'blocks.10.att.time_decay_w1', 'blocks.10.att.time_decay_w2', 'blocks.10.att.time_faaaa', 'blocks.10.att.time_maa_g', 'blocks.10.att.time_maa_k', 'blocks.10.att.time_maa_r', 'blocks.10.att.time_maa_v', 'blocks.10.att.time_maa_w', 'blocks.10.att.time_maa_w1', 'blocks.10.att.time_maa_w2', 'blocks.10.att.time_maa_x', 'blocks.10.att.value.weight', 'blocks.10.ffn.key.weight', 'blocks.10.ffn.receptance.weight', 'blocks.10.ffn.time_maa_k', 'blocks.10.ffn.time_maa_r', 'blocks.10.ffn.value.weight', 'blocks.10.ln1.bias', 'blocks.10.ln1.weight', 'blocks.10.ln2.bias', 'blocks.10.ln2.weight', 'blocks.11.att.gate.weight', 'blocks.11.att.key.weight', 'blocks.11.att.ln_x.bias', 'blocks.11.att.ln_x.weight', 'blocks.11.att.output.weight', 'blocks.11.att.receptance.weight', 'blocks.11.att.time_decay_w1', 'blocks.11.att.time_decay_w2', 'blocks.11.att.time_faaaa', 'blocks.11.att.time_maa_g', 'blocks.11.att.time_maa_k', 'blocks.11.att.time_maa_r', 'blocks.11.att.time_maa_v', 'blocks.11.att.time_maa_w', 'blocks.11.att.time_maa_w1', 'blocks.11.att.time_maa_w2', 'blocks.11.att.time_maa_x', 'blocks.11.att.value.weight', 'blocks.11.ffn.key.weight', 'blocks.11.ffn.receptance.weight', 'blocks.11.ffn.time_maa_k', 'blocks.11.ffn.time_maa_r', 'blocks.11.ffn.value.weight', 'blocks.11.ln1.bias', 'blocks.11.ln1.weight', 'blocks.11.ln2.bias', 'blocks.11.ln2.weight', 'blocks.12.att.gate.weight', 'blocks.12.att.key.weight', 'blocks.12.att.ln_x.bias', 'blocks.12.att.ln_x.weight', 'blocks.12.att.output.weight', 'blocks.12.att.receptance.weight', 'blocks.12.att.time_decay_w1', 'blocks.12.att.time_decay_w2', 'blocks.12.att.time_faaaa', 'blocks.12.att.time_maa_g', 'blocks.12.att.time_maa_k', 'blocks.12.att.time_maa_r', 'blocks.12.att.time_maa_v', 'blocks.12.att.time_maa_w', 'blocks.12.att.time_maa_w1', 'blocks.12.att.time_maa_w2', 'blocks.12.att.time_maa_x', 'blocks.12.att.value.weight', 'blocks.12.ffn.key.weight', 'blocks.12.ffn.receptance.weight', 'blocks.12.ffn.time_maa_k', 'blocks.12.ffn.time_maa_r', 'blocks.12.ffn.value.weight', 'blocks.12.ln1.bias', 'blocks.12.ln1.weight', 'blocks.12.ln2.bias', 'blocks.12.ln2.weight', 'blocks.13.att.gate.weight', 'blocks.13.att.key.weight', 'blocks.13.att.ln_x.bias', 'blocks.13.att.ln_x.weight', 'blocks.13.att.output.weight', 'blocks.13.att.receptance.weight', 'blocks.13.att.time_decay_w1', 'blocks.13.att.time_decay_w2', 'blocks.13.att.time_faaaa', 'blocks.13.att.time_maa_g', 'blocks.13.att.time_maa_k', 'blocks.13.att.time_maa_r', 'blocks.13.att.time_maa_v', 'blocks.13.att.time_maa_w', 'blocks.13.att.time_maa_w1', 'blocks.13.att.time_maa_w2', 'blocks.13.att.time_maa_x', 'blocks.13.att.value.weight', 'blocks.13.ffn.key.weight', 'blocks.13.ffn.receptance.weight', 'blocks.13.ffn.time_maa_k', 'blocks.13.ffn.time_maa_r', 'blocks.13.ffn.value.weight', 'blocks.13.ln1.bias', 'blocks.13.ln1.weight', 'blocks.13.ln2.bias', 'blocks.13.ln2.weight', 'blocks.14.att.gate.weight', 'blocks.14.att.key.weight', 'blocks.14.att.ln_x.bias', 'blocks.14.att.ln_x.weight', 'blocks.14.att.output.weight', 'blocks.14.att.receptance.weight', 'blocks.14.att.time_decay_w1', 'blocks.14.att.time_decay_w2', 'blocks.14.att.time_faaaa', 'blocks.14.att.time_maa_g', 'blocks.14.att.time_maa_k', 'blocks.14.att.time_maa_r', 'blocks.14.att.time_maa_v', 'blocks.14.att.time_maa_w', 'blocks.14.att.time_maa_w1', 'blocks.14.att.time_maa_w2', 'blocks.14.att.time_maa_x', 'blocks.14.att.value.weight', 'blocks.14.ffn.key.weight', 'blocks.14.ffn.receptance.weight', 'blocks.14.ffn.time_maa_k', 'blocks.14.ffn.time_maa_r', 'blocks.14.ffn.value.weight', 'blocks.14.ln1.bias', 'blocks.14.ln1.weight', 'blocks.14.ln2.bias', 'blocks.14.ln2.weight', 'blocks.15.att.gate.weight', 'blocks.15.att.key.weight', 'blocks.15.att.ln_x.bias', 'blocks.15.att.ln_x.weight', 'blocks.15.att.output.weight', 'blocks.15.att.receptance.weight', 'blocks.15.att.time_decay_w1', 'blocks.15.att.time_decay_w2', 'blocks.15.att.time_faaaa', 'blocks.15.att.time_maa_g', 'blocks.15.att.time_maa_k', 'blocks.15.att.time_maa_r', 'blocks.15.att.time_maa_v', 'blocks.15.att.time_maa_w', 'blocks.15.att.time_maa_w1', 'blocks.15.att.time_maa_w2', 'blocks.15.att.time_maa_x', 'blocks.15.att.value.weight', 'blocks.15.ffn.key.weight', 'blocks.15.ffn.receptance.weight', 'blocks.15.ffn.time_maa_k', 'blocks.15.ffn.time_maa_r', 'blocks.15.ffn.value.weight', 'blocks.15.ln1.bias', 'blocks.15.ln1.weight', 'blocks.15.ln2.bias', 'blocks.15.ln2.weight', 'blocks.16.att.gate.weight', 'blocks.16.att.key.weight', 'blocks.16.att.ln_x.bias', 'blocks.16.att.ln_x.weight', 'blocks.16.att.output.weight', 'blocks.16.att.receptance.weight', 'blocks.16.att.time_decay_w1', 'blocks.16.att.time_decay_w2', 'blocks.16.att.time_faaaa', 'blocks.16.att.time_maa_g', 'blocks.16.att.time_maa_k', 'blocks.16.att.time_maa_r', 'blocks.16.att.time_maa_v', 'blocks.16.att.time_maa_w', 'blocks.16.att.time_maa_w1', 'blocks.16.att.time_maa_w2', 'blocks.16.att.time_maa_x', 'blocks.16.att.value.weight', 'blocks.16.ffn.key.weight', 'blocks.16.ffn.receptance.weight', 'blocks.16.ffn.time_maa_k', 'blocks.16.ffn.time_maa_r', 'blocks.16.ffn.value.weight', 'blocks.16.ln1.bias', 'blocks.16.ln1.weight', 'blocks.16.ln2.bias', 'blocks.16.ln2.weight', 'blocks.17.att.gate.weight', 'blocks.17.att.key.weight', 'blocks.17.att.ln_x.bias', 'blocks.17.att.ln_x.weight', 'blocks.17.att.output.weight', 'blocks.17.att.receptance.weight', 'blocks.17.att.time_decay_w1', 'blocks.17.att.time_decay_w2', 'blocks.17.att.time_faaaa', 'blocks.17.att.time_maa_g', 'blocks.17.att.time_maa_k', 'blocks.17.att.time_maa_r', 'blocks.17.att.time_maa_v', 'blocks.17.att.time_maa_w', 'blocks.17.att.time_maa_w1', 'blocks.17.att.time_maa_w2', 'blocks.17.att.time_maa_x', 'blocks.17.att.value.weight', 'blocks.17.ffn.key.weight', 'blocks.17.ffn.receptance.weight', 'blocks.17.ffn.time_maa_k', 'blocks.17.ffn.time_maa_r', 'blocks.17.ffn.value.weight', 'blocks.17.ln1.bias', 'blocks.17.ln1.weight', 'blocks.17.ln2.bias', 'blocks.17.ln2.weight', 'blocks.18.att.gate.weight', 'blocks.18.att.key.weight', 'blocks.18.att.ln_x.bias', 'blocks.18.att.ln_x.weight', 'blocks.18.att.output.weight', 'blocks.18.att.receptance.weight', 'blocks.18.att.time_decay_w1', 'blocks.18.att.time_decay_w2', 'blocks.18.att.time_faaaa', 'blocks.18.att.time_maa_g', 'blocks.18.att.time_maa_k', 'blocks.18.att.time_maa_r', 'blocks.18.att.time_maa_v', 'blocks.18.att.time_maa_w', 'blocks.18.att.time_maa_w1', 'blocks.18.att.time_maa_w2', 'blocks.18.att.time_maa_x', 'blocks.18.att.value.weight', 'blocks.18.ffn.key.weight', 'blocks.18.ffn.receptance.weight', 'blocks.18.ffn.time_maa_k', 'blocks.18.ffn.time_maa_r', 'blocks.18.ffn.value.weight', 'blocks.18.ln1.bias', 'blocks.18.ln1.weight', 'blocks.18.ln2.bias', 'blocks.18.ln2.weight', 'blocks.19.att.gate.weight', 'blocks.19.att.key.weight', 'blocks.19.att.ln_x.bias', 'blocks.19.att.ln_x.weight', 'blocks.19.att.output.weight', 'blocks.19.att.receptance.weight', 'blocks.19.att.time_decay_w1', 'blocks.19.att.time_decay_w2', 'blocks.19.att.time_faaaa', 'blocks.19.att.time_maa_g', 'blocks.19.att.time_maa_k', 'blocks.19.att.time_maa_r', 'blocks.19.att.time_maa_v', 'blocks.19.att.time_maa_w', 'blocks.19.att.time_maa_w1', 'blocks.19.att.time_maa_w2', 'blocks.19.att.time_maa_x', 'blocks.19.att.value.weight', 'blocks.19.ffn.key.weight', 'blocks.19.ffn.receptance.weight', 'blocks.19.ffn.time_maa_k', 'blocks.19.ffn.time_maa_r', 'blocks.19.ffn.value.weight', 'blocks.19.ln1.bias', 'blocks.19.ln1.weight', 'blocks.19.ln2.bias', 'blocks.19.ln2.weight', 'blocks.2.att.gate.weight', 'blocks.2.att.key.weight', 'blocks.2.att.ln_x.bias', 'blocks.2.att.ln_x.weight', 'blocks.2.att.output.weight', 'blocks.2.att.receptance.weight', 'blocks.2.att.time_decay_w1', 'blocks.2.att.time_decay_w2', 'blocks.2.att.time_faaaa', 'blocks.2.att.time_maa_g', 'blocks.2.att.time_maa_k', 'blocks.2.att.time_maa_r', 'blocks.2.att.time_maa_v', 'blocks.2.att.time_maa_w', 'blocks.2.att.time_maa_w1', 'blocks.2.att.time_maa_w2', 'blocks.2.att.time_maa_x', 'blocks.2.att.value.weight', 'blocks.2.ffn.key.weight', 'blocks.2.ffn.receptance.weight', 'blocks.2.ffn.time_maa_k', 'blocks.2.ffn.time_maa_r', 'blocks.2.ffn.value.weight', 'blocks.2.ln1.bias', 'blocks.2.ln1.weight', 'blocks.2.ln2.bias', 'blocks.2.ln2.weight', 'blocks.20.att.gate.weight', 'blocks.20.att.key.weight', 'blocks.20.att.ln_x.bias', 'blocks.20.att.ln_x.weight', 'blocks.20.att.output.weight', 'blocks.20.att.receptance.weight', 'blocks.20.att.time_decay_w1', 'blocks.20.att.time_decay_w2', 'blocks.20.att.time_faaaa', 'blocks.20.att.time_maa_g', 'blocks.20.att.time_maa_k', 'blocks.20.att.time_maa_r', 'blocks.20.att.time_maa_v', 'blocks.20.att.time_maa_w', 'blocks.20.att.time_maa_w1', 'blocks.20.att.time_maa_w2', 'blocks.20.att.time_maa_x', 'blocks.20.att.value.weight', 'blocks.20.ffn.key.weight', 'blocks.20.ffn.receptance.weight', 'blocks.20.ffn.time_maa_k', 'blocks.20.ffn.time_maa_r', 'blocks.20.ffn.value.weight', 'blocks.20.ln1.bias', 'blocks.20.ln1.weight', 'blocks.20.ln2.bias', 'blocks.20.ln2.weight', 'blocks.21.att.gate.weight', 'blocks.21.att.key.weight', 'blocks.21.att.ln_x.bias', 'blocks.21.att.ln_x.weight', 'blocks.21.att.output.weight', 'blocks.21.att.receptance.weight', 'blocks.21.att.time_decay_w1', 'blocks.21.att.time_decay_w2', 'blocks.21.att.time_faaaa', 'blocks.21.att.time_maa_g', 'blocks.21.att.time_maa_k', 'blocks.21.att.time_maa_r', 'blocks.21.att.time_maa_v', 'blocks.21.att.time_maa_w', 'blocks.21.att.time_maa_w1', 'blocks.21.att.time_maa_w2', 'blocks.21.att.time_maa_x', 'blocks.21.att.value.weight', 'blocks.21.ffn.key.weight', 'blocks.21.ffn.receptance.weight', 'blocks.21.ffn.time_maa_k', 'blocks.21.ffn.time_maa_r', 'blocks.21.ffn.value.weight', 'blocks.21.ln1.bias', 'blocks.21.ln1.weight', 'blocks.21.ln2.bias', 'blocks.21.ln2.weight', 'blocks.22.att.gate.weight', 'blocks.22.att.key.weight', 'blocks.22.att.ln_x.bias', 'blocks.22.att.ln_x.weight', 'blocks.22.att.output.weight', 'blocks.22.att.receptance.weight', 'blocks.22.att.time_decay_w1', 'blocks.22.att.time_decay_w2', 'blocks.22.att.time_faaaa', 'blocks.22.att.time_maa_g', 'blocks.22.att.time_maa_k', 'blocks.22.att.time_maa_r', 'blocks.22.att.time_maa_v', 'blocks.22.att.time_maa_w', 'blocks.22.att.time_maa_w1', 'blocks.22.att.time_maa_w2', 'blocks.22.att.time_maa_x', 'blocks.22.att.value.weight', 'blocks.22.ffn.key.weight', 'blocks.22.ffn.receptance.weight', 'blocks.22.ffn.time_maa_k', 'blocks.22.ffn.time_maa_r', 'blocks.22.ffn.value.weight', 'blocks.22.ln1.bias', 'blocks.22.ln1.weight', 'blocks.22.ln2.bias', 'blocks.22.ln2.weight', 'blocks.23.att.gate.weight', 'blocks.23.att.key.weight', 'blocks.23.att.ln_x.bias', 'blocks.23.att.ln_x.weight', 'blocks.23.att.output.weight', 'blocks.23.att.receptance.weight', 'blocks.23.att.time_decay_w1', 'blocks.23.att.time_decay_w2', 'blocks.23.att.time_faaaa', 'blocks.23.att.time_maa_g', 'blocks.23.att.time_maa_k', 'blocks.23.att.time_maa_r', 'blocks.23.att.time_maa_v', 'blocks.23.att.time_maa_w', 'blocks.23.att.time_maa_w1', 'blocks.23.att.time_maa_w2', 'blocks.23.att.time_maa_x', 'blocks.23.att.value.weight', 'blocks.23.ffn.key.weight', 'blocks.23.ffn.receptance.weight', 'blocks.23.ffn.time_maa_k', 'blocks.23.ffn.time_maa_r', 'blocks.23.ffn.value.weight', 'blocks.23.ln1.bias', 'blocks.23.ln1.weight', 'blocks.23.ln2.bias', 'blocks.23.ln2.weight', 'blocks.24.att.gate.weight', 'blocks.24.att.key.weight', 'blocks.24.att.ln_x.bias', 'blocks.24.att.ln_x.weight', 'blocks.24.att.output.weight', 'blocks.24.att.receptance.weight', 'blocks.24.att.time_decay_w1', 'blocks.24.att.time_decay_w2', 'blocks.24.att.time_faaaa', 'blocks.24.att.time_maa_g', 'blocks.24.att.time_maa_k', 'blocks.24.att.time_maa_r', 'blocks.24.att.time_maa_v', 'blocks.24.att.time_maa_w', 'blocks.24.att.time_maa_w1', 'blocks.24.att.time_maa_w2', 'blocks.24.att.time_maa_x', 'blocks.24.att.value.weight', 'blocks.24.ffn.key.weight', 'blocks.24.ffn.receptance.weight', 'blocks.24.ffn.time_maa_k', 'blocks.24.ffn.time_maa_r', 'blocks.24.ffn.value.weight', 'blocks.24.ln1.bias', 'blocks.24.ln1.weight', 'blocks.24.ln2.bias', 'blocks.24.ln2.weight', 'blocks.25.att.gate.weight', 'blocks.25.att.key.weight', 'blocks.25.att.ln_x.bias', 'blocks.25.att.ln_x.weight', 'blocks.25.att.output.weight', 'blocks.25.att.receptance.weight', 'blocks.25.att.time_decay_w1', 'blocks.25.att.time_decay_w2', 'blocks.25.att.time_faaaa', 'blocks.25.att.time_maa_g', 'blocks.25.att.time_maa_k', 'blocks.25.att.time_maa_r', 'blocks.25.att.time_maa_v', 'blocks.25.att.time_maa_w', 'blocks.25.att.time_maa_w1', 'blocks.25.att.time_maa_w2', 'blocks.25.att.time_maa_x', 'blocks.25.att.value.weight', 'blocks.25.ffn.key.weight', 'blocks.25.ffn.receptance.weight', 'blocks.25.ffn.time_maa_k', 'blocks.25.ffn.time_maa_r', 'blocks.25.ffn.value.weight', 'blocks.25.ln1.bias', 'blocks.25.ln1.weight', 'blocks.25.ln2.bias', 'blocks.25.ln2.weight', 'blocks.26.att.gate.weight', 'blocks.26.att.key.weight', 'blocks.26.att.ln_x.bias', 'blocks.26.att.ln_x.weight', 'blocks.26.att.output.weight', 'blocks.26.att.receptance.weight', 'blocks.26.att.time_decay_w1', 'blocks.26.att.time_decay_w2', 'blocks.26.att.time_faaaa', 'blocks.26.att.time_maa_g', 'blocks.26.att.time_maa_k', 'blocks.26.att.time_maa_r', 'blocks.26.att.time_maa_v', 'blocks.26.att.time_maa_w', 'blocks.26.att.time_maa_w1', 'blocks.26.att.time_maa_w2', 'blocks.26.att.time_maa_x', 'blocks.26.att.value.weight', 'blocks.26.ffn.key.weight', 'blocks.26.ffn.receptance.weight', 'blocks.26.ffn.time_maa_k', 'blocks.26.ffn.time_maa_r', 'blocks.26.ffn.value.weight', 'blocks.26.ln1.bias', 'blocks.26.ln1.weight', 'blocks.26.ln2.bias', 'blocks.26.ln2.weight', 'blocks.27.att.gate.weight', 'blocks.27.att.key.weight', 'blocks.27.att.ln_x.bias', 'blocks.27.att.ln_x.weight', 'blocks.27.att.output.weight', 'blocks.27.att.receptance.weight', 'blocks.27.att.time_decay_w1', 'blocks.27.att.time_decay_w2', 'blocks.27.att.time_faaaa', 'blocks.27.att.time_maa_g', 'blocks.27.att.time_maa_k', 'blocks.27.att.time_maa_r', 'blocks.27.att.time_maa_v', 'blocks.27.att.time_maa_w', 'blocks.27.att.time_maa_w1', 'blocks.27.att.time_maa_w2', 'blocks.27.att.time_maa_x', 'blocks.27.att.value.weight', 'blocks.27.ffn.key.weight', 'blocks.27.ffn.receptance.weight', 'blocks.27.ffn.time_maa_k', 'blocks.27.ffn.time_maa_r', 'blocks.27.ffn.value.weight', 'blocks.27.ln1.bias', 'blocks.27.ln1.weight', 'blocks.27.ln2.bias', 'blocks.27.ln2.weight', 'blocks.28.att.gate.weight', 'blocks.28.att.key.weight', 'blocks.28.att.ln_x.bias', 'blocks.28.att.ln_x.weight', 'blocks.28.att.output.weight', 'blocks.28.att.receptance.weight', 'blocks.28.att.time_decay_w1', 'blocks.28.att.time_decay_w2', 'blocks.28.att.time_faaaa', 'blocks.28.att.time_maa_g', 'blocks.28.att.time_maa_k', 'blocks.28.att.time_maa_r', 'blocks.28.att.time_maa_v', 'blocks.28.att.time_maa_w', 'blocks.28.att.time_maa_w1', 'blocks.28.att.time_maa_w2', 'blocks.28.att.time_maa_x', 'blocks.28.att.value.weight', 'blocks.28.ffn.key.weight', 'blocks.28.ffn.receptance.weight', 'blocks.28.ffn.time_maa_k', 'blocks.28.ffn.time_maa_r', 'blocks.28.ffn.value.weight', 'blocks.28.ln1.bias', 'blocks.28.ln1.weight', 'blocks.28.ln2.bias', 'blocks.28.ln2.weight', 'blocks.29.att.gate.weight', 'blocks.29.att.key.weight', 'blocks.29.att.ln_x.bias', 'blocks.29.att.ln_x.weight', 'blocks.29.att.output.weight', 'blocks.29.att.receptance.weight', 'blocks.29.att.time_decay_w1', 'blocks.29.att.time_decay_w2', 'blocks.29.att.time_faaaa', 'blocks.29.att.time_maa_g', 'blocks.29.att.time_maa_k', 'blocks.29.att.time_maa_r', 'blocks.29.att.time_maa_v', 'blocks.29.att.time_maa_w', 'blocks.29.att.time_maa_w1', 'blocks.29.att.time_maa_w2', 'blocks.29.att.time_maa_x', 'blocks.29.att.value.weight', 'blocks.29.ffn.key.weight', 'blocks.29.ffn.receptance.weight', 'blocks.29.ffn.time_maa_k', 'blocks.29.ffn.time_maa_r', 'blocks.29.ffn.value.weight', 'blocks.29.ln1.bias', 'blocks.29.ln1.weight', 'blocks.29.ln2.bias', 'blocks.29.ln2.weight', 'blocks.3.att.gate.weight', 'blocks.3.att.key.weight', 'blocks.3.att.ln_x.bias', 'blocks.3.att.ln_x.weight', 'blocks.3.att.output.weight', 'blocks.3.att.receptance.weight', 'blocks.3.att.time_decay_w1', 'blocks.3.att.time_decay_w2', 'blocks.3.att.time_faaaa', 'blocks.3.att.time_maa_g', 'blocks.3.att.time_maa_k', 'blocks.3.att.time_maa_r', 'blocks.3.att.time_maa_v', 'blocks.3.att.time_maa_w', 'blocks.3.att.time_maa_w1', 'blocks.3.att.time_maa_w2', 'blocks.3.att.time_maa_x', 'blocks.3.att.value.weight', 'blocks.3.ffn.key.weight', 'blocks.3.ffn.receptance.weight', 'blocks.3.ffn.time_maa_k', 'blocks.3.ffn.time_maa_r', 'blocks.3.ffn.value.weight', 'blocks.3.ln1.bias', 'blocks.3.ln1.weight', 'blocks.3.ln2.bias', 'blocks.3.ln2.weight', 'blocks.30.att.gate.weight', 'blocks.30.att.key.weight', 'blocks.30.att.ln_x.bias', 'blocks.30.att.ln_x.weight', 'blocks.30.att.output.weight', 'blocks.30.att.receptance.weight', 'blocks.30.att.time_decay_w1', 'blocks.30.att.time_decay_w2', 'blocks.30.att.time_faaaa', 'blocks.30.att.time_maa_g', 'blocks.30.att.time_maa_k', 'blocks.30.att.time_maa_r', 'blocks.30.att.time_maa_v', 'blocks.30.att.time_maa_w', 'blocks.30.att.time_maa_w1', 'blocks.30.att.time_maa_w2', 'blocks.30.att.time_maa_x', 'blocks.30.att.value.weight', 'blocks.30.ffn.key.weight', 'blocks.30.ffn.receptance.weight', 'blocks.30.ffn.time_maa_k', 'blocks.30.ffn.time_maa_r', 'blocks.30.ffn.value.weight', 'blocks.30.ln1.bias', 'blocks.30.ln1.weight', 'blocks.30.ln2.bias', 'blocks.30.ln2.weight', 'blocks.31.att.gate.weight', 'blocks.31.att.key.weight', 'blocks.31.att.ln_x.bias', 'blocks.31.att.ln_x.weight', 'blocks.31.att.output.weight', 'blocks.31.att.receptance.weight', 'blocks.31.att.time_decay_w1', 'blocks.31.att.time_decay_w2', 'blocks.31.att.time_faaaa', 'blocks.31.att.time_maa_g', 'blocks.31.att.time_maa_k', 'blocks.31.att.time_maa_r', 'blocks.31.att.time_maa_v', 'blocks.31.att.time_maa_w', 'blocks.31.att.time_maa_w1', 'blocks.31.att.time_maa_w2', 'blocks.31.att.time_maa_x', 'blocks.31.att.value.weight', 'blocks.31.ffn.key.weight', 'blocks.31.ffn.receptance.weight', 'blocks.31.ffn.time_maa_k', 'blocks.31.ffn.time_maa_r', 'blocks.31.ffn.value.weight', 'blocks.31.ln1.bias', 'blocks.31.ln1.weight', 'blocks.31.ln2.bias', 'blocks.31.ln2.weight', 'blocks.4.att.gate.weight', 'blocks.4.att.key.weight', 'blocks.4.att.ln_x.bias', 'blocks.4.att.ln_x.weight', 'blocks.4.att.output.weight', 'blocks.4.att.receptance.weight', 'blocks.4.att.time_decay_w1', 'blocks.4.att.time_decay_w2', 'blocks.4.att.time_faaaa', 'blocks.4.att.time_maa_g', 'blocks.4.att.time_maa_k', 'blocks.4.att.time_maa_r', 'blocks.4.att.time_maa_v', 'blocks.4.att.time_maa_w', 'blocks.4.att.time_maa_w1', 'blocks.4.att.time_maa_w2', 'blocks.4.att.time_maa_x', 'blocks.4.att.value.weight', 'blocks.4.ffn.key.weight', 'blocks.4.ffn.receptance.weight', 'blocks.4.ffn.time_maa_k', 'blocks.4.ffn.time_maa_r', 'blocks.4.ffn.value.weight', 'blocks.4.ln1.bias', 'blocks.4.ln1.weight', 'blocks.4.ln2.bias', 'blocks.4.ln2.weight', 'blocks.5.att.gate.weight', 'blocks.5.att.key.weight', 'blocks.5.att.ln_x.bias', 'blocks.5.att.ln_x.weight', 'blocks.5.att.output.weight', 'blocks.5.att.receptance.weight', 'blocks.5.att.time_decay_w1', 'blocks.5.att.time_decay_w2', 'blocks.5.att.time_faaaa', 'blocks.5.att.time_maa_g', 'blocks.5.att.time_maa_k', 'blocks.5.att.time_maa_r', 'blocks.5.att.time_maa_v', 'blocks.5.att.time_maa_w', 'blocks.5.att.time_maa_w1', 'blocks.5.att.time_maa_w2', 'blocks.5.att.time_maa_x', 'blocks.5.att.value.weight', 'blocks.5.ffn.key.weight', 'blocks.5.ffn.receptance.weight', 'blocks.5.ffn.time_maa_k', 'blocks.5.ffn.time_maa_r', 'blocks.5.ffn.value.weight', 'blocks.5.ln1.bias', 'blocks.5.ln1.weight', 'blocks.5.ln2.bias', 'blocks.5.ln2.weight', 'blocks.6.att.gate.weight', 'blocks.6.att.key.weight', 'blocks.6.att.ln_x.bias', 'blocks.6.att.ln_x.weight', 'blocks.6.att.output.weight', 'blocks.6.att.receptance.weight', 'blocks.6.att.time_decay_w1', 'blocks.6.att.time_decay_w2', 'blocks.6.att.time_faaaa', 'blocks.6.att.time_maa_g', 'blocks.6.att.time_maa_k', 'blocks.6.att.time_maa_r', 'blocks.6.att.time_maa_v', 'blocks.6.att.time_maa_w', 'blocks.6.att.time_maa_w1', 'blocks.6.att.time_maa_w2', 'blocks.6.att.time_maa_x', 'blocks.6.att.value.weight', 'blocks.6.ffn.key.weight', 'blocks.6.ffn.receptance.weight', 'blocks.6.ffn.time_maa_k', 'blocks.6.ffn.time_maa_r', 'blocks.6.ffn.value.weight', 'blocks.6.ln1.bias', 'blocks.6.ln1.weight', 'blocks.6.ln2.bias', 'blocks.6.ln2.weight', 'blocks.7.att.gate.weight', 'blocks.7.att.key.weight', 'blocks.7.att.ln_x.bias', 'blocks.7.att.ln_x.weight', 'blocks.7.att.output.weight', 'blocks.7.att.receptance.weight', 'blocks.7.att.time_decay_w1', 'blocks.7.att.time_decay_w2', 'blocks.7.att.time_faaaa', 'blocks.7.att.time_maa_g', 'blocks.7.att.time_maa_k', 'blocks.7.att.time_maa_r', 'blocks.7.att.time_maa_v', 'blocks.7.att.time_maa_w', 'blocks.7.att.time_maa_w1', 'blocks.7.att.time_maa_w2', 'blocks.7.att.time_maa_x', 'blocks.7.att.value.weight', 'blocks.7.ffn.key.weight', 'blocks.7.ffn.receptance.weight', 'blocks.7.ffn.time_maa_k', 'blocks.7.ffn.time_maa_r', 'blocks.7.ffn.value.weight', 'blocks.7.ln1.bias', 'blocks.7.ln1.weight', 'blocks.7.ln2.bias', 'blocks.7.ln2.weight', 'blocks.8.att.gate.weight', 'blocks.8.att.key.weight', 'blocks.8.att.ln_x.bias', 'blocks.8.att.ln_x.weight', 'blocks.8.att.output.weight', 'blocks.8.att.receptance.weight', 'blocks.8.att.time_decay_w1', 'blocks.8.att.time_decay_w2', 'blocks.8.att.time_faaaa', 'blocks.8.att.time_maa_g', 'blocks.8.att.time_maa_k', 'blocks.8.att.time_maa_r', 'blocks.8.att.time_maa_v', 'blocks.8.att.time_maa_w', 'blocks.8.att.time_maa_w1', 'blocks.8.att.time_maa_w2', 'blocks.8.att.time_maa_x', 'blocks.8.att.value.weight', 'blocks.8.ffn.key.weight', 'blocks.8.ffn.receptance.weight', 'blocks.8.ffn.time_maa_k', 'blocks.8.ffn.time_maa_r', 'blocks.8.ffn.value.weight', 'blocks.8.ln1.bias', 'blocks.8.ln1.weight', 'blocks.8.ln2.bias', 'blocks.8.ln2.weight', 'blocks.9.att.gate.weight', 'blocks.9.att.key.weight', 'blocks.9.att.ln_x.bias', 'blocks.9.att.ln_x.weight', 'blocks.9.att.output.weight', 'blocks.9.att.receptance.weight', 'blocks.9.att.time_decay_w1', 'blocks.9.att.time_decay_w2', 'blocks.9.att.time_faaaa', 'blocks.9.att.time_maa_g', 'blocks.9.att.time_maa_k', 'blocks.9.att.time_maa_r', 'blocks.9.att.time_maa_v', 'blocks.9.att.time_maa_w', 'blocks.9.att.time_maa_w1', 'blocks.9.att.time_maa_w2', 'blocks.9.att.time_maa_x', 'blocks.9.att.value.weight', 'blocks.9.ffn.key.weight', 'blocks.9.ffn.receptance.weight', 'blocks.9.ffn.time_maa_k', 'blocks.9.ffn.time_maa_r', 'blocks.9.ffn.value.weight', 'blocks.9.ln1.bias', 'blocks.9.ln1.weight', 'blocks.9.ln2.bias', 'blocks.9.ln2.weight', 'emb.weight', 'head.weight', 'ln_out.bias', 'ln_out.weight']
+2x ['blocks.0.att.time_decay', 'blocks.1.att.time_decay', 'blocks.10.att.time_decay', 'blocks.11.att.time_decay', 'blocks.12.att.time_decay', 'blocks.13.att.time_decay', 'blocks.14.att.time_decay', 'blocks.15.att.time_decay', 'blocks.16.att.time_decay', 'blocks.17.att.time_decay', 'blocks.18.att.time_decay', 'blocks.19.att.time_decay', 'blocks.2.att.time_decay', 'blocks.20.att.time_decay', 'blocks.21.att.time_decay', 'blocks.22.att.time_decay', 'blocks.23.att.time_decay', 'blocks.24.att.time_decay', 'blocks.25.att.time_decay', 'blocks.26.att.time_decay', 'blocks.27.att.time_decay', 'blocks.28.att.time_decay', 'blocks.29.att.time_decay', 'blocks.3.att.time_decay', 'blocks.30.att.time_decay', 'blocks.31.att.time_decay', 'blocks.4.att.time_decay', 'blocks.5.att.time_decay', 'blocks.6.att.time_decay', 'blocks.7.att.time_decay', 'blocks.8.att.time_decay', 'blocks.9.att.time_decay']
+3x []
+Time to load fused_adam op: 0.10227370262145996 seconds
+Parameter Offload: Total persistent parameters: 2113536 in 516 params
+┏━━━┳━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━┓
+┃[1m   [22m┃[1m Name   [22m┃[1m Type       [22m┃[1m Params [22m┃[1m        [22m┃
+┡━━━╇━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━┩
+│ 0 │ emb    │ Embedding  │  268 M │ 16.8 M │
+│ 1 │ blocks │ ModuleList │  7.0 B │ 440 M  │
+│ 2 │ ln_out │ LayerNorm  │  8.2 K │ 512    │
+│ 3 │ head   │ Linear     │  268 M │ 16.8 M │
+└───┴────────┴────────────┴────────┴────────┘
+[1mTrainable params[22m: 7.6 B
+[1mNon-trainable params[22m: 0
+[1mTotal params[22m: 7.6 B
+[1mTotal estimated model params size (MB)[22m: 30.3 K
+/usr/local/lib/python3.10/dist-packages/pytorch_lightning/loops/fit_loop.py:298: The number of training batches (2025324) is smaller than the logging interval Trainer(log_every_n_steps=100000000000000000000). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+Loading  /checkpoint/testload/L32-D4096-x060/rwkv-150.pth on rank 0
+Loaded model on rank 0
+65536 4096        emb.weight
+4096              blocks.0.ln1.weight
+4096              blocks.0.ln1.bias
+4096              blocks.0.ln2.weight
+4096              blocks.0.ln2.bias
+4096              blocks.0.ln0.weight
+4096              blocks.0.ln0.bias
+4096              blocks.0.att.time_maa_x
+4096              blocks.0.att.time_maa_w
+4096              blocks.0.att.time_maa_k
+4096              blocks.0.att.time_maa_v
+4096              blocks.0.att.time_maa_r
+4096              blocks.0.att.time_maa_g
+4096  160         blocks.0.att.time_maa_w1
+5     32    4096  blocks.0.att.time_maa_w2
+4096              blocks.0.att.time_decay
+4096  64          blocks.0.att.time_decay_w1
+64    4096        blocks.0.att.time_decay_w2
+64    64          blocks.0.att.time_faaaa
+4096  4096        blocks.0.att.receptance.weight
+4096  4096        blocks.0.att.key.weight
+4096  4096        blocks.0.att.value.weight
+4096  4096        blocks.0.att.output.weight
+4096  4096        blocks.0.att.gate.weight
+4096              blocks.0.att.ln_x.weight
+4096              blocks.0.att.ln_x.bias
+4096              blocks.0.ffn.time_maa_k
+4096              blocks.0.ffn.time_maa_r
+14336 4096        blocks.0.ffn.key.weight
+4096  4096        blocks.0.ffn.receptance.weight
+4096  14336       blocks.0.ffn.value.weight
+4096              blocks.1.ln1.weight
+4096              blocks.1.ln1.bias
+4096              blocks.1.ln2.weight
+4096              blocks.1.ln2.bias
+4096              blocks.1.att.time_maa_x
+4096              blocks.1.att.time_maa_w
+4096              blocks.1.att.time_maa_k
+4096              blocks.1.att.time_maa_v
+4096              blocks.1.att.time_maa_r
+4096              blocks.1.att.time_maa_g
+4096  160         blocks.1.att.time_maa_w1
+5     32    4096  blocks.1.att.time_maa_w2
+4096              blocks.1.att.time_decay
+4096  64          blocks.1.att.time_decay_w1
+64    4096        blocks.1.att.time_decay_w2
+64    64          blocks.1.att.time_faaaa
+4096  4096        blocks.1.att.receptance.weight
+4096  4096        blocks.1.att.key.weight
+4096  4096        blocks.1.att.value.weight
+4096  4096        blocks.1.att.output.weight
+4096  4096        blocks.1.att.gate.weight
+4096              blocks.1.att.ln_x.weight
+4096              blocks.1.att.ln_x.bias
+4096              blocks.1.ffn.time_maa_k
+4096              blocks.1.ffn.time_maa_r
+14336 4096        blocks.1.ffn.key.weight
+4096  4096        blocks.1.ffn.receptance.weight
+4096  14336       blocks.1.ffn.value.weight
+4096              blocks.2.ln1.weight
+4096              blocks.2.ln1.bias
+4096              blocks.2.ln2.weight
+4096              blocks.2.ln2.bias
+4096              blocks.2.att.time_maa_x
+4096              blocks.2.att.time_maa_w
+4096              blocks.2.att.time_maa_k
+4096              blocks.2.att.time_maa_v
+4096              blocks.2.att.time_maa_r
+4096              blocks.2.att.time_maa_g
+4096  160         blocks.2.att.time_maa_w1
+5     32    4096  blocks.2.att.time_maa_w2
+4096              blocks.2.att.time_decay
+4096  64          blocks.2.att.time_decay_w1
+64    4096        blocks.2.att.time_decay_w2
+64    64          blocks.2.att.time_faaaa
+4096  4096        blocks.2.att.receptance.weight
+4096  4096        blocks.2.att.key.weight
+4096  4096        blocks.2.att.value.weight
+4096  4096        blocks.2.att.output.weight
+4096  4096        blocks.2.att.gate.weight
+4096              blocks.2.att.ln_x.weight
+4096              blocks.2.att.ln_x.bias
+4096              blocks.2.ffn.time_maa_k
+4096              blocks.2.ffn.time_maa_r
+14336 4096        blocks.2.ffn.key.weight
+4096  4096        blocks.2.ffn.receptance.weight
+4096  14336       blocks.2.ffn.value.weight
+4096              blocks.3.ln1.weight
+4096              blocks.3.ln1.bias
+4096              blocks.3.ln2.weight
+4096              blocks.3.ln2.bias
+4096              blocks.3.att.time_maa_x
+4096              blocks.3.att.time_maa_w
+4096              blocks.3.att.time_maa_k
+4096              blocks.3.att.time_maa_v
+4096              blocks.3.att.time_maa_r
+4096              blocks.3.att.time_maa_g
+4096  160         blocks.3.att.time_maa_w1
+5     32    4096  blocks.3.att.time_maa_w2
+4096              blocks.3.att.time_decay
+4096  64          blocks.3.att.time_decay_w1
+64    4096        blocks.3.att.time_decay_w2
+64    64          blocks.3.att.time_faaaa
+4096  4096        blocks.3.att.receptance.weight
+4096  4096        blocks.3.att.key.weight
+4096  4096        blocks.3.att.value.weight
+4096  4096        blocks.3.att.output.weight
+4096  4096        blocks.3.att.gate.weight
+4096              blocks.3.att.ln_x.weight
+4096              blocks.3.att.ln_x.bias
+4096              blocks.3.ffn.time_maa_k
+4096              blocks.3.ffn.time_maa_r
+14336 4096        blocks.3.ffn.key.weight
+4096  4096        blocks.3.ffn.receptance.weight
+4096  14336       blocks.3.ffn.value.weight
+4096              blocks.4.ln1.weight
+4096              blocks.4.ln1.bias
+4096              blocks.4.ln2.weight
+4096              blocks.4.ln2.bias
+4096              blocks.4.att.time_maa_x
+4096              blocks.4.att.time_maa_w
+4096              blocks.4.att.time_maa_k
+4096              blocks.4.att.time_maa_v
+4096              blocks.4.att.time_maa_r
+4096              blocks.4.att.time_maa_g
+4096  160         blocks.4.att.time_maa_w1
+5     32    4096  blocks.4.att.time_maa_w2
+4096              blocks.4.att.time_decay
+4096  64          blocks.4.att.time_decay_w1
+64    4096        blocks.4.att.time_decay_w2
+64    64          blocks.4.att.time_faaaa
+4096  4096        blocks.4.att.receptance.weight
+4096  4096        blocks.4.att.key.weight
+4096  4096        blocks.4.att.value.weight
+4096  4096        blocks.4.att.output.weight
+4096  4096        blocks.4.att.gate.weight
+4096              blocks.4.att.ln_x.weight
+4096              blocks.4.att.ln_x.bias
+4096              blocks.4.ffn.time_maa_k
+4096              blocks.4.ffn.time_maa_r
+14336 4096        blocks.4.ffn.key.weight
+4096  4096        blocks.4.ffn.receptance.weight
+4096  14336       blocks.4.ffn.value.weight
+4096              blocks.5.ln1.weight
+4096              blocks.5.ln1.bias
+4096              blocks.5.ln2.weight
+4096              blocks.5.ln2.bias
+4096              blocks.5.att.time_maa_x
+4096              blocks.5.att.time_maa_w
+4096              blocks.5.att.time_maa_k
+4096              blocks.5.att.time_maa_v
+4096              blocks.5.att.time_maa_r
+4096              blocks.5.att.time_maa_g
+4096  160         blocks.5.att.time_maa_w1
+5     32    4096  blocks.5.att.time_maa_w2
+4096              blocks.5.att.time_decay
+4096  64          blocks.5.att.time_decay_w1
+64    4096        blocks.5.att.time_decay_w2
+64    64          blocks.5.att.time_faaaa
+4096  4096        blocks.5.att.receptance.weight
+4096  4096        blocks.5.att.key.weight
+4096  4096        blocks.5.att.value.weight
+4096  4096        blocks.5.att.output.weight
+4096  4096        blocks.5.att.gate.weight
+4096              blocks.5.att.ln_x.weight
+4096              blocks.5.att.ln_x.bias
+4096              blocks.5.ffn.time_maa_k
+4096              blocks.5.ffn.time_maa_r
+14336 4096        blocks.5.ffn.key.weight
+4096  4096        blocks.5.ffn.receptance.weight
+4096  14336       blocks.5.ffn.value.weight
+4096              blocks.6.ln1.weight
+4096              blocks.6.ln1.bias
+4096              blocks.6.ln2.weight
+4096              blocks.6.ln2.bias
+4096              blocks.6.att.time_maa_x
+4096              blocks.6.att.time_maa_w
+4096              blocks.6.att.time_maa_k
+4096              blocks.6.att.time_maa_v
+4096              blocks.6.att.time_maa_r
+4096              blocks.6.att.time_maa_g
+4096  160         blocks.6.att.time_maa_w1
+5     32    4096  blocks.6.att.time_maa_w2
+4096              blocks.6.att.time_decay
+4096  64          blocks.6.att.time_decay_w1
+64    4096        blocks.6.att.time_decay_w2
+64    64          blocks.6.att.time_faaaa
+4096  4096        blocks.6.att.receptance.weight
+4096  4096        blocks.6.att.key.weight
+4096  4096        blocks.6.att.value.weight
+4096  4096        blocks.6.att.output.weight
+4096  4096        blocks.6.att.gate.weight
+4096              blocks.6.att.ln_x.weight
+4096              blocks.6.att.ln_x.bias
+4096              blocks.6.ffn.time_maa_k
+4096              blocks.6.ffn.time_maa_r
+14336 4096        blocks.6.ffn.key.weight
+4096  4096        blocks.6.ffn.receptance.weight
+4096  14336       blocks.6.ffn.value.weight
+4096              blocks.7.ln1.weight
+4096              blocks.7.ln1.bias
+4096              blocks.7.ln2.weight
+4096              blocks.7.ln2.bias
+4096              blocks.7.att.time_maa_x
+4096              blocks.7.att.time_maa_w
+4096              blocks.7.att.time_maa_k
+4096              blocks.7.att.time_maa_v
+4096              blocks.7.att.time_maa_r
+4096              blocks.7.att.time_maa_g
+4096  160         blocks.7.att.time_maa_w1
+5     32    4096  blocks.7.att.time_maa_w2
+4096              blocks.7.att.time_decay
+4096  64          blocks.7.att.time_decay_w1
+64    4096        blocks.7.att.time_decay_w2
+64    64          blocks.7.att.time_faaaa
+4096  4096        blocks.7.att.receptance.weight
+4096  4096        blocks.7.att.key.weight
+4096  4096        blocks.7.att.value.weight
+4096  4096        blocks.7.att.output.weight
+4096  4096        blocks.7.att.gate.weight
+4096              blocks.7.att.ln_x.weight
+4096              blocks.7.att.ln_x.bias
+4096              blocks.7.ffn.time_maa_k
+4096              blocks.7.ffn.time_maa_r
+14336 4096        blocks.7.ffn.key.weight
+4096  4096        blocks.7.ffn.receptance.weight
+4096  14336       blocks.7.ffn.value.weight
+4096              blocks.8.ln1.weight
+4096              blocks.8.ln1.bias
+4096              blocks.8.ln2.weight
+4096              blocks.8.ln2.bias
+4096              blocks.8.att.time_maa_x
+4096              blocks.8.att.time_maa_w
+4096              blocks.8.att.time_maa_k
+4096              blocks.8.att.time_maa_v
+4096              blocks.8.att.time_maa_r
+4096              blocks.8.att.time_maa_g
+4096  160         blocks.8.att.time_maa_w1
+5     32    4096  blocks.8.att.time_maa_w2
+4096              blocks.8.att.time_decay
+4096  64          blocks.8.att.time_decay_w1
+64    4096        blocks.8.att.time_decay_w2
+64    64          blocks.8.att.time_faaaa
+4096  4096        blocks.8.att.receptance.weight
+4096  4096        blocks.8.att.key.weight
+4096  4096        blocks.8.att.value.weight
+4096  4096        blocks.8.att.output.weight
+4096  4096        blocks.8.att.gate.weight
+4096              blocks.8.att.ln_x.weight
+4096              blocks.8.att.ln_x.bias
+4096              blocks.8.ffn.time_maa_k
+4096              blocks.8.ffn.time_maa_r
+14336 4096        blocks.8.ffn.key.weight
+4096  4096        blocks.8.ffn.receptance.weight
+4096  14336       blocks.8.ffn.value.weight
+4096              blocks.9.ln1.weight
+4096              blocks.9.ln1.bias
+4096              blocks.9.ln2.weight
+4096              blocks.9.ln2.bias
+4096              blocks.9.att.time_maa_x
+4096              blocks.9.att.time_maa_w
+4096              blocks.9.att.time_maa_k
+4096              blocks.9.att.time_maa_v
+4096              blocks.9.att.time_maa_r
+4096              blocks.9.att.time_maa_g
+4096  160         blocks.9.att.time_maa_w1
+5     32    4096  blocks.9.att.time_maa_w2
+4096              blocks.9.att.time_decay
+4096  64          blocks.9.att.time_decay_w1
+64    4096        blocks.9.att.time_decay_w2
+64    64          blocks.9.att.time_faaaa
+4096  4096        blocks.9.att.receptance.weight
+4096  4096        blocks.9.att.key.weight
+4096  4096        blocks.9.att.value.weight
+4096  4096        blocks.9.att.output.weight
+4096  4096        blocks.9.att.gate.weight
+4096              blocks.9.att.ln_x.weight
+4096              blocks.9.att.ln_x.bias
+4096              blocks.9.ffn.time_maa_k
+4096              blocks.9.ffn.time_maa_r
+14336 4096        blocks.9.ffn.key.weight
+4096  4096        blocks.9.ffn.receptance.weight
+4096  14336       blocks.9.ffn.value.weight
+4096              blocks.10.ln1.weight
+4096              blocks.10.ln1.bias
+4096              blocks.10.ln2.weight
+4096              blocks.10.ln2.bias
+4096              blocks.10.att.time_maa_x
+4096              blocks.10.att.time_maa_w
+4096              blocks.10.att.time_maa_k
+4096              blocks.10.att.time_maa_v
+4096              blocks.10.att.time_maa_r
+4096              blocks.10.att.time_maa_g
+4096  160         blocks.10.att.time_maa_w1
+5     32    4096  blocks.10.att.time_maa_w2
+4096              blocks.10.att.time_decay
+4096  64          blocks.10.att.time_decay_w1
+64    4096        blocks.10.att.time_decay_w2
+64    64          blocks.10.att.time_faaaa
+4096  4096        blocks.10.att.receptance.weight
+4096  4096        blocks.10.att.key.weight
+4096  4096        blocks.10.att.value.weight
+4096  4096        blocks.10.att.output.weight
+4096  4096        blocks.10.att.gate.weight
+4096              blocks.10.att.ln_x.weight
+4096              blocks.10.att.ln_x.bias
+4096              blocks.10.ffn.time_maa_k
+4096              blocks.10.ffn.time_maa_r
+14336 4096        blocks.10.ffn.key.weight
+4096  4096        blocks.10.ffn.receptance.weight
+4096  14336       blocks.10.ffn.value.weight
+4096              blocks.11.ln1.weight
+4096              blocks.11.ln1.bias
+4096              blocks.11.ln2.weight
+4096              blocks.11.ln2.bias
+4096              blocks.11.att.time_maa_x
+4096              blocks.11.att.time_maa_w
+4096              blocks.11.att.time_maa_k
+4096              blocks.11.att.time_maa_v
+4096              blocks.11.att.time_maa_r
+4096              blocks.11.att.time_maa_g
+4096  160         blocks.11.att.time_maa_w1
+5     32    4096  blocks.11.att.time_maa_w2
+4096              blocks.11.att.time_decay
+4096  64          blocks.11.att.time_decay_w1
+64    4096        blocks.11.att.time_decay_w2
+64    64          blocks.11.att.time_faaaa
+4096  4096        blocks.11.att.receptance.weight
+4096  4096        blocks.11.att.key.weight
+4096  4096        blocks.11.att.value.weight
+4096  4096        blocks.11.att.output.weight
+4096  4096        blocks.11.att.gate.weight
+4096              blocks.11.att.ln_x.weight
+4096              blocks.11.att.ln_x.bias
+4096              blocks.11.ffn.time_maa_k
+4096              blocks.11.ffn.time_maa_r
+14336 4096        blocks.11.ffn.key.weight
+4096  4096        blocks.11.ffn.receptance.weight
+4096  14336       blocks.11.ffn.value.weight
+4096              blocks.12.ln1.weight
+4096              blocks.12.ln1.bias
+4096              blocks.12.ln2.weight
+4096              blocks.12.ln2.bias
+4096              blocks.12.att.time_maa_x
+4096              blocks.12.att.time_maa_w
+4096              blocks.12.att.time_maa_k
+4096              blocks.12.att.time_maa_v
+4096              blocks.12.att.time_maa_r
+4096              blocks.12.att.time_maa_g
+4096  160         blocks.12.att.time_maa_w1
+5     32    4096  blocks.12.att.time_maa_w2
+4096              blocks.12.att.time_decay
+4096  64          blocks.12.att.time_decay_w1
+64    4096        blocks.12.att.time_decay_w2
+64    64          blocks.12.att.time_faaaa
+4096  4096        blocks.12.att.receptance.weight
+4096  4096        blocks.12.att.key.weight
+4096  4096        blocks.12.att.value.weight
+4096  4096        blocks.12.att.output.weight
+4096  4096        blocks.12.att.gate.weight
+4096              blocks.12.att.ln_x.weight
+4096              blocks.12.att.ln_x.bias
+4096              blocks.12.ffn.time_maa_k
+4096              blocks.12.ffn.time_maa_r
+14336 4096        blocks.12.ffn.key.weight
+4096  4096        blocks.12.ffn.receptance.weight
+4096  14336       blocks.12.ffn.value.weight
+4096              blocks.13.ln1.weight
+4096              blocks.13.ln1.bias
+4096              blocks.13.ln2.weight
+4096              blocks.13.ln2.bias
+4096              blocks.13.att.time_maa_x
+4096              blocks.13.att.time_maa_w
+4096              blocks.13.att.time_maa_k
+4096              blocks.13.att.time_maa_v
+4096              blocks.13.att.time_maa_r
+4096              blocks.13.att.time_maa_g
+4096  160         blocks.13.att.time_maa_w1
+5     32    4096  blocks.13.att.time_maa_w2
+4096              blocks.13.att.time_decay
+4096  64          blocks.13.att.time_decay_w1
+64    4096        blocks.13.att.time_decay_w2
+64    64          blocks.13.att.time_faaaa
+4096  4096        blocks.13.att.receptance.weight
+4096  4096        blocks.13.att.key.weight
+4096  4096        blocks.13.att.value.weight
+4096  4096        blocks.13.att.output.weight
+4096  4096        blocks.13.att.gate.weight
+4096              blocks.13.att.ln_x.weight
+4096              blocks.13.att.ln_x.bias
+4096              blocks.13.ffn.time_maa_k
+4096              blocks.13.ffn.time_maa_r
+14336 4096        blocks.13.ffn.key.weight
+4096  4096        blocks.13.ffn.receptance.weight
+4096  14336       blocks.13.ffn.value.weight
+4096              blocks.14.ln1.weight
+4096              blocks.14.ln1.bias
+4096              blocks.14.ln2.weight
+4096              blocks.14.ln2.bias
+4096              blocks.14.att.time_maa_x
+4096              blocks.14.att.time_maa_w
+4096              blocks.14.att.time_maa_k
+4096              blocks.14.att.time_maa_v
+4096              blocks.14.att.time_maa_r
+4096              blocks.14.att.time_maa_g
+4096  160         blocks.14.att.time_maa_w1
+5     32    4096  blocks.14.att.time_maa_w2
+4096              blocks.14.att.time_decay
+4096  64          blocks.14.att.time_decay_w1
+64    4096        blocks.14.att.time_decay_w2
+64    64          blocks.14.att.time_faaaa
+4096  4096        blocks.14.att.receptance.weight
+4096  4096        blocks.14.att.key.weight
+4096  4096        blocks.14.att.value.weight
+4096  4096        blocks.14.att.output.weight
+4096  4096        blocks.14.att.gate.weight
+4096              blocks.14.att.ln_x.weight
+4096              blocks.14.att.ln_x.bias
+4096              blocks.14.ffn.time_maa_k
+4096              blocks.14.ffn.time_maa_r
+14336 4096        blocks.14.ffn.key.weight
+4096  4096        blocks.14.ffn.receptance.weight
+4096  14336       blocks.14.ffn.value.weight
+4096              blocks.15.ln1.weight
+4096              blocks.15.ln1.bias
+4096              blocks.15.ln2.weight
+4096              blocks.15.ln2.bias
+4096              blocks.15.att.time_maa_x
+4096              blocks.15.att.time_maa_w
+4096              blocks.15.att.time_maa_k
+4096              blocks.15.att.time_maa_v
+4096              blocks.15.att.time_maa_r
+4096              blocks.15.att.time_maa_g
+4096  160         blocks.15.att.time_maa_w1
+5     32    4096  blocks.15.att.time_maa_w2
+4096              blocks.15.att.time_decay
+4096  64          blocks.15.att.time_decay_w1
+64    4096        blocks.15.att.time_decay_w2
+64    64          blocks.15.att.time_faaaa
+4096  4096        blocks.15.att.receptance.weight
+4096  4096        blocks.15.att.key.weight
+4096  4096        blocks.15.att.value.weight
+4096  4096        blocks.15.att.output.weight
+4096  4096        blocks.15.att.gate.weight
+4096              blocks.15.att.ln_x.weight
+4096              blocks.15.att.ln_x.bias
+4096              blocks.15.ffn.time_maa_k
+4096              blocks.15.ffn.time_maa_r
+14336 4096        blocks.15.ffn.key.weight
+4096  4096        blocks.15.ffn.receptance.weight
+4096  14336       blocks.15.ffn.value.weight
+4096              blocks.16.ln1.weight
+4096              blocks.16.ln1.bias
+4096              blocks.16.ln2.weight
+4096              blocks.16.ln2.bias
+4096              blocks.16.att.time_maa_x
+4096              blocks.16.att.time_maa_w
+4096              blocks.16.att.time_maa_k
+4096              blocks.16.att.time_maa_v
+4096              blocks.16.att.time_maa_r
+4096              blocks.16.att.time_maa_g
+4096  160         blocks.16.att.time_maa_w1
+5     32    4096  blocks.16.att.time_maa_w2
+4096              blocks.16.att.time_decay
+4096  64          blocks.16.att.time_decay_w1
+64    4096        blocks.16.att.time_decay_w2
+64    64          blocks.16.att.time_faaaa
+4096  4096        blocks.16.att.receptance.weight
+4096  4096        blocks.16.att.key.weight
+4096  4096        blocks.16.att.value.weight
+4096  4096        blocks.16.att.output.weight
+4096  4096        blocks.16.att.gate.weight
+4096              blocks.16.att.ln_x.weight
+4096              blocks.16.att.ln_x.bias
+4096              blocks.16.ffn.time_maa_k
+4096              blocks.16.ffn.time_maa_r
+14336 4096        blocks.16.ffn.key.weight
+4096  4096        blocks.16.ffn.receptance.weight
+4096  14336       blocks.16.ffn.value.weight
+4096              blocks.17.ln1.weight
+4096              blocks.17.ln1.bias
+4096              blocks.17.ln2.weight
+4096              blocks.17.ln2.bias
+4096              blocks.17.att.time_maa_x
+4096              blocks.17.att.time_maa_w
+4096              blocks.17.att.time_maa_k
+4096              blocks.17.att.time_maa_v
+4096              blocks.17.att.time_maa_r
+4096              blocks.17.att.time_maa_g
+4096  160         blocks.17.att.time_maa_w1
+5     32    4096  blocks.17.att.time_maa_w2
+4096              blocks.17.att.time_decay
+4096  64          blocks.17.att.time_decay_w1
+64    4096        blocks.17.att.time_decay_w2
+64    64          blocks.17.att.time_faaaa
+4096  4096        blocks.17.att.receptance.weight
+4096  4096        blocks.17.att.key.weight
+4096  4096        blocks.17.att.value.weight
+4096  4096        blocks.17.att.output.weight
+4096  4096        blocks.17.att.gate.weight
+4096              blocks.17.att.ln_x.weight
+4096              blocks.17.att.ln_x.bias
+4096              blocks.17.ffn.time_maa_k
+4096              blocks.17.ffn.time_maa_r
+14336 4096        blocks.17.ffn.key.weight
+4096  4096        blocks.17.ffn.receptance.weight
+4096  14336       blocks.17.ffn.value.weight
+4096              blocks.18.ln1.weight
+4096              blocks.18.ln1.bias
+4096              blocks.18.ln2.weight
+4096              blocks.18.ln2.bias
+4096              blocks.18.att.time_maa_x
+4096              blocks.18.att.time_maa_w
+4096              blocks.18.att.time_maa_k
+4096              blocks.18.att.time_maa_v
+4096              blocks.18.att.time_maa_r
+4096              blocks.18.att.time_maa_g
+4096  160         blocks.18.att.time_maa_w1
+5     32    4096  blocks.18.att.time_maa_w2
+4096              blocks.18.att.time_decay
+4096  64          blocks.18.att.time_decay_w1
+64    4096        blocks.18.att.time_decay_w2
+64    64          blocks.18.att.time_faaaa
+4096  4096        blocks.18.att.receptance.weight
+4096  4096        blocks.18.att.key.weight
+4096  4096        blocks.18.att.value.weight
+4096  4096        blocks.18.att.output.weight
+4096  4096        blocks.18.att.gate.weight
+4096              blocks.18.att.ln_x.weight
+4096              blocks.18.att.ln_x.bias
+4096              blocks.18.ffn.time_maa_k
+4096              blocks.18.ffn.time_maa_r
+14336 4096        blocks.18.ffn.key.weight
+4096  4096        blocks.18.ffn.receptance.weight
+4096  14336       blocks.18.ffn.value.weight
+4096              blocks.19.ln1.weight
+4096              blocks.19.ln1.bias
+4096              blocks.19.ln2.weight
+4096              blocks.19.ln2.bias
+4096              blocks.19.att.time_maa_x
+4096              blocks.19.att.time_maa_w
+4096              blocks.19.att.time_maa_k
+4096              blocks.19.att.time_maa_v
+4096              blocks.19.att.time_maa_r
+4096              blocks.19.att.time_maa_g
+4096  160         blocks.19.att.time_maa_w1
+5     32    4096  blocks.19.att.time_maa_w2
+4096              blocks.19.att.time_decay
+4096  64          blocks.19.att.time_decay_w1
+64    4096        blocks.19.att.time_decay_w2
+64    64          blocks.19.att.time_faaaa
+4096  4096        blocks.19.att.receptance.weight
+4096  4096        blocks.19.att.key.weight
+4096  4096        blocks.19.att.value.weight
+4096  4096        blocks.19.att.output.weight
+4096  4096        blocks.19.att.gate.weight
+4096              blocks.19.att.ln_x.weight
+4096              blocks.19.att.ln_x.bias
+4096              blocks.19.ffn.time_maa_k
+4096              blocks.19.ffn.time_maa_r
+14336 4096        blocks.19.ffn.key.weight
+4096  4096        blocks.19.ffn.receptance.weight
+4096  14336       blocks.19.ffn.value.weight
+4096              blocks.20.ln1.weight
+4096              blocks.20.ln1.bias
+4096              blocks.20.ln2.weight
+4096              blocks.20.ln2.bias
+4096              blocks.20.att.time_maa_x
+4096              blocks.20.att.time_maa_w
+4096              blocks.20.att.time_maa_k
+4096              blocks.20.att.time_maa_v
+4096              blocks.20.att.time_maa_r
+4096              blocks.20.att.time_maa_g
+4096  160         blocks.20.att.time_maa_w1
+5     32    4096  blocks.20.att.time_maa_w2
+4096              blocks.20.att.time_decay
+4096  64          blocks.20.att.time_decay_w1
+64    4096        blocks.20.att.time_decay_w2
+64    64          blocks.20.att.time_faaaa
+4096  4096        blocks.20.att.receptance.weight
+4096  4096        blocks.20.att.key.weight
+4096  4096        blocks.20.att.value.weight
+4096  4096        blocks.20.att.output.weight
+4096  4096        blocks.20.att.gate.weight
+4096              blocks.20.att.ln_x.weight
+4096              blocks.20.att.ln_x.bias
+4096              blocks.20.ffn.time_maa_k
+4096              blocks.20.ffn.time_maa_r
+14336 4096        blocks.20.ffn.key.weight
+4096  4096        blocks.20.ffn.receptance.weight
+4096  14336       blocks.20.ffn.value.weight
+4096              blocks.21.ln1.weight
+4096              blocks.21.ln1.bias
+4096              blocks.21.ln2.weight
+4096              blocks.21.ln2.bias
+4096              blocks.21.att.time_maa_x
+4096              blocks.21.att.time_maa_w
+4096              blocks.21.att.time_maa_k
+4096              blocks.21.att.time_maa_v
+4096              blocks.21.att.time_maa_r
+4096              blocks.21.att.time_maa_g
+4096  160         blocks.21.att.time_maa_w1
+5     32    4096  blocks.21.att.time_maa_w2
+4096              blocks.21.att.time_decay
+4096  64          blocks.21.att.time_decay_w1
+64    4096        blocks.21.att.time_decay_w2
+64    64          blocks.21.att.time_faaaa
+4096  4096        blocks.21.att.receptance.weight
+4096  4096        blocks.21.att.key.weight
+4096  4096        blocks.21.att.value.weight
+4096  4096        blocks.21.att.output.weight
+4096  4096        blocks.21.att.gate.weight
+4096              blocks.21.att.ln_x.weight
+4096              blocks.21.att.ln_x.bias
+4096              blocks.21.ffn.time_maa_k
+4096              blocks.21.ffn.time_maa_r
+14336 4096        blocks.21.ffn.key.weight
+4096  4096        blocks.21.ffn.receptance.weight
+4096  14336       blocks.21.ffn.value.weight
+4096              blocks.22.ln1.weight
+4096              blocks.22.ln1.bias
+4096              blocks.22.ln2.weight
+4096              blocks.22.ln2.bias
+4096              blocks.22.att.time_maa_x
+4096              blocks.22.att.time_maa_w
+4096              blocks.22.att.time_maa_k
+4096              blocks.22.att.time_maa_v
+4096              blocks.22.att.time_maa_r
+4096              blocks.22.att.time_maa_g
+4096  160         blocks.22.att.time_maa_w1
+5     32    4096  blocks.22.att.time_maa_w2
+4096              blocks.22.att.time_decay
+4096  64          blocks.22.att.time_decay_w1
+64    4096        blocks.22.att.time_decay_w2
+64    64          blocks.22.att.time_faaaa
+4096  4096        blocks.22.att.receptance.weight
+4096  4096        blocks.22.att.key.weight
+4096  4096        blocks.22.att.value.weight
+4096  4096        blocks.22.att.output.weight
+4096  4096        blocks.22.att.gate.weight
+4096              blocks.22.att.ln_x.weight
+4096              blocks.22.att.ln_x.bias
+4096              blocks.22.ffn.time_maa_k
+4096              blocks.22.ffn.time_maa_r
+14336 4096        blocks.22.ffn.key.weight
+4096  4096        blocks.22.ffn.receptance.weight
+4096  14336       blocks.22.ffn.value.weight
+4096              blocks.23.ln1.weight
+4096              blocks.23.ln1.bias
+4096              blocks.23.ln2.weight
+4096              blocks.23.ln2.bias
+4096              blocks.23.att.time_maa_x
+4096              blocks.23.att.time_maa_w
+4096              blocks.23.att.time_maa_k
+4096              blocks.23.att.time_maa_v
+4096              blocks.23.att.time_maa_r
+4096              blocks.23.att.time_maa_g
+4096  160         blocks.23.att.time_maa_w1
+5     32    4096  blocks.23.att.time_maa_w2
+4096              blocks.23.att.time_decay
+4096  64          blocks.23.att.time_decay_w1
+64    4096        blocks.23.att.time_decay_w2
+64    64          blocks.23.att.time_faaaa
+4096  4096        blocks.23.att.receptance.weight
+4096  4096        blocks.23.att.key.weight
+4096  4096        blocks.23.att.value.weight
+4096  4096        blocks.23.att.output.weight
+4096  4096        blocks.23.att.gate.weight
+4096              blocks.23.att.ln_x.weight
+4096              blocks.23.att.ln_x.bias
+4096              blocks.23.ffn.time_maa_k
+4096              blocks.23.ffn.time_maa_r
+14336 4096        blocks.23.ffn.key.weight
+4096  4096        blocks.23.ffn.receptance.weight
+4096  14336       blocks.23.ffn.value.weight
+4096              blocks.24.ln1.weight
+4096              blocks.24.ln1.bias
+4096              blocks.24.ln2.weight
+4096              blocks.24.ln2.bias
+4096              blocks.24.att.time_maa_x
+4096              blocks.24.att.time_maa_w
+4096              blocks.24.att.time_maa_k
+4096              blocks.24.att.time_maa_v
+4096              blocks.24.att.time_maa_r
+4096              blocks.24.att.time_maa_g
+4096  160         blocks.24.att.time_maa_w1
+5     32    4096  blocks.24.att.time_maa_w2
+4096              blocks.24.att.time_decay
+4096  64          blocks.24.att.time_decay_w1
+64    4096        blocks.24.att.time_decay_w2
+64    64          blocks.24.att.time_faaaa
+4096  4096        blocks.24.att.receptance.weight
+4096  4096        blocks.24.att.key.weight
+4096  4096        blocks.24.att.value.weight
+4096  4096        blocks.24.att.output.weight
+4096  4096        blocks.24.att.gate.weight
+4096              blocks.24.att.ln_x.weight
+4096              blocks.24.att.ln_x.bias
+4096              blocks.24.ffn.time_maa_k
+4096              blocks.24.ffn.time_maa_r
+14336 4096        blocks.24.ffn.key.weight
+4096  4096        blocks.24.ffn.receptance.weight
+4096  14336       blocks.24.ffn.value.weight
+4096              blocks.25.ln1.weight
+4096              blocks.25.ln1.bias
+4096              blocks.25.ln2.weight
+4096              blocks.25.ln2.bias
+4096              blocks.25.att.time_maa_x
+4096              blocks.25.att.time_maa_w
+4096              blocks.25.att.time_maa_k
+4096              blocks.25.att.time_maa_v
+4096              blocks.25.att.time_maa_r
+4096              blocks.25.att.time_maa_g
+4096  160         blocks.25.att.time_maa_w1
+5     32    4096  blocks.25.att.time_maa_w2
+4096              blocks.25.att.time_decay
+4096  64          blocks.25.att.time_decay_w1
+64    4096        blocks.25.att.time_decay_w2
+64    64          blocks.25.att.time_faaaa
+4096  4096        blocks.25.att.receptance.weight
+4096  4096        blocks.25.att.key.weight
+4096  4096        blocks.25.att.value.weight
+4096  4096        blocks.25.att.output.weight
+4096  4096        blocks.25.att.gate.weight
+4096              blocks.25.att.ln_x.weight
+4096              blocks.25.att.ln_x.bias
+4096              blocks.25.ffn.time_maa_k
+4096              blocks.25.ffn.time_maa_r
+14336 4096        blocks.25.ffn.key.weight
+4096  4096        blocks.25.ffn.receptance.weight
+4096  14336       blocks.25.ffn.value.weight
+4096              blocks.26.ln1.weight
+4096              blocks.26.ln1.bias
+4096              blocks.26.ln2.weight
+4096              blocks.26.ln2.bias
+4096              blocks.26.att.time_maa_x
+4096              blocks.26.att.time_maa_w
+4096              blocks.26.att.time_maa_k
+4096              blocks.26.att.time_maa_v
+4096              blocks.26.att.time_maa_r
+4096              blocks.26.att.time_maa_g
+4096  160         blocks.26.att.time_maa_w1
+5     32    4096  blocks.26.att.time_maa_w2
+4096              blocks.26.att.time_decay
+4096  64          blocks.26.att.time_decay_w1
+64    4096        blocks.26.att.time_decay_w2
+64    64          blocks.26.att.time_faaaa
+4096  4096        blocks.26.att.receptance.weight
+4096  4096        blocks.26.att.key.weight
+4096  4096        blocks.26.att.value.weight
+4096  4096        blocks.26.att.output.weight
+4096  4096        blocks.26.att.gate.weight
+4096              blocks.26.att.ln_x.weight
+4096              blocks.26.att.ln_x.bias
+4096              blocks.26.ffn.time_maa_k
+4096              blocks.26.ffn.time_maa_r
+14336 4096        blocks.26.ffn.key.weight
+4096  4096        blocks.26.ffn.receptance.weight
+4096  14336       blocks.26.ffn.value.weight
+4096              blocks.27.ln1.weight
+4096              blocks.27.ln1.bias
+4096              blocks.27.ln2.weight
+4096              blocks.27.ln2.bias
+4096              blocks.27.att.time_maa_x
+4096              blocks.27.att.time_maa_w
+4096              blocks.27.att.time_maa_k
+4096              blocks.27.att.time_maa_v
+4096              blocks.27.att.time_maa_r
+4096              blocks.27.att.time_maa_g
+4096  160         blocks.27.att.time_maa_w1
+5     32    4096  blocks.27.att.time_maa_w2
+4096              blocks.27.att.time_decay
+4096  64          blocks.27.att.time_decay_w1
+64    4096        blocks.27.att.time_decay_w2
+64    64          blocks.27.att.time_faaaa
+4096  4096        blocks.27.att.receptance.weight
+4096  4096        blocks.27.att.key.weight
+4096  4096        blocks.27.att.value.weight
+4096  4096        blocks.27.att.output.weight
+4096  4096        blocks.27.att.gate.weight
+4096              blocks.27.att.ln_x.weight
+4096              blocks.27.att.ln_x.bias
+4096              blocks.27.ffn.time_maa_k
+4096              blocks.27.ffn.time_maa_r
+14336 4096        blocks.27.ffn.key.weight
+4096  4096        blocks.27.ffn.receptance.weight
+4096  14336       blocks.27.ffn.value.weight
+4096              blocks.28.ln1.weight
+4096              blocks.28.ln1.bias
+4096              blocks.28.ln2.weight
+4096              blocks.28.ln2.bias
+4096              blocks.28.att.time_maa_x
+4096              blocks.28.att.time_maa_w
+4096              blocks.28.att.time_maa_k
+4096              blocks.28.att.time_maa_v
+4096              blocks.28.att.time_maa_r
+4096              blocks.28.att.time_maa_g
+4096  160         blocks.28.att.time_maa_w1
+5     32    4096  blocks.28.att.time_maa_w2
+4096              blocks.28.att.time_decay
+4096  64          blocks.28.att.time_decay_w1
+64    4096        blocks.28.att.time_decay_w2
+64    64          blocks.28.att.time_faaaa
+4096  4096        blocks.28.att.receptance.weight
+4096  4096        blocks.28.att.key.weight
+4096  4096        blocks.28.att.value.weight
+4096  4096        blocks.28.att.output.weight
+4096  4096        blocks.28.att.gate.weight
+4096              blocks.28.att.ln_x.weight
+4096              blocks.28.att.ln_x.bias
+4096              blocks.28.ffn.time_maa_k
+4096              blocks.28.ffn.time_maa_r
+14336 4096        blocks.28.ffn.key.weight
+4096  4096        blocks.28.ffn.receptance.weight
+4096  14336       blocks.28.ffn.value.weight
+4096              blocks.29.ln1.weight
+4096              blocks.29.ln1.bias
+4096              blocks.29.ln2.weight
+4096              blocks.29.ln2.bias
+4096              blocks.29.att.time_maa_x
+4096              blocks.29.att.time_maa_w
+4096              blocks.29.att.time_maa_k
+4096              blocks.29.att.time_maa_v
+4096              blocks.29.att.time_maa_r
+4096              blocks.29.att.time_maa_g
+4096  160         blocks.29.att.time_maa_w1
+5     32    4096  blocks.29.att.time_maa_w2
+4096              blocks.29.att.time_decay
+4096  64          blocks.29.att.time_decay_w1
+64    4096        blocks.29.att.time_decay_w2
+64    64          blocks.29.att.time_faaaa
+4096  4096        blocks.29.att.receptance.weight
+4096  4096        blocks.29.att.key.weight
+4096  4096        blocks.29.att.value.weight
+4096  4096        blocks.29.att.output.weight
+4096  4096        blocks.29.att.gate.weight
+4096              blocks.29.att.ln_x.weight
+4096              blocks.29.att.ln_x.bias
+4096              blocks.29.ffn.time_maa_k
+4096              blocks.29.ffn.time_maa_r
+14336 4096        blocks.29.ffn.key.weight
+4096  4096        blocks.29.ffn.receptance.weight
+4096  14336       blocks.29.ffn.value.weight
+4096              blocks.30.ln1.weight
+4096              blocks.30.ln1.bias
+4096              blocks.30.ln2.weight
+4096              blocks.30.ln2.bias
+4096              blocks.30.att.time_maa_x
+4096              blocks.30.att.time_maa_w
+4096              blocks.30.att.time_maa_k
+4096              blocks.30.att.time_maa_v
+4096              blocks.30.att.time_maa_r
+4096              blocks.30.att.time_maa_g
+4096  160         blocks.30.att.time_maa_w1
+5     32    4096  blocks.30.att.time_maa_w2
+4096              blocks.30.att.time_decay
+4096  64          blocks.30.att.time_decay_w1
+64    4096        blocks.30.att.time_decay_w2
+64    64          blocks.30.att.time_faaaa
+4096  4096        blocks.30.att.receptance.weight
+4096  4096        blocks.30.att.key.weight
+4096  4096        blocks.30.att.value.weight
+4096  4096        blocks.30.att.output.weight
+4096  4096        blocks.30.att.gate.weight
+4096              blocks.30.att.ln_x.weight
+4096              blocks.30.att.ln_x.bias
+4096              blocks.30.ffn.time_maa_k
+4096              blocks.30.ffn.time_maa_r
+14336 4096        blocks.30.ffn.key.weight
+4096  4096        blocks.30.ffn.receptance.weight
+4096  14336       blocks.30.ffn.value.weight
+4096              blocks.31.ln1.weight
+4096              blocks.31.ln1.bias
+4096              blocks.31.ln2.weight
+4096              blocks.31.ln2.bias
+4096              blocks.31.att.time_maa_x
+4096              blocks.31.att.time_maa_w
+4096              blocks.31.att.time_maa_k
+4096              blocks.31.att.time_maa_v
+4096              blocks.31.att.time_maa_r
+4096              blocks.31.att.time_maa_g
+4096  160         blocks.31.att.time_maa_w1
+5     32    4096  blocks.31.att.time_maa_w2
+4096              blocks.31.att.time_decay
+4096  64          blocks.31.att.time_decay_w1
+64    4096        blocks.31.att.time_decay_w2
+64    64          blocks.31.att.time_faaaa
+4096  4096        blocks.31.att.receptance.weight
+4096  4096        blocks.31.att.key.weight
+4096  4096        blocks.31.att.value.weight
+4096  4096        blocks.31.att.output.weight
+4096  4096        blocks.31.att.gate.weight
+4096              blocks.31.att.ln_x.weight
+4096              blocks.31.att.ln_x.bias
+4096              blocks.31.ffn.time_maa_k
+4096              blocks.31.ffn.time_maa_r
+14336 4096        blocks.31.ffn.key.weight
+4096  4096        blocks.31.ffn.receptance.weight
+4096  14336       blocks.31.ffn.value.weight
+4096              ln_out.weight
+4096              ln_out.bias
+65536 4096        head.weight
+Broadcasted tensor sizes list length: 902 rank: 0
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight
+Progress: 24/902 | Sending name: blocks.0.ffn.value.weight

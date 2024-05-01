@@ -1,0 +1,256 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.12
+    cli_version: 0.16.6
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1714461707.0
+    t:
+      1:
+      - 1
+      - 9
+      - 55
+      - 103
+      2:
+      - 1
+      - 9
+      - 55
+      - 103
+      3:
+      - 7
+      - 13
+      - 23
+      4: 3.10.12
+      5: 0.16.6
+      8:
+      - 5
+      13: linux-x86_64
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+args/load_model:
+  desc: null
+  value: ''
+args/init_model:
+  desc: null
+  value: 0
+args/wandb:
+  desc: null
+  value: 70B-RUN
+args/proj_dir:
+  desc: null
+  value: /checkpoint/testload/L32-D4096-x060
+args/random_seed:
+  desc: null
+  value: -1
+args/train_type:
+  desc: null
+  value: ''
+args/data_file:
+  desc: null
+  value: /checkpoint/moe-dataset/1.5a/dataset_chunk_0_text_document
+args/data_type:
+  desc: null
+  value: binidx
+args/vocab_size:
+  desc: null
+  value: 65536
+args/ctx_len:
+  desc: null
+  value: 512
+args/step_begin:
+  desc: null
+  value: 0
+args/epoch_count:
+  desc: null
+  value: 1
+args/epoch_step_save:
+  desc: null
+  value: 150
+args/micro_bsz:
+  desc: null
+  value: 16
+args/n_layer:
+  desc: null
+  value: 32
+args/n_embd:
+  desc: null
+  value: 4096
+args/log_freq:
+  desc: null
+  value: 500
+args/dim_att:
+  desc: null
+  value: 4096
+args/dim_ffn:
+  desc: null
+  value: 14336
+args/pre_ffn:
+  desc: null
+  value: 0
+args/head_qk:
+  desc: null
+  value: 0
+args/tiny_att_dim:
+  desc: null
+  value: 0
+args/tiny_att_layer:
+  desc: null
+  value: -999
+args/lr_init:
+  desc: null
+  value: 5.0e-05
+args/lr_final:
+  desc: null
+  value: 1.0e-05
+args/warmup_steps:
+  desc: null
+  value: 10
+args/beta1:
+  desc: null
+  value: 0.9
+args/beta2:
+  desc: null
+  value: 0.99
+args/adam_eps:
+  desc: null
+  value: 1.0e-08
+args/grad_cp:
+  desc: null
+  value: 1
+args/dropout:
+  desc: null
+  value: 0
+args/weight_decay:
+  desc: null
+  value: 0.0001
+args/weight_decay_final:
+  desc: null
+  value: -1
+args/my_pile_version:
+  desc: null
+  value: 1
+args/my_pile_stage:
+  desc: null
+  value: 0
+args/my_pile_shift:
+  desc: null
+  value: -1
+args/my_pile_edecay:
+  desc: null
+  value: 0
+args/layerwise_lr:
+  desc: null
+  value: 1
+args/ds_bucket_mb:
+  desc: null
+  value: 200
+args/my_sample_len:
+  desc: null
+  value: 0
+args/my_ffn_shift:
+  desc: null
+  value: 1
+args/my_att_shift:
+  desc: null
+  value: 1
+args/head_size_a:
+  desc: null
+  value: 64
+args/head_size_divisor:
+  desc: null
+  value: 8
+args/my_pos_emb:
+  desc: null
+  value: 0
+args/load_partial:
+  desc: null
+  value: 0
+args/magic_prime:
+  desc: null
+  value: 0
+args/my_qa_mask:
+  desc: null
+  value: 0
+args/my_random_steps:
+  desc: null
+  value: 0
+args/my_testing:
+  desc: null
+  value: x060
+args/my_exit:
+  desc: null
+  value: 99999999
+args/my_exit_tokens:
+  desc: null
+  value: 0
+args/accelerator:
+  desc: null
+  value: gpu
+args/strategy:
+  desc: null
+  value: deepspeed_stage_3
+args/devices:
+  desc: null
+  value: 8
+args/num_nodes:
+  desc: null
+  value: 2
+args/precision:
+  desc: null
+  value: bf16-mixed
+args/accumulate_grad_batches:
+  desc: null
+  value: 1
+args/my_timestamp:
+  desc: null
+  value: 2024-04-30-07-21-46
+args/enable_checkpointing:
+  desc: null
+  value: false
+args/replace_sampler_ddp:
+  desc: null
+  value: false
+args/gradient_clip_val:
+  desc: null
+  value: 1.0
+args/num_sanity_val_steps:
+  desc: null
+  value: 0
+args/check_val_every_n_epoch:
+  desc: null
+  value: 100000000000000000000
+args/log_every_n_steps:
+  desc: null
+  value: 100000000000000000000
+args/max_epochs:
+  desc: null
+  value: 1
+args/betas:
+  desc: null
+  value:
+  - 0.9
+  - 0.99
+args/real_bsz:
+  desc: null
+  value: 256
+args/run_name:
+  desc: null
+  value: 65536 ctx512 L32 D4096
+args/start_step:
+  desc: null
+  value: 150
+args/actual_model_path:
+  desc: null
+  value: /checkpoint/testload/L32-D4096-x060/rwkv-150.pth
+args/dataset_len:
+  desc: null
+  value: 259241538
+args/trainer:
+  desc: null
+  value: <pytorch_lightning.trainer.trainer.Trainer object at 0x7f7f980b3fa0>

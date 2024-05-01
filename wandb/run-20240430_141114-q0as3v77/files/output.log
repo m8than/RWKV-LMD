@@ -1,0 +1,2 @@
+/usr/local/lib/python3.10/dist-packages/lightning/pytorch/loggers/wandb.py:396: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+/usr/local/lib/python3.10/dist-packages/pytorch_lightning/utilities/parsing.py:44: attribute 'args' removed from hparams because it cannot be pickled

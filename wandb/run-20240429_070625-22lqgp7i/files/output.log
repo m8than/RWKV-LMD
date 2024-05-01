@@ -1,0 +1,3350 @@
+
+Loading  /checkpoint/testload/L32-D4096-x060/rwkv-init.pth on rank 0
+Loaded model on rank 0
+65536 4096        emb.weight
+4096              blocks.0.ln1.weight
+4096              blocks.0.ln1.bias
+4096              blocks.0.ln2.weight
+4096              blocks.0.ln2.bias
+4096              blocks.0.ln0.weight
+4096              blocks.0.ln0.bias
+4096              blocks.0.att.time_maa_x
+4096              blocks.0.att.time_maa_w
+4096              blocks.0.att.time_maa_k
+4096              blocks.0.att.time_maa_v
+4096              blocks.0.att.time_maa_r
+4096              blocks.0.att.time_maa_g
+4096  160         blocks.0.att.time_maa_w1
+5     32    4096  blocks.0.att.time_maa_w2
+4096              blocks.0.att.time_decay
+4096  64          blocks.0.att.time_decay_w1
+64    4096        blocks.0.att.time_decay_w2
+64    64          blocks.0.att.time_faaaa
+4096  4096        blocks.0.att.receptance.weight
+4096  4096        blocks.0.att.key.weight
+4096  4096        blocks.0.att.value.weight
+4096  4096        blocks.0.att.output.weight
+4096  4096        blocks.0.att.gate.weight
+4096              blocks.0.att.ln_x.weight
+4096              blocks.0.att.ln_x.bias
+4096              blocks.0.ffn.time_maa_k
+4096              blocks.0.ffn.time_maa_r
+14336 4096        blocks.0.ffn.key.weight
+4096  4096        blocks.0.ffn.receptance.weight
+4096  14336       blocks.0.ffn.value.weight
+4096              blocks.1.ln1.weight
+4096              blocks.1.ln1.bias
+4096              blocks.1.ln2.weight
+4096              blocks.1.ln2.bias
+4096              blocks.1.att.time_maa_x
+4096              blocks.1.att.time_maa_w
+4096              blocks.1.att.time_maa_k
+4096              blocks.1.att.time_maa_v
+4096              blocks.1.att.time_maa_r
+4096              blocks.1.att.time_maa_g
+4096  160         blocks.1.att.time_maa_w1
+5     32    4096  blocks.1.att.time_maa_w2
+4096              blocks.1.att.time_decay
+4096  64          blocks.1.att.time_decay_w1
+64    4096        blocks.1.att.time_decay_w2
+64    64          blocks.1.att.time_faaaa
+4096  4096        blocks.1.att.receptance.weight
+4096  4096        blocks.1.att.key.weight
+4096  4096        blocks.1.att.value.weight
+4096  4096        blocks.1.att.output.weight
+4096  4096        blocks.1.att.gate.weight
+4096              blocks.1.att.ln_x.weight
+4096              blocks.1.att.ln_x.bias
+4096              blocks.1.ffn.time_maa_k
+4096              blocks.1.ffn.time_maa_r
+14336 4096        blocks.1.ffn.key.weight
+4096  4096        blocks.1.ffn.receptance.weight
+4096  14336       blocks.1.ffn.value.weight
+4096              blocks.2.ln1.weight
+4096              blocks.2.ln1.bias
+4096              blocks.2.ln2.weight
+4096              blocks.2.ln2.bias
+4096              blocks.2.att.time_maa_x
+4096              blocks.2.att.time_maa_w
+4096              blocks.2.att.time_maa_k
+4096              blocks.2.att.time_maa_v
+4096              blocks.2.att.time_maa_r
+4096              blocks.2.att.time_maa_g
+4096  160         blocks.2.att.time_maa_w1
+5     32    4096  blocks.2.att.time_maa_w2
+4096              blocks.2.att.time_decay
+4096  64          blocks.2.att.time_decay_w1
+64    4096        blocks.2.att.time_decay_w2
+64    64          blocks.2.att.time_faaaa
+4096  4096        blocks.2.att.receptance.weight
+4096  4096        blocks.2.att.key.weight
+4096  4096        blocks.2.att.value.weight
+4096  4096        blocks.2.att.output.weight
+4096  4096        blocks.2.att.gate.weight
+4096              blocks.2.att.ln_x.weight
+4096              blocks.2.att.ln_x.bias
+4096              blocks.2.ffn.time_maa_k
+4096              blocks.2.ffn.time_maa_r
+14336 4096        blocks.2.ffn.key.weight
+4096  4096        blocks.2.ffn.receptance.weight
+4096  14336       blocks.2.ffn.value.weight
+4096              blocks.3.ln1.weight
+4096              blocks.3.ln1.bias
+4096              blocks.3.ln2.weight
+4096              blocks.3.ln2.bias
+4096              blocks.3.att.time_maa_x
+4096              blocks.3.att.time_maa_w
+4096              blocks.3.att.time_maa_k
+4096              blocks.3.att.time_maa_v
+4096              blocks.3.att.time_maa_r
+4096              blocks.3.att.time_maa_g
+4096  160         blocks.3.att.time_maa_w1
+5     32    4096  blocks.3.att.time_maa_w2
+4096              blocks.3.att.time_decay
+4096  64          blocks.3.att.time_decay_w1
+64    4096        blocks.3.att.time_decay_w2
+64    64          blocks.3.att.time_faaaa
+4096  4096        blocks.3.att.receptance.weight
+4096  4096        blocks.3.att.key.weight
+4096  4096        blocks.3.att.value.weight
+4096  4096        blocks.3.att.output.weight
+4096  4096        blocks.3.att.gate.weight
+4096              blocks.3.att.ln_x.weight
+4096              blocks.3.att.ln_x.bias
+4096              blocks.3.ffn.time_maa_k
+4096              blocks.3.ffn.time_maa_r
+14336 4096        blocks.3.ffn.key.weight
+4096  4096        blocks.3.ffn.receptance.weight
+4096  14336       blocks.3.ffn.value.weight
+4096              blocks.4.ln1.weight
+4096              blocks.4.ln1.bias
+4096              blocks.4.ln2.weight
+4096              blocks.4.ln2.bias
+4096              blocks.4.att.time_maa_x
+4096              blocks.4.att.time_maa_w
+4096              blocks.4.att.time_maa_k
+4096              blocks.4.att.time_maa_v
+4096              blocks.4.att.time_maa_r
+4096              blocks.4.att.time_maa_g
+4096  160         blocks.4.att.time_maa_w1
+5     32    4096  blocks.4.att.time_maa_w2
+4096              blocks.4.att.time_decay
+4096  64          blocks.4.att.time_decay_w1
+64    4096        blocks.4.att.time_decay_w2
+64    64          blocks.4.att.time_faaaa
+4096  4096        blocks.4.att.receptance.weight
+4096  4096        blocks.4.att.key.weight
+4096  4096        blocks.4.att.value.weight
+4096  4096        blocks.4.att.output.weight
+4096  4096        blocks.4.att.gate.weight
+4096              blocks.4.att.ln_x.weight
+4096              blocks.4.att.ln_x.bias
+4096              blocks.4.ffn.time_maa_k
+4096              blocks.4.ffn.time_maa_r
+14336 4096        blocks.4.ffn.key.weight
+4096  4096        blocks.4.ffn.receptance.weight
+4096  14336       blocks.4.ffn.value.weight
+4096              blocks.5.ln1.weight
+4096              blocks.5.ln1.bias
+4096              blocks.5.ln2.weight
+4096              blocks.5.ln2.bias
+4096              blocks.5.att.time_maa_x
+4096              blocks.5.att.time_maa_w
+4096              blocks.5.att.time_maa_k
+4096              blocks.5.att.time_maa_v
+4096              blocks.5.att.time_maa_r
+4096              blocks.5.att.time_maa_g
+4096  160         blocks.5.att.time_maa_w1
+5     32    4096  blocks.5.att.time_maa_w2
+4096              blocks.5.att.time_decay
+4096  64          blocks.5.att.time_decay_w1
+64    4096        blocks.5.att.time_decay_w2
+64    64          blocks.5.att.time_faaaa
+4096  4096        blocks.5.att.receptance.weight
+4096  4096        blocks.5.att.key.weight
+4096  4096        blocks.5.att.value.weight
+4096  4096        blocks.5.att.output.weight
+4096  4096        blocks.5.att.gate.weight
+4096              blocks.5.att.ln_x.weight
+4096              blocks.5.att.ln_x.bias
+4096              blocks.5.ffn.time_maa_k
+4096              blocks.5.ffn.time_maa_r
+14336 4096        blocks.5.ffn.key.weight
+4096  4096        blocks.5.ffn.receptance.weight
+4096  14336       blocks.5.ffn.value.weight
+4096              blocks.6.ln1.weight
+4096              blocks.6.ln1.bias
+4096              blocks.6.ln2.weight
+4096              blocks.6.ln2.bias
+4096              blocks.6.att.time_maa_x
+4096              blocks.6.att.time_maa_w
+4096              blocks.6.att.time_maa_k
+4096              blocks.6.att.time_maa_v
+4096              blocks.6.att.time_maa_r
+4096              blocks.6.att.time_maa_g
+4096  160         blocks.6.att.time_maa_w1
+5     32    4096  blocks.6.att.time_maa_w2
+4096              blocks.6.att.time_decay
+4096  64          blocks.6.att.time_decay_w1
+64    4096        blocks.6.att.time_decay_w2
+64    64          blocks.6.att.time_faaaa
+4096  4096        blocks.6.att.receptance.weight
+4096  4096        blocks.6.att.key.weight
+4096  4096        blocks.6.att.value.weight
+4096  4096        blocks.6.att.output.weight
+4096  4096        blocks.6.att.gate.weight
+4096              blocks.6.att.ln_x.weight
+4096              blocks.6.att.ln_x.bias
+4096              blocks.6.ffn.time_maa_k
+4096              blocks.6.ffn.time_maa_r
+14336 4096        blocks.6.ffn.key.weight
+4096  4096        blocks.6.ffn.receptance.weight
+4096  14336       blocks.6.ffn.value.weight
+4096              blocks.7.ln1.weight
+4096              blocks.7.ln1.bias
+4096              blocks.7.ln2.weight
+4096              blocks.7.ln2.bias
+4096              blocks.7.att.time_maa_x
+4096              blocks.7.att.time_maa_w
+4096              blocks.7.att.time_maa_k
+4096              blocks.7.att.time_maa_v
+4096              blocks.7.att.time_maa_r
+4096              blocks.7.att.time_maa_g
+4096  160         blocks.7.att.time_maa_w1
+5     32    4096  blocks.7.att.time_maa_w2
+4096              blocks.7.att.time_decay
+4096  64          blocks.7.att.time_decay_w1
+64    4096        blocks.7.att.time_decay_w2
+64    64          blocks.7.att.time_faaaa
+4096  4096        blocks.7.att.receptance.weight
+4096  4096        blocks.7.att.key.weight
+4096  4096        blocks.7.att.value.weight
+4096  4096        blocks.7.att.output.weight
+4096  4096        blocks.7.att.gate.weight
+4096              blocks.7.att.ln_x.weight
+4096              blocks.7.att.ln_x.bias
+4096              blocks.7.ffn.time_maa_k
+4096              blocks.7.ffn.time_maa_r
+14336 4096        blocks.7.ffn.key.weight
+4096  4096        blocks.7.ffn.receptance.weight
+4096  14336       blocks.7.ffn.value.weight
+4096              blocks.8.ln1.weight
+4096              blocks.8.ln1.bias
+4096              blocks.8.ln2.weight
+4096              blocks.8.ln2.bias
+4096              blocks.8.att.time_maa_x
+4096              blocks.8.att.time_maa_w
+4096              blocks.8.att.time_maa_k
+4096              blocks.8.att.time_maa_v
+4096              blocks.8.att.time_maa_r
+4096              blocks.8.att.time_maa_g
+4096  160         blocks.8.att.time_maa_w1
+5     32    4096  blocks.8.att.time_maa_w2
+4096              blocks.8.att.time_decay
+4096  64          blocks.8.att.time_decay_w1
+64    4096        blocks.8.att.time_decay_w2
+64    64          blocks.8.att.time_faaaa
+4096  4096        blocks.8.att.receptance.weight
+4096  4096        blocks.8.att.key.weight
+4096  4096        blocks.8.att.value.weight
+4096  4096        blocks.8.att.output.weight
+4096  4096        blocks.8.att.gate.weight
+4096              blocks.8.att.ln_x.weight
+4096              blocks.8.att.ln_x.bias
+4096              blocks.8.ffn.time_maa_k
+4096              blocks.8.ffn.time_maa_r
+14336 4096        blocks.8.ffn.key.weight
+4096  4096        blocks.8.ffn.receptance.weight
+4096  14336       blocks.8.ffn.value.weight
+4096              blocks.9.ln1.weight
+4096              blocks.9.ln1.bias
+4096              blocks.9.ln2.weight
+4096              blocks.9.ln2.bias
+4096              blocks.9.att.time_maa_x
+4096              blocks.9.att.time_maa_w
+4096              blocks.9.att.time_maa_k
+4096              blocks.9.att.time_maa_v
+4096              blocks.9.att.time_maa_r
+4096              blocks.9.att.time_maa_g
+4096  160         blocks.9.att.time_maa_w1
+5     32    4096  blocks.9.att.time_maa_w2
+4096              blocks.9.att.time_decay
+4096  64          blocks.9.att.time_decay_w1
+64    4096        blocks.9.att.time_decay_w2
+64    64          blocks.9.att.time_faaaa
+4096  4096        blocks.9.att.receptance.weight
+4096  4096        blocks.9.att.key.weight
+4096  4096        blocks.9.att.value.weight
+4096  4096        blocks.9.att.output.weight
+4096  4096        blocks.9.att.gate.weight
+4096              blocks.9.att.ln_x.weight
+4096              blocks.9.att.ln_x.bias
+4096              blocks.9.ffn.time_maa_k
+4096              blocks.9.ffn.time_maa_r
+14336 4096        blocks.9.ffn.key.weight
+4096  4096        blocks.9.ffn.receptance.weight
+4096  14336       blocks.9.ffn.value.weight
+4096              blocks.10.ln1.weight
+4096              blocks.10.ln1.bias
+4096              blocks.10.ln2.weight
+4096              blocks.10.ln2.bias
+4096              blocks.10.att.time_maa_x
+4096              blocks.10.att.time_maa_w
+4096              blocks.10.att.time_maa_k
+4096              blocks.10.att.time_maa_v
+4096              blocks.10.att.time_maa_r
+4096              blocks.10.att.time_maa_g
+4096  160         blocks.10.att.time_maa_w1
+5     32    4096  blocks.10.att.time_maa_w2
+4096              blocks.10.att.time_decay
+4096  64          blocks.10.att.time_decay_w1
+64    4096        blocks.10.att.time_decay_w2
+64    64          blocks.10.att.time_faaaa
+4096  4096        blocks.10.att.receptance.weight
+4096  4096        blocks.10.att.key.weight
+4096  4096        blocks.10.att.value.weight
+4096  4096        blocks.10.att.output.weight
+4096  4096        blocks.10.att.gate.weight
+4096              blocks.10.att.ln_x.weight
+4096              blocks.10.att.ln_x.bias
+4096              blocks.10.ffn.time_maa_k
+4096              blocks.10.ffn.time_maa_r
+14336 4096        blocks.10.ffn.key.weight
+4096  4096        blocks.10.ffn.receptance.weight
+4096  14336       blocks.10.ffn.value.weight
+4096              blocks.11.ln1.weight
+4096              blocks.11.ln1.bias
+4096              blocks.11.ln2.weight
+4096              blocks.11.ln2.bias
+4096              blocks.11.att.time_maa_x
+4096              blocks.11.att.time_maa_w
+4096              blocks.11.att.time_maa_k
+4096              blocks.11.att.time_maa_v
+4096              blocks.11.att.time_maa_r
+4096              blocks.11.att.time_maa_g
+4096  160         blocks.11.att.time_maa_w1
+5     32    4096  blocks.11.att.time_maa_w2
+4096              blocks.11.att.time_decay
+4096  64          blocks.11.att.time_decay_w1
+64    4096        blocks.11.att.time_decay_w2
+64    64          blocks.11.att.time_faaaa
+4096  4096        blocks.11.att.receptance.weight
+4096  4096        blocks.11.att.key.weight
+4096  4096        blocks.11.att.value.weight
+4096  4096        blocks.11.att.output.weight
+4096  4096        blocks.11.att.gate.weight
+4096              blocks.11.att.ln_x.weight
+4096              blocks.11.att.ln_x.bias
+4096              blocks.11.ffn.time_maa_k
+4096              blocks.11.ffn.time_maa_r
+14336 4096        blocks.11.ffn.key.weight
+4096  4096        blocks.11.ffn.receptance.weight
+4096  14336       blocks.11.ffn.value.weight
+4096              blocks.12.ln1.weight
+4096              blocks.12.ln1.bias
+4096              blocks.12.ln2.weight
+4096              blocks.12.ln2.bias
+4096              blocks.12.att.time_maa_x
+4096              blocks.12.att.time_maa_w
+4096              blocks.12.att.time_maa_k
+4096              blocks.12.att.time_maa_v
+4096              blocks.12.att.time_maa_r
+4096              blocks.12.att.time_maa_g
+4096  160         blocks.12.att.time_maa_w1
+5     32    4096  blocks.12.att.time_maa_w2
+4096              blocks.12.att.time_decay
+4096  64          blocks.12.att.time_decay_w1
+64    4096        blocks.12.att.time_decay_w2
+64    64          blocks.12.att.time_faaaa
+4096  4096        blocks.12.att.receptance.weight
+4096  4096        blocks.12.att.key.weight
+4096  4096        blocks.12.att.value.weight
+4096  4096        blocks.12.att.output.weight
+4096  4096        blocks.12.att.gate.weight
+4096              blocks.12.att.ln_x.weight
+4096              blocks.12.att.ln_x.bias
+4096              blocks.12.ffn.time_maa_k
+4096              blocks.12.ffn.time_maa_r
+14336 4096        blocks.12.ffn.key.weight
+4096  4096        blocks.12.ffn.receptance.weight
+4096  14336       blocks.12.ffn.value.weight
+4096              blocks.13.ln1.weight
+4096              blocks.13.ln1.bias
+4096              blocks.13.ln2.weight
+4096              blocks.13.ln2.bias
+4096              blocks.13.att.time_maa_x
+4096              blocks.13.att.time_maa_w
+4096              blocks.13.att.time_maa_k
+4096              blocks.13.att.time_maa_v
+4096              blocks.13.att.time_maa_r
+4096              blocks.13.att.time_maa_g
+4096  160         blocks.13.att.time_maa_w1
+5     32    4096  blocks.13.att.time_maa_w2
+4096              blocks.13.att.time_decay
+4096  64          blocks.13.att.time_decay_w1
+64    4096        blocks.13.att.time_decay_w2
+64    64          blocks.13.att.time_faaaa
+4096  4096        blocks.13.att.receptance.weight
+4096  4096        blocks.13.att.key.weight
+4096  4096        blocks.13.att.value.weight
+4096  4096        blocks.13.att.output.weight
+4096  4096        blocks.13.att.gate.weight
+4096              blocks.13.att.ln_x.weight
+4096              blocks.13.att.ln_x.bias
+4096              blocks.13.ffn.time_maa_k
+4096              blocks.13.ffn.time_maa_r
+14336 4096        blocks.13.ffn.key.weight
+4096  4096        blocks.13.ffn.receptance.weight
+4096  14336       blocks.13.ffn.value.weight
+4096              blocks.14.ln1.weight
+4096              blocks.14.ln1.bias
+4096              blocks.14.ln2.weight
+4096              blocks.14.ln2.bias
+4096              blocks.14.att.time_maa_x
+4096              blocks.14.att.time_maa_w
+4096              blocks.14.att.time_maa_k
+4096              blocks.14.att.time_maa_v
+4096              blocks.14.att.time_maa_r
+4096              blocks.14.att.time_maa_g
+4096  160         blocks.14.att.time_maa_w1
+5     32    4096  blocks.14.att.time_maa_w2
+4096              blocks.14.att.time_decay
+4096  64          blocks.14.att.time_decay_w1
+64    4096        blocks.14.att.time_decay_w2
+64    64          blocks.14.att.time_faaaa
+4096  4096        blocks.14.att.receptance.weight
+4096  4096        blocks.14.att.key.weight
+4096  4096        blocks.14.att.value.weight
+4096  4096        blocks.14.att.output.weight
+4096  4096        blocks.14.att.gate.weight
+4096              blocks.14.att.ln_x.weight
+4096              blocks.14.att.ln_x.bias
+4096              blocks.14.ffn.time_maa_k
+4096              blocks.14.ffn.time_maa_r
+14336 4096        blocks.14.ffn.key.weight
+4096  4096        blocks.14.ffn.receptance.weight
+4096  14336       blocks.14.ffn.value.weight
+4096              blocks.15.ln1.weight
+4096              blocks.15.ln1.bias
+4096              blocks.15.ln2.weight
+4096              blocks.15.ln2.bias
+4096              blocks.15.att.time_maa_x
+4096              blocks.15.att.time_maa_w
+4096              blocks.15.att.time_maa_k
+4096              blocks.15.att.time_maa_v
+4096              blocks.15.att.time_maa_r
+4096              blocks.15.att.time_maa_g
+4096  160         blocks.15.att.time_maa_w1
+5     32    4096  blocks.15.att.time_maa_w2
+4096              blocks.15.att.time_decay
+4096  64          blocks.15.att.time_decay_w1
+64    4096        blocks.15.att.time_decay_w2
+64    64          blocks.15.att.time_faaaa
+4096  4096        blocks.15.att.receptance.weight
+4096  4096        blocks.15.att.key.weight
+4096  4096        blocks.15.att.value.weight
+4096  4096        blocks.15.att.output.weight
+4096  4096        blocks.15.att.gate.weight
+4096              blocks.15.att.ln_x.weight
+4096              blocks.15.att.ln_x.bias
+4096              blocks.15.ffn.time_maa_k
+4096              blocks.15.ffn.time_maa_r
+14336 4096        blocks.15.ffn.key.weight
+4096  4096        blocks.15.ffn.receptance.weight
+4096  14336       blocks.15.ffn.value.weight
+4096              blocks.16.ln1.weight
+4096              blocks.16.ln1.bias
+4096              blocks.16.ln2.weight
+4096              blocks.16.ln2.bias
+4096              blocks.16.att.time_maa_x
+4096              blocks.16.att.time_maa_w
+4096              blocks.16.att.time_maa_k
+4096              blocks.16.att.time_maa_v
+4096              blocks.16.att.time_maa_r
+4096              blocks.16.att.time_maa_g
+4096  160         blocks.16.att.time_maa_w1
+5     32    4096  blocks.16.att.time_maa_w2
+4096              blocks.16.att.time_decay
+4096  64          blocks.16.att.time_decay_w1
+64    4096        blocks.16.att.time_decay_w2
+64    64          blocks.16.att.time_faaaa
+4096  4096        blocks.16.att.receptance.weight
+4096  4096        blocks.16.att.key.weight
+4096  4096        blocks.16.att.value.weight
+4096  4096        blocks.16.att.output.weight
+4096  4096        blocks.16.att.gate.weight
+4096              blocks.16.att.ln_x.weight
+4096              blocks.16.att.ln_x.bias
+4096              blocks.16.ffn.time_maa_k
+4096              blocks.16.ffn.time_maa_r
+14336 4096        blocks.16.ffn.key.weight
+4096  4096        blocks.16.ffn.receptance.weight
+4096  14336       blocks.16.ffn.value.weight
+4096              blocks.17.ln1.weight
+4096              blocks.17.ln1.bias
+4096              blocks.17.ln2.weight
+4096              blocks.17.ln2.bias
+4096              blocks.17.att.time_maa_x
+4096              blocks.17.att.time_maa_w
+4096              blocks.17.att.time_maa_k
+4096              blocks.17.att.time_maa_v
+4096              blocks.17.att.time_maa_r
+4096              blocks.17.att.time_maa_g
+4096  160         blocks.17.att.time_maa_w1
+5     32    4096  blocks.17.att.time_maa_w2
+4096              blocks.17.att.time_decay
+4096  64          blocks.17.att.time_decay_w1
+64    4096        blocks.17.att.time_decay_w2
+64    64          blocks.17.att.time_faaaa
+4096  4096        blocks.17.att.receptance.weight
+4096  4096        blocks.17.att.key.weight
+4096  4096        blocks.17.att.value.weight
+4096  4096        blocks.17.att.output.weight
+4096  4096        blocks.17.att.gate.weight
+4096              blocks.17.att.ln_x.weight
+4096              blocks.17.att.ln_x.bias
+4096              blocks.17.ffn.time_maa_k
+4096              blocks.17.ffn.time_maa_r
+14336 4096        blocks.17.ffn.key.weight
+4096  4096        blocks.17.ffn.receptance.weight
+4096  14336       blocks.17.ffn.value.weight
+4096              blocks.18.ln1.weight
+4096              blocks.18.ln1.bias
+4096              blocks.18.ln2.weight
+4096              blocks.18.ln2.bias
+4096              blocks.18.att.time_maa_x
+4096              blocks.18.att.time_maa_w
+4096              blocks.18.att.time_maa_k
+4096              blocks.18.att.time_maa_v
+4096              blocks.18.att.time_maa_r
+4096              blocks.18.att.time_maa_g
+4096  160         blocks.18.att.time_maa_w1
+5     32    4096  blocks.18.att.time_maa_w2
+4096              blocks.18.att.time_decay
+4096  64          blocks.18.att.time_decay_w1
+64    4096        blocks.18.att.time_decay_w2
+64    64          blocks.18.att.time_faaaa
+4096  4096        blocks.18.att.receptance.weight
+4096  4096        blocks.18.att.key.weight
+4096  4096        blocks.18.att.value.weight
+4096  4096        blocks.18.att.output.weight
+4096  4096        blocks.18.att.gate.weight
+4096              blocks.18.att.ln_x.weight
+4096              blocks.18.att.ln_x.bias
+4096              blocks.18.ffn.time_maa_k
+4096              blocks.18.ffn.time_maa_r
+14336 4096        blocks.18.ffn.key.weight
+4096  4096        blocks.18.ffn.receptance.weight
+4096  14336       blocks.18.ffn.value.weight
+4096              blocks.19.ln1.weight
+4096              blocks.19.ln1.bias
+4096              blocks.19.ln2.weight
+4096              blocks.19.ln2.bias
+4096              blocks.19.att.time_maa_x
+4096              blocks.19.att.time_maa_w
+4096              blocks.19.att.time_maa_k
+4096              blocks.19.att.time_maa_v
+4096              blocks.19.att.time_maa_r
+4096              blocks.19.att.time_maa_g
+4096  160         blocks.19.att.time_maa_w1
+5     32    4096  blocks.19.att.time_maa_w2
+4096              blocks.19.att.time_decay
+4096  64          blocks.19.att.time_decay_w1
+64    4096        blocks.19.att.time_decay_w2
+64    64          blocks.19.att.time_faaaa
+4096  4096        blocks.19.att.receptance.weight
+4096  4096        blocks.19.att.key.weight
+4096  4096        blocks.19.att.value.weight
+4096  4096        blocks.19.att.output.weight
+4096  4096        blocks.19.att.gate.weight
+4096              blocks.19.att.ln_x.weight
+4096              blocks.19.att.ln_x.bias
+4096              blocks.19.ffn.time_maa_k
+4096              blocks.19.ffn.time_maa_r
+14336 4096        blocks.19.ffn.key.weight
+4096  4096        blocks.19.ffn.receptance.weight
+4096  14336       blocks.19.ffn.value.weight
+4096              blocks.20.ln1.weight
+4096              blocks.20.ln1.bias
+4096              blocks.20.ln2.weight
+4096              blocks.20.ln2.bias
+4096              blocks.20.att.time_maa_x
+4096              blocks.20.att.time_maa_w
+4096              blocks.20.att.time_maa_k
+4096              blocks.20.att.time_maa_v
+4096              blocks.20.att.time_maa_r
+4096              blocks.20.att.time_maa_g
+4096  160         blocks.20.att.time_maa_w1
+5     32    4096  blocks.20.att.time_maa_w2
+4096              blocks.20.att.time_decay
+4096  64          blocks.20.att.time_decay_w1
+64    4096        blocks.20.att.time_decay_w2
+64    64          blocks.20.att.time_faaaa
+4096  4096        blocks.20.att.receptance.weight
+4096  4096        blocks.20.att.key.weight
+4096  4096        blocks.20.att.value.weight
+4096  4096        blocks.20.att.output.weight
+4096  4096        blocks.20.att.gate.weight
+4096              blocks.20.att.ln_x.weight
+4096              blocks.20.att.ln_x.bias
+4096              blocks.20.ffn.time_maa_k
+4096              blocks.20.ffn.time_maa_r
+14336 4096        blocks.20.ffn.key.weight
+4096  4096        blocks.20.ffn.receptance.weight
+4096  14336       blocks.20.ffn.value.weight
+4096              blocks.21.ln1.weight
+4096              blocks.21.ln1.bias
+4096              blocks.21.ln2.weight
+4096              blocks.21.ln2.bias
+4096              blocks.21.att.time_maa_x
+4096              blocks.21.att.time_maa_w
+4096              blocks.21.att.time_maa_k
+4096              blocks.21.att.time_maa_v
+4096              blocks.21.att.time_maa_r
+4096              blocks.21.att.time_maa_g
+4096  160         blocks.21.att.time_maa_w1
+5     32    4096  blocks.21.att.time_maa_w2
+4096              blocks.21.att.time_decay
+4096  64          blocks.21.att.time_decay_w1
+64    4096        blocks.21.att.time_decay_w2
+64    64          blocks.21.att.time_faaaa
+4096  4096        blocks.21.att.receptance.weight
+4096  4096        blocks.21.att.key.weight
+4096  4096        blocks.21.att.value.weight
+4096  4096        blocks.21.att.output.weight
+4096  4096        blocks.21.att.gate.weight
+4096              blocks.21.att.ln_x.weight
+4096              blocks.21.att.ln_x.bias
+4096              blocks.21.ffn.time_maa_k
+4096              blocks.21.ffn.time_maa_r
+14336 4096        blocks.21.ffn.key.weight
+4096  4096        blocks.21.ffn.receptance.weight
+4096  14336       blocks.21.ffn.value.weight
+4096              blocks.22.ln1.weight
+4096              blocks.22.ln1.bias
+4096              blocks.22.ln2.weight
+4096              blocks.22.ln2.bias
+4096              blocks.22.att.time_maa_x
+4096              blocks.22.att.time_maa_w
+4096              blocks.22.att.time_maa_k
+4096              blocks.22.att.time_maa_v
+4096              blocks.22.att.time_maa_r
+4096              blocks.22.att.time_maa_g
+4096  160         blocks.22.att.time_maa_w1
+5     32    4096  blocks.22.att.time_maa_w2
+4096              blocks.22.att.time_decay
+4096  64          blocks.22.att.time_decay_w1
+64    4096        blocks.22.att.time_decay_w2
+64    64          blocks.22.att.time_faaaa
+4096  4096        blocks.22.att.receptance.weight
+4096  4096        blocks.22.att.key.weight
+4096  4096        blocks.22.att.value.weight
+4096  4096        blocks.22.att.output.weight
+4096  4096        blocks.22.att.gate.weight
+4096              blocks.22.att.ln_x.weight
+4096              blocks.22.att.ln_x.bias
+4096              blocks.22.ffn.time_maa_k
+4096              blocks.22.ffn.time_maa_r
+14336 4096        blocks.22.ffn.key.weight
+4096  4096        blocks.22.ffn.receptance.weight
+4096  14336       blocks.22.ffn.value.weight
+4096              blocks.23.ln1.weight
+4096              blocks.23.ln1.bias
+4096              blocks.23.ln2.weight
+4096              blocks.23.ln2.bias
+4096              blocks.23.att.time_maa_x
+4096              blocks.23.att.time_maa_w
+4096              blocks.23.att.time_maa_k
+4096              blocks.23.att.time_maa_v
+4096              blocks.23.att.time_maa_r
+4096              blocks.23.att.time_maa_g
+4096  160         blocks.23.att.time_maa_w1
+5     32    4096  blocks.23.att.time_maa_w2
+4096              blocks.23.att.time_decay
+4096  64          blocks.23.att.time_decay_w1
+64    4096        blocks.23.att.time_decay_w2
+64    64          blocks.23.att.time_faaaa
+4096  4096        blocks.23.att.receptance.weight
+4096  4096        blocks.23.att.key.weight
+4096  4096        blocks.23.att.value.weight
+4096  4096        blocks.23.att.output.weight
+4096  4096        blocks.23.att.gate.weight
+4096              blocks.23.att.ln_x.weight
+4096              blocks.23.att.ln_x.bias
+4096              blocks.23.ffn.time_maa_k
+4096              blocks.23.ffn.time_maa_r
+14336 4096        blocks.23.ffn.key.weight
+4096  4096        blocks.23.ffn.receptance.weight
+4096  14336       blocks.23.ffn.value.weight
+4096              blocks.24.ln1.weight
+4096              blocks.24.ln1.bias
+4096              blocks.24.ln2.weight
+4096              blocks.24.ln2.bias
+4096              blocks.24.att.time_maa_x
+4096              blocks.24.att.time_maa_w
+4096              blocks.24.att.time_maa_k
+4096              blocks.24.att.time_maa_v
+4096              blocks.24.att.time_maa_r
+4096              blocks.24.att.time_maa_g
+4096  160         blocks.24.att.time_maa_w1
+5     32    4096  blocks.24.att.time_maa_w2
+4096              blocks.24.att.time_decay
+4096  64          blocks.24.att.time_decay_w1
+64    4096        blocks.24.att.time_decay_w2
+64    64          blocks.24.att.time_faaaa
+4096  4096        blocks.24.att.receptance.weight
+4096  4096        blocks.24.att.key.weight
+4096  4096        blocks.24.att.value.weight
+4096  4096        blocks.24.att.output.weight
+4096  4096        blocks.24.att.gate.weight
+4096              blocks.24.att.ln_x.weight
+4096              blocks.24.att.ln_x.bias
+4096              blocks.24.ffn.time_maa_k
+4096              blocks.24.ffn.time_maa_r
+14336 4096        blocks.24.ffn.key.weight
+4096  4096        blocks.24.ffn.receptance.weight
+4096  14336       blocks.24.ffn.value.weight
+4096              blocks.25.ln1.weight
+4096              blocks.25.ln1.bias
+4096              blocks.25.ln2.weight
+4096              blocks.25.ln2.bias
+4096              blocks.25.att.time_maa_x
+4096              blocks.25.att.time_maa_w
+4096              blocks.25.att.time_maa_k
+4096              blocks.25.att.time_maa_v
+4096              blocks.25.att.time_maa_r
+4096              blocks.25.att.time_maa_g
+4096  160         blocks.25.att.time_maa_w1
+5     32    4096  blocks.25.att.time_maa_w2
+4096              blocks.25.att.time_decay
+4096  64          blocks.25.att.time_decay_w1
+64    4096        blocks.25.att.time_decay_w2
+64    64          blocks.25.att.time_faaaa
+4096  4096        blocks.25.att.receptance.weight
+4096  4096        blocks.25.att.key.weight
+4096  4096        blocks.25.att.value.weight
+4096  4096        blocks.25.att.output.weight
+4096  4096        blocks.25.att.gate.weight
+4096              blocks.25.att.ln_x.weight
+4096              blocks.25.att.ln_x.bias
+4096              blocks.25.ffn.time_maa_k
+4096              blocks.25.ffn.time_maa_r
+14336 4096        blocks.25.ffn.key.weight
+4096  4096        blocks.25.ffn.receptance.weight
+4096  14336       blocks.25.ffn.value.weight
+4096              blocks.26.ln1.weight
+4096              blocks.26.ln1.bias
+4096              blocks.26.ln2.weight
+4096              blocks.26.ln2.bias
+4096              blocks.26.att.time_maa_x
+4096              blocks.26.att.time_maa_w
+4096              blocks.26.att.time_maa_k
+4096              blocks.26.att.time_maa_v
+4096              blocks.26.att.time_maa_r
+4096              blocks.26.att.time_maa_g
+4096  160         blocks.26.att.time_maa_w1
+5     32    4096  blocks.26.att.time_maa_w2
+4096              blocks.26.att.time_decay
+4096  64          blocks.26.att.time_decay_w1
+64    4096        blocks.26.att.time_decay_w2
+64    64          blocks.26.att.time_faaaa
+4096  4096        blocks.26.att.receptance.weight
+4096  4096        blocks.26.att.key.weight
+4096  4096        blocks.26.att.value.weight
+4096  4096        blocks.26.att.output.weight
+4096  4096        blocks.26.att.gate.weight
+4096              blocks.26.att.ln_x.weight
+4096              blocks.26.att.ln_x.bias
+4096              blocks.26.ffn.time_maa_k
+4096              blocks.26.ffn.time_maa_r
+14336 4096        blocks.26.ffn.key.weight
+4096  4096        blocks.26.ffn.receptance.weight
+4096  14336       blocks.26.ffn.value.weight
+4096              blocks.27.ln1.weight
+4096              blocks.27.ln1.bias
+4096              blocks.27.ln2.weight
+4096              blocks.27.ln2.bias
+4096              blocks.27.att.time_maa_x
+4096              blocks.27.att.time_maa_w
+4096              blocks.27.att.time_maa_k
+4096              blocks.27.att.time_maa_v
+4096              blocks.27.att.time_maa_r
+4096              blocks.27.att.time_maa_g
+4096  160         blocks.27.att.time_maa_w1
+5     32    4096  blocks.27.att.time_maa_w2
+4096              blocks.27.att.time_decay
+4096  64          blocks.27.att.time_decay_w1
+64    4096        blocks.27.att.time_decay_w2
+64    64          blocks.27.att.time_faaaa
+4096  4096        blocks.27.att.receptance.weight
+4096  4096        blocks.27.att.key.weight
+4096  4096        blocks.27.att.value.weight
+4096  4096        blocks.27.att.output.weight
+4096  4096        blocks.27.att.gate.weight
+4096              blocks.27.att.ln_x.weight
+4096              blocks.27.att.ln_x.bias
+4096              blocks.27.ffn.time_maa_k
+4096              blocks.27.ffn.time_maa_r
+14336 4096        blocks.27.ffn.key.weight
+4096  4096        blocks.27.ffn.receptance.weight
+4096  14336       blocks.27.ffn.value.weight
+4096              blocks.28.ln1.weight
+4096              blocks.28.ln1.bias
+4096              blocks.28.ln2.weight
+4096              blocks.28.ln2.bias
+4096              blocks.28.att.time_maa_x
+4096              blocks.28.att.time_maa_w
+4096              blocks.28.att.time_maa_k
+4096              blocks.28.att.time_maa_v
+4096              blocks.28.att.time_maa_r
+4096              blocks.28.att.time_maa_g
+4096  160         blocks.28.att.time_maa_w1
+5     32    4096  blocks.28.att.time_maa_w2
+4096              blocks.28.att.time_decay
+4096  64          blocks.28.att.time_decay_w1
+64    4096        blocks.28.att.time_decay_w2
+64    64          blocks.28.att.time_faaaa
+4096  4096        blocks.28.att.receptance.weight
+4096  4096        blocks.28.att.key.weight
+4096  4096        blocks.28.att.value.weight
+4096  4096        blocks.28.att.output.weight
+4096  4096        blocks.28.att.gate.weight
+4096              blocks.28.att.ln_x.weight
+4096              blocks.28.att.ln_x.bias
+4096              blocks.28.ffn.time_maa_k
+4096              blocks.28.ffn.time_maa_r
+14336 4096        blocks.28.ffn.key.weight
+4096  4096        blocks.28.ffn.receptance.weight
+4096  14336       blocks.28.ffn.value.weight
+4096              blocks.29.ln1.weight
+4096              blocks.29.ln1.bias
+4096              blocks.29.ln2.weight
+4096              blocks.29.ln2.bias
+4096              blocks.29.att.time_maa_x
+4096              blocks.29.att.time_maa_w
+4096              blocks.29.att.time_maa_k
+4096              blocks.29.att.time_maa_v
+4096              blocks.29.att.time_maa_r
+4096              blocks.29.att.time_maa_g
+4096  160         blocks.29.att.time_maa_w1
+5     32    4096  blocks.29.att.time_maa_w2
+4096              blocks.29.att.time_decay
+4096  64          blocks.29.att.time_decay_w1
+64    4096        blocks.29.att.time_decay_w2
+64    64          blocks.29.att.time_faaaa
+4096  4096        blocks.29.att.receptance.weight
+4096  4096        blocks.29.att.key.weight
+4096  4096        blocks.29.att.value.weight
+4096  4096        blocks.29.att.output.weight
+4096  4096        blocks.29.att.gate.weight
+4096              blocks.29.att.ln_x.weight
+4096              blocks.29.att.ln_x.bias
+4096              blocks.29.ffn.time_maa_k
+4096              blocks.29.ffn.time_maa_r
+14336 4096        blocks.29.ffn.key.weight
+4096  4096        blocks.29.ffn.receptance.weight
+4096  14336       blocks.29.ffn.value.weight
+4096              blocks.30.ln1.weight
+4096              blocks.30.ln1.bias
+4096              blocks.30.ln2.weight
+4096              blocks.30.ln2.bias
+4096              blocks.30.att.time_maa_x
+4096              blocks.30.att.time_maa_w
+4096              blocks.30.att.time_maa_k
+4096              blocks.30.att.time_maa_v
+4096              blocks.30.att.time_maa_r
+4096              blocks.30.att.time_maa_g
+4096  160         blocks.30.att.time_maa_w1
+5     32    4096  blocks.30.att.time_maa_w2
+4096              blocks.30.att.time_decay
+4096  64          blocks.30.att.time_decay_w1
+64    4096        blocks.30.att.time_decay_w2
+64    64          blocks.30.att.time_faaaa
+4096  4096        blocks.30.att.receptance.weight
+4096  4096        blocks.30.att.key.weight
+4096  4096        blocks.30.att.value.weight
+4096  4096        blocks.30.att.output.weight
+4096  4096        blocks.30.att.gate.weight
+4096              blocks.30.att.ln_x.weight
+4096              blocks.30.att.ln_x.bias
+4096              blocks.30.ffn.time_maa_k
+4096              blocks.30.ffn.time_maa_r
+14336 4096        blocks.30.ffn.key.weight
+4096  4096        blocks.30.ffn.receptance.weight
+4096  14336       blocks.30.ffn.value.weight
+4096              blocks.31.ln1.weight
+4096              blocks.31.ln1.bias
+4096              blocks.31.ln2.weight
+4096              blocks.31.ln2.bias
+4096              blocks.31.att.time_maa_x
+4096              blocks.31.att.time_maa_w
+4096              blocks.31.att.time_maa_k
+4096              blocks.31.att.time_maa_v
+4096              blocks.31.att.time_maa_r
+4096              blocks.31.att.time_maa_g
+4096  160         blocks.31.att.time_maa_w1
+5     32    4096  blocks.31.att.time_maa_w2
+4096              blocks.31.att.time_decay
+4096  64          blocks.31.att.time_decay_w1
+64    4096        blocks.31.att.time_decay_w2
+64    64          blocks.31.att.time_faaaa
+4096  4096        blocks.31.att.receptance.weight
+4096  4096        blocks.31.att.key.weight
+4096  4096        blocks.31.att.value.weight
+4096  4096        blocks.31.att.output.weight
+4096  4096        blocks.31.att.gate.weight
+4096              blocks.31.att.ln_x.weight
+4096              blocks.31.att.ln_x.bias
+4096              blocks.31.ffn.time_maa_k
+4096              blocks.31.ffn.time_maa_r
+14336 4096        blocks.31.ffn.key.weight
+4096  4096        blocks.31.ffn.receptance.weight
+4096  14336       blocks.31.ffn.value.weight
+4096              ln_out.weight
+4096              ln_out.bias
+65536 4096        head.weight
+Broadcasted tensor sizes list length: 902 rank: 0
+0 blocks.0.att.gate.weight tensor([[ 1.1969e-04, -4.5395e-04, -2.7466e-03,  ..., -4.9591e-04,
+         -3.5477e-04,  3.9482e-04],
+        [-1.8997e-03,  6.1798e-04,  1.4267e-03,  ...,  1.3428e-03,
+         -7.3016e-06,  1.3828e-04],
+        [-1.0757e-03, -2.0142e-03,  4.7302e-04,  ...,  9.8419e-04,
+         -3.4485e-03, -1.7624e-03],
+        ...,
+        [-4.6921e-04, -5.6076e-04,  2.2430e-03,  ..., -6.1798e-04,
+          1.3199e-03,  3.3875e-03],
+        [ 2.3041e-03,  1.6403e-03,  8.6212e-04,  ..., -1.5974e-05,
+          7.2479e-04, -2.0447e-03],
+        [-1.1444e-03,  1.8234e-03, -6.8283e-04,  ...,  9.6512e-04,
+         -2.1210e-03,  3.4142e-04]], dtype=torch.bfloat16)
+0 blocks.0.att.key.weight tensor([[-2.2888e-04,  8.0109e-04, -3.2425e-04,  ...,  2.8229e-04,
+          5.3024e-04,  5.7220e-04],
+        [-8.5068e-04,  1.2589e-03, -6.9046e-04,  ..., -2.8381e-03,
+          7.7057e-04, -5.6839e-04],
+        [-1.0300e-03, -2.3804e-03, -5.0354e-04,  ..., -8.0109e-04,
+         -3.3379e-04, -4.7302e-03],
+        ...,
+        [ 2.3346e-03,  2.0447e-03,  8.4686e-04,  ...,  3.3188e-04,
+         -8.5449e-04,  7.2861e-04],
+        [-5.1880e-04,  1.2970e-03, -2.5482e-03,  ...,  2.1362e-03,
+         -4.4632e-04,  2.1057e-03],
+        [-3.9101e-04, -1.6479e-03,  7.4863e-05,  ..., -1.4725e-03,
+         -1.0347e-04,  7.5150e-04]], dtype=torch.bfloat16)
+0 blocks.0.att.ln_x.bias tensor([0., 0., 0.,  ..., 0., 0., 0.], dtype=torch.bfloat16)
+0 blocks.0.att.ln_x.weight tensor([0.0884, 0.0884, 0.0884,  ..., 0.0884, 0.0884, 0.0884],
+       dtype=torch.bfloat16)
+0 blocks.0.att.output.weight tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.0.att.receptance.weight tensor([[-0.0479,  0.0070, -0.0045,  ..., -0.0102, -0.0062, -0.0038],
+        [-0.0172,  0.0053, -0.0101,  ..., -0.0019,  0.0047,  0.0120],
+        [ 0.0041,  0.0182, -0.0022,  ...,  0.0139, -0.0159,  0.0280],
+        ...,
+        [-0.0107,  0.0066, -0.0238,  ..., -0.0082,  0.0117,  0.0035],
+        [ 0.0125,  0.0010, -0.0212,  ...,  0.0026, -0.0051, -0.0023],
+        [ 0.0030,  0.0052,  0.0305,  ..., -0.0151, -0.0179,  0.0031]],
+       dtype=torch.bfloat16)
+0 blocks.0.att.time_decay tensor([[[-6.0000, -6.0000, -5.9688,  ..., -1.0000, -1.0000, -1.0000]]],
+       dtype=torch.bfloat16)
+0 blocks.0.att.time_decay_w1 tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.0.att.time_decay_w2 tensor([[-0.0051, -0.0099,  0.0096,  ..., -0.0034,  0.0092,  0.0089],
+        [ 0.0087,  0.0060, -0.0076,  ...,  0.0037, -0.0002,  0.0060],
+        [ 0.0058, -0.0094,  0.0008,  ...,  0.0039, -0.0078,  0.0037],
+        ...,
+        [-0.0056,  0.0052,  0.0087,  ...,  0.0068,  0.0053, -0.0060],
+        [ 0.0063,  0.0046,  0.0079,  ..., -0.0003,  0.0080, -0.0052],
+        [ 0.0036,  0.0070, -0.0058,  ..., -0.0009, -0.0065,  0.0021]],
+       dtype=torch.bfloat16)
+0 blocks.0.att.time_faaaa tensor([[ 0.0000,  0.1001, -0.1001,  ...,  0.1001, -0.1001,  0.0000],
+        [ 0.1001, -0.1001,  0.0000,  ..., -0.1001,  0.0000,  0.1001],
+        [-0.1001,  0.0000,  0.1001,  ...,  0.0000,  0.1001, -0.1001],
+        ...,
+        [ 0.1001, -0.1001,  0.0000,  ..., -0.1001,  0.0000,  0.1001],
+        [-0.1001,  0.0000,  0.1001,  ...,  0.0000,  0.1001, -0.1001],
+        [ 0.0000,  0.1001, -0.1001,  ...,  0.1001, -0.1001,  0.0000]],
+       dtype=torch.bfloat16)
+0 blocks.0.att.time_maa_g tensor([[[1.0000e+00, 9.8438e-01, 9.7656e-01,  ..., 3.6621e-04,
+          2.4414e-04, 1.2207e-04]]], dtype=torch.bfloat16)
+0 blocks.0.att.time_maa_k tensor([[[1.0000e+00, 1.0000e+00, 1.0000e+00,  ..., 7.3242e-04,
+          4.8828e-04, 2.4414e-04]]], dtype=torch.bfloat16)
+0 blocks.0.att.time_maa_r tensor([[[1.0000e+00, 9.8438e-01, 9.7656e-01,  ..., 3.6621e-04,
+          2.4414e-04, 1.2207e-04]]], dtype=torch.bfloat16)
+0 blocks.0.att.time_maa_v tensor([[[1.0000e+00, 1.0000e+00, 1.0000e+00,  ..., 7.3242e-04,
+          4.8828e-04, 2.4414e-04]]], dtype=torch.bfloat16)
+0 blocks.0.att.time_maa_w tensor([[[1.0000e+00, 1.0000e+00, 1.0000e+00,  ..., 7.3242e-04,
+          4.8828e-04, 2.4414e-04]]], dtype=torch.bfloat16)
+0 blocks.0.att.time_maa_w1 tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.0.att.time_maa_w2 tensor([[[ 9.7656e-04, -8.7280e-03,  7.7820e-03,  ...,  8.4839e-03,
+          -8.7280e-03, -9.4223e-04],
+         [ 8.4839e-03, -4.6692e-03,  2.4414e-03,  ..., -3.9368e-03,
+           3.6316e-03,  4.8218e-03],
+         [-6.7444e-03,  3.6774e-03,  6.9885e-03,  ...,  7.0190e-03,
+          -5.9891e-04,  1.7776e-03],
+         ...,
+         [ 1.5030e-03, -8.9722e-03,  3.2997e-04,  ...,  2.1820e-03,
+           9.4604e-03,  4.1008e-04],
+         [-4.1580e-04,  4.2534e-04, -1.8158e-03,  ..., -3.2501e-03,
+           5.5542e-03, -4.8523e-03],
+         [-2.0142e-03,  6.5918e-03, -5.1880e-03,  ..., -8.7357e-04,
+           1.4954e-03, -4.3945e-03]],
+        [[ 1.0757e-03,  8.3008e-03, -2.3193e-03,  ...,  9.7656e-03,
+          -4.2114e-03, -3.9368e-03],
+         [ 3.3264e-03, -2.2583e-03, -8.9111e-03,  ..., -4.2725e-03,
+           2.4872e-03,  5.1880e-03],
+         [ 3.4180e-03, -5.7373e-03, -3.7842e-03,  ..., -1.2665e-03,
+          -2.6855e-03,  1.6785e-03],
+         ...,
+         [-4.5776e-03, -1.6913e-06, -1.9073e-03,  ..., -6.7749e-03,
+          -7.4768e-04,  5.3101e-03],
+         [ 8.1177e-03, -3.2806e-03, -8.5449e-03,  ...,  8.3542e-04,
+           6.0654e-04,  6.0425e-03],
+         [-9.0332e-03, -7.7515e-03, -5.3711e-03,  ...,  2.1210e-03,
+           6.3171e-03,  3.2349e-03]],
+        [[-4.9973e-04, -3.4943e-03, -1.8768e-03,  ...,  8.2397e-03,
+          -5.1575e-03, -1.1969e-04],
+         [ 9.3384e-03,  1.1368e-03, -5.6458e-03,  ...,  2.8229e-03,
+           2.7771e-03,  3.0670e-03],
+         [-6.7444e-03, -9.0332e-03,  9.9487e-03,  ...,  6.0425e-03,
+          -2.2736e-03, -7.7515e-03],
+         ...,
+         [-3.7079e-03,  7.6294e-03, -4.6387e-03,  ..., -2.3842e-04,
+           1.2283e-03, -2.2583e-03],
+         [-7.5684e-03,  1.9150e-03,  8.0566e-03,  ...,  4.7913e-03,
+          -5.1880e-03,  9.2773e-03],
+         [-8.2016e-04, -9.0942e-03,  8.6060e-03,  ...,  5.4932e-03,
+           9.0942e-03, -4.7913e-03]],
+        [[-2.1667e-03,  5.2490e-03, -5.3711e-03,  ..., -8.7280e-03,
+          -2.4261e-03,  8.4686e-04],
+         [ 4.1504e-03, -1.5182e-03, -8.9722e-03,  ...,  8.4229e-03,
+          -7.0496e-03,  8.3618e-03],
+         [ 2.4109e-03,  2.1973e-03,  4.3335e-03,  ..., -3.8300e-03,
+           9.7656e-03, -6.9275e-03],
+         ...,
+         [-3.8757e-03, -6.3171e-03, -6.5918e-03,  ..., -9.1553e-03,
+          -2.8229e-03,  9.4604e-03],
+         [ 7.3624e-04,  2.3193e-03, -3.1738e-03,  ..., -5.4932e-03,
+          -9.5215e-03, -9.0942e-03],
+         [-3.4332e-03, -9.0332e-03,  7.4463e-03,  ...,  6.6528e-03,
+           4.8828e-03, -3.6469e-03]],
+        [[-6.5308e-03,  9.3994e-03, -5.8365e-04,  ..., -7.4158e-03,
+           4.9133e-03, -7.6904e-03],
+         [ 6.5002e-03, -7.4768e-03, -3.2997e-04,  ..., -7.5073e-03,
+          -1.1063e-03, -8.4229e-03],
+         [ 6.0730e-03,  5.5542e-03, -5.4321e-03,  ...,  3.2806e-03,
+           1.4420e-03, -8.9722e-03],
+         ...,
+         [-7.0496e-03, -6.5918e-03,  5.4016e-03,  ..., -4.9438e-03,
+          -2.6550e-03, -6.9580e-03],
+         [ 3.6316e-03, -2.0885e-04, -1.8082e-03,  ..., -6.4392e-03,
+          -5.1270e-03,  9.7656e-03],
+         [ 1.1520e-03,  3.2196e-03, -1.8978e-04,  ...,  8.4839e-03,
+          -9.8267e-03,  3.2043e-03]]], dtype=torch.bfloat16)
+0 blocks.0.att.time_maa_x tensor([[[1.0000e+00, 1.0000e+00, 1.0000e+00,  ..., 7.3242e-04,
+          4.8828e-04, 2.4414e-04]]], dtype=torch.bfloat16)
+0 blocks.0.att.value.weight tensor([[ 0.0030,  0.0026, -0.0006,  ..., -0.0039,  0.0272, -0.0060],
+        [ 0.0393,  0.0187,  0.0118,  ...,  0.0028,  0.0258, -0.0249],
+        [ 0.0054, -0.0002, -0.0035,  ...,  0.0096, -0.0041, -0.0128],
+        ...,
+        [-0.0194, -0.0298, -0.0195,  ..., -0.0145,  0.0206,  0.0098],
+        [-0.0219,  0.0074,  0.0092,  ..., -0.0075,  0.0125, -0.0083],
+        [-0.0330,  0.0311,  0.0005,  ...,  0.0135,  0.0187, -0.0131]],
+       dtype=torch.bfloat16)
+0 blocks.0.ffn.key.weight tensor([[-0.0027,  0.0129,  0.0110,  ..., -0.0107,  0.0011,  0.0015],
+        [-0.0043, -0.0026, -0.0208,  ...,  0.0079, -0.0126, -0.0041],
+        [ 0.0082,  0.0074, -0.0009,  ..., -0.0026, -0.0055,  0.0012],
+        ...,
+        [ 0.0066,  0.0062, -0.0056,  ..., -0.0033, -0.0004, -0.0075],
+        [-0.0030,  0.0056, -0.0049,  ...,  0.0138,  0.0034,  0.0049],
+        [-0.0031, -0.0084,  0.0055,  ..., -0.0002,  0.0075, -0.0007]],
+       dtype=torch.bfloat16)
+0 blocks.0.ffn.receptance.weight tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.0.ffn.time_maa_k tensor([[[1.0000e+00, 1.0000e+00, 1.0000e+00,  ..., 7.3242e-04,
+          4.8828e-04, 2.4414e-04]]], dtype=torch.bfloat16)
+0 blocks.0.ffn.time_maa_r tensor([[[1.0000e+00, 1.0000e+00, 1.0000e+00,  ..., 7.3242e-04,
+          4.8828e-04, 2.4414e-04]]], dtype=torch.bfloat16)
+0 blocks.0.ffn.value.weight tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.0.ln0.bias tensor([0., 0., 0.,  ..., 0., 0., 0.], dtype=torch.bfloat16)
+0 blocks.0.ln0.weight tensor([1., 1., 1.,  ..., 1., 1., 1.], dtype=torch.bfloat16)
+0 blocks.0.ln1.bias tensor([0., 0., 0.,  ..., 0., 0., 0.], dtype=torch.bfloat16)
+0 blocks.0.ln1.weight tensor([1., 1., 1.,  ..., 1., 1., 1.], dtype=torch.bfloat16)
+0 blocks.0.ln2.bias tensor([0., 0., 0.,  ..., 0., 0., 0.], dtype=torch.bfloat16)
+0 blocks.0.ln2.weight tensor([1., 1., 1.,  ..., 1., 1., 1.], dtype=torch.bfloat16)
+0 blocks.1.att.gate.weight tensor([[-3.3569e-04,  1.9836e-03,  6.5231e-04,  ..., -2.2984e-04,
+          2.0142e-03, -1.6785e-03],
+        [-1.2817e-03,  1.2741e-03, -1.3275e-03,  ...,  4.0245e-04,
+         -8.8501e-04, -1.8234e-03],
+        [-2.6894e-04, -2.4719e-03, -7.2479e-04,  ...,  7.6675e-04,
+         -1.4246e-05,  2.3041e-03],
+        ...,
+        [ 1.7090e-03, -2.1362e-03,  6.8283e-04,  ...,  2.7924e-03,
+          1.2360e-03, -6.7139e-03],
+        [-3.4332e-04, -9.9182e-04,  5.0354e-04,  ..., -1.0681e-03,
+          1.5335e-03, -2.0142e-03],
+        [-7.6294e-04, -8.6594e-04,  5.3787e-04,  ...,  1.0681e-03,
+         -1.1826e-03, -1.9531e-03]], dtype=torch.bfloat16)
+0 blocks.1.att.key.weight tensor([[-3.6049e-04,  2.7924e-03,  2.9144e-03,  ..., -6.4850e-04,
+          3.2997e-04,  3.0327e-04],
+        [ 3.3379e-04, -2.2430e-03,  5.2452e-05,  ...,  5.6839e-04,
+         -1.2665e-03,  4.3640e-03],
+        [ 1.6479e-03,  1.2894e-03, -2.6245e-03,  ..., -7.6294e-05,
+          5.9128e-04,  3.7384e-04],
+        ...,
+        [-1.5793e-03, -2.9907e-03, -9.0027e-04,  ..., -3.4790e-03,
+          1.1597e-03,  2.7161e-03],
+        [ 1.2970e-03, -1.3046e-03,  2.5177e-03,  ...,  5.7220e-04,
+          5.0068e-05, -1.8024e-04],
+        [ 4.9973e-04,  1.1292e-03,  9.6512e-04,  ...,  4.6539e-04,
+         -8.7357e-04, -9.6130e-04]], dtype=torch.bfloat16)
+0 blocks.1.att.ln_x.bias tensor([0., 0., 0.,  ..., 0., 0., 0.], dtype=torch.bfloat16)
+0 blocks.1.att.ln_x.weight tensor([0.1436, 0.1436, 0.1436,  ..., 0.1436, 0.1436, 0.1436],
+       dtype=torch.bfloat16)
+0 blocks.1.att.output.weight tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.1.att.receptance.weight tensor([[ 4.6082e-03, -3.4273e-07, -3.4424e-02,  ..., -5.3101e-03,
+         -1.3733e-02, -1.2390e-02],
+        [ 1.1169e-02,  3.2227e-02,  2.9449e-03,  ..., -3.1982e-02,
+          1.7700e-02, -9.3384e-03],
+        [ 7.5378e-03,  1.4465e-02, -1.4893e-02,  ..., -3.2349e-03,
+          1.6724e-02,  1.2695e-02],
+        ...,
+        [-2.9663e-02,  4.1748e-02,  1.4954e-03,  ..., -5.3101e-03,
+          1.5381e-02, -2.1118e-02],
+        [ 3.7842e-02,  1.8555e-02,  9.2163e-03,  ...,  4.7607e-02,
+         -4.2114e-03,  7.4158e-03],
+        [-1.5381e-02, -4.6997e-03, -7.1411e-03,  ..., -1.3062e-02,
+         -1.6846e-02, -4.4861e-03]], dtype=torch.bfloat16)
+0 blocks.1.att.time_decay tensor([[[-6.0000, -6.0000, -5.9688,  ..., -1.0000, -1.0000, -1.0000]]],
+       dtype=torch.bfloat16)
+0 blocks.1.att.time_decay_w1 tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.1.att.time_decay_w2 tensor([[-0.0032, -0.0069, -0.0031,  ..., -0.0093,  0.0096, -0.0078],
+        [-0.0047,  0.0045,  0.0093,  ...,  0.0018,  0.0053, -0.0062],
+        [ 0.0012,  0.0067,  0.0077,  ..., -0.0012,  0.0011, -0.0097],
+        ...,
+        [ 0.0007, -0.0043,  0.0096,  ..., -0.0027,  0.0004, -0.0047],
+        [-0.0007,  0.0078, -0.0036,  ...,  0.0058, -0.0067,  0.0055],
+        [ 0.0059,  0.0014, -0.0078,  ...,  0.0096,  0.0008,  0.0034]],
+       dtype=torch.bfloat16)
+0 blocks.1.att.time_faaaa tensor([[ 0.0322,  0.1318, -0.0679,  ...,  0.1318, -0.0684,  0.0317],
+        [ 0.1318, -0.0684,  0.0317,  ..., -0.0688,  0.0312,  0.1309],
+        [-0.0688,  0.0312,  0.1309,  ...,  0.0308,  0.1309, -0.0693],
+        ...,
+        [ 0.1016, -0.0986,  0.0015,  ..., -0.0991,  0.0010,  0.1011],
+        [-0.0991,  0.0010,  0.1011,  ...,  0.0005,  0.1006, -0.0996],
+        [ 0.0005,  0.1006, -0.0996,  ...,  0.1001, -0.1001,  0.0000]],
+       dtype=torch.bfloat16)
+0 blocks.1.att.time_maa_g tensor([[[1.0000e+00, 9.8047e-01, 9.7656e-01,  ..., 3.5477e-04,
+          2.3651e-04, 1.1826e-04]]], dtype=torch.bfloat16)
+0 blocks.1.att.time_maa_k tensor([[[1.0000e+00, 1.0000e+00, 1.0000e+00,  ..., 7.0953e-04,
+          4.7302e-04, 2.3651e-04]]], dtype=torch.bfloat16)
+0 blocks.1.att.time_maa_r tensor([[[1.0000e+00, 9.8047e-01, 9.7656e-01,  ..., 3.5477e-04,
+          2.3651e-04, 1.1826e-04]]], dtype=torch.bfloat16)
+0 blocks.1.att.time_maa_v tensor([[[ 0.9922,  0.9883,  0.9883,  ..., -0.0090, -0.0092, -0.0095]]],
+       dtype=torch.bfloat16)
+0 blocks.1.att.time_maa_w tensor([[[1.0000e+00, 1.0000e+00, 1.0000e+00,  ..., 7.0953e-04,
+          4.7302e-04, 2.3651e-04]]], dtype=torch.bfloat16)
+0 blocks.1.att.time_maa_w1 tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.1.att.time_maa_w2 tensor([[[ 8.4839e-03, -3.6430e-04, -3.1738e-03,  ..., -9.2163e-03,
+          -1.5106e-03, -9.2163e-03],
+         [ 1.3428e-03, -1.6327e-03,  2.4567e-03,  ..., -8.7738e-04,
+          -9.0332e-03, -8.7357e-04],
+         [ 5.4626e-03, -3.9062e-03, -3.7689e-03,  ...,  1.7319e-03,
+          -7.0496e-03, -1.0529e-03],
+         ...,
+         [ 9.3994e-03, -1.2064e-04,  6.6528e-03,  ...,  3.2959e-03,
+          -8.1787e-03,  9.0332e-03],
+         [ 4.6082e-03,  9.4604e-03,  8.9645e-04,  ...,  7.8125e-03,
+           2.3499e-03, -6.2866e-03],
+         [ 2.1362e-03,  7.2937e-03,  1.1015e-04,  ...,  4.4556e-03,
+           6.1340e-03,  7.5989e-03]],
+        [[-9.4604e-03,  7.6904e-03,  9.7656e-03,  ...,  9.2773e-03,
+          -9.4604e-03,  2.9755e-03],
+         [ 7.8125e-03, -4.7302e-03,  5.1880e-04,  ...,  4.9744e-03,
+           1.8005e-03,  5.3101e-03],
+         [ 1.8311e-04,  5.9204e-03,  4.9133e-03,  ...,  1.1206e-04,
+           3.6469e-03,  1.8616e-03],
+         ...,
+         [ 3.9673e-03,  4.3030e-03, -7.2327e-03,  ..., -4.6387e-03,
+          -8.8501e-03, -2.5368e-04],
+         [-8.9645e-04, -5.8289e-03, -5.2185e-03,  ...,  9.7656e-03,
+           5.8594e-03, -6.4392e-03],
+         [ 6.8665e-03,  9.5825e-03, -5.4321e-03,  ..., -2.8229e-03,
+          -7.8125e-03, -9.0942e-03]],
+        [[ 6.2561e-03,  9.1553e-03, -1.7700e-03,  ..., -7.4158e-03,
+          -5.9204e-03,  1.9531e-03],
+         [-8.8501e-03,  3.4790e-03, -1.9684e-03,  ..., -6.1340e-03,
+           4.5166e-03, -9.9487e-03],
+         [ 1.3809e-03,  8.8501e-03, -3.2959e-03,  ...,  7.4158e-03,
+          -3.7231e-03,  9.9487e-03],
+         ...,
+         [ 7.2632e-03,  7.9346e-03, -1.9989e-03,  ...,  4.7913e-03,
+          -7.9956e-03,  1.0605e-03],
+         [ 6.1340e-03,  1.3199e-03,  4.6387e-03,  ..., -5.5237e-03,
+           1.3809e-03, -5.5237e-03],
+         [-6.8359e-03,  4.7607e-03,  7.5989e-03,  ...,  5.7983e-03,
+          -5.0659e-03, -7.7820e-03]],
+        [[ 1.8539e-03, -7.1106e-03,  1.1292e-03,  ...,  4.2114e-03,
+          -6.5613e-03, -6.5002e-03],
+         [ 2.5635e-03, -7.1411e-03, -4.4556e-03,  ..., -6.8665e-03,
+           9.1076e-05,  6.1340e-03],
+         [ 7.0190e-03, -6.1951e-03, -5.7983e-04,  ...,  8.0872e-04,
+          -5.5237e-03, -8.7280e-03],
+         ...,
+         [ 9.2163e-03, -9.4604e-03,  8.2397e-03,  ...,  1.2207e-03,
+          -3.7537e-03,  3.5477e-04],
+         [-5.7678e-03, -1.6098e-03, -8.2397e-03,  ..., -9.3384e-03,
+           6.2866e-03, -3.9978e-03],
+         [-7.6599e-03, -7.6904e-03, -8.3542e-04,  ..., -9.7656e-03,
+          -5.0354e-03,  7.0801e-03]],
+        [[-7.5912e-04,  4.9438e-03, -7.8964e-04,  ..., -6.3171e-03,
+          -3.2997e-04,  5.1270e-03],
+         [-6.7444e-03,  8.8501e-03, -8.8501e-03,  ...,  1.2131e-03,
+          -3.0670e-03,  6.0730e-03],
+         [-1.1063e-03, -6.1340e-03,  3.1738e-03,  ..., -8.3008e-03,
+           7.6599e-03, -3.1281e-03],
+         ...,
+         [-7.7820e-03,  7.4768e-03,  9.9945e-04,  ..., -8.4839e-03,
+           6.7444e-03, -5.1270e-03],
+         [-7.6904e-03, -9.3994e-03, -3.8910e-03,  ..., -1.6861e-03,
+           8.1177e-03, -5.8289e-03],
+         [ 4.4346e-05,  3.5095e-03,  9.0942e-03,  ..., -2.3346e-03,
+          -4.1504e-03,  2.5787e-03]]], dtype=torch.bfloat16)
+0 blocks.1.att.time_maa_x tensor([[[1.0000e+00, 1.0000e+00, 1.0000e+00,  ..., 7.0953e-04,
+          4.7302e-04, 2.3651e-04]]], dtype=torch.bfloat16)
+0 blocks.1.att.value.weight tensor([[-0.0066,  0.0024,  0.0214,  ..., -0.0088,  0.0070, -0.0069],
+        [ 0.0106,  0.0188, -0.0288,  ...,  0.0020,  0.0035, -0.0061],
+        [ 0.0251,  0.0096, -0.0070,  ..., -0.0055,  0.0017,  0.0037],
+        ...,
+        [-0.0208,  0.0033, -0.0040,  ..., -0.0175, -0.0042,  0.0187],
+        [ 0.0272,  0.0281,  0.0067,  ...,  0.0017,  0.0019, -0.0127],
+        [ 0.0286, -0.0427, -0.0182,  ...,  0.0227, -0.0134,  0.0069]],
+       dtype=torch.bfloat16)
+Progress: 50/902 | Sending name: blocks.1.ffn.key.weight
+0 blocks.0.ffn.value.weight tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        ...,fn.value.weight tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [ 0.0065,  0.0027,  0.0188,  ...,  0.0090, -0.0327, -0.0060],
+        [-0.0103,  0.0014,  0.0315,  ..., -0.0344, -0.0110, -0.0110],
+        [ 0.0089,  0.0009, -0.0089,  ..., -0.0120,  0.0069,  0.0077]],
+       dtype=torch.bfloat16)
+0 blocks.10.ffn.key.weight tensor([[-0.0032,  0.0142,  0.0077,  ...,  0.0057,  0.0167,  0.0063],
+        [-0.0152, -0.0066,  0.0171,  ..., -0.0046,  0.0097,  0.0096],
+        [-0.0072, -0.0111,  0.0002,  ..., -0.0070, -0.0104,  0.0003],
+        ...,
+        [ 0.0049,  0.0030, -0.0041,  ..., -0.0057, -0.0055,  0.0075],
+        [ 0.0038,  0.0031,  0.0020,  ...,  0.0078,  0.0132,  0.0023],
+        [-0.0123, -0.0061, -0.0011,  ...,  0.0016,  0.0049,  0.0089]],
+       dtype=torch.bfloat16)
+0 blocks.10.ffn.receptance.weight tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.10.ffn.time_maa_k tensor([[[1.0000e+00, 9.9609e-01, 9.9609e-01,  ..., 5.0354e-04,
+          3.3569e-04, 1.6785e-04]]], dtype=torch.bfloat16)
+0 blocks.10.ffn.time_maa_r tensor([[[1.0000e+00, 9.9609e-01, 9.9609e-01,  ..., 5.0354e-04,
+          3.3569e-04, 1.6785e-04]]], dtype=torch.bfloat16)
+0 blocks.10.ffn.value.weight tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.10.ln1.bias tensor([0., 0., 0.,  ..., 0., 0., 0.], dtype=torch.bfloat16)
+0 blocks.10.ln1.weight tensor([1., 1., 1.,  ..., 1., 1., 1.], dtype=torch.bfloat16)
+0 blocks.10.ln2.bias tensor([0., 0., 0.,  ..., 0., 0., 0.], dtype=torch.bfloat16)
+0 blocks.10.ln2.weight tensor([1., 1., 1.,  ..., 1., 1., 1.], dtype=torch.bfloat16)
+Progress: 87/902 | Sending name: blocks.11.att.gate.weight
+        [[-6.5002e-03,  7.9956e-03, -9.6436e-03,  ...,  8.3618e-03,
+          -8.6060e-03, -5.9509e-03],
+         [-2.2125e-03,  5.9204e-03, -8.6060e-03,  ..., -3.6316e-03,
+          -3.1738e-03,  3.6049e-04],
+         [-2.7313e-03,  7.3242e-03,  4.1504e-03,  ...,  5.2185e-03,
+          -2.1820e-03, -3.2959e-03],
+         ...,
+         [ 9.4604e-03, -2.0294e-03,  1.9684e-03,  ..., -3.3569e-03,
+          -6.6223e-03,  5.4626e-03],
+         [ 3.1738e-03,  1.7834e-04,  4.8218e-03,  ...,  7.2098e-04,
+          -9.8267e-03,  2.6703e-03],
+         [-9.9487e-03,  1.7700e-03,  4.1199e-03,  ..., -1.6479e-03,
+          -8.6060e-03,  9.2773e-03]],
+        [[ 2.5177e-03,  5.0964e-03, -4.3335e-03,  ..., -7.9956e-03,
+           2.3193e-03, -2.3499e-03],
+         [ 5.0354e-03, -6.0120e-03,  2.2736e-03,  ...,  4.9744e-03,
+           6.4697e-03,  1.9741e-04],
+         [ 5.0354e-03,  4.1771e-04,  9.2773e-03,  ..., -4.3030e-03,
+           5.0964e-03,  5.4626e-03],
+         ...,
+         [-1.9836e-03, -9.5215e-03, -9.8267e-03,  ...,  9.7656e-03,
+          -4.8523e-03, -4.9438e-03],
+         [ 9.0122e-05,  9.7046e-03, -6.2256e-03,  ...,  4.7302e-03,
+          -5.4626e-03,  3.7384e-03],
+         [-1.5411e-03,  1.6022e-03,  6.6223e-03,  ...,  4.1809e-03,
+          -2.3804e-03, -5.6152e-03]],
+        [[-6.6833e-03,  9.3994e-03,  6.1951e-03,  ..., -6.1646e-03,
+          -3.4943e-03, -4.0283e-03],
+         [-4.5471e-03,  6.0120e-03, -9.1553e-03,  ...,  1.6861e-03,
+          -8.1787e-03,  5.7678e-03],
+         [-5.2490e-03,  5.0964e-03, -2.3651e-03,  ..., -7.4158e-03,
+           1.0147e-03,  2.8534e-03],
+         ...,
+         [ 5.1270e-03,  9.7656e-03,  7.0496e-03,  ...,  4.1580e-04,
+          -3.4943e-03, -5.2185e-03],
+         [ 1.1206e-04,  3.2654e-03, -3.4332e-03,  ..., -5.8594e-03,
+          -5.2490e-03,  5.0964e-03],
+         [ 8.7891e-03, -7.4768e-03,  9.2163e-03,  ...,  4.5776e-03,
+           4.0283e-03,  8.0566e-03]],
+        [[ 6.5308e-03,  2.3651e-04, -1.1215e-03,  ...,  7.2327e-03,
+          -5.5847e-03,  8.8501e-03],
+         [-1.9836e-03,  9.2773e-03, -6.2866e-03,  ..., -4.0894e-03,
+          -4.0245e-04, -1.8921e-03],
+         [ 4.0894e-03, -3.3417e-03,  4.4861e-03,  ...,  4.0283e-03,
+          -3.0823e-03, -8.1787e-03],
+         ...,
+         [-7.5378e-03,  5.9204e-03,  4.9133e-03,  ...,  3.2501e-03,
+           3.8605e-03,  9.3384e-03],
+         [-4.4556e-03, -6.3171e-03, -1.6861e-03,  ...,  6.4087e-03,
+          -4.3640e-03, -6.9885e-03],
+         [-3.6011e-03, -9.8267e-03,  1.3733e-03,  ..., -8.4839e-03,
+           3.9978e-03,  2.2583e-03]]], dtype=torch.bfloat16)
+0 blocks.11.att.time_maa_x tensor([[[1.0000e+00, 9.9609e-01, 9.9219e-01,  ..., 4.8065e-04,
+          3.2043e-04, 1.6022e-04]]], dtype=torch.bfloat16)
+0 blocks.11.att.value.weight tensor([[-0.0143, -0.0220, -0.0081,  ...,  0.0291,  0.0315, -0.0075],
+        [ 0.0002,  0.0103, -0.0245,  ...,  0.0129,  0.0135,  0.0264],
+        [-0.0015, -0.0183,  0.0181,  ..., -0.0165, -0.0084, -0.0076],
+        ...,
+        [ 0.0080,  0.0063,  0.0047,  ..., -0.0199,  0.0295, -0.0093],
+        [ 0.0142,  0.0160,  0.0175,  ...,  0.0178,  0.0009, -0.0198],
+        [ 0.0232, -0.0016, -0.0031,  ...,  0.0359, -0.0125,  0.0280]],
+       dtype=torch.bfloat16)
+0 blocks.11.ffn.key.weight tensor([[ 0.0066,  0.0141,  0.0013,  ..., -0.0070,  0.0058,  0.0108],
+        [ 0.0022,  0.0004,  0.0061,  ...,  0.0017, -0.0150, -0.0060],
+        [-0.0154,  0.0050, -0.0144,  ..., -0.0087,  0.0086,  0.0010],
+        ...,
+        [-0.0073, -0.0120,  0.0027,  ...,  0.0103,  0.0038,  0.0006],
+        [-0.0188,  0.0225,  0.0128,  ...,  0.0092,  0.0028, -0.0022],
+        [ 0.0042,  0.0070,  0.0286,  ...,  0.0042, -0.0067, -0.0026]],
+       dtype=torch.bfloat16)
+0 blocks.11.ffn.receptance.weight tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.11.ffn.time_maa_k tensor([[[1.0000e+00, 9.9609e-01, 9.9219e-01,  ..., 4.8065e-04,
+          3.2043e-04, 1.6022e-04]]], dtype=torch.bfloat16)
+0 blocks.11.ffn.time_maa_r tensor([[[1.0000e+00, 9.9609e-01, 9.9219e-01,  ..., 4.8065e-04,
+          3.2043e-04, 1.6022e-04]]], dtype=torch.bfloat16)
+Progress: 110/902 | Sending name: blocks.11.ffn.value.weight
+        [0., 0., 0.,  ..., 0., 0., 0.],6436e-03,  ...,  8.3618e-03,
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.12.att.time_maa_w2 tensor([[[-8.7891e-03,  5.7373e-03,  9.2163e-03,  ...,  2.5330e-03,
+           4.3335e-03, -3.3264e-03],
+         [-2.3193e-03, -6.8054e-03, -2.4719e-03,  ...,  2.7618e-03,
+          -7.1106e-03, -8.3618e-03],
+         [ 8.7891e-03,  1.6174e-03,  4.6387e-03,  ..., -6.4392e-03,
+          -8.7891e-03, -4.3945e-03],
+         ...,
+         [-2.1973e-03,  5.1880e-04,  5.1880e-03,  ...,  8.2970e-05,
+          -6.5002e-03, -9.5215e-03],
+         [ 9.0332e-03, -2.0142e-03, -4.6387e-03,  ..., -6.3171e-03,
+           7.2632e-03,  1.3733e-03],
+         [ 6.5613e-03, -5.5695e-04, -4.9744e-03,  ...,  9.3079e-04,
+           3.0060e-03, -2.8038e-04]],
+        [[ 2.1362e-03,  1.3504e-03, -4.0588e-03,  ..., -3.2501e-03,
+           6.2866e-03, -2.8076e-03],
+         [-5.3101e-03, -3.4180e-03, -9.5825e-03,  ...,  5.0049e-03,
+           9.8267e-03, -4.8218e-03],
+         [-1.2360e-03,  5.4321e-03, -4.3030e-03,  ...,  8.0566e-03,
+           4.5776e-03,  7.3853e-03],
+         ...,
+         [-4.5471e-03,  5.0354e-03, -6.0730e-03,  ...,  4.1504e-03,
+          -8.6670e-03, -5.4626e-03],
+         [-2.0447e-03,  6.9275e-03,  5.8289e-03,  ...,  8.0566e-03,
+          -3.2654e-03, -7.1716e-03],
+         [ 9.2773e-03,  2.1057e-03,  3.0823e-03,  ...,  6.3171e-03,
+          -3.4332e-03,  4.6082e-03]],
+        [[ 6.7444e-03, -1.8082e-03, -4.8523e-03,  ..., -8.6060e-03,
+           3.7537e-03,  3.5400e-03],
+         [-9.7046e-03, -7.9956e-03,  2.6550e-03,  ..., -9.5215e-03,
+          -6.7444e-03,  3.3875e-03],
+         [ 2.4567e-03,  9.8267e-03,  5.9814e-03,  ...,  8.2397e-03,
+           6.9580e-03,  5.8899e-03],
+         ...,
+         [-4.0283e-03, -7.6294e-03, -5.7697e-05,  ..., -4.7493e-04,
+           6.7902e-04, -7.1716e-03],
+         [ 6.3477e-03,  2.6550e-03,  5.5542e-03,  ...,  7.1106e-03,
+           3.6774e-03,  3.1281e-03],
+         [ 8.3008e-03, -4.7607e-03, -1.7090e-03,  ...,  8.2779e-04,
+           2.5749e-04, -8.0566e-03]],
+        [[ 7.1716e-03,  3.6430e-04, -4.2152e-04,  ..., -9.0027e-04,
+          -8.3618e-03,  2.4261e-03],
+         [-2.5940e-03,  6.5918e-03, -1.2207e-03,  ...,  8.9111e-03,
+           9.5215e-03,  2.1667e-03],
+         [ 9.7752e-05,  3.4637e-03, -8.2397e-03,  ...,  5.8899e-03,
+          -6.4087e-03,  2.1515e-03],
+         ...,
+         [ 8.6060e-03, -1.8768e-03,  1.9379e-03,  ..., -8.2397e-03,
+           5.9204e-03, -8.4229e-03],
+         [ 8.1787e-03,  7.9956e-03, -2.7466e-04,  ..., -5.5695e-04,
+          -3.9673e-03, -8.5449e-03],
+         [-6.6161e-06, -6.1646e-03, -1.5869e-03,  ...,  7.9346e-03,
+          -3.2234e-04, -2.8687e-03]],
+        [[ 4.0283e-03, -6.5308e-03, -2.7924e-03,  ..., -1.0395e-04,
+           7.5073e-03,  6.9580e-03],
+         [ 7.2327e-03,  6.9275e-03,  6.0730e-03,  ..., -4.0283e-03,
+          -9.5215e-03,  7.1411e-03],
+         [-9.6436e-03, -9.0942e-03, -6.9580e-03,  ..., -6.0425e-03,
+          -2.7313e-03, -9.3994e-03],
+         ...,
+         [ 2.0599e-03,  1.1520e-03,  6.9275e-03,  ...,  3.5095e-03,
+          -1.7471e-03,  2.1515e-03],
+         [ 3.8605e-03, -8.5449e-03,  4.9744e-03,  ..., -7.0496e-03,
+          -6.2256e-03,  8.4229e-03],
+         [-2.5024e-03, -6.3171e-03, -8.5449e-03,  ..., -7.9346e-03,
+          -2.0752e-03,  5.0049e-03]]], dtype=torch.bfloat16)
+0 blocks.12.att.time_maa_x tensor([[[1.0000e+00, 9.9609e-01, 9.9219e-01,  ..., 4.5776e-04,
+          3.0518e-04, 1.5259e-04]]], dtype=torch.bfloat16)
+0 blocks.12.att.value.weight tensor([[-0.0060,  0.0184, -0.0066,  ..., -0.0050, -0.0210, -0.0117],
+        [ 0.0008,  0.0129,  0.0173,  ..., -0.0005, -0.0312,  0.0284],
+        [ 0.0012, -0.0121, -0.0171,  ..., -0.0156, -0.0006,  0.0183],
+        ...,
+        [ 0.0166,  0.0045,  0.0053,  ...,  0.0146,  0.0084,  0.0181],
+        [ 0.0155, -0.0094, -0.0095,  ..., -0.0148, -0.0176,  0.0303],
+        [-0.0033, -0.0086,  0.0125,  ...,  0.0117,  0.0116, -0.0073]],
+       dtype=torch.bfloat16)
+0 blocks.12.ffn.key.weight  name: blocks.12.ffn.key.weight
+          1.4496e-04, 7.2479e-05]]], dtype=torch.bfloat16)3618e-03,
+0 blocks.13.att.time_maa_k tensor([[[1.0000e+00, 9.9219e-01, 9.8828e-01,  ..., 4.3488e-04,
+          2.8992e-04, 1.4496e-04]]], dtype=torch.bfloat16)
+0 blocks.13.att.time_maa_r tensor([[[1.0000e+00, 9.1406e-01, 8.9453e-01,  ..., 2.1744e-04,
+          1.4496e-04, 7.2479e-05]]], dtype=torch.bfloat16)
+0 blocks.13.att.time_maa_v tensor([[[ 0.8750,  0.8672,  0.8633,  ..., -0.1250, -0.1260, -0.1260]]],
+       dtype=torch.bfloat16)
+0 blocks.13.att.time_maa_w tensor([[[1.0000e+00, 9.9219e-01, 9.8828e-01,  ..., 4.3488e-04,
+          2.8992e-04, 1.4496e-04]]], dtype=torch.bfloat16)
+0 blocks.13.att.time_maa_w1 tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.13.att.time_maa_w2 tensor([[[ 0.0071, -0.0068, -0.0006,  ...,  0.0015,  0.0061, -0.0057],
+         [ 0.0044,  0.0076, -0.0040,  ..., -0.0005,  0.0095, -0.0077],
+         [-0.0022,  0.0088,  0.0001,  ..., -0.0080, -0.0006,  0.0089],
+         ...,
+         [ 0.0065,  0.0002,  0.0007,  ...,  0.0070, -0.0019, -0.0013],
+         [ 0.0073, -0.0009,  0.0078,  ...,  0.0029, -0.0083,  0.0019],
+         [-0.0063,  0.0088,  0.0055,  ...,  0.0086, -0.0092, -0.0011]],
+        [[-0.0096, -0.0090, -0.0003,  ...,  0.0018,  0.0023, -0.0028],
+         [-0.0050, -0.0089,  0.0004,  ..., -0.0079, -0.0042,  0.0016],
+         [-0.0069, -0.0023,  0.0029,  ...,  0.0047,  0.0081, -0.0081],
+         ...,
+         [ 0.0048,  0.0041,  0.0073,  ..., -0.0003, -0.0022,  0.0011],
+         [-0.0076,  0.0078, -0.0062,  ...,  0.0071, -0.0025, -0.0022],
+         [ 0.0058, -0.0095,  0.0047,  ..., -0.0045, -0.0060,  0.0005]],
+        [[ 0.0037,  0.0073,  0.0086,  ...,  0.0081, -0.0084,  0.0081],
+         [-0.0025, -0.0061, -0.0056,  ..., -0.0018, -0.0053, -0.0045],
+         [ 0.0074, -0.0044, -0.0087,  ..., -0.0055, -0.0041,  0.0068],
+         ...,
+         [ 0.0087, -0.0087, -0.0082,  ..., -0.0039, -0.0022, -0.0007],
+         [-0.0056, -0.0015,  0.0029,  ...,  0.0044,  0.0060, -0.0006],
+         [ 0.0056,  0.0046, -0.0095,  ..., -0.0018, -0.0049,  0.0085]],
+        [[-0.0080, -0.0088, -0.0073,  ...,  0.0063, -0.0035, -0.0065],
+         [ 0.0079,  0.0075, -0.0020,  ...,  0.0009,  0.0010, -0.0011],
+         [-0.0087,  0.0084, -0.0082,  ...,  0.0095, -0.0092, -0.0078],
+         ...,
+         [-0.0092, -0.0004,  0.0096,  ..., -0.0042,  0.0036,  0.0014],
+         [-0.0044, -0.0008, -0.0086,  ...,  0.0084,  0.0096, -0.0087],
+         [-0.0070,  0.0094,  0.0069,  ..., -0.0073,  0.0090, -0.0060]],
+        [[-0.0076,  0.0051, -0.0040,  ..., -0.0056,  0.0010,  0.0006],
+         [-0.0055, -0.0043, -0.0046,  ...,  0.0044, -0.0025,  0.0041],
+         [-0.0096, -0.0007, -0.0009,  ..., -0.0054,  0.0098, -0.0006],
+         ...,
+         [-0.0019, -0.0095, -0.0016,  ..., -0.0016,  0.0056,  0.0044],
+         [-0.0002, -0.0053, -0.0073,  ..., -0.0094, -0.0038,  0.0058],
+         [-0.0054,  0.0082,  0.0037,  ...,  0.0094,  0.0031,  0.0022]]],
+       dtype=torch.bfloat16)
+0 blocks.13.att.time_maa_x tensor([[[1.0000e+00, 9.9219e-01, 9.8828e-01,  ..., 4.3488e-04,
+          2.8992e-04, 1.4496e-04]]], dtype=torch.bfloat16)
+0 blocks.13.att.value.weight tensor([[-0.0085,  0.0013, -0.0110,  ..., -0.0086, -0.0056, -0.0030],
+        [ 0.0005,  0.0052,  0.0008,  ...,  0.0096,  0.0302, -0.0020],
+        [ 0.0071,  0.0197, -0.0046,  ...,  0.0069,  0.0052, -0.0078],
+        ...,
+        [-0.0136,  0.0085, -0.0244,  ..., -0.0184, -0.0212,  0.0110],
+        [-0.0215, -0.0013, -0.0126,  ...,  0.0019, -0.0009, -0.0052],
+        [-0.0013,  0.0217, -0.0090,  ..., -0.0310,  0.0119,  0.0044]],
+       dtype=torch.bfloat16)
+Progress: 162/902 | Sending name: blocks.13.ffn.key.weight
+          1.4496e-04, 7.2479e-05]]], dtype=torch.bfloat16)3618e-03,
+           4.2725e-04,  9.8267e-03], dtype=torch.bfloat16)3618e-03,
+         [-3.4027e-03,  2.8372e-05,  7.2021e-03,  ..., -2.5024e-03,
+           5.6458e-03, -4.0588e-03],
+         [-1.6708e-03, -4.3640e-03,  9.8267e-03,  ...,  1.4877e-03,
+           9.8877e-03,  4.9438e-03],
+         ...,
+         [-9.5825e-03, -1.2665e-03,  6.7139e-03,  ...,  8.1787e-03,
+          -9.3994e-03, -9.0408e-04],
+         [-3.7079e-03,  1.4725e-03, -3.4790e-03,  ..., -1.7548e-03,
+          -8.6670e-03,  3.0975e-03],
+         [-4.5471e-03, -5.8594e-03,  3.0060e-03,  ...,  2.7466e-03,
+          -3.4943e-03, -7.4005e-04]],
+        [[ 5.6763e-03, -4.7607e-03, -7.7515e-03,  ..., -4.0588e-03,
+           4.1504e-03, -3.0670e-03],
+         [-8.0566e-03, -4.7302e-03, -2.1515e-03,  ..., -5.9509e-03,
+          -3.6011e-03, -1.5259e-03],
+         [ 3.1738e-03,  2.7161e-03, -4.6997e-03,  ...,  7.6599e-03,
+          -5.0049e-03, -9.2163e-03],
+         ...,
+         [-4.8523e-03, -1.5793e-03,  3.6812e-04,  ..., -4.8218e-03,
+          -5.9204e-03, -4.0054e-04],
+         [ 8.4839e-03, -4.0588e-03,  4.0283e-03,  ...,  3.3875e-03,
+          -5.9814e-03,  2.0905e-03],
+         [-5.4016e-03, -1.1749e-03, -1.2970e-03,  ..., -8.6670e-03,
+           3.1128e-03, -6.3782e-03]]], dtype=torch.bfloat16)
+0 blocks.14.att.time_maa_x tensor([[[1.0000e+00, 9.9219e-01, 9.8438e-01,  ..., 4.1199e-04,
+          2.7466e-04, 1.3733e-04]]], dtype=torch.bfloat16)
+0 blocks.14.att.value.weight tensor([[ 0.0179,  0.0073, -0.0052,  ..., -0.0053, -0.0249, -0.0045],
+        [-0.0238, -0.0120,  0.0166,  ...,  0.0178, -0.0015, -0.0107],
+        [ 0.0016, -0.0076, -0.0052,  ...,  0.0019,  0.0025,  0.0001],
+        ...,
+        [-0.0089, -0.0093,  0.0510,  ...,  0.0134,  0.0089, -0.0074],
+        [-0.0219, -0.0209,  0.0160,  ..., -0.0024, -0.0041, -0.0148],
+        [ 0.0127,  0.0096, -0.0035,  ...,  0.0052,  0.0259,  0.0134]],
+       dtype=torch.bfloat16)
+0 blocks.14.ffn.key.weight tensor([[ 1.3367e-02, -9.0942e-03,  4.2915e-04,  ...,  1.6602e-02,
+         -1.1047e-02, -2.9755e-04],
+        [ 9.0027e-04,  7.0190e-03, -6.9580e-03,  ..., -1.1353e-02,
+         -2.7924e-03,  2.1118e-02],
+        [-4.3335e-03, -1.3977e-02,  6.7139e-03,  ..., -1.6174e-03,
+         -7.3547e-03,  1.6479e-02],
+        ...,
+        [ 3.9978e-03, -4.2725e-03, -6.9580e-03,  ..., -1.1475e-02,
+         -4.5471e-03,  3.0136e-04],
+        [-7.2937e-03, -8.9722e-03, -4.8523e-03,  ...,  7.2632e-03,
+         -3.9368e-03, -4.7607e-03],
+        [ 2.8992e-03, -6.9141e-05,  9.1553e-03,  ...,  1.0315e-02,
+          3.9673e-03,  1.1169e-02]], dtype=torch.bfloat16)
+0 blocks.14.ffn.receptance.weight tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.14.ffn.time_maa_k tensor([[[1.0000e+00, 9.9219e-01, 9.8438e-01,  ..., 4.1199e-04,
+          2.7466e-04, 1.3733e-04]]], dtype=torch.bfloat16)
+0 blocks.14.ffn.time_maa_r tensor([[[1.0000e+00, 9.9219e-01, 9.8438e-01,  ..., 4.1199e-04,
+          2.7466e-04, 1.3733e-04]]], dtype=torch.bfloat16)
+Progress: 194/902 | Sending name: blocks.14.ffn.value.weight
+        [0., 0., 0.,  ..., 0., 0., 0.],ype=torch.bfloat16)3618e-03,
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.15.att.time_maa_w2 tensor([[[-0.0035,  0.0005,  0.0025,  ...,  0.0021,  0.0071, -0.0003],
+         [-0.0030,  0.0074,  0.0064,  ...,  0.0056,  0.0082, -0.0066],
+         [ 0.0061, -0.0092,  0.0013,  ...,  0.0055, -0.0079,  0.0099],
+         ...,
+         [ 0.0076,  0.0084,  0.0046,  ...,  0.0015, -0.0060,  0.0005],
+         [ 0.0002, -0.0029,  0.0081,  ..., -0.0025,  0.0014,  0.0015],
+         [-0.0093,  0.0071,  0.0067,  ...,  0.0031, -0.0093, -0.0065]],
+        [[-0.0028,  0.0011,  0.0021,  ...,  0.0007,  0.0092,  0.0006],
+         [-0.0084,  0.0037, -0.0023,  ...,  0.0025,  0.0008, -0.0042],
+         [-0.0022,  0.0021, -0.0098,  ..., -0.0095, -0.0091, -0.0054],
+         ...,
+         [ 0.0095, -0.0017,  0.0042,  ..., -0.0007,  0.0067,  0.0090],
+         [-0.0005,  0.0054, -0.0011,  ...,  0.0089, -0.0055,  0.0095],
+         [-0.0061, -0.0023,  0.0071,  ...,  0.0037, -0.0008,  0.0063]],
+        [[ 0.0082,  0.0072, -0.0096,  ...,  0.0004,  0.0085, -0.0087],
+         [-0.0014,  0.0034,  0.0030,  ...,  0.0018, -0.0012,  0.0093],
+         [ 0.0002,  0.0087,  0.0055,  ..., -0.0007,  0.0081,  0.0023],
+         ...,
+         [-0.0007,  0.0012, -0.0046,  ...,  0.0100, -0.0030,  0.0087],
+         [-0.0035, -0.0039, -0.0024,  ..., -0.0043, -0.0042,  0.0032],
+         [-0.0023,  0.0051, -0.0073,  ...,  0.0017,  0.0047,  0.0039]],
+        [[-0.0056,  0.0036, -0.0049,  ..., -0.0066, -0.0089,  0.0054],
+         [ 0.0009,  0.0098,  0.0007,  ...,  0.0052,  0.0056,  0.0013],
+         [-0.0051, -0.0067, -0.0081,  ..., -0.0055, -0.0061,  0.0044],
+         ...,
+         [ 0.0055,  0.0012, -0.0031,  ..., -0.0025, -0.0052, -0.0027],
+         [-0.0008,  0.0013, -0.0096,  ..., -0.0050, -0.0024, -0.0054],
+         [-0.0071,  0.0098, -0.0058,  ...,  0.0080, -0.0022, -0.0089]],
+        [[-0.0046, -0.0064, -0.0031,  ..., -0.0007,  0.0032,  0.0045],
+         [ 0.0047,  0.0054,  0.0025,  ...,  0.0020, -0.0003,  0.0084],
+         [-0.0071, -0.0088, -0.0092,  ...,  0.0055,  0.0090,  0.0016],
+         ...,
+         [ 0.0019,  0.0020, -0.0084,  ...,  0.0012, -0.0037, -0.0079],
+         [-0.0014, -0.0027, -0.0091,  ..., -0.0096, -0.0060, -0.0098],
+         [ 0.0048,  0.0020, -0.0087,  ...,  0.0064,  0.0002,  0.0073]]],
+       dtype=torch.bfloat16)
+0 blocks.15.att.time_maa_x tensor([[[1.0000e+00, 9.8828e-01, 9.8438e-01,  ..., 3.8910e-04,
+          2.5940e-04, 1.2970e-04]]], dtype=torch.bfloat16)
+0 blocks.15.att.value.weight tensor([[-0.0179,  0.0255, -0.0003,  ..., -0.0046,  0.0151, -0.0437],
+        [ 0.0330, -0.0145, -0.0168,  ..., -0.0219,  0.0113, -0.0044],
+        [-0.0012, -0.0154, -0.0065,  ...,  0.0026, -0.0003, -0.0029],
+        ...,
+        [-0.0189, -0.0079, -0.0126,  ..., -0.0140, -0.0275,  0.0104],
+        [ 0.0245,  0.0015,  0.0052,  ..., -0.0140, -0.0022, -0.0139],
+        [-0.0289, -0.0121,  0.0104,  ..., -0.0102, -0.0060, -0.0140]],
+       dtype=torch.bfloat16)
+0 blocks.15.ffn.key.weight tensor([[-0.0009, -0.0128, -0.0054,  ..., -0.0018,  0.0015,  0.0019],
+        [-0.0039, -0.0104, -0.0058,  ...,  0.0013,  0.0008, -0.0070],
+        [-0.0140, -0.0027, -0.0107,  ..., -0.0066, -0.0153, -0.0103],
+        ...,
+        [ 0.0095, -0.0005,  0.0034,  ..., -0.0026,  0.0068,  0.0073],
+        [ 0.0027, -0.0117, -0.0041,  ...,  0.0039, -0.0061,  0.0139],
+        [ 0.0114,  0.0204, -0.0034,  ..., -0.0018,  0.0037, -0.0074]],
+       dtype=torch.bfloat16)
+Progress: 219/902 | Sending name: blocks.15.ffn.receptance.weight
+0 blocks.16.att.time_maa_r tensor([[[1.0000e+00, 8.7500e-01, 8.5156e-01,  ..., 1.8311e-04,
+          1.2207e-04, 6.1035e-05]]], dtype=torch.bfloat16)
+0 blocks.16.att.time_maa_v tensor([[[ 0.8438,  0.8281,  0.8242,  ..., -0.1543, -0.1543, -0.1543]]],
+       dtype=torch.bfloat16)
+0 blocks.16.att.time_maa_w tensor([[[1.0000e+00, 9.8438e-01, 9.7656e-01,  ..., 3.6621e-04,
+          2.4414e-04, 1.2207e-04]]], dtype=torch.bfloat16)
+0 blocks.16.att.time_maa_w1 tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.16.att.time_maa_w2 tensor([[[ 9.3994e-03,  4.6997e-03, -7.9346e-03,  ..., -3.5248e-03,
+          -4.0283e-03, -8.0566e-03],
+         [-8.3008e-03, -1.2512e-03,  4.2677e-05,  ...,  2.4719e-03,
+           2.1210e-03,  9.0332e-03],
+         [ 9.5825e-03,  1.1673e-03,  6.2866e-03,  ...,  4.1504e-03,
+          -1.9531e-03, -7.1106e-03],
+         ...,
+         [ 2.8992e-04,  5.3406e-03,  2.2602e-04,  ...,  5.3787e-04,
+          -7.6599e-03,  6.4087e-03],
+         [-4.6082e-03,  8.9722e-03,  5.7068e-03,  ...,  3.2806e-03,
+          -4.2114e-03,  4.8828e-03],
+         [-5.6458e-03, -5.1575e-03,  4.6997e-03,  ...,  2.8229e-03,
+          -4.7607e-03,  8.9111e-03]],
+        [[-9.0942e-03, -5.6152e-03, -9.1553e-03,  ...,  7.6294e-03,
+           5.3101e-03, -8.6670e-03],
+         [-4.0894e-03, -7.8735e-03,  6.7749e-03,  ..., -7.6294e-03,
+          -4.7302e-03, -2.1515e-03],
+         [ 5.9509e-03,  6.3171e-03, -8.7280e-03,  ...,  8.4229e-03,
+          -2.0294e-03, -2.5368e-04],
+         ...,
+         [ 1.4420e-03,  3.7384e-03,  9.8267e-03,  ...,  4.4250e-03,
+          -7.4768e-03, -5.2795e-03],
+         [-8.7738e-04,  3.7537e-03, -3.7384e-03,  ...,  8.9722e-03,
+           6.2561e-03,  9.6436e-03],
+         [ 3.5248e-03,  8.1177e-03,  7.5073e-03,  ..., -9.2163e-03,
+          -7.6294e-03,  9.2773e-03]],
+        [[-1.8082e-03, -5.0659e-03,  3.3569e-03,  ...,  8.4229e-03,
+           8.6060e-03, -9.3994e-03],
+         [ 7.5989e-03, -8.5449e-03, -4.0894e-03,  ...,  7.1716e-03,
+           4.2725e-03, -5.9204e-03],
+         [-6.9275e-03,  4.9133e-03, -8.8501e-03,  ..., -7.1716e-03,
+          -9.5825e-03, -6.8359e-03],
+         ...,
+         [-6.5994e-04,  2.2793e-04,  3.9978e-03,  ..., -6.5002e-03,
+           1.9684e-03,  4.7493e-04],
+         [ 1.1396e-04, -9.5215e-03, -1.2283e-03,  ...,  6.7444e-03,
+           8.6060e-03,  5.2795e-03],
+         [ 9.6436e-03, -3.4332e-03,  3.2196e-03,  ..., -8.8882e-04,
+           4.6692e-03, -2.2125e-04]],
+        [[ 8.7891e-03,  9.6436e-03, -5.2795e-03,  ..., -6.6223e-03,
+          -4.6692e-03,  6.4697e-03],
+         [-2.5368e-04,  5.3101e-03,  4.5471e-03,  ...,  7.7515e-03,
+          -3.3417e-03, -9.8877e-03],
+         [ 3.2043e-03, -3.3569e-03,  9.7046e-03,  ..., -7.7515e-03,
+           7.8125e-03,  5.6152e-03],
+         ...,
+         [-6.2256e-03, -8.6670e-03, -7.1716e-03,  ..., -6.8970e-03,
+           6.1035e-03, -7.7209e-03],
+         [ 4.8523e-03,  4.2915e-04, -2.1210e-03,  ...,  9.0332e-03,
+           8.9407e-06, -3.3417e-03],
+         [-2.7537e-05,  3.7231e-03,  6.5002e-03,  ..., -5.5134e-06,
+          -2.9297e-03, -4.5776e-03]],
+        [[-3.4027e-03, -5.7068e-03,  3.2654e-03,  ..., -9.3384e-03,
+          -9.0332e-03, -1.6308e-04],
+         [ 6.3477e-03,  7.5989e-03,  9.6436e-03,  ...,  7.3853e-03,
+          -7.2327e-03, -2.9755e-03],
+         [ 4.3030e-03,  4.9744e-03, -5.4932e-03,  ...,  5.2261e-04,
+          -7.1106e-03,  2.6855e-03],
+         ...,
+         [ 6.9885e-03,  7.3853e-03, -9.4223e-04,  ..., -9.9487e-03,
+          -1.8311e-03, -2.3041e-03],
+         [-3.1433e-03,  9.0942e-03,  6.5308e-03,  ..., -1.1826e-03,
+           9.3384e-03,  3.4485e-03],
+         [-4.4250e-03, -7.2632e-03, -8.7891e-03,  ...,  2.8076e-03,
+           1.5640e-03, -4.6387e-03]]], dtype=torch.bfloat16)
+0 blocks.16.att.time_maa_x tensor([[[1.0000e+00, 9.8438e-01, 9.7656e-01,  ..., 3.6621e-04,
+          2.4414e-04, 1.2207e-04]]], dtype=torch.bfloat16)
+0 blocks.16.att.value.weight tensor([[-0.0094, -0.0347, -0.0066,  ..., -0.0320, -0.0156, -0.0154],
+        [-0.0193, -0.0170,  0.0069,  ..., -0.0126,  0.0078, -0.0077],
+        [ 0.0288, -0.0057,  0.0322,  ...,  0.0176,  0.0024,  0.0135],
+        ...,
+        [-0.0084, -0.0427, -0.0076,  ...,  0.0009,  0.0155,  0.0471],
+        [ 0.0121, -0.0061, -0.0046,  ..., -0.0003,  0.0051, -0.0072],
+        [-0.0233, -0.0100,  0.0194,  ...,  0.0181, -0.0164,  0.0244]],
+       dtype=torch.bfloat16)
+Progress: 246/902 | Sending name: blocks.16.ffn.key.weight
+0 blocks.16.att.time_maa_r tensor([[[1.0000e+00, 8.7500e-01, 8.5156e-01,  ..., 1.8311e-04,
+           6.9885e-03,  2.7466e-03],[1.0000e+00, 8.7500e-01, 8.5156e-01,  ..., 1.8311e-04,
+         [ 2.7161e-03,  3.9673e-03, -9.2163e-03,  ...,  8.2397e-03,
+          -1.1292e-03, -9.7046e-03],
+         [ 7.8125e-03, -3.8757e-03, -3.6621e-03,  ..., -5.4626e-03,
+          -8.1177e-03, -7.6904e-03]],
+        [[ 2.5635e-03,  8.8501e-03, -3.2043e-03,  ..., -5.0659e-03,
+           8.3008e-03,  5.9509e-03],
+         [-3.8300e-03, -6.4468e-04,  8.4229e-03,  ..., -5.9204e-03,
+          -3.4180e-03, -8.9722e-03],
+         [-6.3171e-03, -6.8665e-03,  2.5177e-03,  ..., -4.6387e-03,
+           8.4229e-03, -7.1411e-03],
+         ...,
+         [ 3.6926e-03,  9.0332e-03, -1.0376e-03,  ...,  6.5613e-03,
+           3.0212e-03, -3.7384e-03],
+         [-8.4839e-03, -2.4414e-03, -5.6458e-04,  ..., -3.1891e-03,
+          -3.3264e-03, -7.5684e-03],
+         [-7.8735e-03, -4.3335e-03,  9.0942e-03,  ..., -6.8359e-03,
+           9.8267e-03, -4.6082e-03]]], dtype=torch.bfloat16)
+0 blocks.17.att.time_maa_x tensor([[[1.0000e+00, 9.8047e-01, 9.7266e-01,  ..., 3.4332e-04,
+          2.2888e-04, 1.1444e-04]]], dtype=torch.bfloat16)
+0 blocks.17.att.value.weight tensor([[ 0.0038,  0.0129, -0.0242,  ..., -0.0066, -0.0104,  0.0244],
+        [ 0.0200, -0.0099, -0.0076,  ...,  0.0193, -0.0171, -0.0091],
+        [ 0.0082,  0.0100,  0.0244,  ...,  0.0069,  0.0076,  0.0164],
+        ...,
+        [-0.0186,  0.0197,  0.0123,  ..., -0.0057, -0.0194, -0.0170],
+        [-0.0044, -0.0101, -0.0135,  ...,  0.0190,  0.0211, -0.0157],
+        [-0.0145, -0.0315, -0.0087,  ..., -0.0121, -0.0030, -0.0299]],
+       dtype=torch.bfloat16)
+0 blocks.17.ffn.key.weight tensor([[-3.1891e-03, -3.5400e-03, -1.5945e-03,  ...,  3.2234e-04,
+         -1.1414e-02, -1.1520e-03],
+        [ 9.0942e-03,  5.6763e-03,  7.7515e-03,  ..., -1.0529e-03,
+          4.8523e-03, -3.0670e-03],
+        [ 4.0588e-03,  1.1597e-02, -1.4771e-02,  ..., -2.0142e-02,
+         -1.1597e-02, -1.6556e-03],
+        ...,
+        [ 7.6904e-03, -1.1292e-02,  3.6163e-03,  ..., -5.3711e-03,
+          1.2207e-02, -4.2725e-03],
+        [ 9.6321e-05, -1.4587e-02, -8.7891e-03,  ...,  5.3101e-03,
+          7.3547e-03,  3.4027e-03],
+        [ 3.1586e-03, -9.1934e-04,  8.9722e-03,  ..., -9.0332e-03,
+         -1.5945e-03, -1.1673e-03]], dtype=torch.bfloat16)
+0 blocks.17.ffn.receptance.weight tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.17.ffn.time_maa_k tensor([[[1.0000e+00, 9.8047e-01, 9.7266e-01,  ..., 3.4332e-04,
+          2.2888e-04, 1.1444e-04]]], dtype=torch.bfloat16)
+0 blocks.17.ffn.time_maa_r tensor([[[1.0000e+00, 9.8047e-01, 9.7266e-01,  ..., 3.4332e-04,
+          2.2888e-04, 1.1444e-04]]], dtype=torch.bfloat16)
+0 blocks.17.ffn.value.weight ame: blocks.17.ffn.value.weight
+           4.1199e-03, -7.1411e-03],[1.0000e+00, 8.7500e-01, 8.5156e-01,  ..., 1.8311e-04,
+         [ 2.3499e-03, -8.5449e-03, -8.8882e-04,  ...,  7.2632e-03,
+           6.1646e-03, -5.7983e-03],
+         ...,
+         [ 7.2327e-03,  8.1177e-03, -2.0142e-03,  ...,  1.5640e-03,
+           4.8218e-03, -2.3651e-03],
+         [ 2.6245e-03, -7.1411e-03, -1.5335e-03,  ...,  3.9673e-03,
+           1.9684e-03, -9.1553e-03],
+         [-3.0212e-03,  1.2589e-03, -7.6294e-03,  ...,  7.3853e-03,
+          -9.3384e-03,  8.2397e-03]],
+        [[ 5.6763e-03, -2.0599e-03, -5.8594e-03,  ..., -5.5847e-03,
+          -3.6163e-03, -8.0566e-03],
+         [-9.3384e-03,  3.5248e-03, -5.7983e-03,  ...,  8.4229e-03,
+          -9.1171e-04, -2.5177e-04],
+         [-5.3406e-03,  6.0730e-03, -5.1880e-03,  ...,  7.3242e-03,
+          -9.8267e-03, -2.5024e-03],
+         ...,
+         [-5.5542e-03,  1.8311e-03, -8.9722e-03,  ...,  7.7515e-03,
+          -4.7913e-03,  2.3041e-03],
+         [-1.2360e-03,  5.6152e-03,  1.6251e-03,  ..., -1.1673e-03,
+          -4.0588e-03,  3.2654e-03],
+         [-3.8605e-03, -7.4768e-03, -3.6774e-03,  ..., -4.5776e-03,
+           7.3242e-03,  7.3242e-03]],
+        [[-6.9275e-03,  7.6294e-03, -1.3962e-03,  ..., -2.3651e-03,
+           7.9346e-03, -6.8054e-03],
+         [-7.4768e-03,  7.2632e-03, -7.9346e-03,  ...,  3.4714e-04,
+           1.8768e-03,  9.5825e-03],
+         [-9.5825e-03,  9.0332e-03,  3.4180e-03,  ...,  5.9814e-03,
+          -2.7161e-03,  8.3618e-03],
+         ...,
+         [ 4.1809e-03, -1.7166e-03,  1.7700e-03,  ..., -8.7891e-03,
+           1.1861e-05,  1.4782e-04],
+         [-6.3477e-03,  1.8158e-03,  5.1270e-03,  ...,  5.4626e-03,
+          -7.3242e-04, -5.8899e-03],
+         [-5.3101e-03,  6.3782e-03, -5.0354e-03,  ...,  5.5542e-03,
+          -2.7161e-03, -5.0659e-03]],
+        [[ 2.5635e-03, -8.3008e-03, -7.1411e-03,  ..., -2.2278e-03,
+          -8.3618e-03,  9.3384e-03],
+         [ 3.4027e-03,  5.4626e-03, -1.8387e-03,  ..., -2.2888e-03,
+           6.4087e-03, -3.3875e-03],
+         [-5.9128e-04, -9.3384e-03,  3.4485e-03,  ...,  9.3384e-03,
+           8.1177e-03, -6.6223e-03],
+         ...,
+         [-3.2959e-03, -6.8359e-03, -6.6833e-03,  ..., -6.5613e-03,
+          -8.9722e-03, -7.4768e-04],
+         [-9.0942e-03,  6.7444e-03, -2.1515e-03,  ...,  4.5471e-03,
+           9.7656e-03,  5.6763e-03],
+         [ 7.5989e-03, -2.6550e-03,  3.1738e-03,  ..., -9.2163e-03,
+          -6.5308e-03,  5.5542e-03]],
+        [[ 3.0060e-03,  4.5776e-03, -4.9744e-03,  ..., -6.2256e-03,
+          -9.3994e-03, -4.0588e-03],
+         [ 2.8839e-03,  8.0566e-03,  1.1063e-03,  ..., -7.5989e-03,
+          -7.5684e-03, -9.1553e-03],
+         [-7.4463e-03, -2.4872e-03, -5.5542e-03,  ...,  8.7280e-03,
+          -3.2043e-03, -8.3008e-03],
+         ...,
+         [-2.3804e-03, -1.1139e-03,  2.3651e-03,  ..., -2.4719e-03,
+          -4.3030e-03,  4.1199e-03],
+         [ 8.6060e-03, -1.6174e-03, -7.8125e-03,  ..., -7.4158e-03,
+           7.9346e-03, -4.1199e-03],
+         [-7.0496e-03,  4.5166e-03, -7.2937e-03,  ..., -7.2632e-03,
+           3.6011e-03,  9.2773e-03]]], dtype=torch.bfloat16)
+0 blocks.18.att.time_maa_x tensor([[[1.0000e+00, 9.7266e-01, 9.6484e-01,  ..., 3.2043e-04,
+          2.1362e-04, 1.0681e-04]]], dtype=torch.bfloat16)
+0 blocks.18.att.value.weight tensor([[ 0.0019, -0.0008,  0.0102,  ..., -0.0006,  0.0171,  0.0009],
+        [ 0.0109,  0.0037, -0.0124,  ..., -0.0154, -0.0128,  0.0012],
+        [-0.0074, -0.0388, -0.0003,  ...,  0.0178,  0.0012, -0.0049],
+        ...,
+        [ 0.0060, -0.0063, -0.0200,  ..., -0.0244,  0.0008,  0.0216],
+        [-0.0008,  0.0090, -0.0005,  ...,  0.0059, -0.0177, -0.0234],
+        [-0.0021, -0.0349, -0.0012,  ...,  0.0040, -0.0204,  0.0361]],
+       dtype=torch.bfloat16)
+0 blocks.18.ffn.key.weight tensor([[ 0.0063,  0.0099, -0.0026,  ...,  0.0031,  0.0055,  0.0055],
+        [ 0.0094, -0.0003,  0.0052,  ...,  0.0097,  0.0205,  0.0045],
+        [-0.0199,  0.0037,  0.0050,  ..., -0.0027, -0.0041, -0.0093],
+        ...,
+        [ 0.0056,  0.0073, -0.0027,  ...,  0.0014,  0.0042, -0.0096],
+        [-0.0038, -0.0122, -0.0107,  ...,  0.0019, -0.0002, -0.0091],
+        [ 0.0025, -0.0134,  0.0023,  ..., -0.0058,  0.0014, -0.0036]],
+       dtype=torch.bfloat16)
+0 blocks.18.ffn.receptance.weight blocks.18.ffn.receptance.weight
+          1.9836e-04, 9.9182e-05]]], dtype=torch.bfloat16)1, 8.5156e-01,  ..., 1.8311e-04,
+0 blocks.19.att.time_maa_w1 tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.19.att.time_maa_w2 tensor([[[ 9.6436e-03,  2.4719e-03,  5.0659e-03,  ...,  4.4823e-04,
+          -3.8757e-03, -5.7068e-03],
+         [ 4.9973e-04,  5.2185e-03, -2.2278e-03,  ..., -9.7656e-04,
+          -1.7166e-03, -7.4768e-03],
+         [ 6.4697e-03, -4.1008e-04,  8.7891e-03,  ...,  9.9487e-03,
+          -1.2589e-04,  5.4016e-03],
+         ...,
+         [ 5.0964e-03,  8.4229e-03, -8.6060e-03,  ..., -1.0010e-02,
+           4.9744e-03, -6.6833e-03],
+         [ 3.4180e-03,  7.8125e-03, -3.9062e-03,  ...,  5.7983e-03,
+           9.8267e-03,  3.7689e-03],
+         [ 4.2419e-03, -8.5449e-03,  6.7749e-03,  ..., -5.5847e-03,
+           9.4604e-03,  2.3193e-03]],
+        [[ 1.1520e-03, -6.4087e-03,  1.8921e-03,  ...,  7.2021e-03,
+           2.2888e-03, -7.8735e-03],
+         [ 8.7280e-03, -7.9346e-03, -7.1716e-03,  ...,  3.4485e-03,
+          -9.1553e-04, -4.7913e-03],
+         [ 8.7891e-03, -5.1270e-03,  5.4016e-03,  ...,  5.3711e-03,
+           9.3994e-03, -5.2185e-03],
+         ...,
+         [ 7.9346e-03,  6.0120e-03, -2.1362e-03,  ...,  4.8065e-04,
+           3.9978e-03, -1.5793e-03],
+         [-3.1662e-04, -1.5182e-03, -6.7444e-03,  ...,  5.3101e-03,
+          -5.3406e-03,  8.9722e-03],
+         [ 7.9956e-03, -6.2256e-03,  9.0942e-03,  ..., -4.1771e-04,
+          -7.8964e-04,  1.6632e-03]],
+        [[-9.6436e-03,  8.6060e-03,  6.0120e-03,  ..., -6.0425e-03,
+          -5.0659e-03,  4.1809e-03],
+         [-9.3384e-03, -3.5553e-03,  4.9133e-03,  ..., -9.5215e-03,
+           3.1433e-03,  8.6670e-03],
+         [ 6.7749e-03, -9.5215e-03,  9.8267e-03,  ..., -8.7891e-03,
+          -4.6158e-04, -7.4005e-04],
+         ...,
+         [-5.2185e-03, -5.3101e-03,  4.2725e-04,  ...,  6.6223e-03,
+           3.4332e-03,  5.2490e-03],
+         [-6.4697e-03,  3.2806e-03, -6.6528e-03,  ..., -1.5030e-03,
+           7.1106e-03,  4.7913e-03],
+         [-2.5558e-04, -7.8735e-03,  7.8735e-03,  ..., -6.7139e-03,
+           8.4839e-03, -7.5378e-03]],
+        [[-2.0599e-03,  6.4087e-03,  3.7384e-03,  ...,  1.6556e-03,
+          -5.5237e-03, -2.5749e-05],
+         [ 2.0752e-03,  5.6458e-03, -4.1809e-03,  ...,  1.8158e-03,
+           1.6689e-04, -3.4027e-03],
+         [ 2.6245e-03,  8.5449e-03,  5.4932e-03,  ...,  2.9755e-03,
+          -3.1586e-03, -2.3346e-03],
+         ...,
+         [ 3.5248e-03, -5.1270e-03,  8.1787e-03,  ...,  6.8665e-03,
+           6.9809e-04,  2.1973e-03],
+         [-2.0447e-03, -4.2114e-03,  9.5825e-03,  ..., -9.8877e-03,
+          -9.8877e-03,  7.8125e-03],
+         [-4.5471e-03,  1.3885e-03,  2.1973e-03,  ...,  1.6403e-04,
+          -2.9907e-03, -5.7068e-03]],
+        [[ 7.3242e-03, -3.7384e-04,  9.1553e-03,  ...,  1.1292e-03,
+          -8.2397e-03,  8.3008e-03],
+         [ 8.7280e-03, -6.6223e-03, -4.2114e-03,  ..., -9.7656e-03,
+           8.8501e-03, -1.1292e-03],
+         [-5.1880e-03, -9.8877e-03, -8.9722e-03,  ..., -4.2419e-03,
+          -4.6997e-03, -9.2697e-04],
+         ...,
+         [-4.1199e-03, -3.8910e-03,  6.3477e-03,  ..., -3.5095e-03,
+          -3.2959e-03, -3.0518e-03],
+         [ 9.7656e-03,  5.4321e-03, -7.0190e-03,  ..., -3.6240e-04,
+          -7.5912e-04,  4.6082e-03],
+         [ 7.1335e-04, -3.2349e-03,  3.6316e-03,  ...,  8.0109e-04,
+           1.6785e-03,  6.4392e-03]]], dtype=torch.bfloat16)
+0 blocks.19.att.time_maa_x tensor([[[1.0000e+00, 9.6484e-01, 9.5312e-01,  ..., 2.9755e-04,
+          1.9836e-04, 9.9182e-05]]], dtype=torch.bfloat16)
+0 blocks.19.att.value.weight tensor([[-0.0217,  0.0047, -0.0113,  ..., -0.0183,  0.0044, -0.0277],
+        [ 0.0042,  0.0170,  0.0125,  ...,  0.0026, -0.0087, -0.0026],
+        [-0.0356,  0.0164,  0.0050,  ...,  0.0291,  0.0092, -0.0016],
+        ...,
+        [-0.0079,  0.0142,  0.0044,  ...,  0.0186, -0.0297, -0.0080],
+        [-0.0072, -0.0247,  0.0099,  ..., -0.0064,  0.0044,  0.0217],
+        [ 0.0266, -0.0004, -0.0136,  ..., -0.0142,  0.0391, -0.0165]],
+       dtype=torch.bfloat16)
+Progress: 330/902 | Sending name: blocks.19.ffn.key.weight
+          1.9836e-04, 9.9182e-05]]], dtype=torch.bfloat16)1, 8.5156e-01,  ..., 1.8311e-04,
+           9.2163e-03, -3.1738e-03], dtype=torch.bfloat16)1, 8.5156e-01,  ..., 1.8311e-04,
+         [ 5.6458e-03, -4.9438e-03,  7.1716e-03,  ...,  5.3787e-04,
+           9.4604e-03, -2.2888e-03],
+         [ 1.4496e-03,  6.5613e-03, -8.0566e-03,  ..., -2.7466e-03,
+          -1.2894e-03, -9.5825e-03],
+         ...,
+         [-2.8534e-03,  3.8452e-03, -5.1575e-03,  ..., -1.8501e-04,
+           4.9744e-03, -5.1270e-03],
+         [-6.7444e-03,  6.1340e-03,  9.3384e-03,  ..., -6.1035e-03,
+           4.1962e-04, -7.4463e-03],
+         [-4.3335e-03, -5.6152e-03, -9.3994e-03,  ..., -5.2643e-04,
+          -2.2888e-03,  2.1057e-03]],
+        [[-7.5912e-04,  8.4839e-03, -5.5237e-03,  ...,  1.0986e-03,
+          -6.8665e-03, -5.2490e-03],
+         [-5.6763e-03,  6.9275e-03, -5.0049e-03,  ..., -4.4250e-03,
+           3.4027e-03,  4.6692e-03],
+         [-2.7313e-03, -3.5858e-04, -5.9509e-03,  ..., -7.5531e-04,
+          -6.2256e-03,  5.9814e-03],
+         ...,
+         [ 3.8910e-03,  3.7689e-03, -1.5945e-03,  ...,  2.6855e-03,
+          -2.3499e-03,  3.7384e-03],
+         [-3.4027e-03,  2.3041e-03, -9.8877e-03,  ..., -4.0283e-03,
+          -1.3123e-03,  8.6060e-03],
+         [ 2.8992e-03, -8.2397e-03,  7.4463e-03,  ...,  7.8735e-03,
+          -5.5237e-03,  9.5215e-03]]], dtype=torch.bfloat16)
+0 blocks.2.att.time_maa_x tensor([[[1.0000e+00, 1.0000e+00, 1.0000e+00,  ..., 6.8665e-04,
+          4.5776e-04, 2.2888e-04]]], dtype=torch.bfloat16)
+0 blocks.2.att.value.weight tensor([[ 0.0140, -0.0173,  0.0309,  ..., -0.0021, -0.0276,  0.0090],
+        [-0.0152, -0.0087,  0.0159,  ..., -0.0312, -0.0084, -0.0192],
+        [-0.0106, -0.0013, -0.0063,  ...,  0.0089, -0.0209,  0.0099],
+        ...,
+        [ 0.0278, -0.0028, -0.0167,  ..., -0.0055,  0.0311, -0.0286],
+        [-0.0160, -0.0082,  0.0040,  ..., -0.0203,  0.0090,  0.0186],
+        [-0.0038,  0.0047,  0.0061,  ...,  0.0107,  0.0302,  0.0157]],
+       dtype=torch.bfloat16)
+0 blocks.2.ffn.key.weight tensor([[ 0.0129, -0.0106,  0.0056,  ..., -0.0019,  0.0101,  0.0052],
+        [-0.0099, -0.0088, -0.0007,  ..., -0.0004,  0.0132,  0.0021],
+        [-0.0017, -0.0049,  0.0125,  ...,  0.0013, -0.0002,  0.0040],
+        ...,
+        [ 0.0084,  0.0013, -0.0082,  ...,  0.0111,  0.0002,  0.0137],
+        [-0.0058, -0.0098,  0.0068,  ..., -0.0112, -0.0044,  0.0020],
+        [-0.0017, -0.0057,  0.0041,  ...,  0.0054, -0.0005, -0.0062]],
+       dtype=torch.bfloat16)
+0 blocks.2.ffn.receptance.weight tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.2.ffn.time_maa_k tensor([[[1.0000e+00, 1.0000e+00, 1.0000e+00,  ..., 6.8665e-04,
+          4.5776e-04, 2.2888e-04]]], dtype=torch.bfloat16)
+0 blocks.2.ffn.time_maa_r tensor([[[1.0000e+00, 1.0000e+00, 1.0000e+00,  ..., 6.8665e-04,
+          4.5776e-04, 2.2888e-04]]], dtype=torch.bfloat16)
+Progress: 362/902 | Sending name: blocks.2.ffn.value.weight
+         ...,2163e-03, -3.1738e-03], dtype=torch.bfloat16)1, 8.5156e-01,  ..., 1.8311e-04,
+         [-0.0098,  0.0081, -0.0037,  ...,  0.0022, -0.0033,  0.0043],
+         [-0.0032, -0.0066, -0.0085,  ...,  0.0012,  0.0096, -0.0002],
+         [-0.0070, -0.0004,  0.0055,  ..., -0.0054,  0.0060,  0.0053]],
+        [[ 0.0071, -0.0068,  0.0044,  ..., -0.0022, -0.0027, -0.0068],
+         [-0.0099,  0.0052,  0.0093,  ..., -0.0009,  0.0096, -0.0003],
+         [-0.0019,  0.0092,  0.0037,  ..., -0.0019,  0.0065, -0.0095],
+         ...,
+         [ 0.0080,  0.0074, -0.0065,  ...,  0.0095,  0.0072,  0.0085],
+         [ 0.0033,  0.0093, -0.0004,  ..., -0.0031,  0.0011, -0.0031],
+         [ 0.0031, -0.0089, -0.0003,  ...,  0.0076,  0.0052, -0.0008]],
+        [[ 0.0053, -0.0026,  0.0068,  ...,  0.0033, -0.0023,  0.0081],
+         [ 0.0033,  0.0048, -0.0062,  ..., -0.0033, -0.0023,  0.0014],
+         [-0.0086,  0.0077, -0.0020,  ...,  0.0074, -0.0053, -0.0078],
+         ...,
+         [ 0.0002, -0.0051,  0.0060,  ...,  0.0007,  0.0077,  0.0050],
+         [ 0.0080,  0.0099,  0.0085,  ...,  0.0054,  0.0003,  0.0044],
+         [-0.0028, -0.0009,  0.0002,  ..., -0.0054, -0.0037, -0.0025]],
+        [[-0.0063, -0.0094,  0.0022,  ..., -0.0005,  0.0096,  0.0061],
+         [-0.0057,  0.0026,  0.0071,  ..., -0.0061,  0.0036, -0.0071],
+         [ 0.0064,  0.0074, -0.0059,  ...,  0.0019,  0.0016, -0.0056],
+         ...,
+         [-0.0034,  0.0045,  0.0070,  ...,  0.0006,  0.0065, -0.0045],
+         [ 0.0045,  0.0077, -0.0031,  ...,  0.0049,  0.0049, -0.0100],
+         [-0.0033,  0.0048,  0.0018,  ..., -0.0012, -0.0001,  0.0027]],
+        [[ 0.0030, -0.0064,  0.0022,  ..., -0.0060, -0.0036, -0.0034],
+         [ 0.0036, -0.0057,  0.0040,  ..., -0.0027, -0.0047, -0.0039],
+         [-0.0086, -0.0030, -0.0069,  ...,  0.0009, -0.0096, -0.0053],
+         ...,
+         [ 0.0008, -0.0055,  0.0003,  ..., -0.0028,  0.0086, -0.0013],
+         [-0.0080,  0.0035, -0.0025,  ...,  0.0005,  0.0064,  0.0066],
+         [ 0.0046, -0.0071,  0.0070,  ...,  0.0035,  0.0095,  0.0085]]],
+       dtype=torch.bfloat16)
+0 blocks.20.att.time_maa_x tensor([[[1.0000e+00, 9.5703e-01, 9.4141e-01,  ..., 2.7466e-04,
+          1.8311e-04, 9.1553e-05]]], dtype=torch.bfloat16)
+0 blocks.20.att.value.weight tensor([[-0.0034, -0.0007, -0.0018,  ..., -0.0150,  0.0125,  0.0175],
+        [-0.0220,  0.0119,  0.0035,  ..., -0.0177,  0.0059,  0.0029],
+        [-0.0107,  0.0064, -0.0043,  ...,  0.0099,  0.0036, -0.0099],
+        ...,
+        [ 0.0126, -0.0024,  0.0045,  ..., -0.0117,  0.0223, -0.0080],
+        [-0.0267,  0.0209,  0.0143,  ..., -0.0154,  0.0075,  0.0227],
+        [ 0.0201, -0.0031,  0.0052,  ...,  0.0186,  0.0168,  0.0221]],
+       dtype=torch.bfloat16)
+0 blocks.20.ffn.key.weight tensor([[-0.0111,  0.0157, -0.0040,  ...,  0.0043,  0.0030, -0.0103],
+        [ 0.0068,  0.0080, -0.0046,  ..., -0.0123, -0.0161, -0.0038],
+        [-0.0064,  0.0245,  0.0062,  ..., -0.0068,  0.0055, -0.0031],
+        ...,
+        [-0.0002,  0.0087, -0.0085,  ...,  0.0132, -0.0127,  0.0033],
+        [ 0.0103,  0.0122, -0.0042,  ...,  0.0071,  0.0004, -0.0038],
+        [-0.0016, -0.0103,  0.0067,  ..., -0.0037, -0.0018,  0.0042]],
+       dtype=torch.bfloat16)
+Progress: 387/902 | Sending name: blocks.20.ffn.receptance.weight
+          1.6785e-04, 8.3923e-05]]], dtype=torch.bfloat16)1, 8.5156e-01,  ..., 1.8311e-04,
+0 blocks.21.att.time_maa_w1 tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.21.att.time_maa_w2 tensor([[[ 0.0031,  0.0034, -0.0090,  ...,  0.0088,  0.0011, -0.0053],
+         [-0.0042, -0.0063, -0.0018,  ..., -0.0050,  0.0013,  0.0050],
+         [ 0.0004,  0.0002, -0.0039,  ...,  0.0076, -0.0067,  0.0012],
+         ...,
+         [ 0.0039,  0.0020,  0.0023,  ..., -0.0057, -0.0026, -0.0003],
+         [-0.0015,  0.0077,  0.0004,  ..., -0.0037,  0.0082, -0.0056],
+         [-0.0026,  0.0075,  0.0075,  ...,  0.0016, -0.0042, -0.0084]],
+        [[-0.0013,  0.0017,  0.0002,  ...,  0.0066, -0.0099,  0.0043],
+         [-0.0054, -0.0099,  0.0018,  ...,  0.0036, -0.0010,  0.0023],
+         [ 0.0017,  0.0084, -0.0082,  ..., -0.0021, -0.0079,  0.0067],
+         ...,
+         [ 0.0003,  0.0049, -0.0080,  ..., -0.0023, -0.0082, -0.0091],
+         [ 0.0065, -0.0033, -0.0027,  ...,  0.0006, -0.0057, -0.0048],
+         [-0.0021, -0.0064,  0.0052,  ...,  0.0074,  0.0070,  0.0077]],
+        [[ 0.0033,  0.0051, -0.0096,  ...,  0.0092,  0.0072,  0.0082],
+         [-0.0068, -0.0090, -0.0090,  ..., -0.0065,  0.0052, -0.0005],
+         [ 0.0090, -0.0019,  0.0054,  ..., -0.0041,  0.0099, -0.0082],
+         ...,
+         [ 0.0058,  0.0087, -0.0057,  ..., -0.0082,  0.0024, -0.0035],
+         [ 0.0093, -0.0038,  0.0025,  ..., -0.0070, -0.0020,  0.0038],
+         [ 0.0093,  0.0007, -0.0087,  ..., -0.0051, -0.0038,  0.0079]],
+        [[ 0.0072, -0.0043, -0.0071,  ..., -0.0076, -0.0041, -0.0089],
+         [-0.0025, -0.0015, -0.0008,  ..., -0.0020, -0.0056,  0.0085],
+         [ 0.0091, -0.0017,  0.0067,  ..., -0.0012, -0.0019,  0.0098],
+         ...,
+         [ 0.0067,  0.0009, -0.0023,  ...,  0.0098, -0.0016, -0.0061],
+         [-0.0008, -0.0031,  0.0077,  ...,  0.0094, -0.0028, -0.0078],
+         [ 0.0072,  0.0006, -0.0041,  ..., -0.0021, -0.0096,  0.0086]],
+        [[-0.0008, -0.0061, -0.0096,  ...,  0.0056,  0.0010, -0.0022],
+         [-0.0034, -0.0072, -0.0083,  ...,  0.0016,  0.0061, -0.0030],
+         [-0.0066, -0.0074,  0.0084,  ..., -0.0057,  0.0064, -0.0098],
+         ...,
+         [-0.0098, -0.0079, -0.0053,  ..., -0.0078,  0.0029, -0.0096],
+         [-0.0018,  0.0071,  0.0020,  ...,  0.0037,  0.0090,  0.0048],
+         [ 0.0002, -0.0026,  0.0065,  ...,  0.0092,  0.0030,  0.0059]]],
+       dtype=torch.bfloat16)
+0 blocks.21.att.time_maa_x tensor([[[1.0000e+00, 9.4141e-01, 9.2578e-01,  ..., 2.5177e-04,
+          1.6785e-04, 8.3923e-05]]], dtype=torch.bfloat16)
+0 blocks.21.att.value.weight tensor([[ 0.0001,  0.0049,  0.0111,  ...,  0.0099,  0.0021,  0.0227],
+        [-0.0153,  0.0110,  0.0064,  ..., -0.0070,  0.0376, -0.0072],
+        [-0.0126, -0.0042,  0.0101,  ..., -0.0090, -0.0014,  0.0112],
+        ...,
+        [ 0.0311, -0.0085, -0.0167,  ...,  0.0151,  0.0095, -0.0222],
+        [ 0.0017,  0.0172,  0.0016,  ...,  0.0040,  0.0315,  0.0376],
+        [ 0.0038,  0.0200, -0.0182,  ...,  0.0137, -0.0091, -0.0029]],
+       dtype=torch.bfloat16)
+Progress: 414/902 | Sending name: blocks.21.ffn.key.weight
+          1.6785e-04, 8.3923e-05]]], dtype=torch.bfloat16)1, 8.5156e-01,  ..., 1.8311e-04,
+         [-7.5378e-03,  9.8267e-03, -1.0452e-03,  ...,  6.5002e-03,e-01,  ..., 1.8311e-04,
+          -3.3722e-03,  5.1270e-03],
+         [-3.0060e-03, -9.7046e-03, -3.4637e-03,  ...,  9.7046e-03,
+           2.8381e-03,  9.7046e-03]],
+        [[ 2.3499e-03, -7.4768e-03,  9.7046e-03,  ..., -8.6670e-03,
+          -7.0496e-03, -2.7008e-03],
+         [-2.1362e-03,  8.3008e-03, -2.0752e-03,  ...,  3.5400e-03,
+           8.3618e-03, -8.7280e-03],
+         [-6.1035e-03,  7.4158e-03, -6.9275e-03,  ..., -5.7373e-03,
+           5.6458e-03,  5.8899e-03],
+         ...,
+         [ 5.9128e-04,  6.8970e-03, -5.8289e-03,  ...,  8.6670e-03,
+          -4.1809e-03,  5.8289e-03],
+         [ 9.5215e-03, -3.0212e-03,  7.8735e-03,  ...,  2.2736e-03,
+           7.5989e-03,  8.5449e-03],
+         [-2.8839e-03,  7.6904e-03,  3.2196e-03,  ..., -5.6458e-03,
+           1.6022e-03,  1.3046e-03]],
+        [[-9.4604e-03,  7.4463e-03,  7.7209e-03,  ...,  9.7656e-03,
+          -9.8267e-03, -1.1139e-03],
+         [-1.9455e-03,  8.8501e-03, -7.5684e-03,  ..., -2.3193e-03,
+          -8.6670e-03, -9.7656e-03],
+         [ 7.6599e-03, -4.7493e-04,  2.5787e-03,  ...,  8.1177e-03,
+          -8.9722e-03,  3.8300e-03],
+         ...,
+         [-8.6060e-03,  6.0120e-03, -5.5313e-04,  ..., -3.5553e-03,
+          -6.2943e-05, -2.3651e-03],
+         [ 4.5776e-03,  7.5989e-03, -1.0204e-04,  ...,  3.8605e-03,
+          -7.9956e-03, -2.4414e-03],
+         [-7.6599e-03, -1.8234e-03,  8.6670e-03,  ..., -4.3335e-03,
+           1.1902e-03,  6.5918e-03]]], dtype=torch.bfloat16)
+0 blocks.22.att.time_maa_x tensor([[[1.0000e+00, 9.2578e-01, 9.0625e-01,  ..., 2.2888e-04,
+          1.5259e-04, 7.6294e-05]]], dtype=torch.bfloat16)
+0 blocks.22.att.value.weight tensor([[ 0.0210,  0.0047,  0.0199,  ..., -0.0134, -0.0093,  0.0271],
+        [ 0.0030, -0.0114, -0.0125,  ..., -0.0060,  0.0099,  0.0062],
+        [-0.0045, -0.0253, -0.0004,  ..., -0.0100,  0.0142,  0.0152],
+        ...,
+        [ 0.0010, -0.0135,  0.0140,  ...,  0.0129, -0.0065,  0.0261],
+        [ 0.0251, -0.0159, -0.0197,  ..., -0.0156, -0.0085,  0.0135],
+        [-0.0123,  0.0299, -0.0349,  ...,  0.0251, -0.0184,  0.0018]],
+       dtype=torch.bfloat16)
+0 blocks.22.ffn.key.weight tensor([[ 0.0021, -0.0151, -0.0044,  ...,  0.0012,  0.0079,  0.0060],
+        [ 0.0023,  0.0056,  0.0011,  ...,  0.0123, -0.0107, -0.0055],
+        [ 0.0075,  0.0024, -0.0188,  ...,  0.0003, -0.0008,  0.0023],
+        ...,
+        [-0.0096,  0.0198, -0.0086,  ...,  0.0108,  0.0136, -0.0120],
+        [ 0.0115, -0.0003,  0.0045,  ...,  0.0068, -0.0104, -0.0022],
+        [ 0.0109, -0.0085, -0.0046,  ...,  0.0025, -0.0058,  0.0112]],
+       dtype=torch.bfloat16)
+0 blocks.22.ffn.receptance.weight tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.22.ffn.time_maa_k tensor([[[1.0000e+00, 9.2578e-01, 9.0625e-01,  ..., 2.2888e-04,
+          1.5259e-04, 7.6294e-05]]], dtype=torch.bfloat16)
+0 blocks.22.ffn.time_maa_r tensor([[[1.0000e+00, 9.2578e-01, 9.0625e-01,  ..., 2.2888e-04,
+          1.5259e-04, 7.6294e-05]]], dtype=torch.bfloat16)
+Progress: 446/902 | Sending name: blocks.22.ffn.value.weight
+          1.3733e-04, 6.8665e-05]]], dtype=torch.bfloat16)5002e-03,e-01,  ..., 1.8311e-04,
+0 blocks.23.att.time_maa_w1 tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.23.att.time_maa_w2 tensor([[[-1.8692e-03,  2.6703e-04, -5.9814e-03,  ..., -2.1973e-03,
+           3.3875e-03, -2.9144e-03],
+         [-9.2773e-03, -6.1340e-03,  3.3722e-03,  ..., -9.2163e-03,
+          -9.5825e-03,  7.3242e-04],
+         [ 3.2959e-03,  9.7656e-04, -2.2736e-03,  ...,  7.0572e-04,
+           2.3041e-03, -9.1553e-03],
+         ...,
+         [ 2.6398e-03, -6.5918e-03,  2.4414e-03,  ..., -5.8899e-03,
+          -1.1215e-03, -4.8523e-03],
+         [-9.6436e-03,  6.2256e-03,  5.4016e-03,  ..., -3.9062e-03,
+          -6.1340e-03, -6.2866e-03],
+         [-2.8992e-03, -8.6670e-03,  5.3711e-03,  ..., -4.6997e-03,
+          -1.7014e-03, -8.7891e-03]],
+        [[ 2.3956e-03,  5.5542e-03,  8.1635e-04,  ..., -2.4109e-03,
+          -2.4414e-03, -8.4686e-04],
+         [ 3.9978e-03,  3.1891e-03,  5.5847e-03,  ..., -2.7771e-03,
+          -6.1951e-03, -6.9885e-03],
+         [ 6.5918e-03,  5.2795e-03,  3.3722e-03,  ..., -7.3242e-03,
+          -3.8300e-03, -1.0147e-03],
+         ...,
+         [ 4.2114e-03, -9.5825e-03, -7.9346e-03,  ...,  9.3842e-04,
+           9.5825e-03, -8.0566e-03],
+         [-7.4387e-04,  6.6833e-03, -9.5215e-03,  ...,  7.8735e-03,
+          -4.5166e-03,  2.7618e-03],
+         [ 2.2125e-03,  5.6458e-03, -5.9814e-03,  ...,  9.7656e-03,
+          -2.0599e-03,  4.0894e-03]],
+        [[ 1.6403e-03, -8.7891e-03, -6.5613e-03,  ...,  7.5340e-05,
+          -5.0659e-03, -3.7079e-03],
+         [ 6.1646e-03,  2.3270e-04, -6.6223e-03,  ..., -8.3008e-03,
+          -5.2185e-03, -1.7853e-03],
+         [ 8.2397e-03,  1.4725e-03, -4.8828e-03,  ...,  5.6458e-03,
+          -5.7068e-03,  8.3008e-03],
+         ...,
+         [ 7.9956e-03,  6.2866e-03, -1.3962e-03,  ..., -1.3885e-03,
+           4.8828e-03, -9.2163e-03],
+         [ 6.8054e-03,  7.6599e-03, -6.9580e-03,  ...,  5.4321e-03,
+          -5.4932e-04,  8.9722e-03],
+         [ 7.4463e-03,  8.3008e-03,  4.3640e-03,  ..., -5.0049e-03,
+           6.4392e-03, -2.5940e-03]],
+        [[-5.3406e-03,  1.5259e-03, -2.8992e-03,  ..., -1.3885e-03,
+          -2.1057e-03, -2.5787e-03],
+         [-3.6316e-03, -1.0376e-03,  9.8267e-03,  ...,  1.8997e-03,
+           1.5106e-03,  3.6163e-03],
+         [ 8.6670e-03,  6.4697e-03, -2.3346e-03,  ...,  5.9509e-03,
+           1.0681e-03,  1.6174e-03],
+         ...,
+         [ 1.7166e-03,  8.7280e-03,  3.9978e-03,  ...,  9.5825e-03,
+          -2.8534e-03,  1.3885e-03],
+         [ 2.6855e-03, -8.3008e-03, -4.7302e-03,  ...,  1.0681e-03,
+           8.5831e-04,  8.1177e-03],
+         [ 2.5940e-03, -7.0496e-03, -5.4626e-03,  ..., -6.1340e-03,
+           9.9487e-03,  1.8997e-03]],
+        [[ 8.1177e-03, -4.5471e-03, -1.5717e-03,  ...,  8.2397e-03,
+           5.4550e-04, -1.5411e-03],
+         [-3.7079e-03, -5.5847e-03,  3.6049e-04,  ...,  7.8735e-03,
+          -9.7656e-03,  5.7983e-03],
+         [ 3.8300e-03, -8.1787e-03,  6.7749e-03,  ...,  2.3499e-03,
+           1.3657e-03, -8.4229e-03],
+         ...,
+         [-9.5215e-03,  9.1553e-03,  5.6458e-03,  ...,  9.6130e-04,
+           9.3079e-04,  8.6670e-03],
+         [-1.9989e-03,  2.5940e-03,  9.0942e-03,  ..., -2.0905e-03,
+          -6.3171e-03, -5.3406e-03],
+         [-5.4016e-03, -3.6621e-03,  9.5825e-03,  ..., -8.3008e-03,
+          -7.5378e-03, -5.2490e-03]]], dtype=torch.bfloat16)
+0 blocks.23.att.time_maa_x tensor([[[1.0000e+00, 9.0234e-01, 8.8281e-01,  ..., 2.0599e-04,
+          1.3733e-04, 6.8665e-05]]], dtype=torch.bfloat16)
+0 blocks.23.att.value.weight tensor([[-0.0085,  0.0154, -0.0127,  ...,  0.0036, -0.0315,  0.0045],
+        [-0.0105,  0.0004, -0.0092,  ..., -0.0371, -0.0115,  0.0055],
+        [ 0.0086, -0.0089,  0.0126,  ...,  0.0413,  0.0069, -0.0145],
+        ...,
+        [-0.0147, -0.0073, -0.0139,  ..., -0.0018,  0.0271,  0.0188],
+        [ 0.0112, -0.0041,  0.0068,  ..., -0.0181, -0.0216, -0.0251],
+        [-0.0037,  0.0088,  0.0088,  ...,  0.0108,  0.0055, -0.0067]],
+       dtype=torch.bfloat16)
+0 blocks.23.ffn.key.weight tensor([[ 0.0044, -0.0062,  0.0079,  ..., -0.0023,  0.0037,  0.0019],
+        [ 0.0018, -0.0118,  0.0106,  ...,  0.0127, -0.0118, -0.0011],
+        [-0.0135,  0.0018, -0.0022,  ...,  0.0074, -0.0195, -0.0070],
+        ...,
+        [-0.0082,  0.0014, -0.0040,  ...,  0.0002, -0.0142, -0.0211],
+        [ 0.0032,  0.0009, -0.0061,  ...,  0.0018, -0.0129,  0.0004],
+        [-0.0033,  0.0025,  0.0017,  ...,  0.0027, -0.0013,  0.0034]],
+       dtype=torch.bfloat16)
+Progress: 471/902 | Sending name: blocks.23.ffn.receptance.weight
+0 blocks.24.att.time_maa_w tensor([[[1.0000e+00, 8.7500e-01, 8.5156e-01,  ..., 1.8311e-04,
+          1.2207e-04, 6.1035e-05]]], dtype=torch.bfloat16)
+0 blocks.24.att.time_maa_w1 tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.24.att.time_maa_w2 tensor([[[ 8.3618e-03, -7.2327e-03, -3.6926e-03,  ..., -6.1798e-04,
+           6.6757e-04, -3.2501e-03],
+         [-8.3008e-03, -8.4686e-04, -9.3994e-03,  ..., -5.1880e-04,
+          -2.4567e-03,  7.7515e-03],
+         [ 2.5940e-03,  3.0518e-03,  1.1902e-03,  ..., -9.1171e-04,
+           6.8054e-03,  1.1673e-03],
+         ...,
+         [ 3.2501e-03,  3.1281e-03,  8.2397e-03,  ...,  4.1199e-03,
+          -8.5449e-03, -6.8665e-03],
+         [ 6.4087e-04, -3.1128e-03,  8.4839e-03,  ..., -4.4861e-03,
+          -6.6833e-03, -4.7913e-03],
+         [ 1.0605e-03, -2.8534e-03,  3.8147e-04,  ...,  1.8005e-03,
+           7.9956e-03, -5.3406e-04]],
+        [[-2.4872e-03, -5.8899e-03,  6.5918e-03,  ..., -1.4038e-03,
+          -6.4087e-04,  3.2234e-04],
+         [-4.9973e-04, -9.8419e-04, -7.9956e-03,  ..., -3.8910e-03,
+           5.9814e-03,  9.9487e-03],
+         [-9.0942e-03, -1.1826e-03, -8.6670e-03,  ...,  4.0894e-03,
+           3.4485e-03, -1.1368e-03],
+         ...,
+         [ 8.6670e-03,  2.2125e-03,  2.2583e-03,  ...,  7.1411e-03,
+          -9.0332e-03,  6.9275e-03],
+         [-1.1139e-03,  9.5825e-03,  3.4943e-03,  ...,  9.5825e-03,
+           1.9226e-03,  8.4229e-03],
+         [ 9.7046e-03,  7.7209e-03,  5.1880e-03,  ...,  2.7466e-03,
+           5.2490e-03, -9.3994e-03]],
+        [[ 9.4604e-03,  1.3809e-03, -2.1973e-03,  ...,  6.8359e-03,
+           6.4087e-03,  1.5488e-03],
+         [ 4.8828e-04,  3.9978e-03,  4.2725e-03,  ...,  3.4485e-03,
+           4.4861e-03,  2.0905e-03],
+         [ 9.3384e-03, -7.2632e-03,  4.9133e-03,  ...,  8.9722e-03,
+           6.0654e-04, -8.7891e-03],
+         ...,
+         [ 9.0942e-03, -9.7046e-03,  6.4087e-03,  ...,  6.1417e-04,
+          -3.0060e-03,  1.4038e-03],
+         [-1.0920e-04, -3.4637e-03, -8.5449e-03,  ..., -3.6774e-03,
+          -1.1597e-03, -8.3618e-03],
+         [-4.0588e-03,  3.9673e-03, -4.8218e-03,  ..., -6.0120e-03,
+          -7.3242e-03, -7.4158e-03]],
+        [[ 4.0283e-03,  4.1504e-03,  3.9978e-03,  ..., -8.7891e-03,
+          -7.6294e-04, -7.7209e-03],
+         [-7.2632e-03,  5.6763e-03, -6.4468e-04,  ..., -7.7820e-04,
+           6.7749e-03,  7.7515e-03],
+         [-6.3782e-03, -3.1738e-03, -8.6670e-03,  ...,  5.8289e-03,
+           1.0605e-03, -5.2490e-03],
+         ...,
+         [-3.8147e-03,  8.8501e-03,  4.2114e-03,  ..., -4.4861e-03,
+          -7.5989e-03, -2.4109e-03],
+         [-2.3499e-03, -9.4604e-03,  3.2349e-03,  ...,  3.1853e-04,
+           7.6904e-03, -7.6904e-03],
+         [ 1.1139e-03, -9.7275e-04, -3.7079e-03,  ...,  5.9509e-03,
+          -1.4420e-03, -5.0049e-03]],
+        [[-6.1951e-03, -4.3335e-03,  6.8054e-03,  ...,  7.4863e-05,
+          -5.7678e-03,  2.0752e-03],
+         [ 7.9956e-03,  6.8665e-03, -9.0332e-03,  ...,  9.5825e-03,
+          -4.5166e-03, -2.8229e-03],
+         [-6.9580e-03, -6.9580e-03, -9.6893e-04,  ..., -5.2261e-04,
+          -7.5989e-03, -4.6082e-03],
+         ...,
+         [ 7.8735e-03,  3.3264e-03,  5.0354e-03,  ...,  5.5237e-03,
+           2.2888e-03, -3.9978e-03],
+         [ 3.3112e-03,  3.3112e-03,  7.7820e-04,  ..., -1.7395e-03,
+          -3.7994e-03,  9.8419e-04],
+         [ 3.5858e-03, -2.4109e-03, -5.7983e-03,  ..., -4.7302e-03,
+           1.9455e-03, -3.2959e-03]]], dtype=torch.bfloat16)
+0 blocks.24.att.time_maa_x tensor([[[1.0000e+00, 8.7500e-01, 8.5156e-01,  ..., 1.8311e-04,
+          1.2207e-04, 6.1035e-05]]], dtype=torch.bfloat16)
+0 blocks.24.att.value.weight tensor([[-0.0041, -0.0070, -0.0017,  ..., -0.0386, -0.0046, -0.0352],
+        [ 0.0200, -0.0157, -0.0051,  ...,  0.0104, -0.0182,  0.0109],
+        [ 0.0123,  0.0183, -0.0205,  ...,  0.0114,  0.0085,  0.0212],
+        ...,
+        [-0.0269,  0.0089,  0.0133,  ..., -0.0212, -0.0065, -0.0073],
+        [-0.0106,  0.0400, -0.0157,  ..., -0.0253, -0.0415,  0.0009],
+        [-0.0140, -0.0388,  0.0130,  ..., -0.0187,  0.0019, -0.0116]],
+       dtype=torch.bfloat16)
+Progress: 498/902 | Sending name: blocks.24.ffn.key.weight
+0 blocks.24.att.time_maa_w tensor([[[1.0000e+00, 8.7500e-01, 8.5156e-01,  ..., 1.8311e-04,
+         [ 0.0052,  0.0092, -0.0045,  ..., -0.0019,  0.0036,  0.0075],1,  ..., 1.8311e-04,
+         ...,
+         [-0.0045, -0.0062,  0.0019,  ...,  0.0042, -0.0086,  0.0080],
+         [ 0.0060, -0.0050,  0.0079,  ...,  0.0071, -0.0046,  0.0063],
+         [-0.0033, -0.0098, -0.0033,  ..., -0.0042, -0.0015, -0.0027]],
+        [[ 0.0029,  0.0029, -0.0052,  ...,  0.0061,  0.0084, -0.0064],
+         [-0.0023, -0.0071, -0.0071,  ...,  0.0092, -0.0088,  0.0003],
+         [-0.0009,  0.0089, -0.0005,  ..., -0.0080,  0.0051,  0.0081],
+         ...,
+         [-0.0060,  0.0021,  0.0096,  ...,  0.0038, -0.0006, -0.0072],
+         [-0.0016, -0.0080, -0.0042,  ...,  0.0086,  0.0004, -0.0022],
+         [-0.0095, -0.0020,  0.0062,  ..., -0.0005,  0.0069, -0.0026]]],
+       dtype=torch.bfloat16)
+0 blocks.25.att.time_maa_x tensor([[[1.0000e+00, 8.3984e-01, 8.1250e-01,  ..., 1.6022e-04,
+          1.0681e-04, 5.3406e-05]]], dtype=torch.bfloat16)
+0 blocks.25.att.value.weight tensor([[ 0.0110, -0.0086, -0.0042,  ...,  0.0151, -0.0083, -0.0093],
+        [-0.0075, -0.0037, -0.0167,  ...,  0.0193, -0.0059,  0.0309],
+        [-0.0209,  0.0040, -0.0099,  ..., -0.0114, -0.0209, -0.0018],
+        ...,
+        [-0.0012, -0.0021,  0.0072,  ..., -0.0179, -0.0039,  0.0013],
+        [-0.0053,  0.0133, -0.0058,  ...,  0.0164, -0.0195, -0.0006],
+        [ 0.0154,  0.0135, -0.0081,  ...,  0.0200, -0.0047, -0.0041]],
+       dtype=torch.bfloat16)
+0 blocks.25.ffn.key.weight tensor([[ 4.1199e-03,  4.8218e-03,  7.5989e-03,  ..., -1.9073e-05,
+          5.6458e-03, -4.9973e-04],
+        [ 4.0894e-03, -9.7046e-03, -2.9564e-04,  ...,  1.5747e-02,
+          1.0620e-02, -1.0010e-02],
+        [ 5.4626e-03,  1.7578e-02,  1.8799e-02,  ...,  1.1826e-04,
+          9.8267e-03, -1.0193e-02],
+        ...,
+        [ 1.7166e-03, -4.9133e-03,  1.3489e-02,  ...,  1.3916e-02,
+          5.5847e-03,  2.0874e-02],
+        [ 6.5308e-03, -1.2146e-02, -9.2163e-03,  ...,  7.3624e-04,
+          2.3174e-04, -1.1978e-03],
+        [ 1.8799e-02,  1.6022e-03, -6.1512e-05,  ...,  7.8735e-03,
+         -8.6212e-04, -2.1057e-03]], dtype=torch.bfloat16)
+0 blocks.25.ffn.receptance.weight tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.25.ffn.time_maa_k tensor([[[1.0000e+00, 8.3984e-01, 8.1250e-01,  ..., 1.6022e-04,
+          1.0681e-04, 5.3406e-05]]], dtype=torch.bfloat16)
+0 blocks.25.ffn.time_maa_r tensor([[[1.0000e+00, 8.3984e-01, 8.1250e-01,  ..., 1.6022e-04,
+          1.0681e-04, 5.3406e-05]]], dtype=torch.bfloat16)
+Progress: 530/902 | Sending name: blocks.25.ffn.value.weight
+        [0., 0., 0.,  ..., 0., 0., 0.],.., -0.0019,  0.0036,  0.0075],1,  ..., 1.8311e-04,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.26.att.time_maa_w2 tensor([[[ 3.2806e-03, -2.8687e-03, -2.0752e-03,  ..., -1.0681e-03,
+          -5.1880e-04,  3.8300e-03],
+         [-5.5847e-03,  4.7607e-03,  1.5068e-04,  ..., -9.5215e-03,
+           5.4932e-03, -9.5215e-03],
+         [-8.4839e-03, -4.4556e-03,  9.3384e-03,  ...,  4.2419e-03,
+          -7.5684e-03,  5.5542e-03],
+         ...,
+         [-2.9144e-03, -6.5613e-03,  9.3994e-03,  ...,  9.5367e-04,
+          -2.3651e-03, -8.6975e-04],
+         [ 3.2196e-03, -8.9722e-03, -9.8877e-03,  ...,  9.0332e-03,
+          -3.3722e-03, -9.2030e-05],
+         [ 2.6550e-03,  4.4250e-03, -6.1340e-03,  ...,  6.2256e-03,
+           8.0490e-04,  8.9722e-03]],
+        [[-9.4604e-03,  5.5542e-03, -3.6049e-04,  ...,  9.2163e-03,
+          -5.6839e-04, -2.5482e-03],
+         [-5.9509e-03, -6.5002e-03, -7.1106e-03,  ...,  5.2490e-03,
+           5.8289e-03, -3.7766e-04],
+         [-7.0190e-03, -4.4556e-03,  6.1035e-04,  ...,  6.2256e-03,
+          -9.1553e-03, -6.7749e-03],
+         ...,
+         [-6.1646e-03,  3.1281e-03, -8.9111e-03,  ..., -4.2114e-03,
+           9.2773e-03, -6.1951e-03],
+         [-9.4604e-03,  3.7079e-03,  6.9275e-03,  ..., -9.5367e-04,
+           1.4725e-03,  4.5166e-03],
+         [ 5.9204e-03, -7.7820e-03, -6.2256e-03,  ..., -4.0588e-03,
+          -4.6997e-03,  1.7776e-03]],
+        [[ 5.5847e-03,  3.9978e-03,  7.9346e-04,  ...,  6.9580e-03,
+           4.7913e-03,  5.4932e-03],
+         [ 3.4637e-03, -7.0496e-03, -4.6387e-03,  ...,  5.8289e-03,
+           5.0049e-03,  4.6539e-04],
+         [-2.3193e-03,  8.7280e-03, -7.0801e-03,  ..., -7.5684e-03,
+           5.8899e-03, -4.6692e-03],
+         ...,
+         [ 9.4223e-04, -3.8757e-03, -7.7209e-03,  ...,  8.3618e-03,
+          -3.9368e-03,  9.8877e-03],
+         [-6.5613e-03,  5.9814e-03, -5.8899e-03,  ...,  3.5095e-03,
+           9.3384e-03,  8.7280e-03],
+         [ 8.1787e-03,  1.8005e-03, -3.8452e-03,  ..., -4.3640e-03,
+          -9.5215e-03, -1.0452e-03]],
+        [[-2.1973e-03,  1.1978e-03, -3.1433e-03,  ..., -9.0332e-03,
+           8.4229e-03,  8.7280e-03],
+         [ 7.6599e-03, -5.2795e-03,  3.3722e-03,  ...,  4.2114e-03,
+          -2.0294e-03, -9.7046e-03],
+         [ 8.1177e-03,  5.7678e-03, -7.0190e-04,  ..., -8.7280e-03,
+          -5.1575e-03,  5.5847e-03],
+         ...,
+         [-3.7079e-03,  7.0801e-03,  6.6528e-03,  ...,  5.0964e-03,
+          -8.1787e-03,  7.9727e-04],
+         [-4.3030e-03, -2.5787e-03, -8.5449e-03,  ...,  9.7046e-03,
+           9.6436e-03,  9.6436e-03],
+         [-1.1742e-05, -1.1215e-03, -2.3651e-03,  ...,  5.5847e-03,
+          -3.9978e-03,  3.7079e-03]],
+        [[-5.1880e-03, -1.9455e-03,  4.2419e-03,  ..., -7.3853e-03,
+          -8.9111e-03,  4.9438e-03],
+         [ 7.1411e-03, -1.6556e-03, -7.4768e-03,  ..., -5.5847e-03,
+          -3.5553e-03,  4.2419e-03],
+         [-9.7046e-03,  3.8605e-03, -2.1057e-03,  ..., -2.4414e-04,
+           3.0518e-03, -7.8125e-03],
+         ...,
+         [-3.2043e-03,  6.7139e-03,  9.8877e-03,  ...,  8.8501e-03,
+          -7.2021e-03,  7.1716e-04],
+         [ 8.5449e-03, -5.8899e-03,  1.5030e-03,  ..., -5.5847e-03,
+           7.9346e-03, -1.6022e-03],
+         [ 5.3101e-03,  8.1177e-03, -1.2741e-03,  ...,  6.9885e-03,
+           5.3101e-03, -5.3711e-03]]], dtype=torch.bfloat16)
+0 blocks.26.att.time_maa_x tensor([[[1.0000e+00, 7.8906e-01, 7.6172e-01,  ..., 1.3733e-04,
+          9.1553e-05, 4.5776e-05]]], dtype=torch.bfloat16)
+0 blocks.26.att.value.weight tensor([[ 0.0058,  0.0053,  0.0047,  ..., -0.0101,  0.0166,  0.0067],
+        [-0.0056,  0.0186,  0.0042,  ..., -0.0226,  0.0233,  0.0135],
+        [ 0.0129,  0.0111, -0.0047,  ...,  0.0055, -0.0027,  0.0167],
+        ...,
+        [ 0.0068,  0.0047, -0.0117,  ...,  0.0020, -0.0212, -0.0080],
+        [-0.0188, -0.0194,  0.0186,  ..., -0.0309, -0.0107, -0.0305],
+        [-0.0034,  0.0193,  0.0164,  ...,  0.0110, -0.0151,  0.0068]],
+       dtype=torch.bfloat16)
+0 blocks.26.ffn.key.weight  name: blocks.26.ffn.key.weight
+        ..., 0., 0.,  ..., 0., 0., 0.],.., -0.0019,  0.0036,  0.0075],1,  ..., 1.8311e-04,
+        [ 0.1406, -0.0596,  0.0403,  ..., -0.0723,  0.0275,  0.1270],
+        [-0.0728,  0.0269,  0.1270,  ...,  0.0140,  0.1138, -0.0864],
+        [ 0.0134,  0.1133, -0.0869,  ...,  0.1006, -0.0996,  0.0000]],
+       dtype=torch.bfloat16)
+0 blocks.27.att.time_maa_g tensor([[[1.0000e+00, 4.7852e-01, 4.4922e-01,  ..., 5.7220e-05,
+          3.8147e-05, 1.9073e-05]]], dtype=torch.bfloat16)
+0 blocks.27.att.time_maa_k tensor([[[1.0000e+00, 7.2656e-01, 6.9531e-01,  ..., 1.1444e-04,
+          7.6294e-05, 3.8147e-05]]], dtype=torch.bfloat16)
+0 blocks.27.att.time_maa_r tensor([[[1.0000e+00, 4.7852e-01, 4.4922e-01,  ..., 5.7220e-05,
+          3.8147e-05, 1.9073e-05]]], dtype=torch.bfloat16)
+0 blocks.27.att.time_maa_v tensor([[[ 0.7383,  0.4668,  0.4355,  ..., -0.2617, -0.2617, -0.2617]]],
+       dtype=torch.bfloat16)
+0 blocks.27.att.time_maa_w tensor([[[1.0000e+00, 7.2656e-01, 6.9531e-01,  ..., 1.1444e-04,
+          7.6294e-05, 3.8147e-05]]], dtype=torch.bfloat16)
+0 blocks.27.att.time_maa_w1 tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.27.att.time_maa_w2 tensor([[[ 5.3711e-03,  7.2021e-03, -4.3030e-03,  ..., -4.9438e-03,
+           4.0894e-03,  8.6594e-04],
+         [ 3.5858e-03, -4.0894e-03, -2.8687e-03,  ...,  6.0120e-03,
+          -8.0566e-03, -2.7313e-03],
+         [-4.6997e-03, -4.9438e-03,  6.1340e-03,  ...,  4.1809e-03,
+           9.8877e-03, -8.3008e-03],
+         ...,
+         [ 7.5378e-03, -8.8120e-04, -7.6294e-04,  ..., -9.8877e-03,
+           2.5482e-03,  3.9368e-03],
+         [ 3.6621e-03, -7.8125e-03, -1.7929e-03,  ...,  1.3885e-03,
+           7.4463e-03, -6.7139e-03],
+         [-2.7924e-03, -5.6763e-03,  2.1210e-03,  ...,  5.3406e-03,
+           8.9722e-03, -1.3428e-03]],
+        [[ 6.3782e-03,  4.1504e-03,  8.8501e-03,  ..., -3.2196e-03,
+          -1.0452e-03, -6.1646e-03],
+         [-6.1035e-03, -5.1575e-03,  4.9744e-03,  ...,  5.0049e-03,
+           5.3101e-03,  6.1340e-03],
+         [ 8.7891e-03,  4.7302e-03, -4.5776e-03,  ...,  7.4158e-03,
+          -2.7924e-03,  3.8300e-03],
+         ...,
+         [-8.3008e-03,  9.9487e-03, -4.9438e-03,  ...,  6.3477e-03,
+          -1.5564e-03,  8.0566e-03],
+         [-1.8768e-03, -7.3242e-03, -9.9487e-03,  ..., -8.4229e-03,
+          -8.7891e-03, -5.3711e-03],
+         [ 5.4626e-03,  3.7842e-03, -5.7678e-03,  ...,  5.3101e-03,
+           1.5411e-03, -9.6893e-04]],
+        [[-5.9204e-03, -4.8523e-03, -2.4109e-03,  ..., -1.1597e-03,
+          -6.9580e-03, -2.3346e-03],
+         [ 1.6251e-03, -3.7193e-04, -6.5002e-03,  ...,  3.2196e-03,
+           6.6528e-03,  9.2030e-05],
+         [-6.6528e-03,  2.0790e-04,  1.7319e-03,  ..., -7.2327e-03,
+          -7.3853e-03, -5.1270e-03],
+         ...,
+         [ 8.9722e-03, -1.7242e-03,  7.4463e-03,  ...,  2.0409e-04,
+          -1.9684e-03,  3.6621e-03],
+         [ 8.3618e-03, -9.3994e-03,  5.6152e-03,  ...,  1.2207e-03,
+           7.9956e-03,  7.8735e-03],
+         [-7.2327e-03,  8.2397e-03,  8.6060e-03,  ...,  4.9133e-03,
+          -3.0975e-03,  3.1738e-03]],
+        [[-4.5776e-04, -9.7046e-03,  1.9684e-03,  ...,  4.4861e-03,
+          -6.1646e-03,  3.8147e-03],
+         [ 6.5308e-03,  1.8005e-03,  2.2125e-04,  ...,  1.9684e-03,
+          -7.6294e-03,  5.7983e-03],
+         [-1.0452e-03, -7.7057e-04,  9.4223e-04,  ..., -8.7891e-03,
+          -9.5215e-03, -8.3618e-03],
+         ...,
+         [-8.7891e-03,  3.8452e-03, -4.3945e-03,  ...,  8.1177e-03,
+           7.2937e-03,  9.1553e-03],
+         [ 5.4321e-03,  9.5825e-03, -6.1417e-04,  ...,  9.2773e-03,
+          -6.2866e-03,  2.4567e-03],
+         [-8.7280e-03,  8.7891e-03,  3.9673e-03,  ..., -7.6599e-03,
+          -8.1177e-03, -8.7891e-03]],
+        [[-3.9062e-03, -4.6692e-03,  1.8387e-03,  ..., -3.6011e-03,
+          -4.3640e-03,  6.8054e-03],
+         [-1.2741e-03,  8.7891e-03, -5.7068e-03,  ...,  3.3722e-03,
+           7.6675e-04, -5.8413e-05],
+         [-7.5073e-03, -7.9346e-03, -6.1340e-03,  ..., -7.2632e-03,
+           7.5073e-03, -4.2419e-03],
+         ...,
+         [-3.2349e-03, -6.2561e-03, -8.1787e-03,  ..., -3.7994e-03,
+          -5.6076e-04, -6.9275e-03],
+         [ 7.0190e-03,  6.9885e-03, -5.9204e-03,  ...,  7.8125e-03,
+           1.3123e-03, -7.9956e-03],
+         [ 6.5002e-03,  6.3705e-04, -8.9722e-03,  ..., -7.8125e-03,
+           1.9455e-03, -7.8735e-03]]], dtype=torch.bfloat16)
+0 blocks.27.att.time_maa_x tensor([[[1.0000e+00, 7.2656e-01, 6.9531e-01,  ..., 1.1444e-04,
+          7.6294e-05, 3.8147e-05]]], dtype=torch.bfloat16)
+Progress: 581/902 | Sending name: blocks.27.att.value.weight
+        ..., 0., 0.,  ..., 0., 0., 0.],.., -0.0019,  0.0036,  0.0075],1,  ..., 1.8311e-04,
+        ..., 0., 0.,  ..., 0., 0., 0.],.., -0.0019,  0.0036,  0.0075],1,  ..., 1.8311e-04,
+        [[-4.7607e-03,  4.7913e-03,  7.1106e-03,  ..., -6.4392e-03,
+           1.9684e-03,  1.4420e-03],
+         [-8.9111e-03,  1.1292e-03,  9.5215e-03,  ...,  7.3853e-03,
+          -1.0605e-03, -3.7384e-03],
+         [-5.5847e-03, -6.5002e-03,  7.3624e-04,  ...,  7.1106e-03,
+           7.2327e-03,  9.8877e-03],
+         ...,
+         [ 9.7656e-03, -9.3994e-03, -1.3657e-03,  ...,  9.1171e-04,
+           8.7280e-03, -6.1951e-03],
+         [ 6.2561e-03, -6.9580e-03,  1.0010e-02,  ...,  5.1270e-03,
+           8.0566e-03,  6.3171e-03],
+         [-9.9487e-03, -5.5542e-03,  4.9438e-03,  ...,  2.3193e-03,
+          -1.7166e-03, -7.3547e-03]],
+        [[-2.5940e-03,  7.9346e-03,  2.8229e-03,  ..., -2.6550e-03,
+           3.7842e-03,  9.8267e-03],
+         [-6.6833e-03, -7.6599e-03, -8.1177e-03,  ...,  3.4332e-04,
+          -9.8267e-03, -6.1951e-03],
+         [ 5.8289e-03,  6.7444e-03, -2.6093e-03,  ..., -4.4861e-03,
+          -9.3384e-03,  2.1515e-03],
+         ...,
+         [-8.4839e-03,  7.9956e-03,  1.1368e-03,  ..., -4.4861e-03,
+          -5.8365e-04,  6.8359e-03],
+         [ 2.6093e-03,  3.0212e-03,  3.0823e-03,  ...,  9.2163e-03,
+           8.7280e-03, -8.3618e-03],
+         [-2.1210e-03,  5.7983e-03,  2.5024e-03,  ..., -7.8125e-03,
+          -6.2943e-04, -8.1177e-03]],
+        [[-3.6774e-03, -4.9133e-03,  1.4572e-03,  ...,  7.6599e-03,
+          -7.4768e-03, -9.3994e-03],
+         [ 2.4261e-03,  7.6599e-03, -9.5215e-03,  ...,  5.2795e-03,
+           4.3030e-03,  6.1951e-03],
+         [ 1.4420e-03,  8.8501e-03,  2.3956e-03,  ..., -5.2490e-03,
+          -4.4556e-03, -9.2773e-03],
+         ...,
+         [ 8.3618e-03, -4.5776e-04,  3.5858e-03,  ..., -8.9264e-04,
+           6.2866e-03,  6.6833e-03],
+         [ 7.4158e-03,  2.8687e-03, -3.0212e-03,  ..., -8.5354e-05,
+           9.1553e-03, -7.5378e-03],
+         [-8.7280e-03, -7.2632e-03, -4.2419e-03,  ..., -1.2283e-03,
+           4.6387e-03,  6.4697e-03]],
+        [[ 7.2632e-03,  7.3242e-03, -2.1820e-03,  ..., -9.7046e-03,
+           3.5095e-03, -8.1787e-03],
+         [ 4.8447e-04,  5.9509e-03, -7.8735e-03,  ..., -6.1035e-03,
+          -6.0120e-03, -7.7820e-03],
+         [ 1.9836e-03,  2.1210e-03, -4.9744e-03,  ..., -3.1281e-03,
+           8.4229e-03, -2.6550e-03],
+         ...,
+         [-8.8501e-03, -3.9978e-03,  8.6670e-03,  ..., -1.8005e-03,
+           7.7057e-04, -1.0529e-03],
+         [-4.0588e-03,  2.0752e-03,  3.5858e-03,  ...,  6.6528e-03,
+          -9.5825e-03,  5.6458e-03],
+         [-4.5166e-03, -4.7913e-03,  9.7656e-03,  ...,  2.1362e-04,
+          -8.8501e-03,  9.4604e-03]]], dtype=torch.bfloat16)
+0 blocks.28.att.time_maa_x tensor([[[1.0000e+00, 6.4453e-01, 6.1328e-01,  ..., 9.1553e-05,
+          6.1035e-05, 3.0518e-05]]], dtype=torch.bfloat16)
+0 blocks.28.att.value.weight tensor([[ 7.4158e-03, -2.3315e-02, -7.7057e-04,  ...,  1.9165e-02,
+          1.4954e-02, -1.2268e-02],
+        [-5.0659e-03, -3.9368e-03, -4.0283e-03,  ...,  3.6240e-04,
+         -2.4536e-02, -6.6376e-04],
+        [ 2.5757e-02,  1.2878e-02, -2.0020e-02,  ..., -2.0874e-02,
+         -2.1973e-02, -2.8442e-02],
+        ...,
+        [-1.2024e-02,  1.7090e-02, -5.5542e-03,  ...,  2.5635e-03,
+         -1.2390e-02,  8.6670e-03],
+        [ 5.1270e-03, -3.4424e-02, -7.4768e-03,  ...,  5.1880e-03,
+          7.4463e-03, -2.2827e-02],
+        [ 4.5898e-02, -9.1553e-05, -1.5354e-04,  ..., -2.9907e-03,
+          2.4261e-03,  2.9907e-02]], dtype=torch.bfloat16)
+0 blocks.28.ffn.key.weight tensor([[ 0.0028,  0.0193,  0.0024,  ...,  0.0111, -0.0034, -0.0078],
+        [ 0.0121,  0.0149,  0.0030,  ..., -0.0046, -0.0147, -0.0060],
+        [ 0.0081,  0.0006, -0.0008,  ...,  0.0049,  0.0048,  0.0005],
+        ...,
+        [ 0.0087,  0.0131,  0.0118,  ..., -0.0164, -0.0058, -0.0039],
+        [ 0.0157, -0.0031, -0.0025,  ...,  0.0033, -0.0025, -0.0109],
+        [ 0.0026,  0.0096, -0.0005,  ..., -0.0018, -0.0110, -0.0006]],
+       dtype=torch.bfloat16)
+0 blocks.28.ffn.receptance.weight tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.28.ffn.time_maa_k tensor([[[1.0000e+00, 6.4453e-01, 6.1328e-01,  ..., 9.1553e-05,
+          6.1035e-05, 3.0518e-05]]], dtype=torch.bfloat16)
+0 blocks.28.ffn.time_maa_r tensor([[[1.0000e+00, 6.4453e-01, 6.1328e-01,  ..., 9.1553e-05,
+          6.1035e-05, 3.0518e-05]]], dtype=torch.bfloat16)
+Progress: 614/902 | Sending name: blocks.28.ffn.value.weight
+        [0., 0., 0.,  ..., 0., 0., 0.],.., -0.0019,  0.0036,  0.0075],1,  ..., 1.8311e-04,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.29.att.time_maa_w2 tensor([[[-7.6904e-03,  1.8024e-04, -4.7445e-05,  ..., -9.0332e-03,
+           1.6708e-03,  4.6082e-03],
+         [-9.7656e-03,  2.8229e-03,  8.1177e-03,  ...,  8.9722e-03,
+           7.6904e-03, -8.6670e-03],
+         [-9.5825e-03,  2.2793e-04, -4.6387e-03,  ..., -8.8501e-03,
+          -2.0599e-03, -5.5847e-03],
+         ...,
+         [-5.3711e-03, -4.6997e-03,  3.8147e-03,  ..., -5.5237e-03,
+          -5.3711e-03, -2.6855e-03],
+         [-6.1340e-03,  2.4567e-03,  1.3885e-03,  ...,  3.0518e-03,
+          -1.1981e-05,  6.8359e-03],
+         [ 8.1787e-03,  9.7046e-03, -9.7046e-03,  ...,  3.7231e-03,
+          -2.6855e-03, -8.9722e-03]],
+        [[-6.6223e-03,  9.9487e-03, -5.8289e-03,  ...,  3.7537e-03,
+          -1.3046e-03, -1.6174e-03],
+         [-2.8381e-03,  2.2430e-03, -6.8970e-03,  ...,  4.6997e-03,
+           1.0010e-02, -8.8501e-03],
+         [-7.0801e-03, -2.7657e-04,  7.6294e-03,  ...,  6.6528e-03,
+          -4.0283e-03, -3.4637e-03],
+         ...,
+         [ 8.7891e-03,  9.8267e-03, -2.8076e-03,  ..., -8.5068e-04,
+           3.8757e-03,  6.2866e-03],
+         [ 9.5215e-03,  7.1716e-03, -7.4158e-03,  ..., -6.8970e-03,
+           3.2043e-03,  8.8501e-03],
+         [-7.9346e-03,  8.4229e-03,  1.7776e-03,  ...,  5.2795e-03,
+          -3.9062e-03,  1.5182e-03]],
+        [[ 6.3477e-03,  6.1798e-04, -3.2959e-03,  ...,  3.7079e-03,
+          -8.4229e-03, -8.9111e-03],
+         [-5.5542e-03,  1.0910e-03,  1.4114e-03,  ...,  7.4768e-03,
+           3.8910e-03, -4.2114e-03],
+         [ 4.2419e-03, -7.3242e-03,  7.0190e-03,  ...,  5.1575e-03,
+           7.5073e-03, -7.5989e-03],
+         ...,
+         [-4.3335e-03,  6.2256e-03, -9.4604e-03,  ...,  6.4697e-03,
+           8.7738e-05,  9.1553e-03],
+         [ 6.9580e-03, -5.8594e-03, -3.4332e-03,  ...,  7.6294e-04,
+           4.8523e-03, -6.4697e-03],
+         [-7.7515e-03,  4.4556e-03, -3.5553e-03,  ...,  2.0599e-03,
+           6.7139e-03, -7.5684e-03]],
+        [[ 6.1035e-03,  1.0010e-02, -9.1553e-03,  ..., -2.9144e-03,
+           1.9684e-03,  2.4567e-03],
+         [ 5.8899e-03, -5.9204e-03, -6.0730e-03,  ...,  2.5024e-03,
+           8.2397e-03,  6.8359e-03],
+         [ 5.6458e-03,  3.5858e-03, -7.0801e-03,  ..., -2.7161e-03,
+           8.3542e-04,  7.2937e-03],
+         ...,
+         [ 5.4626e-03,  2.8839e-03, -2.8992e-03,  ...,  9.9487e-03,
+          -7.5073e-03,  9.9659e-05],
+         [ 8.8501e-03,  7.9956e-03, -3.8605e-03,  ...,  4.3335e-03,
+           1.9226e-03, -3.0670e-03],
+         [ 4.5776e-03,  9.5215e-03, -9.8877e-03,  ..., -1.3885e-03,
+          -8.1177e-03, -3.2654e-03]],
+        [[ 4.5776e-03,  8.1787e-03, -6.1951e-03,  ..., -8.1787e-03,
+          -4.7302e-03,  2.2583e-03],
+         [ 2.0599e-03,  1.2894e-03, -8.2397e-03,  ..., -7.4768e-03,
+          -5.4016e-03,  3.7079e-03],
+         [-5.2185e-03,  4.5166e-03,  3.9978e-03,  ..., -9.0942e-03,
+          -2.9297e-03, -8.6670e-03],
+         ...,
+         [-6.6833e-03, -6.0730e-03,  9.1171e-04,  ...,  8.3618e-03,
+          -5.5542e-03, -5.2185e-03],
+         [-4.1199e-03,  3.3417e-03, -3.3569e-03,  ...,  9.3384e-03,
+           2.5749e-04, -5.0049e-03],
+         [ 4.5776e-03,  7.4158e-03, -1.1368e-03,  ..., -7.5684e-03,
+           8.9722e-03,  3.0212e-03]]], dtype=torch.bfloat16)
+0 blocks.29.att.time_maa_x tensor([[[1.0000e+00, 5.4297e-01, 5.1172e-01,  ..., 6.8665e-05,
+          4.5776e-05, 2.2888e-05]]], dtype=torch.bfloat16)
+0 blocks.29.att.value.weight tensor([[-0.0187,  0.0239, -0.0053,  ...,  0.0159,  0.0146,  0.0236],
+        [-0.0077, -0.0010, -0.0132,  ...,  0.0063,  0.0055,  0.0101],
+        [-0.0242,  0.0139, -0.0177,  ...,  0.0081,  0.0142, -0.0063],
+        ...,
+        [ 0.0272, -0.0145, -0.0086,  ..., -0.0057,  0.0356, -0.0204],
+        [ 0.0272,  0.0167, -0.0016,  ...,  0.0085, -0.0033, -0.0055],
+        [-0.0220,  0.0183,  0.0098,  ..., -0.0179,  0.0032, -0.0125]],
+       dtype=torch.bfloat16)
+Progress: 638/902 | Sending name: blocks.29.ffn.key.weight
+        [0., 0., 0.,  ..., 0., 0., 0.],.., -0.0019,  0.0036,  0.0075],1,  ..., 1.8311e-04,
+        ..., 0., 0.,  ..., 0., 0., 0.],.., -0.0019,  0.0036,  0.0075],1,  ..., 1.8311e-04,
+        [-0.0020, -0.0098, -0.0048,  ...,  0.0102, -0.0004,  0.0033],
+        [ 0.0092,  0.0046,  0.0026,  ...,  0.0068, -0.0083,  0.0131],
+        [-0.0270,  0.0179, -0.0071,  ...,  0.0144,  0.0153, -0.0023]],
+       dtype=torch.bfloat16)
+0 blocks.3.ffn.key.weight tensor([[-0.0060,  0.0036, -0.0041,  ...,  0.0134,  0.0084,  0.0073],
+        [-0.0009,  0.0026,  0.0077,  ..., -0.0056,  0.0024, -0.0029],
+        [ 0.0175,  0.0023,  0.0007,  ..., -0.0013,  0.0112, -0.0106],
+        ...,
+        [-0.0103, -0.0053, -0.0112,  ...,  0.0188,  0.0007, -0.0091],
+        [-0.0086,  0.0024, -0.0143,  ..., -0.0037,  0.0049, -0.0026],
+        [-0.0133,  0.0033,  0.0013,  ...,  0.0015,  0.0005,  0.0003]],
+       dtype=torch.bfloat16)
+0 blocks.3.ffn.receptance.weight tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.3.ffn.time_maa_k tensor([[[1.0000e+00, 1.0000e+00, 1.0000e+00,  ..., 6.6376e-04,
+          4.4250e-04, 2.2125e-04]]], dtype=torch.bfloat16)
+0 blocks.3.ffn.time_maa_r tensor([[[1.0000e+00, 1.0000e+00, 1.0000e+00,  ..., 6.6376e-04,
+          4.4250e-04, 2.2125e-04]]], dtype=torch.bfloat16)
+0 blocks.3.ffn.value.weight name: blocks.3.ffn.value.weight
+         [ 0.0024, -0.0087,  0.0061,  ..., -0.0008, -0.0043, -0.0092],1,  ..., 1.8311e-04,
+         ...,
+         [-0.0049, -0.0047,  0.0013,  ...,  0.0056,  0.0079,  0.0064],
+         [ 0.0073, -0.0018, -0.0010,  ..., -0.0067, -0.0089, -0.0055],
+         [-0.0064, -0.0064,  0.0055,  ..., -0.0052, -0.0058,  0.0042]],
+        [[-0.0049,  0.0075, -0.0081,  ...,  0.0015, -0.0004,  0.0033],
+         [-0.0096, -0.0074,  0.0060,  ...,  0.0072, -0.0055, -0.0003],
+         [ 0.0058, -0.0032, -0.0049,  ...,  0.0075,  0.0065,  0.0070],
+         ...,
+         [ 0.0081, -0.0009, -0.0076,  ...,  0.0097, -0.0053,  0.0005],
+         [-0.0095,  0.0088,  0.0026,  ..., -0.0082,  0.0098, -0.0060],
+         [ 0.0052, -0.0070,  0.0013,  ..., -0.0071,  0.0044, -0.0037]],
+        [[ 0.0099, -0.0024, -0.0093,  ..., -0.0095,  0.0071, -0.0081],
+         [-0.0076,  0.0029,  0.0079,  ..., -0.0082, -0.0042,  0.0075],
+         [ 0.0058, -0.0062, -0.0058,  ...,  0.0025, -0.0089, -0.0099],
+         ...,
+         [ 0.0053, -0.0006,  0.0064,  ..., -0.0097,  0.0004, -0.0045],
+         [ 0.0019,  0.0086, -0.0035,  ..., -0.0052,  0.0088,  0.0037],
+         [ 0.0007,  0.0062, -0.0069,  ..., -0.0010,  0.0038, -0.0008]],
+        [[-0.0064,  0.0004,  0.0058,  ..., -0.0011, -0.0058,  0.0085],
+         [ 0.0022,  0.0041, -0.0061,  ...,  0.0099,  0.0053,  0.0024],
+         [-0.0088, -0.0075, -0.0009,  ...,  0.0060,  0.0007, -0.0026],
+         ...,
+         [-0.0028,  0.0055,  0.0026,  ...,  0.0003,  0.0035,  0.0069],
+         [ 0.0032, -0.0036, -0.0089,  ..., -0.0059, -0.0088,  0.0092],
+         [-0.0043, -0.0023, -0.0093,  ..., -0.0090, -0.0042,  0.0014]],
+        [[ 0.0009,  0.0061,  0.0089,  ...,  0.0065, -0.0043, -0.0031],
+         [-0.0038,  0.0010,  0.0032,  ..., -0.0004,  0.0017, -0.0078],
+         [ 0.0019,  0.0008, -0.0073,  ...,  0.0002,  0.0091, -0.0029],
+         ...,
+         [-0.0097, -0.0088,  0.0054,  ...,  0.0045,  0.0060,  0.0048],
+         [ 0.0063,  0.0066,  0.0036,  ...,  0.0096,  0.0093, -0.0004],
+         [ 0.0013,  0.0033,  0.0035,  ...,  0.0038, -0.0076, -0.0060]]],
+       dtype=torch.bfloat16)
+0 blocks.30.att.time_maa_x tensor([[[1.0000e+00, 4.0625e-01, 3.7891e-01,  ..., 4.5776e-05,
+          3.0518e-05, 1.5259e-05]]], dtype=torch.bfloat16)
+0 blocks.30.att.value.weight tensor([[-0.0100,  0.0071,  0.0133,  ..., -0.0046,  0.0112,  0.0079],
+        [ 0.0294,  0.0183, -0.0046,  ...,  0.0075,  0.0037,  0.0187],
+        [-0.0099, -0.0156,  0.0016,  ..., -0.0086,  0.0007, -0.0074],
+        ...,
+        [-0.0130,  0.0103,  0.0170,  ...,  0.0096, -0.0325, -0.0123],
+        [-0.0106,  0.0186,  0.0171,  ..., -0.0128, -0.0100,  0.0007],
+        [-0.0013, -0.0108,  0.0067,  ..., -0.0015,  0.0173, -0.0139]],
+       dtype=torch.bfloat16)
+0 blocks.30.ffn.key.weight tensor([[ 2.7618e-03, -1.6357e-02,  4.9438e-03,  ...,  1.5747e-02,
+         -4.5166e-03,  5.0735e-04],
+        [ 7.8201e-04,  9.0942e-03,  1.1230e-02,  ..., -9.8267e-03,
+          5.0354e-04, -2.8419e-04],
+        [ 9.5367e-04,  4.8828e-03,  2.5330e-03,  ...,  6.1340e-03,
+          1.5488e-03, -6.5613e-04],
+        ...,
+        [ 4.6387e-03, -4.3945e-03,  7.8125e-03,  ..., -5.4836e-05,
+         -1.5503e-02, -8.0566e-03],
+        [ 3.2425e-04,  1.0620e-02, -1.1902e-03,  ..., -1.0376e-02,
+          1.0193e-02, -9.8877e-03],
+        [-4.0894e-03, -1.5503e-02,  1.1749e-03,  ..., -2.3499e-03,
+          1.4099e-02,  1.7395e-03]], dtype=torch.bfloat16)
+Progress: 695/902 | Sending name: blocks.30.ffn.receptance.weight
+        [0., 0., 0.,  ..., 0., 0., 0.],.., -0.0008, -0.0043, -0.0092],1,  ..., 1.8311e-04,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.31.att.time_maa_w2 tensor([[[-6.1035e-03, -6.8665e-03,  1.5869e-03,  ..., -5.9814e-03,
+           8.4305e-04, -3.7537e-03],
+         [-2.6245e-03, -7.0572e-04, -1.6327e-03,  ..., -9.1553e-03,
+           8.1177e-03, -2.3956e-03],
+         [-1.5259e-05,  1.5640e-03, -4.1199e-03,  ...,  6.1646e-03,
+          -6.5918e-03, -4.2114e-03],
+         ...,
+         [-4.4703e-06,  7.2937e-03,  5.6458e-03,  ..., -5.4932e-04,
+           9.6436e-03, -1.9455e-04],
+         [ 4.8828e-03, -3.4332e-03, -2.7084e-04,  ...,  2.7008e-03,
+          -7.0496e-03,  6.6376e-04],
+         [-5.2795e-03, -8.3618e-03,  5.5847e-03,  ...,  7.0496e-03,
+          -6.4697e-03, -8.7280e-03]],
+        [[-8.7891e-03, -7.2021e-03,  9.0332e-03,  ..., -1.9073e-03,
+          -9.9945e-04, -5.4550e-04],
+         [-2.4261e-03, -6.4392e-03,  5.3406e-03,  ..., -3.5095e-03,
+           7.2021e-03, -5.5542e-03],
+         [-7.7820e-03, -6.9275e-03,  3.1586e-03,  ...,  4.6692e-03,
+          -6.0120e-03,  9.2163e-03],
+         ...,
+         [ 9.2163e-03, -5.7373e-03,  9.2163e-03,  ..., -1.8005e-03,
+          -8.6060e-03, -8.5449e-03],
+         [-3.1281e-03, -1.4496e-03, -3.4180e-03,  ...,  8.2397e-04,
+           8.6060e-03,  8.3618e-03],
+         [-4.4250e-03,  5.6763e-03,  7.3853e-03,  ..., -9.5367e-04,
+          -2.6855e-03, -3.6621e-03]],
+        [[ 6.0120e-03,  7.1106e-03, -6.2256e-03,  ..., -5.2185e-03,
+           7.4768e-03, -1.1673e-03],
+         [ 3.7689e-03,  1.2741e-03,  2.3346e-03,  ..., -9.4604e-03,
+           2.7924e-03, -2.9297e-03],
+         [ 6.0120e-03, -2.0752e-03,  3.5553e-03,  ..., -5.8289e-03,
+          -8.3618e-03,  3.9978e-03],
+         ...,
+         [-1.0910e-03,  4.5776e-03, -9.6436e-03,  ..., -3.8757e-03,
+          -8.0566e-03,  8.8501e-03],
+         [-1.1139e-03,  2.3346e-03, -5.0964e-03,  ...,  1.7166e-03,
+           5.2490e-03,  2.9602e-03],
+         [ 6.2561e-03,  4.3945e-03,  4.6387e-03,  ..., -6.7749e-03,
+           2.3499e-03, -6.2866e-03]],
+        [[ 5.8594e-03,  9.2163e-03, -3.2196e-03,  ...,  6.8054e-03,
+           8.7891e-03, -9.2773e-03],
+         [ 1.1368e-03,  3.6469e-03,  7.7209e-03,  ..., -5.1575e-03,
+           8.8501e-03,  3.0518e-03],
+         [ 5.2795e-03,  9.8419e-04, -2.4796e-04,  ...,  9.9487e-03,
+          -8.0566e-03, -3.1128e-03],
+         ...,
+         [ 2.7313e-03,  7.2021e-03,  6.4697e-03,  ..., -9.0332e-03,
+           1.3046e-03,  5.7983e-03],
+         [-5.4932e-03, -5.3101e-03,  4.6692e-03,  ..., -2.7618e-03,
+           5.9204e-03, -5.7068e-03],
+         [-7.0190e-03,  9.3994e-03, -3.5553e-03,  ...,  9.1934e-04,
+          -2.8076e-03, -6.8665e-03]],
+        [[-9.1553e-03,  9.9945e-04, -9.6436e-03,  ..., -7.6294e-03,
+           2.9297e-03,  7.3853e-03],
+         [-3.8910e-03, -6.5308e-03, -6.7139e-03,  ..., -2.1210e-03,
+          -5.7678e-03,  3.1586e-03],
+         [ 3.5858e-03,  6.9275e-03,  1.6937e-03,  ..., -3.1738e-03,
+           8.5449e-03,  4.6082e-03],
+         ...,
+         [ 5.5237e-03,  6.7520e-04, -6.9580e-03,  ...,  9.8267e-03,
+          -2.4719e-03, -5.7068e-03],
+         [-1.4267e-03,  9.3384e-03,  5.2795e-03,  ..., -1.3428e-03,
+           4.0588e-03, -9.5825e-03],
+         [-1.5259e-03, -4.5166e-03, -6.2561e-03,  ..., -1.9073e-03,
+           9.3994e-03, -7.7820e-03]]], dtype=torch.bfloat16)
+0 blocks.31.att.time_maa_x tensor([[[1.0000e+00, 2.2852e-01, 2.1191e-01,  ..., 2.2888e-05,
+          1.5259e-05, 7.6294e-06]]], dtype=torch.bfloat16)
+Progress: 721/902 | Sending name: blocks.31.att.value.weight
+        [0., 0., 0.,  ..., 0., 0., 0.],.., -0.0008, -0.0043, -0.0092],1,  ..., 1.8311e-04,
+           3.1128e-03, -4.1809e-03],.],.., -0.0008, -0.0043, -0.0092],1,  ..., 1.8311e-04,
+         ...,
+         [-8.9111e-03,  3.4485e-03, -4.0588e-03,  ...,  9.2163e-03,
+           3.5858e-03,  9.3384e-03],
+         [-7.7209e-03, -2.8687e-03,  4.7607e-03,  ..., -1.3962e-03,
+          -2.8839e-03,  4.0894e-03],
+         [-6.3477e-03,  9.2773e-03, -9.0942e-03,  ..., -1.4725e-03,
+          -8.2397e-03, -4.1246e-05]],
+        [[-5.4321e-03,  9.1553e-04,  8.4229e-03,  ...,  3.0212e-03,
+           6.7139e-04, -5.8594e-03],
+         [-3.8452e-03, -7.7820e-03,  7.5073e-03,  ..., -3.2501e-03,
+           8.5449e-03,  7.0496e-03],
+         [ 9.8267e-03, -5.3711e-03, -1.0529e-03,  ..., -5.2490e-03,
+           6.4087e-03,  7.0801e-03],
+         ...,
+         [-1.4648e-03, -8.9264e-04, -9.7046e-03,  ..., -3.7231e-03,
+          -6.9275e-03, -5.3101e-03],
+         [-2.5940e-03,  6.2866e-03, -7.5684e-03,  ..., -2.6398e-03,
+           4.1504e-03,  6.8970e-03],
+         [-7.7209e-03, -1.4572e-03,  7.1106e-03,  ...,  7.7209e-03,
+          -2.9755e-03,  9.7656e-03]],
+        [[-9.9487e-03, -5.3101e-03,  2.3346e-03,  ..., -7.2937e-03,
+           4.0588e-03,  2.0294e-03],
+         [ 8.0566e-03,  2.1667e-03, -3.9368e-03,  ...,  3.6469e-03,
+           6.1646e-03, -8.2397e-03],
+         [-6.0425e-03,  4.2152e-04, -4.8218e-03,  ...,  4.9744e-03,
+           2.2888e-03, -3.5095e-03],
+         ...,
+         [ 1.3962e-03, -2.7008e-03, -6.0730e-03,  ...,  5.7678e-03,
+          -6.0120e-03,  9.8267e-03],
+         [-1.7929e-03,  7.1106e-03, -3.7193e-04,  ..., -1.1215e-03,
+          -2.0447e-03, -7.5073e-03],
+         [-9.9487e-03, -1.1292e-03,  2.1362e-03,  ...,  3.2806e-03,
+          -8.5068e-04, -8.2397e-03]],
+        [[-7.6599e-03, -5.8594e-03, -1.6479e-03,  ...,  4.4250e-04,
+           3.4943e-03,  8.9111e-03],
+         [-7.5989e-03,  2.5940e-03,  6.3705e-04,  ..., -3.2349e-03,
+           5.0964e-03, -5.3101e-03],
+         [-5.3711e-03, -8.6670e-03, -2.4109e-03,  ..., -7.8125e-03,
+          -1.8463e-03,  1.4877e-03],
+         ...,
+         [ 5.5542e-03, -1.2360e-03, -9.3994e-03,  ...,  7.6599e-03,
+          -3.8338e-04, -6.0120e-03],
+         [-4.9438e-03, -8.1787e-03,  2.1210e-03,  ...,  4.9133e-03,
+           3.9062e-03, -2.5635e-03],
+         [ 9.2316e-04, -9.6436e-03, -5.4016e-03,  ..., -3.0212e-03,
+          -5.3406e-03, -7.0190e-03]]], dtype=torch.bfloat16)
+0 blocks.4.att.time_maa_x tensor([[[1.0000e+00, 1.0000e+00, 1.0000e+00,  ..., 6.4087e-04,
+          4.2725e-04, 2.1362e-04]]], dtype=torch.bfloat16)
+0 blocks.4.att.value.weight tensor([[ 0.0052, -0.0033,  0.0249,  ...,  0.0074, -0.0024,  0.0244],
+        [-0.0157,  0.0193, -0.0330,  ..., -0.0153,  0.0037, -0.0317],
+        [ 0.0260, -0.0019,  0.0030,  ...,  0.0018, -0.0132, -0.0194],
+        ...,
+        [ 0.0027,  0.0048, -0.0175,  ...,  0.0332, -0.0186,  0.0148],
+        [-0.0013,  0.0221, -0.0221,  ..., -0.0148,  0.0137,  0.0181],
+        [ 0.0132, -0.0032, -0.0086,  ...,  0.0156, -0.0045,  0.0078]],
+       dtype=torch.bfloat16)
+0 blocks.4.ffn.key.weight tensor([[ 7.1106e-03,  1.9165e-02,  1.6479e-02,  ...,  5.1880e-03,
+          7.3242e-03,  1.2268e-02],
+        [-2.2278e-03, -6.4392e-03, -1.1292e-02,  ..., -8.6670e-03,
+          7.5989e-03, -7.4005e-04],
+        [ 2.0447e-03,  1.6403e-03,  6.1646e-03,  ...,  7.1716e-03,
+          1.3000e-02,  1.1902e-02],
+        ...,
+        [-4.0283e-03,  3.2959e-03,  5.6763e-03,  ...,  2.0386e-02,
+         -8.8501e-03, -3.6774e-03],
+        [-4.6997e-03, -7.1716e-03, -2.0123e-04,  ...,  2.4199e-05,
+         -6.3477e-03, -4.0894e-03],
+        [-4.1504e-03, -4.8523e-03,  5.8594e-03,  ..., -1.4648e-03,
+         -1.5411e-03, -6.4697e-03]], dtype=torch.bfloat16)
+0 blocks.4.ffn.receptance.weight tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.4.ffn.time_maa_k tensor([[[1.0000e+00, 1.0000e+00, 1.0000e+00,  ..., 6.4087e-04,
+          4.2725e-04, 2.1362e-04]]], dtype=torch.bfloat16)
+0 blocks.4.ffn.time_maa_r tensor([[[1.0000e+00, 1.0000e+00, 1.0000e+00,  ..., 6.4087e-04,
+          4.2725e-04, 2.1362e-04]]], dtype=torch.bfloat16)
+Progress: 754/902 | Sending name: blocks.4.ffn.value.weight
+           8.6670e-03, -6.6223e-03],.],.., -0.0008, -0.0043, -0.0092],1,  ..., 1.8311e-04,
+         [-9.0332e-03, -4.8523e-03, -5.8289e-03,  ..., -4.8218e-03,
+           9.0332e-03, -5.0659e-03],
+         ...,
+         [-1.0834e-03,  7.6294e-03, -9.4604e-03,  ..., -7.4158e-03,
+          -9.7046e-03, -7.2632e-03],
+         [ 3.6011e-03, -4.6997e-03, -5.7678e-03,  ...,  5.8594e-03,
+          -6.2256e-03,  7.6294e-03],
+         [-6.7139e-03, -1.2283e-03, -2.4719e-03,  ...,  4.9438e-03,
+           3.3875e-03, -7.1716e-03]],
+        [[-8.4686e-04,  1.2817e-03,  1.4420e-03,  ..., -2.5482e-03,
+           6.5613e-03,  3.0670e-03],
+         [-4.4556e-03, -4.5776e-03, -9.8267e-03,  ...,  1.0910e-03,
+           1.1215e-03, -3.8910e-03],
+         [-3.4943e-03,  4.9438e-03,  2.3041e-03,  ...,  5.8594e-03,
+          -8.3008e-03,  2.5177e-03],
+         ...,
+         [ 7.5989e-03,  3.1128e-03,  8.3008e-03,  ...,  5.7678e-03,
+          -2.2430e-03,  8.9111e-03],
+         [ 3.0365e-03,  6.1951e-03, -2.4872e-03,  ..., -3.8452e-03,
+           6.1951e-03, -6.4697e-03],
+         [ 1.6861e-03, -3.4485e-03, -3.9978e-03,  ...,  6.4392e-03,
+           6.8054e-03, -1.3428e-03]],
+        [[-6.5918e-03, -4.5586e-04,  7.6294e-03,  ...,  4.1809e-03,
+          -9.9487e-03,  5.0354e-03],
+         [-1.1749e-03,  7.2327e-03,  2.6245e-03,  ..., -4.6387e-03,
+          -1.7014e-03,  2.8076e-03],
+         [ 6.7139e-03,  9.8267e-03, -4.4632e-04,  ...,  1.5411e-03,
+           6.7749e-03, -5.1880e-03],
+         ...,
+         [ 1.8234e-03,  8.7280e-03,  7.7820e-04,  ...,  7.3242e-03,
+           3.6430e-04, -4.0283e-03],
+         [ 8.7280e-03,  9.0942e-03,  8.4839e-03,  ...,  9.4604e-03,
+           2.0752e-03, -7.7820e-03],
+         [ 8.1177e-03,  3.4332e-04,  2.9907e-03,  ...,  1.1597e-03,
+           5.1880e-03,  7.3853e-03]],
+        [[-4.0588e-03, -8.3160e-04,  9.7275e-05,  ..., -6.9885e-03,
+          -7.9956e-03, -7.7209e-03],
+         [-3.2349e-03, -5.7678e-03, -7.1411e-03,  ..., -3.6163e-03,
+          -9.3384e-03,  7.6599e-03],
+         [ 1.3733e-03, -9.1553e-03, -6.6528e-03,  ...,  9.5215e-03,
+           5.6458e-03, -5.9814e-03],
+         ...,
+         [-5.7678e-03,  3.1891e-03,  1.2741e-03,  ...,  8.5449e-03,
+           1.9836e-03, -6.1989e-05],
+         [ 7.9956e-03, -6.7749e-03, -3.9062e-03,  ...,  7.5684e-03,
+          -9.4604e-03, -1.6785e-03],
+         [-9.3994e-03, -8.1177e-03, -8.2397e-03,  ..., -2.3956e-03,
+           4.8218e-03,  6.4087e-04]],
+        [[-8.9111e-03,  5.8594e-03, -5.2795e-03,  ..., -8.1787e-03,
+          -7.9346e-04,  5.8289e-03],
+         [-7.0496e-03,  4.6692e-03,  5.5542e-03,  ..., -4.4556e-03,
+           7.9346e-03, -5.4321e-03],
+         [-2.8534e-03,  7.7820e-03, -3.0670e-03,  ...,  8.3008e-03,
+           3.9368e-03, -9.3994e-03],
+         ...,
+         [-9.4604e-03, -1.0986e-03, -1.8005e-03,  ...,  7.5073e-03,
+           7.8125e-03,  9.6436e-03],
+         [ 8.2397e-03,  4.4250e-03, -2.2278e-03,  ..., -7.7820e-03,
+          -5.2261e-04, -6.0730e-03],
+         [ 4.0588e-03,  4.2419e-03, -4.8523e-03,  ...,  5.8899e-03,
+          -5.9204e-03,  1.5182e-03]]], dtype=torch.bfloat16)
+0 blocks.5.att.time_maa_x tensor([[[1.0000e+00, 1.0000e+00, 1.0000e+00,  ..., 6.1798e-04,
+          4.1199e-04, 2.0599e-04]]], dtype=torch.bfloat16)
+0 blocks.5.att.value.weight tensor([[ 0.0221,  0.0040,  0.0359,  ..., -0.0221,  0.0057,  0.0223],
+        [-0.0031, -0.0047, -0.0122,  ...,  0.0036, -0.0085, -0.0058],
+        [ 0.0330, -0.0161, -0.0075,  ...,  0.0027,  0.0118,  0.0021],
+        ...,
+        [ 0.0188,  0.0232, -0.0162,  ...,  0.0096, -0.0042,  0.0120],
+        [-0.0051,  0.0122, -0.0167,  ..., -0.0145,  0.0157,  0.0104],
+        [ 0.0018,  0.0173, -0.0132,  ..., -0.0046, -0.0055,  0.0108]],
+       dtype=torch.bfloat16)
+Progress: 778/902 | Sending name: blocks.5.ffn.key.weight
+           8.6670e-03, -6.6223e-03],.],.., -0.0008, -0.0043, -0.0092],1,  ..., 1.8311e-04,
+           8.6670e-03, -6.6223e-03],.],.., -0.0008, -0.0043, -0.0092],1,  ..., 1.8311e-04,
+        [[ 9.2773e-03, -1.7395e-03, -3.2501e-03,  ...,  9.5215e-03,
+          -7.3547e-03, -8.6670e-03],
+         [-9.6436e-03,  9.3384e-03,  5.3406e-03,  ...,  2.4109e-03,
+           3.0975e-03, -6.8970e-03],
+         [-3.8605e-03, -9.2773e-03, -3.9062e-03,  ...,  5.7983e-03,
+           3.6774e-03, -6.3477e-03],
+         ...,
+         [-4.2419e-03,  4.8256e-04,  5.9509e-03,  ..., -8.1787e-03,
+          -3.2501e-03, -6.8970e-03],
+         [-7.2632e-03,  1.3504e-03, -7.9346e-03,  ..., -6.1646e-03,
+          -4.3945e-03, -9.7656e-03],
+         [-1.0010e-02,  6.6161e-06,  5.9509e-03,  ...,  1.8463e-03,
+          -1.4191e-03,  6.0120e-03]],
+        [[-6.9275e-03, -7.2021e-03, -5.5237e-03,  ...,  9.8267e-03,
+           1.0071e-03, -2.0294e-03],
+         [ 8.2397e-03, -1.0376e-03, -6.7444e-03,  ..., -8.1787e-03,
+           4.8523e-03,  9.7046e-03],
+         [-7.3547e-03, -6.1951e-03,  6.1340e-03,  ...,  4.7302e-03,
+          -3.6621e-03, -6.9885e-03],
+         ...,
+         [-5.0964e-03, -5.7983e-03, -1.9150e-03,  ...,  8.9111e-03,
+           7.6599e-03, -9.1553e-03],
+         [-4.7302e-03,  6.4392e-03, -3.9062e-03,  ..., -7.5073e-03,
+           2.2583e-03,  3.7842e-03],
+         [ 7.4463e-03, -2.0862e-05, -3.3417e-03,  ..., -3.8757e-03,
+          -1.0147e-03,  4.8828e-03]],
+        [[-9.7046e-03,  7.0801e-03, -1.9455e-04,  ...,  8.8501e-03,
+           1.8005e-03,  6.1646e-03],
+         [ 7.3242e-03,  4.7302e-03,  1.3809e-03,  ...,  9.9487e-03,
+          -1.6632e-03,  3.8605e-03],
+         [-9.5215e-03,  7.6904e-03, -2.8076e-03,  ..., -4.5471e-03,
+          -2.8534e-03, -9.3384e-03],
+         ...,
+         [-4.6082e-03, -8.6060e-03,  1.9989e-03,  ...,  9.9487e-03,
+           4.4250e-03,  7.9956e-03],
+         [-2.3804e-03,  7.6904e-03, -4.2725e-03,  ..., -8.3008e-03,
+          -6.4087e-04,  4.9133e-03],
+         [ 5.5542e-03,  1.3962e-03, -3.3417e-03,  ..., -6.4697e-03,
+           6.3477e-03,  3.9673e-03]]], dtype=torch.bfloat16)
+0 blocks.6.att.time_maa_x tensor([[[1.0000e+00, 1.0000e+00, 9.9609e-01,  ..., 5.9509e-04,
+          3.9673e-04, 1.9836e-04]]], dtype=torch.bfloat16)
+0 blocks.6.att.value.weight tensor([[ 0.0130,  0.0309, -0.0217,  ..., -0.0195,  0.0332,  0.0183],
+        [ 0.0076, -0.0164,  0.0034,  ..., -0.0083, -0.0117,  0.0332],
+        [-0.0356,  0.0381, -0.0120,  ...,  0.0062, -0.0187,  0.0045],
+        ...,
+        [-0.0265, -0.0128,  0.0096,  ..., -0.0156, -0.0112,  0.0281],
+        [ 0.0031,  0.0165, -0.0170,  ..., -0.0265, -0.0049, -0.0405],
+        [ 0.0271, -0.0002,  0.0152,  ...,  0.0258, -0.0114,  0.0457]],
+       dtype=torch.bfloat16)
+0 blocks.6.ffn.key.weight tensor([[ 0.0014,  0.0005,  0.0078,  ..., -0.0043,  0.0039,  0.0016],
+        [-0.0055,  0.0124, -0.0036,  ..., -0.0076,  0.0090,  0.0053],
+        [ 0.0066, -0.0078,  0.0062,  ...,  0.0096, -0.0075, -0.0084],
+        ...,
+        [-0.0007,  0.0019, -0.0021,  ..., -0.0027,  0.0166, -0.0095],
+        [-0.0173,  0.0083, -0.0047,  ..., -0.0037, -0.0035, -0.0074],
+        [-0.0056,  0.0103, -0.0035,  ..., -0.0008,  0.0117, -0.0052]],
+       dtype=torch.bfloat16)
+0 blocks.6.ffn.receptance.weight tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.6.ffn.time_maa_k tensor([[[1.0000e+00, 1.0000e+00, 9.9609e-01,  ..., 5.9509e-04,
+          3.9673e-04, 1.9836e-04]]], dtype=torch.bfloat16)
+0 blocks.6.ffn.time_maa_r tensor([[[1.0000e+00, 1.0000e+00, 9.9609e-01,  ..., 5.9509e-04,
+          3.9673e-04, 1.9836e-04]]], dtype=torch.bfloat16)
+Progress: 810/902 | Sending name: blocks.6.ffn.value.weight
+          -2.7771e-03,  9.7046e-03],.],.., -0.0008, -0.0043, -0.0092],1,  ..., 1.8311e-04,
+         [-9.3994e-03,  9.8267e-03, -3.5400e-03,  ...,  4.7913e-03,
+           8.2397e-03, -8.2397e-03],
+         ...,
+         [-9.7046e-03,  7.6904e-03,  2.5635e-03,  ..., -2.3041e-03,
+           7.5073e-03, -4.5471e-03],
+         [-4.1771e-04,  4.0283e-03,  5.5847e-03,  ..., -5.9204e-03,
+           2.7924e-03,  9.8267e-03],
+         [-2.4719e-03,  3.2043e-03, -8.5068e-04,  ..., -3.0823e-03,
+           7.8735e-03,  7.4387e-04]],
+        [[ 8.7891e-03, -6.0425e-03,  3.8910e-03,  ..., -8.9111e-03,
+           6.1340e-03,  4.5776e-03],
+         [ 2.0905e-03, -5.0354e-03,  8.2397e-04,  ...,  1.0147e-03,
+          -8.1787e-03, -2.8381e-03],
+         [-6.5002e-03,  7.4463e-03, -7.0801e-03,  ...,  8.2397e-03,
+           4.4250e-03, -6.2256e-03],
+         ...,
+         [ 6.0425e-03,  3.3875e-03, -2.2125e-03,  ..., -6.5918e-03,
+          -1.7357e-04,  3.7079e-03],
+         [-9.5825e-03,  9.6512e-04,  6.4697e-03,  ..., -3.6621e-03,
+          -1.3504e-03, -4.3030e-03],
+         [-7.2327e-03, -4.9133e-03,  4.3030e-03,  ..., -2.4261e-03,
+           8.1787e-03, -3.0823e-03]],
+        [[-3.0365e-03,  2.1362e-03,  6.3324e-04,  ..., -7.5989e-03,
+           1.9684e-03, -7.0801e-03],
+         [-6.9275e-03,  8.1787e-03,  3.7537e-03,  ...,  9.7275e-04,
+          -6.0730e-03,  1.9455e-03],
+         [ 2.0752e-03, -6.7139e-03, -5.7373e-03,  ...,  3.0670e-03,
+           2.1057e-03,  6.2866e-03],
+         ...,
+         [-4.0283e-03,  1.4954e-03, -8.1177e-03,  ...,  8.3618e-03,
+          -7.1106e-03, -2.3804e-03],
+         [-7.6904e-03,  6.2561e-03, -7.9956e-03,  ..., -3.8910e-03,
+           9.5215e-03, -9.5825e-03],
+         [ 8.2397e-03, -6.4697e-03, -3.0518e-03,  ...,  4.5395e-04,
+          -2.7161e-03, -7.9346e-04]],
+        [[ 1.2741e-03, -2.6512e-04, -5.2795e-03,  ...,  3.2501e-03,
+           7.9346e-03,  4.4861e-03],
+         [-6.7749e-03, -7.7209e-03, -2.1362e-03,  ...,  6.0272e-04,
+           7.9956e-03, -7.4768e-03],
+         [ 8.1635e-04,  1.3580e-03, -7.0190e-03,  ...,  4.4861e-03,
+          -6.2561e-03,  7.2021e-03],
+         ...,
+         [ 5.1270e-03, -5.3711e-03, -8.3542e-04,  ..., -5.8594e-03,
+          -5.4626e-03,  7.6599e-03],
+         [ 5.0049e-03, -4.0894e-03,  2.9755e-03,  ...,  7.1106e-03,
+           2.2736e-03, -4.9438e-03],
+         [ 7.5684e-03,  8.7891e-03, -6.6833e-03,  ...,  3.3569e-03,
+          -8.2397e-03,  1.7929e-03]],
+        [[-8.5449e-03,  2.4719e-03,  6.2943e-04,  ..., -4.6082e-03,
+          -9.1553e-03, -7.8735e-03],
+         [-3.5248e-03,  8.6670e-03, -2.9144e-03,  ..., -7.6599e-03,
+           3.3417e-03, -9.2163e-03],
+         [-8.1787e-03,  1.8616e-03,  6.2466e-05,  ..., -8.3008e-03,
+           4.3678e-04, -1.7319e-03],
+         ...,
+         [-6.3782e-03, -7.2021e-03,  4.0283e-03,  ...,  7.2327e-03,
+           6.0120e-03,  3.5553e-03],
+         [-1.2817e-03,  4.7607e-03, -7.2479e-04,  ..., -8.7280e-03,
+          -4.0894e-03,  8.9111e-03],
+         [-6.1951e-03,  2.5177e-03, -9.1553e-03,  ..., -9.9487e-03,
+          -5.1575e-03, -2.2888e-03]]], dtype=torch.bfloat16)
+0 blocks.7.att.time_maa_x tensor([[[1.0000e+00, 1.0000e+00, 9.9609e-01,  ..., 5.7220e-04,
+          3.8147e-04, 1.9073e-04]]], dtype=torch.bfloat16)
+0 blocks.7.att.value.weight tensor([[-0.0045, -0.0074,  0.0144,  ..., -0.0128, -0.0109,  0.0242],
+        [-0.0159, -0.0245, -0.0150,  ...,  0.0152,  0.0183, -0.0149],
+        [-0.0069,  0.0184,  0.0250,  ...,  0.0054, -0.0063,  0.0054],
+        ...,
+        [ 0.0044,  0.0045, -0.0002,  ...,  0.0284,  0.0236, -0.0199],
+        [-0.0236, -0.0079, -0.0295,  ..., -0.0021,  0.0061,  0.0118],
+        [ 0.0136,  0.0056, -0.0021,  ...,  0.0298, -0.0282,  0.0074]],
+       dtype=torch.bfloat16)
+Progress: 834/902 | Sending name: blocks.7.ffn.key.weight
+          -2.7771e-03,  9.7046e-03],.],.., -0.0008, -0.0043, -0.0092],1,  ..., 1.8311e-04,
+          -2.0447e-03,  2.4414e-03],.],.., -0.0008, -0.0043, -0.0092],1,  ..., 1.8311e-04,
+         [-1.9379e-03, -8.9722e-03, -2.7313e-03,  ...,  2.2278e-03,
+          -6.7139e-03, -6.4697e-03],
+         [-3.1128e-03,  9.5825e-03, -1.4267e-03,  ..., -3.5858e-04,
+          -5.7983e-04, -8.6060e-03],
+         ...,
+         [-5.2795e-03,  8.0566e-03,  3.4485e-03,  ..., -4.3335e-03,
+           5.0354e-03,  4.2725e-03],
+         [-2.8381e-03, -4.6692e-03, -4.6692e-03,  ..., -5.4932e-03,
+           3.9978e-03, -6.7444e-03],
+         [ 3.2806e-03, -4.9744e-03, -3.1471e-05,  ...,  9.7656e-03,
+           2.5332e-06,  4.3945e-03]],
+        [[ 7.6294e-03, -2.8534e-03,  5.4626e-03,  ..., -3.2196e-03,
+           5.2185e-03,  6.9885e-03],
+         [-4.4861e-03,  6.6376e-04,  8.3618e-03,  ...,  4.7607e-03,
+           9.5825e-03,  9.1553e-03],
+         [-8.9111e-03, -7.2937e-03, -3.6316e-03,  ..., -8.5831e-04,
+          -7.1716e-04, -9.7656e-03],
+         ...,
+         [ 8.9111e-03,  1.4420e-03, -6.0425e-03,  ...,  3.8757e-03,
+           1.1539e-04,  6.1646e-03],
+         [ 9.7656e-03, -8.6670e-03,  7.7820e-03,  ..., -7.6599e-03,
+           2.5482e-03,  2.3651e-03],
+         [-1.2131e-03, -9.7046e-03, -8.1177e-03,  ...,  3.1586e-03,
+          -4.6082e-03,  5.6458e-03]]], dtype=torch.bfloat16)
+0 blocks.8.att.time_maa_x tensor([[[1.0000e+00, 1.0000e+00, 9.9609e-01,  ..., 5.4932e-04,
+          3.6621e-04, 1.8311e-04]]], dtype=torch.bfloat16)
+0 blocks.8.att.value.weight tensor([[-0.0077, -0.0256,  0.0022,  ...,  0.0245, -0.0023,  0.0092],
+        [ 0.0030,  0.0055,  0.0023,  ..., -0.0083, -0.0205,  0.0137],
+        [ 0.0134, -0.0001,  0.0142,  ..., -0.0078, -0.0132,  0.0273],
+        ...,
+        [-0.0109, -0.0154, -0.0425,  ...,  0.0067, -0.0160, -0.0398],
+        [-0.0075,  0.0077, -0.0076,  ...,  0.0119,  0.0099, -0.0156],
+        [-0.0075, -0.0322, -0.0052,  ...,  0.0165, -0.0033, -0.0203]],
+       dtype=torch.bfloat16)
+0 blocks.8.ffn.key.weight tensor([[-1.3672e-02,  6.9427e-04,  7.8735e-03,  ..., -1.5503e-02,
+          2.3193e-03, -1.7014e-03],
+        [ 2.4292e-02, -4.7913e-03,  6.0730e-03,  ..., -5.0964e-03,
+         -5.0964e-03,  9.7046e-03],
+        [ 7.4768e-03, -1.0986e-02, -7.5989e-03,  ...,  4.6997e-03,
+          3.0212e-03,  1.5640e-03],
+        ...,
+        [ 4.2419e-03, -2.8801e-04, -7.8964e-04,  ...,  8.3008e-03,
+         -1.5488e-03,  1.0132e-02],
+        [-2.3041e-03, -4.8523e-03, -3.3112e-03,  ...,  4.8828e-03,
+         -4.8523e-03, -3.5095e-03],
+        [ 1.0376e-02, -1.4114e-03,  2.6822e-05,  ...,  1.3000e-02,
+         -5.3406e-04,  5.5847e-03]], dtype=torch.bfloat16)
+0 blocks.8.ffn.receptance.weight tensor([[0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.],
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.8.ffn.time_maa_k tensor([[[1.0000e+00, 1.0000e+00, 9.9609e-01,  ..., 5.4932e-04,
+          3.6621e-04, 1.8311e-04]]], dtype=torch.bfloat16)
+0 blocks.8.ffn.time_maa_r tensor([[[1.0000e+00, 1.0000e+00, 9.9609e-01,  ..., 5.4932e-04,
+          3.6621e-04, 1.8311e-04]]], dtype=torch.bfloat16)
+Progress: 866/902 | Sending name: blocks.8.ffn.value.weight
+        [0., 0., 0.,  ..., 0., 0., 0.],.., -0.0008, -0.0043, -0.0092],1,  ..., 1.8311e-04,
+        [0., 0., 0.,  ..., 0., 0., 0.]], dtype=torch.bfloat16)
+0 blocks.9.att.time_maa_w2 tensor([[[-8.6670e-03,  9.8267e-03, -8.0566e-03,  ...,  3.8910e-03,
+           8.8501e-03, -6.7139e-03],
+         [-9.0332e-03, -7.7820e-03, -7.1411e-03,  ...,  4.1809e-03,
+          -6.1951e-03,  8.9722e-03],
+         [-1.3580e-03, -2.9907e-03,  1.0010e-02,  ...,  3.8147e-03,
+          -9.1553e-03, -2.0752e-03],
+         ...,
+         [-5.9204e-03,  2.5024e-03,  7.9346e-03,  ...,  7.0496e-03,
+          -6.1646e-03,  2.9755e-03],
+         [-4.9744e-03,  9.8267e-03, -9.8348e-06,  ..., -3.6926e-03,
+          -3.2501e-03, -3.4332e-04],
+         [ 9.0332e-03, -3.9062e-03, -8.3008e-03,  ...,  5.0964e-03,
+           3.0212e-03, -6.8665e-03]],
+        [[ 9.8267e-03,  6.9580e-03, -4.7112e-04,  ..., -5.4321e-03,
+          -3.0975e-03, -7.8125e-03],
+         [ 5.0354e-03,  6.8970e-03,  5.1880e-04,  ...,  8.7891e-03,
+           8.3008e-03,  5.3711e-03],
+         [ 4.3640e-03, -2.6703e-03,  4.8218e-03,  ..., -4.6082e-03,
+           3.7384e-03, -2.1210e-03],
+         ...,
+         [ 2.7924e-03,  3.2349e-03,  8.6060e-03,  ..., -6.2256e-03,
+           8.6060e-03, -4.9744e-03],
+         [ 6.6223e-03,  6.9885e-03, -8.6060e-03,  ...,  3.9368e-03,
+           9.4604e-04,  8.3008e-03],
+         [ 1.0681e-03,  1.1215e-03, -3.5400e-03,  ...,  7.8125e-03,
+          -7.0496e-03, -7.1411e-03]],
+        [[ 3.8147e-03, -2.6894e-04,  9.6436e-03,  ..., -2.0409e-04,
+          -7.0572e-05,  1.2436e-03],
+         [-1.0910e-03,  1.4648e-03, -4.2114e-03,  ...,  9.2773e-03,
+          -9.5825e-03,  5.0354e-03],
+         [-3.7956e-04, -1.7776e-03,  1.9684e-03,  ...,  1.1902e-03,
+           3.6926e-03,  4.6387e-03],
+         ...,
+         [ 8.3542e-04,  3.6240e-04, -1.4954e-03,  ...,  4.9744e-03,
+           6.1035e-03,  5.0735e-04],
+         [-7.6904e-03, -8.0566e-03, -7.6904e-03,  ..., -6.6833e-03,
+           5.2643e-04,  2.1362e-03],
+         [-1.5259e-04, -6.2943e-04, -8.9645e-04,  ..., -3.0365e-03,
+          -8.1787e-03, -2.0294e-03]],
+        [[ 2.8839e-03, -8.0566e-03,  9.2163e-03,  ...,  8.0566e-03,
+          -7.3242e-03, -6.8054e-03],
+         [-2.3804e-03, -7.4158e-03, -6.6528e-03,  ...,  6.3782e-03,
+          -9.1553e-03, -2.0294e-03],
+         [-2.5940e-03,  4.6997e-03, -7.5531e-04,  ..., -2.0123e-04,
+          -6.0120e-03, -9.2773e-03],
+         ...,
+         [-8.0566e-03,  7.9956e-03, -8.6670e-03,  ...,  9.7656e-03,
+          -3.7689e-03,  1.8158e-03],
+         [ 7.5531e-04,  4.0588e-03,  5.5542e-03,  ..., -3.8910e-03,
+           1.7776e-03, -4.5166e-03],
+         [ 3.5706e-03,  8.2397e-03,  4.3030e-03,  ..., -3.7537e-03,
+           5.8899e-03, -9.2773e-03]],
+        [[ 2.2278e-03, -8.8501e-03,  4.6082e-03,  ..., -7.2327e-03,
+           2.7466e-03,  3.0518e-03],
+         [ 1.8978e-04, -1.4191e-03, -9.5749e-04,  ..., -5.7678e-03,
+           9.5825e-03, -8.9722e-03],
+         [ 4.7607e-03, -1.1063e-03,  7.0801e-03,  ..., -8.3008e-03,
+           6.2866e-03,  5.4932e-03],
+         ...,
+         [-2.0447e-03, -2.6855e-03,  9.0942e-03,  ..., -6.9275e-03,
+           6.1340e-03, -3.9062e-03],
+         [ 3.1281e-04,  8.2397e-03,  4.3106e-04,  ...,  4.6921e-04,
+          -2.1667e-03,  5.5237e-03],
+         [ 2.5940e-03,  9.0942e-03,  8.3618e-03,  ...,  7.8735e-03,
+           9.3384e-03,  1.9379e-03]]], dtype=torch.bfloat16)
+0 blocks.9.att.time_maa_x tensor([[[1.0000e+00, 9.9609e-01, 9.9609e-01,  ..., 5.2643e-04,
+          3.5095e-04, 1.7548e-04]]], dtype=torch.bfloat16)
+0 blocks.9.att.value.weight tensor([[-0.0193, -0.0102, -0.0190,  ..., -0.0415, -0.0117, -0.0415],
+        [ 0.0217, -0.0091, -0.0219,  ...,  0.0312,  0.0204,  0.0078],
+        [-0.0053,  0.0072, -0.0320,  ...,  0.0052, -0.0098, -0.0284],
+        ...,
+        [-0.0123,  0.0033, -0.0151,  ...,  0.0199, -0.0002,  0.0036],
+        [-0.0047,  0.0031, -0.0054,  ..., -0.0221, -0.0179, -0.0056],
+        [-0.0010,  0.0024, -0.0118,  ..., -0.0131, -0.0038,  0.0151]],
+       dtype=torch.bfloat16)
+0 blocks.9.ffn.key.weight tensor([[ 8.4839e-03, -1.2146e-02,  1.1536e-02,  ..., -4.6692e-03,
+         -4.7913e-03,  7.2937e-03],
+        [ 1.2878e-02, -1.6113e-02, -1.1353e-02,  ..., -8.9645e-04,
+          5.0964e-03,  8.3008e-03],
+        [-3.9673e-03, -1.2939e-02, -4.8523e-03,  ...,  9.6130e-04,
+          4.2725e-03, -1.3000e-02],
+        ...,
+        [ 2.5635e-03,  8.1177e-03, -1.0315e-02,  ...,  1.4709e-02,
+         -1.1368e-03, -2.7466e-04],
+        [-3.7537e-03,  9.7046e-03, -5.8899e-03,  ..., -7.3853e-03,
+          1.3123e-02, -5.4932e-03],
+        [ 1.2451e-02,  2.9144e-03,  1.7929e-03,  ...,  5.7936e-05,
+          9.2163e-03,  3.0975e-03]], dtype=torch.bfloat16)
+Progress: 891/902 | Sending name: blocks.9.ffn.receptance.weight
+        [0., 0., 0.,  ..., 0., 0., 0.],.., -0.0008, -0.0043, -0.0092],1,  ..., 1.8311e-04,
+        [0., 0., 0.,  ..., 0., 0., 0.],.., -0.0008, -0.0043, -0.0092],1,  ..., 1.8311e-04,
+        [0., 0., 0.,  ..., 0., 0., 0.],.., -0.0008, -0.0043, -0.0092],1,  ..., 1.8311e-04,
+        [0., 0., 0.,  ..., 0., 0., 0.],.., -0.0008, -0.0043, -0.0092],1,  ..., 1.8311e-04,

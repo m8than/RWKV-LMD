@@ -1,0 +1,44 @@
+/usr/local/lib/python3.10/dist-packages/lightning/pytorch/loggers/wandb.py:396: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+/usr/local/lib/python3.10/dist-packages/pytorch_lightning/utilities/parsing.py:44: attribute 'args' removed from hparams because it cannot be pickled
+INFO:pytorch_lightning.strategies.deepspeed:initializing deepspeed distributed: GLOBAL_RANK: 0, MEMBER: 1/32
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/call.py", line 43, in _call_and_handle_interrupt
+    return trainer.strategy.launcher.launch(trainer_fn, *args, trainer=trainer, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/strategies/launchers/subprocess_script.py", line 105, in launch
+    return function(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 580, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 943, in _run
+    self.strategy.setup_environment()
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/strategies/deepspeed.py", line 323, in setup_environment
+    super().setup_environment()
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/strategies/ddp.py", line 154, in setup_environment
+    self.setup_distributed()
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/strategies/deepspeed.py", line 331, in setup_distributed
+    self._init_deepspeed_distributed()
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/strategies/deepspeed.py", line 369, in _init_deepspeed_distributed
+    deepspeed.init_distributed(self._process_group_backend, distributed_port=self.cluster_environment.main_port)
+  File "/usr/local/lib/python3.10/dist-packages/deepspeed/comm/comm.py", line 670, in init_distributed
+    cdb = TorchBackend(dist_backend, timeout, init_method, rank, world_size)
+  File "/usr/local/lib/python3.10/dist-packages/deepspeed/comm/torch.py", line 112, in __init__
+    self.init_process_group(backend, timeout, init_method, rank, world_size)
+  File "/usr/local/lib/python3.10/dist-packages/deepspeed/comm/torch.py", line 142, in init_process_group
+    torch.distributed.init_process_group(backend,
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/c10d_logger.py", line 74, in wrapper
+    func_return = func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/distributed_c10d.py", line 1141, in init_process_group
+    store, rank, world_size = next(rendezvous_iterator)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/rendezvous.py", line 241, in _env_rendezvous_handler
+    store = _create_c10d_store(master_addr, master_port, rank, world_size, timeout)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/rendezvous.py", line 172, in _create_c10d_store
+    return TCPStore(
+RuntimeError: Interrupted system call
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/workspace/nathan/RWKV-LM/RWKV-v5/train.py", line 351, in <module>
+    trainer.fit(model, data_loader)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 544, in fit
+    call._call_and_handle_interrupt(
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/call.py", line 43, in _call_and_handle_interrupt
+    return trainer.strategy.launcher.launch(trainer_fn, *args, trainer=trainer, **kwargs)
+KeyboardInterrupt

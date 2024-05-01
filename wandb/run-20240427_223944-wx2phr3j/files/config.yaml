@@ -1,0 +1,247 @@
+wandb_version: 1
+
+load_model:
+  desc: null
+  value: /checkpoint/testload/L32-D4096-x060/rwkv-init.pth
+wandb:
+  desc: null
+  value: 70B-RUN
+proj_dir:
+  desc: null
+  value: /checkpoint/testload/L32-D4096-x060
+random_seed:
+  desc: null
+  value: -1
+train_type:
+  desc: null
+  value: ''
+data_file:
+  desc: null
+  value: /checkpoint/moe-dataset/1.5a/dataset_chunk_0_text_document
+data_type:
+  desc: null
+  value: binidx
+vocab_size:
+  desc: null
+  value: 65536
+ctx_len:
+  desc: null
+  value: 512
+epoch_steps:
+  desc: null
+  value: 1260
+epoch_count:
+  desc: null
+  value: 6429
+epoch_begin:
+  desc: null
+  value: 0
+epoch_save:
+  desc: null
+  value: 1
+micro_bsz:
+  desc: null
+  value: 4
+n_layer:
+  desc: null
+  value: 32
+n_embd:
+  desc: null
+  value: 4096
+dim_att:
+  desc: null
+  value: 4096
+dim_ffn:
+  desc: null
+  value: 14336
+pre_ffn:
+  desc: null
+  value: 0
+head_qk:
+  desc: null
+  value: 0
+tiny_att_dim:
+  desc: null
+  value: 0
+tiny_att_layer:
+  desc: null
+  value: -999
+lr_init:
+  desc: null
+  value: 0.0001
+lr_final:
+  desc: null
+  value: 1.0e-05
+warmup_steps:
+  desc: null
+  value: 0
+beta1:
+  desc: null
+  value: 0.9
+beta2:
+  desc: null
+  value: 0.99
+adam_eps:
+  desc: null
+  value: 1.0e-08
+grad_cp:
+  desc: null
+  value: 1
+dropout:
+  desc: null
+  value: 0
+weight_decay:
+  desc: null
+  value: 0.0001
+weight_decay_final:
+  desc: null
+  value: -1
+my_pile_version:
+  desc: null
+  value: 1
+my_pile_stage:
+  desc: null
+  value: 3
+my_pile_shift:
+  desc: null
+  value: 0
+my_pile_edecay:
+  desc: null
+  value: 0
+layerwise_lr:
+  desc: null
+  value: 1
+ds_bucket_mb:
+  desc: null
+  value: 200
+my_sample_len:
+  desc: null
+  value: 0
+my_ffn_shift:
+  desc: null
+  value: 1
+my_att_shift:
+  desc: null
+  value: 1
+head_size_a:
+  desc: null
+  value: 64
+head_size_divisor:
+  desc: null
+  value: 8
+my_pos_emb:
+  desc: null
+  value: 0
+load_partial:
+  desc: null
+  value: 0
+magic_prime:
+  desc: null
+  value: 259241513
+my_qa_mask:
+  desc: null
+  value: 0
+my_random_steps:
+  desc: null
+  value: 0
+my_testing:
+  desc: null
+  value: x060
+my_exit:
+  desc: null
+  value: 99999999
+my_exit_tokens:
+  desc: null
+  value: 132731667543
+accelerator:
+  desc: null
+  value: gpu
+strategy:
+  desc: null
+  value: deepspeed_stage_3
+devices:
+  desc: null
+  value: 8
+num_nodes:
+  desc: null
+  value: 1
+precision:
+  desc: null
+  value: bf16-mixed
+accumulate_grad_batches:
+  desc: null
+  value: 1
+my_timestamp:
+  desc: null
+  value: 2024-04-27-22-39-16
+enable_checkpointing:
+  desc: null
+  value: false
+replace_sampler_ddp:
+  desc: null
+  value: false
+logger:
+  desc: null
+  value: false
+gradient_clip_val:
+  desc: null
+  value: 1.0
+num_sanity_val_steps:
+  desc: null
+  value: 0
+check_val_every_n_epoch:
+  desc: null
+  value: 100000000000000000000
+log_every_n_steps:
+  desc: null
+  value: 100000000000000000000
+max_epochs:
+  desc: null
+  value: -1
+betas:
+  desc: null
+  value:
+  - 0.9
+  - 0.99
+real_bsz:
+  desc: null
+  value: 32
+run_name:
+  desc: null
+  value: 65536 ctx512 L32 D4096
+trainer:
+  desc: null
+  value: <pytorch_lightning.trainer.trainer.Trainer object at 0x7f18536590f0>
+actual_model_path:
+  desc: null
+  value: /checkpoint/testload/L32-D4096-x060/rwkv-init.pth
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.12
+    cli_version: 0.16.6
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1714257584.0
+    t:
+      1:
+      - 1
+      - 9
+      - 55
+      - 103
+      2:
+      - 1
+      - 9
+      - 55
+      - 103
+      3:
+      - 13
+      - 16
+      - 23
+      - 61
+      4: 3.10.12
+      5: 0.16.6
+      8:
+      - 5
+      13: linux-x86_64

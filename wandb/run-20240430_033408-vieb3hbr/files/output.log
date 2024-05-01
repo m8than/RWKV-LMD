@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/nathan/RWKV-LM/RWKV-v5/train.py", line 267, in <module>
+    val_check_interval=args.val_check_interval,
+AttributeError: 'Namespace' object has no attribute 'val_check_interval'
+Traceback (most recent call last):
+  File "/workspace/nathan/RWKV-LM/RWKV-v5/train.py", line 267, in <module>
+    val_check_interval=args.val_check_interval,
+AttributeError: 'Namespace' object has no attribute 'val_check_interval'

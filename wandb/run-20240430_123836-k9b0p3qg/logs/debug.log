@@ -1,0 +1,28 @@
+2024-04-30 12:38:36,517 INFO    MainThread:1631525 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-30 12:38:36,517 INFO    MainThread:1631525 [wandb_setup.py:_flush():76] Configure stats pid to 1631525
+2024-04-30 12:38:36,517 INFO    MainThread:1631525 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2024-04-30 12:38:36,517 INFO    MainThread:1631525 [wandb_setup.py:_flush():76] Loading settings from /workspace/nathan/RWKV-LM/RWKV-v5/wandb/settings
+2024-04-30 12:38:36,517 INFO    MainThread:1631525 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-30 12:38:36,517 INFO    MainThread:1631525 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-30 12:38:36,517 INFO    MainThread:1631525 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program_abspath': '/workspace/nathan/RWKV-LM/RWKV-v5/train.py', 'program': '/workspace/nathan/RWKV-LM/RWKV-v5/train.py'}
+2024-04-30 12:38:36,517 INFO    MainThread:1631525 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-30 12:38:36,517 INFO    MainThread:1631525 [wandb_init.py:_log_setup():521] Logging user logs to ./wandb/run-20240430_123836-k9b0p3qg/logs/debug.log
+2024-04-30 12:38:36,517 INFO    MainThread:1631525 [wandb_init.py:_log_setup():522] Logging internal logs to ./wandb/run-20240430_123836-k9b0p3qg/logs/debug-internal.log
+2024-04-30 12:38:36,517 INFO    MainThread:1631525 [wandb_init.py:init():561] calling init triggers
+2024-04-30 12:38:36,517 INFO    MainThread:1631525 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {}
+2024-04-30 12:38:36,517 INFO    MainThread:1631525 [wandb_init.py:init():611] starting backend
+2024-04-30 12:38:36,517 INFO    MainThread:1631525 [wandb_init.py:init():615] setting up manager
+2024-04-30 12:38:36,518 INFO    MainThread:1631525 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-04-30 12:38:36,519 INFO    MainThread:1631525 [wandb_init.py:init():623] backend started and connected
+2024-04-30 12:38:36,520 INFO    MainThread:1631525 [wandb_init.py:init():715] updated telemetry
+2024-04-30 12:38:36,526 INFO    MainThread:1631525 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-30 12:38:37,181 INFO    MainThread:1631525 [wandb_run.py:_on_init():2357] communicating current version
+2024-04-30 12:38:37,378 INFO    MainThread:1631525 [wandb_run.py:_on_init():2366] got version response 
+2024-04-30 12:38:37,378 INFO    MainThread:1631525 [wandb_init.py:init():799] starting run threads in backend
+2024-04-30 12:38:37,645 INFO    MainThread:1631525 [wandb_run.py:_console_start():2335] atexit reg
+2024-04-30 12:38:37,645 INFO    MainThread:1631525 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-04-30 12:38:37,645 INFO    MainThread:1631525 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-04-30 12:38:37,645 INFO    MainThread:1631525 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-04-30 12:38:37,645 INFO    MainThread:1631525 [wandb_init.py:init():842] run started, returning control to user process
+2024-04-30 12:39:40,177 INFO    MainThread:1631525 [wandb_run.py:_config_callback():1347] config_cb None None {'args/load_model': '0', 'args/init_model': 0, 'args/wandb': '70B-RUN-NEW', 'args/proj_dir': '/checkpoint/70B/L10-D8192-x060', 'args/random_seed': -1, 'args/train_type': '', 'args/data_file': '/checkpoint/moe-dataset/1.5a/dataset_chunk_0_text_document', 'args/data_type': 'binidx', 'args/vocab_size': 65536, 'args/ctx_len': 1024, 'args/lr_step_period': 2500, 'args/step_begin': 0, 'args/epoch_count': 1, 'args/epoch_step_save': 1500, 'args/micro_bsz': 16, 'args/n_layer': 10, 'args/n_embd': 8192, 'args/log_freq': 500, 'args/dim_att': 8192, 'args/dim_ffn': 28672, 'args/pre_ffn': 0, 'args/head_qk': 0, 'args/tiny_att_dim': 0, 'args/tiny_att_layer': -999, 'args/lr_init': 0.00025, 'args/lr_final': 8e-05, 'args/warmup_steps': 30, 'args/beta1': 0.9, 'args/beta2': 0.95, 'args/adam_eps': 1e-08, 'args/grad_cp': 1, 'args/dropout': 0, 'args/weight_decay': 0.1, 'args/weight_decay_final': -1, 'args/my_pile_version': 1, 'args/my_pile_stage': 0, 'args/my_pile_shift': -1, 'args/my_pile_edecay': 0, 'args/layerwise_lr': 1, 'args/ds_bucket_mb': 100, 'args/my_sample_len': 0, 'args/my_ffn_shift': 1, 'args/my_att_shift': 1, 'args/head_size_a': 64, 'args/head_size_divisor': 8, 'args/my_pos_emb': 0, 'args/load_partial': 0, 'args/magic_prime': 0, 'args/my_qa_mask': 0, 'args/my_random_steps': 0, 'args/my_testing': 'x060', 'args/my_exit': 99999999, 'args/my_exit_tokens': 0, 'args/accelerator': 'gpu', 'args/strategy': 'deepspeed_stage_2', 'args/devices': 8, 'args/num_nodes': 4, 'args/precision': 'bf16-mixed', 'args/accumulate_grad_batches': 1, 'args/my_timestamp': '2024-04-30-12-38-35', 'args/enable_checkpointing': False, 'args/replace_sampler_ddp': False, 'args/gradient_clip_val': 1.0, 'args/num_sanity_val_steps': 0, 'args/check_val_every_n_epoch': 100000000000000000000, 'args/log_every_n_steps': 100000000000000000000, 'args/max_epochs': 1, 'args/betas': [0.9, 0.95], 'args/real_bsz': 512, 'args/run_name': '65536 ctx1024 L10 D8192', 'args/start_step': 0, 'args/actual_model_path': '/checkpoint/70B/L10-D8192-x060/rwkv-init.pth', 'args/dataset_len': 129620769, 'args/trainer': '<pytorch_lightning.trainer.trainer.Trainer object at 0x7f01f836bb20>'}

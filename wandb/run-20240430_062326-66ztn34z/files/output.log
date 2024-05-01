@@ -1,0 +1,30 @@
+
+INFO:pytorch_lightning.strategies.deepspeed:initializing deepspeed distributed: GLOBAL_RANK: 8, MEMBER: 9/16
+INFO:pytorch_lightning.accelerators.cuda:LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Using /root/.cache/torch_extensions/py310_cu121 as PyTorch extensions root...
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.10166358947753906 seconds
+Broadcasted tensor sizes list length: 902 rank: 8
+Updated 902 keys on 8
+Non zero tensors rank 8 - 0
+tensor(11.2500, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<L2WrapBackward>) tensor(11.2500, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<L2WrapBackward>)
+tensor(8.8750, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>) tensor(8.8750, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>)
+tensor(9.2500, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>) tensor(9.2500, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>)
+tensor(8.4375, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>) tensor(8.4375, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>)
+tensor(8.6250, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>) tensor(8.6250, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>)
+tensor(8.2500, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>) tensor(8.2500, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>)
+tensor(7.9062, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>) tensor(7.9062, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>)
+tensor(7.7500, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>) tensor(7.7500, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>)
+tensor(7.9375, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>) tensor(7.9375, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>)
+tensor(7.6250, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>) tensor(7.6250, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>)
+tensor(7.3750, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>) tensor(7.3750, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>)
+tensor(7.1875, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>) tensor(7.1875, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>)
+tensor(7.0625, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>) tensor(7.0625, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>)
+tensor(7.0938, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>) tensor(7.0938, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>)
+tensor(6.7500, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>) tensor(6.7500, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>)
+tensor(6.6875, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>) tensor(6.6875, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>)
+tensor(6.5312, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>) tensor(6.5312, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>)
+tensor(6.7188, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>) tensor(6.7188, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>)
+tensor(6.4688, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>) tensor(6.4688, device='cuda:0', dtype=torch.bfloat16, grad_fn=<L2WrapBackward>)

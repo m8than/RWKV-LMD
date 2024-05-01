@@ -1,0 +1,5 @@
+Error
+ name 'get_world_size' is not defined
+Error
+ name 'get_world_size' is not defined
+/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/call.py:54: Detected KeyboardInterrupt, attempting graceful shutdown...

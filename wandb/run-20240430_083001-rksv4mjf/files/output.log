@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/nathan/RWKV-LM/RWKV-v5/train.py", line 262, in <module>
+    from pytorch_lightning.callbacks.progress.RichProgress import RichProgressBarTheme
+ModuleNotFoundError: No module named 'pytorch_lightning.callbacks.progress.RichProgress'
+Traceback (most recent call last):
+  File "/workspace/nathan/RWKV-LM/RWKV-v5/train.py", line 262, in <module>
+    from pytorch_lightning.callbacks.progress.RichProgress import RichProgressBarTheme
+ModuleNotFoundError: No module named 'pytorch_lightning.callbacks.progress.RichProgress'

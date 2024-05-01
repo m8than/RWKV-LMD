@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/workspace/nathan/RWKV-LM/RWKV-v5/train.py", line 269, in <module>
+    callbacks=[train_callback(args)],
+  File "/workspace/nathan/RWKV-LM/RWKV-v5/src/trainer.py", line 54, in __init__
+    self.trainer = self.args.trainer
+AttributeError: 'Namespace' object has no attribute 'trainer'
+Traceback (most recent call last):
+  File "/workspace/nathan/RWKV-LM/RWKV-v5/train.py", line 269, in <module>
+    callbacks=[train_callback(args)],
+  File "/workspace/nathan/RWKV-LM/RWKV-v5/src/trainer.py", line 54, in __init__
+    self.trainer = self.args.trainer
+AttributeError: 'Namespace' object has no attribute 'trainer'

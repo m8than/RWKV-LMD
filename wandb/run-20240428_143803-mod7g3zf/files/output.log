@@ -1,0 +1,6 @@
+Parameter containing:
+tensor([], device='cuda:0', dtype=torch.bfloat16, requires_grad=True)
+===================
+Error
+ name 'full_param' is not defined
+/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/call.py:54: Detected KeyboardInterrupt, attempting graceful shutdown...

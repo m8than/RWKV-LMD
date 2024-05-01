@@ -1,0 +1,47 @@
+
+INFO:pytorch_lightning.strategies.deepspeed:initializing deepspeed distributed: GLOBAL_RANK: 8, MEMBER: 9/16
+INFO:pytorch_lightning.accelerators.cuda:LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Using /root/.cache/torch_extensions/py310_cu121 as PyTorch extensions root...
+Loading extension module fused_adam...
+Time to load fused_adam op: 0.1017296314239502 seconds
+Broadcasted tensor sizes list length: 902 rank: 8
+Updated 902 keys on 8
+Non zero tensors rank 8 - 0
+tensor(11.2500, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<NllLossBackward0>)
+tensor(9.1250, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<NllLossBackward0>)
+tensor(9.3125, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<NllLossBackward0>)
+tensor(8.3750, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<NllLossBackward0>)
+tensor(8.5625, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<NllLossBackward0>)
+tensor(8.6250, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<NllLossBackward0>)
+tensor(8.6875, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<NllLossBackward0>)
+tensor(7.8125, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<NllLossBackward0>)
+tensor(8.0625, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<NllLossBackward0>)
+tensor(8., device='cuda:0', dtype=torch.bfloat16, grad_fn=<NllLossBackward0>)
+tensor(7.1562, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<NllLossBackward0>)
+tensor(6.7812, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<NllLossBackward0>)
+tensor(7.3438, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<NllLossBackward0>)
+tensor(7.3750, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<NllLossBackward0>)
+tensor(6.2188, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<NllLossBackward0>)
+tensor(6.5312, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<NllLossBackward0>)
+tensor(6.7188, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<NllLossBackward0>)
+tensor(7.3125, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<NllLossBackward0>)
+tensor(5.7812, device='cuda:0', dtype=torch.bfloat16,
+       grad_fn=<NllLossBackward0>)
+tensor(5.3438, device='cuda:0', dtype=torch.bfloat16,

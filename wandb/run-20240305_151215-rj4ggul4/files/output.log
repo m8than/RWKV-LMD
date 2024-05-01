@@ -1,0 +1,2 @@
+/usr/local/lib/python3.10/dist-packages/pytorch_lightning/strategies/ddp.py:437: UserWarning: Error handling mechanism for deadlock detection is uninitialized. Skipping check.
+  rank_zero_warn("Error handling mechanism for deadlock detection is uninitialized. Skipping check.")

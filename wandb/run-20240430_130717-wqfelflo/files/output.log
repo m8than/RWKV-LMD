@@ -1,0 +1,72 @@
+INFO: GPU available: True (cuda), used: True
+INFO:lightning.pytorch.utilities.rank_zero:GPU available: True (cuda), used: True
+INFO: TPU available: False, using: 0 TPU cores
+INFO:lightning.pytorch.utilities.rank_zero:TPU available: False, using: 0 TPU cores
+INFO: IPU available: False, using: 0 IPUs
+INFO:lightning.pytorch.utilities.rank_zero:IPU available: False, using: 0 IPUs
+INFO: HPU available: False, using: 0 HPUs
+INFO:lightning.pytorch.utilities.rank_zero:HPU available: False, using: 0 HPUs
+/usr/local/lib/python3.10/dist-packages/pytorch_lightning/utilities/parsing.py:44: attribute 'args' removed from hparams because it cannot be pickled
+INFO:pytorch_lightning.strategies.deepspeed:initializing deepspeed distributed: GLOBAL_RANK: 0, MEMBER: 1/32
+Traceback (most recent call last):
+  File "/workspace/nathan/RWKV-LM/RWKV-v5/train.py", line 349, in <module>
+    trainer.fit(model, data_loader)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 544, in fit
+    call._call_and_handle_interrupt(
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/call.py", line 43, in _call_and_handle_interrupt
+    return trainer.strategy.launcher.launch(trainer_fn, *args, trainer=trainer, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/strategies/launchers/subprocess_script.py", line 105, in launch
+    return function(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 580, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 944, in _run
+    self.__setup_profiler()
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 1079, in __setup_profiler
+    self.profiler.setup(stage=self.state.fn, local_rank=local_rank, log_dir=self.log_dir)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 1249, in log_dir
+    dirpath = self.strategy.broadcast(dirpath)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/strategies/ddp.py", line 307, in broadcast
+    torch.distributed.broadcast_object_list(obj, src, group=_group.WORLD)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/c10d_logger.py", line 47, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/distributed_c10d.py", line 2603, in broadcast_object_list
+    broadcast(object_sizes_tensor, src=src, group=group)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/c10d_logger.py", line 47, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/distributed_c10d.py", line 1906, in broadcast
+    work = default_pg.broadcast([tensor], opts)
+torch.distributed.DistBackendError: NCCL error in: ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1333, unhandled system error (run with NCCL_DEBUG=INFO for details), NCCL version 2.18.1
+ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error.
+Last error:
+socketStartConnect: Connect to 172.17.131.34<53903> failed : Software caused connection abort
+Traceback (most recent call last):
+  File "/workspace/nathan/RWKV-LM/RWKV-v5/train.py", line 349, in <module>
+    trainer.fit(model, data_loader)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 544, in fit
+    call._call_and_handle_interrupt(
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/call.py", line 43, in _call_and_handle_interrupt
+    return trainer.strategy.launcher.launch(trainer_fn, *args, trainer=trainer, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/strategies/launchers/subprocess_script.py", line 105, in launch
+    return function(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 580, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 944, in _run
+    self.__setup_profiler()
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 1079, in __setup_profiler
+    self.profiler.setup(stage=self.state.fn, local_rank=local_rank, log_dir=self.log_dir)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/trainer/trainer.py", line 1249, in log_dir
+    dirpath = self.strategy.broadcast(dirpath)
+  File "/usr/local/lib/python3.10/dist-packages/pytorch_lightning/strategies/ddp.py", line 307, in broadcast
+    torch.distributed.broadcast_object_list(obj, src, group=_group.WORLD)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/c10d_logger.py", line 47, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/distributed_c10d.py", line 2603, in broadcast_object_list
+    broadcast(object_sizes_tensor, src=src, group=group)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/c10d_logger.py", line 47, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/distributed_c10d.py", line 1906, in broadcast
+    work = default_pg.broadcast([tensor], opts)
+torch.distributed.DistBackendError: NCCL error in: ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1333, unhandled system error (run with NCCL_DEBUG=INFO for details), NCCL version 2.18.1
+ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error.
+Last error:
+socketStartConnect: Connect to 172.17.131.34<53903> failed : Software caused connection abort

@@ -1,0 +1,19 @@
+2024-04-29 02:55:57,062 INFO    StreamThr :653025 [internal.py:wandb_internal():86] W&B internal server running at pid: 653025, started at: 2024-04-29 02:55:57.060844
+2024-04-29 02:55:57,064 DEBUG   HandlerThread:653025 [handler.py:handle_request():146] handle_request: status
+2024-04-29 02:55:57,065 INFO    WriterThread:653025 [datastore.py:open_for_write():87] open: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240429_025557-37cnzb55/run-37cnzb55.wandb
+2024-04-29 02:55:57,068 DEBUG   SenderThread:653025 [sender.py:send():379] send: header
+2024-04-29 02:55:57,068 DEBUG   SenderThread:653025 [sender.py:send():379] send: run
+2024-04-29 02:55:57,483 INFO    SenderThread:653025 [dir_watcher.py:__init__():211] watching files in: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240429_025557-37cnzb55/files
+2024-04-29 02:55:57,483 INFO    SenderThread:653025 [sender.py:_start_run_threads():1124] run started: 37cnzb55 with start time 1714359357.060278
+2024-04-29 02:55:58,065 WARNING StreamThr :653025 [internal.py:is_dead():414] Internal process exiting, parent pid 651243 disappeared
+2024-04-29 02:55:58,065 ERROR   StreamThr :653025 [internal.py:wandb_internal():152] Internal process shutdown.
+2024-04-29 02:55:58,068 INFO    HandlerThread:653025 [handler.py:finish():866] shutting down handler
+2024-04-29 02:55:58,068 INFO    WriterThread:653025 [datastore.py:close():296] close: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240429_025557-37cnzb55/run-37cnzb55.wandb
+2024-04-29 02:55:58,484 INFO    SenderThread:653025 [sender.py:finish():1546] shutting down sender
+2024-04-29 02:55:58,484 INFO    SenderThread:653025 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-29 02:55:59,486 INFO    SenderThread:653025 [dir_watcher.py:finish():388] scan: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240429_025557-37cnzb55/files
+2024-04-29 02:55:59,486 INFO    SenderThread:653025 [dir_watcher.py:finish():402] scan save: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240429_025557-37cnzb55/files/config.yaml config.yaml
+2024-04-29 02:55:59,486 INFO    SenderThread:653025 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-29 02:55:59,486 INFO    SenderThread:653025 [file_pusher.py:join():178] waiting for file pusher
+2024-04-29 02:56:00,089 INFO    wandb-upload_0:653025 [upload_job.py:push():131] Uploaded file /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240429_025557-37cnzb55/files/config.yaml
+2024-04-29 02:56:00,090 INFO    MainThread:653025 [internal.py:handle_exit():76] Internal process exited

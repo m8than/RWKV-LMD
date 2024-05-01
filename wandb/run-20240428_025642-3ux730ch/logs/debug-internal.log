@@ -1,0 +1,573 @@
+2024-04-28 02:56:42,745 INFO    StreamThr :228395 [internal.py:wandb_internal():86] W&B internal server running at pid: 228395, started at: 2024-04-28 02:56:42.743533
+2024-04-28 02:56:42,747 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status
+2024-04-28 02:56:42,750 INFO    WriterThread:228395 [datastore.py:open_for_write():87] open: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/run-3ux730ch.wandb
+2024-04-28 02:56:42,753 DEBUG   SenderThread:228395 [sender.py:send():379] send: header
+2024-04-28 02:56:42,753 DEBUG   SenderThread:228395 [sender.py:send():379] send: run
+2024-04-28 02:56:43,176 INFO    SenderThread:228395 [dir_watcher.py:__init__():211] watching files in: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files
+2024-04-28 02:56:43,176 INFO    SenderThread:228395 [sender.py:_start_run_threads():1124] run started: 3ux730ch with start time 1714273002.743247
+2024-04-28 02:56:43,184 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: check_version
+2024-04-28 02:56:43,185 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: check_version
+2024-04-28 02:56:43,301 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: run_start
+2024-04-28 02:56:43,507 DEBUG   HandlerThread:228395 [system_info.py:__init__():26] System info init
+2024-04-28 02:56:43,507 DEBUG   HandlerThread:228395 [system_info.py:__init__():41] System info init done
+2024-04-28 02:56:43,507 INFO    HandlerThread:228395 [system_monitor.py:start():194] Starting system monitor
+2024-04-28 02:56:43,507 INFO    SystemMonitor:228395 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-28 02:56:43,508 INFO    HandlerThread:228395 [system_monitor.py:probe():214] Collecting system info
+2024-04-28 02:56:43,508 INFO    SystemMonitor:228395 [interfaces.py:start():190] Started cpu monitoring
+2024-04-28 02:56:43,509 INFO    SystemMonitor:228395 [interfaces.py:start():190] Started disk monitoring
+2024-04-28 02:56:43,510 INFO    SystemMonitor:228395 [interfaces.py:start():190] Started gpu monitoring
+2024-04-28 02:56:43,512 INFO    SystemMonitor:228395 [interfaces.py:start():190] Started memory monitoring
+2024-04-28 02:56:43,512 INFO    SystemMonitor:228395 [interfaces.py:start():190] Started network monitoring
+2024-04-28 02:56:43,563 DEBUG   HandlerThread:228395 [system_info.py:probe():150] Probing system
+2024-04-28 02:56:43,568 DEBUG   HandlerThread:228395 [system_info.py:_probe_git():135] Probing git
+2024-04-28 02:56:43,574 ERROR   HandlerThread:228395 [gitlib.py:root():92] git root error: Cmd('git') failed due to: exit code(128)
+  cmdline: git rev-parse --show-toplevel
+  stderr: 'fatal: detected dubious ownership in repository at '/workspace/nathan/RWKV-LM'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /workspace/nathan/RWKV-LM'
+2024-04-28 02:56:43,574 DEBUG   HandlerThread:228395 [system_info.py:_probe_git():143] Probing git done
+2024-04-28 02:56:43,574 DEBUG   HandlerThread:228395 [system_info.py:probe():198] Probing system done
+2024-04-28 02:56:43,574 DEBUG   HandlerThread:228395 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-166-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-04-28T02:56:43.564057', 'startedAt': '2024-04-28T02:56:42.719924', 'docker': None, 'cuda': None, 'args': ('--load_model', '', '--wandb', '70B-RUN', '--proj_dir', '/checkpoint/testload/L32-D4096-x060', '--my_testing', 'x060', '--ctx_len', '512', '--my_pile_stage', '3', '--epoch_count', '999999', '--epoch_begin', '0', '--data_file', '/checkpoint/moe-dataset/1.5a/dataset_chunk_0_text_document', '--my_exit_tokens', '132731667543', '--magic_prime', '259241513', '--num_nodes', '1', '--micro_bsz', '16', '--n_layer', '32', '--n_embd', '4096', '--pre_ffn', '0', '--head_qk', '0', '--lr_init', '1e-4', '--lr_final', '1e-5', '--warmup_steps', '0', '--beta1', '0.9', '--beta2', '0.99', '--adam_eps', '1e-8', '--my_pile_edecay', '0', '--data_type', 'binidx', '--vocab_size', '65536', '--weight_decay', '0.0001', '--epoch_save', '1', '--head_size_a', '64', '--accelerator', 'gpu', '--devices', '8', '--precision', 'bf16-mixed', '--strategy', 'deepspeed_stage_3', '--grad_cp', '1', '--ds_bucket_mb', '200'), 'state': 'running', 'program': '/workspace/nathan/RWKV-LM/RWKV-v5/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/BlinkDL/RWKV-LM.git', 'commit': None}, 'email': None, 'root': '/workspace/nathan/RWKV-LM/RWKV-v5', 'host': 'gpu-notebooks-qp9ft', 'username': 'root', 'executable': '/usr/bin/python', 'cpu_count': 80, 'cpu_count_logical': 160, 'cpu_freq': {'current': 2100.0, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 457.59750747680664, 'used': 49.18427276611328}}, 'gpu': 'NVIDIA H100 80GB HBM3', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}], 'memory': {'total': 1259.8572463989258}}
+2024-04-28 02:56:43,574 INFO    HandlerThread:228395 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-28 02:56:43,574 INFO    HandlerThread:228395 [system_monitor.py:probe():227] Publishing system info
+2024-04-28 02:56:43,578 INFO    HandlerThread:228395 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-28 02:56:43,580 DEBUG   SenderThread:228395 [sender.py:send():379] send: files
+2024-04-28 02:56:43,580 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-28 02:56:43,655 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-28 02:56:43,655 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 02:56:43,655 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: python_packages
+2024-04-28 02:56:43,656 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 02:56:43,660 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 02:56:43,887 DEBUG   SenderThread:228395 [sender.py:send():379] send: telemetry
+2024-04-28 02:56:44,179 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-metadata.json
+2024-04-28 02:56:44,179 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/requirements.txt
+2024-04-28 02:56:44,340 INFO    wandb-upload_0:228395 [upload_job.py:push():131] Uploaded file /tmp/tmpwumhuo6pwandb/i6jvrp3r-wandb-metadata.json
+2024-04-28 02:56:47,888 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:56:52,889 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:56:55,065 DEBUG   SenderThread:228395 [sender.py:send():379] send: telemetry
+2024-04-28 02:56:55,066 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:56:57,150 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:56:57,151 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:56:57,151 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:56:57,156 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:56:57,200 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:56:58,157 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:56:58,656 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:56:58,657 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 02:56:58,657 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:56:58,658 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:56:58,658 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 02:56:58,663 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:56:58,664 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 02:56:59,203 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:00,140 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:00,141 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:00,141 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:00,146 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:00,205 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:01,625 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:01,626 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:01,626 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:01,632 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:02,208 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:03,169 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:03,170 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:03,170 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:03,170 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:57:03,175 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:03,209 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:04,648 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:04,650 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:04,650 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:04,655 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:05,213 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:06,132 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:06,133 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:06,133 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:06,139 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:06,214 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:07,606 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:07,608 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:07,609 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:07,613 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:08,218 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:08,614 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:57:09,090 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:09,091 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:09,091 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:09,094 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:09,221 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:10,563 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:10,564 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:10,564 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:10,569 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:11,224 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:12,047 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:12,047 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:12,048 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:12,053 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:12,225 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:13,588 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:13,589 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:13,589 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:13,594 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:13,660 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:57:13,660 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 02:57:13,661 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 02:57:13,837 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 02:57:14,229 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:14,229 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/config.yaml
+2024-04-28 02:57:15,304 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:15,305 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:15,305 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:15,310 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:16,231 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:16,779 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:16,780 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:16,780 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:16,786 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:17,233 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:18,255 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:18,256 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:18,256 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:18,262 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:19,236 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:19,262 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:57:19,736 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:19,736 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:19,737 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:19,741 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:20,237 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:21,218 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:21,219 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:21,219 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:21,225 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:21,238 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:22,694 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:22,695 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:22,695 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:22,701 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:23,241 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:24,164 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:24,165 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:24,165 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:24,172 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:24,242 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:25,173 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:57:25,638 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:25,639 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:25,639 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:25,646 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:26,245 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:27,122 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:27,123 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:27,123 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:27,128 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:27,246 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:28,604 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:28,604 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:28,605 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:28,610 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:28,657 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 02:57:28,657 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 02:57:28,659 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 02:57:29,249 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:30,076 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:30,077 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:30,077 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:30,083 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:30,250 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:31,084 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:57:31,549 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:31,550 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:31,550 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:31,555 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:32,253 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:33,022 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:33,023 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:33,023 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:33,028 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:33,255 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:34,496 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:34,497 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:34,497 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:34,501 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:35,258 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:35,962 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:35,963 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:35,963 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:35,968 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:36,259 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:36,969 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:57:37,433 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:37,434 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:37,434 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:37,440 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:38,262 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:38,905 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:38,906 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:38,906 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:38,911 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:39,263 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:40,377 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:40,378 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:40,378 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:40,383 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:41,266 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:41,852 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:41,853 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:41,853 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:41,858 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:42,267 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:42,859 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:57:43,326 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:43,327 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:43,327 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:43,332 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:43,513 DEBUG   SystemMonitor:228395 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-28 02:57:43,515 DEBUG   SenderThread:228395 [sender.py:send():379] send: stats
+2024-04-28 02:57:43,657 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 02:57:43,657 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 02:57:43,658 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 02:57:44,269 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:44,797 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:44,798 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:44,798 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:44,803 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:45,271 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:46,266 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:46,267 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:46,267 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:46,272 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:46,272 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:47,739 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:47,740 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:47,740 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:47,745 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:48,275 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:48,746 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:57:49,214 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:49,215 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:49,215 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:49,221 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:49,275 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:50,682 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:50,683 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:50,683 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:50,688 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:51,278 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:52,150 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 02:57:52,151 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 02:57:52,151 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 02:57:52,157 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 02:57:52,279 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 02:57:52,279 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/output.log
+2024-04-28 02:57:53,815 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:57:54,284 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/output.log
+2024-04-28 02:57:56,290 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/output.log
+2024-04-28 02:57:58,295 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/output.log
+2024-04-28 02:57:58,657 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 02:57:58,657 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 02:57:58,658 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 02:57:58,898 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:58:00,301 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/output.log
+2024-04-28 02:58:02,307 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/output.log
+2024-04-28 02:58:04,061 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:58:04,312 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/output.log
+2024-04-28 02:58:06,317 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/output.log
+2024-04-28 02:58:08,322 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/output.log
+2024-04-28 02:58:09,118 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:58:10,327 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/output.log
+2024-04-28 02:58:12,333 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/output.log
+2024-04-28 02:58:13,516 DEBUG   SenderThread:228395 [sender.py:send():379] send: stats
+2024-04-28 02:58:13,657 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 02:58:13,658 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 02:58:13,660 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 02:58:14,126 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:58:14,339 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/output.log
+2024-04-28 02:58:16,345 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/output.log
+2024-04-28 02:58:18,350 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/output.log
+2024-04-28 02:58:19,127 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:58:20,356 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/output.log
+2024-04-28 02:58:22,361 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/output.log
+2024-04-28 02:58:24,973 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:58:28,676 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 02:58:28,919 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 02:58:28,919 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 02:58:30,273 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:58:35,274 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:58:40,275 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:58:43,518 DEBUG   SenderThread:228395 [sender.py:send():379] send: stats
+2024-04-28 02:58:46,018 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:58:51,019 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:58:52,375 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 02:58:52,375 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 02:58:52,376 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 02:58:56,566 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:59:00,164 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-28 02:59:01,080 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 02:59:01,081 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 02:59:01,467 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 02:59:02,299 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:59:07,300 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:59:12,301 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:59:13,522 DEBUG   SenderThread:228395 [sender.py:send():379] send: stats
+2024-04-28 02:59:17,524 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:59:19,339 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 02:59:19,501 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 02:59:19,502 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 02:59:22,746 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:59:27,746 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:59:32,747 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:59:37,748 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:59:38,953 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 02:59:38,954 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 02:59:42,541 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 02:59:43,109 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:59:43,521 DEBUG   SenderThread:228395 [sender.py:send():379] send: stats
+2024-04-28 02:59:48,523 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:59:53,524 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 02:59:55,119 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 02:59:55,311 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 02:59:55,311 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 02:59:58,544 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:00:03,545 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:00:08,546 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:00:11,710 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 03:00:11,711 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 03:00:12,192 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 03:00:13,523 DEBUG   SenderThread:228395 [sender.py:send():379] send: stats
+2024-04-28 03:00:14,524 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:00:19,525 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:00:24,526 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:00:29,526 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:00:29,918 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 03:00:30,544 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 03:00:30,545 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 03:00:34,787 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:00:39,787 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:00:43,524 DEBUG   SenderThread:228395 [sender.py:send():379] send: stats
+2024-04-28 03:00:45,526 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:00:48,056 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 03:00:48,057 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 03:00:51,202 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:00:56,203 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:01:01,203 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:01:06,204 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:01:07,726 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-28 03:01:08,239 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 03:01:08,240 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 03:01:11,785 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:01:13,530 DEBUG   SenderThread:228395 [sender.py:send():379] send: stats
+2024-04-28 03:01:17,531 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:01:22,532 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:01:22,911 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-28 03:01:23,966 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 03:01:23,967 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 03:01:28,161 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:01:33,162 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:01:38,163 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:01:38,442 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-28 03:01:39,747 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 03:01:39,748 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 03:01:43,528 DEBUG   SenderThread:228395 [sender.py:send():379] send: stats
+2024-04-28 03:01:43,529 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:01:48,529 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:01:53,530 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:01:55,212 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-28 03:01:58,410 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 03:01:58,411 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 03:01:58,619 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:02:03,620 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:02:08,621 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:02:13,531 DEBUG   SenderThread:228395 [sender.py:send():379] send: stats
+2024-04-28 03:02:14,532 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:02:17,652 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-28 03:02:18,197 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 03:02:18,197 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 03:02:20,461 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:02:25,462 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:02:30,463 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:02:33,065 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-28 03:02:33,067 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 03:02:33,067 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 03:02:35,520 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 03:02:35,521 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 03:02:35,521 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 03:02:35,521 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:02:35,526 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 03:02:35,862 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 03:02:36,981 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 03:02:36,981 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 03:02:36,982 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 03:02:36,987 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 03:02:37,865 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 03:02:38,446 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 03:02:38,447 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 03:02:38,447 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 03:02:38,453 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 03:02:38,866 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 03:02:39,918 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 03:02:39,919 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 03:02:39,919 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 03:02:39,925 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 03:02:40,870 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 03:02:40,926 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:02:41,385 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 03:02:41,386 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 03:02:41,386 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 03:02:41,391 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 03:02:41,871 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 03:02:42,856 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 03:02:42,857 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 03:02:42,857 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 03:02:42,862 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 03:02:42,873 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 03:02:43,531 DEBUG   SenderThread:228395 [sender.py:send():379] send: stats
+2024-04-28 03:02:44,339 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 03:02:44,339 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 03:02:44,340 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 03:02:44,344 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 03:02:44,876 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 03:02:45,671 DEBUG   SenderThread:228395 [sender.py:send():379] send: exit
+2024-04-28 03:02:45,671 INFO    SenderThread:228395 [sender.py:send_exit():586] handling exit code: 0
+2024-04-28 03:02:45,672 INFO    SenderThread:228395 [sender.py:send_exit():588] handling runtime: 362
+2024-04-28 03:02:45,676 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 03:02:45,677 INFO    SenderThread:228395 [sender.py:send_exit():594] send defer
+2024-04-28 03:02:45,677 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 03:02:45,677 INFO    HandlerThread:228395 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-28 03:02:45,678 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: defer
+2024-04-28 03:02:45,678 INFO    SenderThread:228395 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-28 03:02:45,678 INFO    SenderThread:228395 [sender.py:transition_state():614] send defer: 1
+2024-04-28 03:02:45,678 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 03:02:45,678 INFO    HandlerThread:228395 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-28 03:02:45,678 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: defer
+2024-04-28 03:02:45,678 INFO    SenderThread:228395 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-28 03:02:45,678 INFO    SenderThread:228395 [sender.py:transition_state():614] send defer: 2
+2024-04-28 03:02:45,678 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 03:02:45,678 INFO    HandlerThread:228395 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-28 03:02:45,678 INFO    HandlerThread:228395 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-28 03:02:45,678 DEBUG   SystemMonitor:228395 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-28 03:02:45,679 INFO    HandlerThread:228395 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-28 03:02:45,679 DEBUG   SystemMonitor:228395 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-28 03:02:45,679 INFO    HandlerThread:228395 [interfaces.py:finish():202] Joined disk monitor
+2024-04-28 03:02:45,877 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 03:02:45,930 INFO    HandlerThread:228395 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-28 03:02:45,931 INFO    HandlerThread:228395 [interfaces.py:finish():202] Joined memory monitor
+2024-04-28 03:02:45,931 INFO    HandlerThread:228395 [interfaces.py:finish():202] Joined network monitor
+2024-04-28 03:02:45,931 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: defer
+2024-04-28 03:02:45,931 INFO    SenderThread:228395 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-28 03:02:45,931 INFO    SenderThread:228395 [sender.py:transition_state():614] send defer: 3
+2024-04-28 03:02:45,931 DEBUG   SenderThread:228395 [sender.py:send():379] send: stats
+2024-04-28 03:02:45,932 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 03:02:45,932 INFO    HandlerThread:228395 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-28 03:02:45,932 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:02:45,933 DEBUG   SenderThread:228395 [sender.py:send():379] send: history
+2024-04-28 03:02:45,933 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 03:02:45,938 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 03:02:45,938 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: defer
+2024-04-28 03:02:45,938 INFO    SenderThread:228395 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-28 03:02:45,938 INFO    SenderThread:228395 [sender.py:transition_state():614] send defer: 4
+2024-04-28 03:02:45,938 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 03:02:45,938 INFO    HandlerThread:228395 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-28 03:02:45,938 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: defer
+2024-04-28 03:02:45,938 INFO    SenderThread:228395 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-28 03:02:45,939 INFO    SenderThread:228395 [sender.py:transition_state():614] send defer: 5
+2024-04-28 03:02:45,939 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 03:02:45,939 INFO    HandlerThread:228395 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-28 03:02:45,939 DEBUG   SenderThread:228395 [sender.py:send():379] send: summary
+2024-04-28 03:02:45,943 INFO    SenderThread:228395 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 03:02:45,943 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: defer
+2024-04-28 03:02:45,943 INFO    SenderThread:228395 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-28 03:02:45,943 INFO    SenderThread:228395 [sender.py:transition_state():614] send defer: 6
+2024-04-28 03:02:45,943 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 03:02:45,943 INFO    HandlerThread:228395 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-28 03:02:45,943 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: defer
+2024-04-28 03:02:45,943 INFO    SenderThread:228395 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-28 03:02:45,943 INFO    SenderThread:228395 [sender.py:transition_state():614] send defer: 7
+2024-04-28 03:02:45,944 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 03:02:45,944 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 03:02:45,944 INFO    HandlerThread:228395 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-28 03:02:45,944 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: defer
+2024-04-28 03:02:45,944 INFO    SenderThread:228395 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-04-28 03:02:46,671 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-28 03:02:46,879 INFO    Thread-12 :228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 03:02:47,678 INFO    SenderThread:228395 [sender.py:transition_state():614] send defer: 8
+2024-04-28 03:02:47,678 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: poll_exit
+2024-04-28 03:02:47,678 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 03:02:47,678 INFO    HandlerThread:228395 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-28 03:02:47,679 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: defer
+2024-04-28 03:02:47,679 INFO    SenderThread:228395 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-04-28 03:02:47,679 INFO    SenderThread:228395 [job_builder.py:build():318] Attempting to build job artifact
+2024-04-28 03:02:47,680 INFO    SenderThread:228395 [job_builder.py:_get_source_type():466] no source found
+2024-04-28 03:02:47,680 INFO    SenderThread:228395 [sender.py:transition_state():614] send defer: 9
+2024-04-28 03:02:47,680 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 03:02:47,680 INFO    HandlerThread:228395 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-28 03:02:47,680 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: defer
+2024-04-28 03:02:47,680 INFO    SenderThread:228395 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-04-28 03:02:47,680 INFO    SenderThread:228395 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-28 03:02:47,881 INFO    SenderThread:228395 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/output.log
+2024-04-28 03:02:47,881 INFO    SenderThread:228395 [dir_watcher.py:finish():388] scan: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files
+2024-04-28 03:02:47,882 INFO    SenderThread:228395 [dir_watcher.py:finish():402] scan save: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/output.log output.log
+2024-04-28 03:02:47,882 INFO    SenderThread:228395 [dir_watcher.py:finish():402] scan save: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-metadata.json wandb-metadata.json
+2024-04-28 03:02:47,882 INFO    SenderThread:228395 [dir_watcher.py:finish():402] scan save: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/requirements.txt requirements.txt
+2024-04-28 03:02:47,882 INFO    SenderThread:228395 [dir_watcher.py:finish():402] scan save: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/config.yaml config.yaml
+2024-04-28 03:02:47,882 INFO    SenderThread:228395 [dir_watcher.py:finish():402] scan save: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json wandb-summary.json
+2024-04-28 03:02:47,882 INFO    SenderThread:228395 [sender.py:transition_state():614] send defer: 10
+2024-04-28 03:02:47,884 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 03:02:47,884 INFO    HandlerThread:228395 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-28 03:02:47,887 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: defer
+2024-04-28 03:02:47,887 INFO    SenderThread:228395 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-04-28 03:02:47,887 INFO    SenderThread:228395 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-28 03:02:48,672 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-28 03:02:48,672 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: poll_exit
+2024-04-28 03:02:48,775 INFO    wandb-upload_1:228395 [upload_job.py:push():131] Uploaded file /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/requirements.txt
+2024-04-28 03:02:48,872 INFO    wandb-upload_0:228395 [upload_job.py:push():131] Uploaded file /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/output.log
+2024-04-28 03:02:48,985 INFO    wandb-upload_3:228395 [upload_job.py:push():131] Uploaded file /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/wandb-summary.json
+2024-04-28 03:02:49,012 INFO    wandb-upload_2:228395 [upload_job.py:push():131] Uploaded file /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/files/config.yaml
+2024-04-28 03:02:49,212 INFO    Thread-11 (_thread_body):228395 [sender.py:transition_state():614] send defer: 11
+2024-04-28 03:02:49,213 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 03:02:49,213 INFO    HandlerThread:228395 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-28 03:02:49,213 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: defer
+2024-04-28 03:02:49,213 INFO    SenderThread:228395 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-04-28 03:02:49,213 INFO    SenderThread:228395 [file_pusher.py:join():178] waiting for file pusher
+2024-04-28 03:02:49,214 INFO    SenderThread:228395 [sender.py:transition_state():614] send defer: 12
+2024-04-28 03:02:49,214 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 03:02:49,214 INFO    HandlerThread:228395 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-28 03:02:49,214 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: defer
+2024-04-28 03:02:49,214 INFO    SenderThread:228395 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-04-28 03:02:49,214 INFO    SenderThread:228395 [file_stream.py:finish():614] file stream finish called
+2024-04-28 03:02:49,673 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-28 03:02:49,689 INFO    SenderThread:228395 [file_stream.py:finish():618] file stream finish is done
+2024-04-28 03:02:49,690 INFO    SenderThread:228395 [sender.py:transition_state():614] send defer: 13
+2024-04-28 03:02:49,690 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: poll_exit
+2024-04-28 03:02:49,690 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 03:02:49,690 INFO    HandlerThread:228395 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-28 03:02:49,690 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: defer
+2024-04-28 03:02:49,690 INFO    SenderThread:228395 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-04-28 03:02:49,690 INFO    SenderThread:228395 [sender.py:transition_state():614] send defer: 14
+2024-04-28 03:02:49,690 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 03:02:49,690 INFO    HandlerThread:228395 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-28 03:02:49,691 DEBUG   SenderThread:228395 [sender.py:send():379] send: final
+2024-04-28 03:02:49,691 DEBUG   SenderThread:228395 [sender.py:send():379] send: footer
+2024-04-28 03:02:49,691 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: defer
+2024-04-28 03:02:49,691 INFO    SenderThread:228395 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-04-28 03:02:49,691 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-28 03:02:49,691 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: poll_exit
+2024-04-28 03:02:49,692 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-28 03:02:49,692 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: server_info
+2024-04-28 03:02:49,692 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-28 03:02:49,692 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: poll_exit
+2024-04-28 03:02:49,692 DEBUG   SenderThread:228395 [sender.py:send_request():406] send_request: server_info
+2024-04-28 03:02:49,693 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-28 03:02:49,694 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 03:02:49,853 INFO    MainThread:228395 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-04-28 03:02:49,853 INFO    MainThread:228395 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-04-28 03:02:49,854 INFO    MainThread:228395 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-04-28 03:02:49,854 DEBUG   HandlerThread:228395 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-28 03:02:49,854 INFO    HandlerThread:228395 [handler.py:finish():866] shutting down handler
+2024-04-28 03:02:50,692 INFO    WriterThread:228395 [datastore.py:close():296] close: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_025642-3ux730ch/run-3ux730ch.wandb
+2024-04-28 03:02:50,853 INFO    SenderThread:228395 [sender.py:finish():1546] shutting down sender
+2024-04-28 03:02:50,853 INFO    SenderThread:228395 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-28 03:02:50,853 INFO    SenderThread:228395 [file_pusher.py:join():178] waiting for file pusher

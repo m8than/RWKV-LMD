@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/nathan/RWKV-LM/RWKV-v5/train.py", line 264, in <module>
+    theme=RichProgressBarTheme(
+NameError: name 'RichProgressBarTheme' is not defined. Did you mean: 'RichProgressBar'?
+Traceback (most recent call last):
+  File "/workspace/nathan/RWKV-LM/RWKV-v5/train.py", line 264, in <module>
+    theme=RichProgressBarTheme(
+NameError: name 'RichProgressBarTheme' is not defined. Did you mean: 'RichProgressBar'?

@@ -1,0 +1,348 @@
+wandb_version: 1
+
+load_model:
+  desc: null
+  value: /checkpoint/magic-eval/rwkv-init.pth
+wandb:
+  desc: null
+  value: RWKV-V5-Eagle-Magic
+proj_dir:
+  desc: null
+  value: /checkpoint/magic-eval
+random_seed:
+  desc: null
+  value: -1
+data_file:
+  desc: null
+  value: /workspace/nathan/miracle-chunk
+data_type:
+  desc: null
+  value: binidx
+vocab_size:
+  desc: null
+  value: 65536
+ctx_len:
+  desc: null
+  value: 4096
+epoch_steps:
+  desc: null
+  value: 560
+epoch_count:
+  desc: null
+  value: 13
+epoch_begin:
+  desc: null
+  value: 0
+epoch_save:
+  desc: null
+  value: 1
+micro_bsz:
+  desc: null
+  value: 9
+n_layer:
+  desc: null
+  value: 32
+n_embd:
+  desc: null
+  value: 4096
+dim_att:
+  desc: null
+  value: 4096
+dim_ffn:
+  desc: null
+  value: 14336
+pre_ffn:
+  desc: null
+  value: 0
+head_qk:
+  desc: null
+  value: 0
+tiny_att_dim:
+  desc: null
+  value: 0
+tiny_att_layer:
+  desc: null
+  value: -999
+lr_init:
+  desc: null
+  value: 1.0e-05
+lr_final:
+  desc: null
+  value: 1.0e-05
+warmup_steps:
+  desc: null
+  value: 10
+beta1:
+  desc: null
+  value: 0.9
+beta2:
+  desc: null
+  value: 0.99
+adam_eps:
+  desc: null
+  value: 1.0e-08
+grad_cp:
+  desc: null
+  value: 1
+dropout:
+  desc: null
+  value: 0
+weight_decay:
+  desc: null
+  value: 0.0
+weight_decay_final:
+  desc: null
+  value: -1
+my_pile_version:
+  desc: null
+  value: 1
+my_pile_stage:
+  desc: null
+  value: 3
+my_pile_shift:
+  desc: null
+  value: 0
+my_pile_edecay:
+  desc: null
+  value: 0
+layerwise_lr:
+  desc: null
+  value: 1
+ds_bucket_mb:
+  desc: null
+  value: 200
+my_sample_len:
+  desc: null
+  value: 0
+my_ffn_shift:
+  desc: null
+  value: 1
+my_att_shift:
+  desc: null
+  value: 1
+head_size_a:
+  desc: null
+  value: 64
+head_size_divisor:
+  desc: null
+  value: 8
+my_pos_emb:
+  desc: null
+  value: 0
+load_partial:
+  desc: null
+  value: 0
+magic_prime:
+  desc: null
+  value: 556403
+my_qa_mask:
+  desc: null
+  value: 0
+my_random_steps:
+  desc: null
+  value: 0
+my_testing:
+  desc: null
+  value: ''
+my_exit:
+  desc: null
+  value: 99999999
+my_exit_tokens:
+  desc: null
+  value: 2279334108
+logger:
+  desc: null
+  value: false
+enable_checkpointing:
+  desc: null
+  value: false
+default_root_dir:
+  desc: null
+  value: null
+gradient_clip_val:
+  desc: null
+  value: 1.0
+gradient_clip_algorithm:
+  desc: null
+  value: null
+num_nodes:
+  desc: null
+  value: 1
+num_processes:
+  desc: null
+  value: null
+devices:
+  desc: null
+  value: '8'
+gpus:
+  desc: null
+  value: null
+auto_select_gpus:
+  desc: null
+  value: null
+tpu_cores:
+  desc: null
+  value: null
+ipus:
+  desc: null
+  value: null
+enable_progress_bar:
+  desc: null
+  value: true
+overfit_batches:
+  desc: null
+  value: 0.0
+track_grad_norm:
+  desc: null
+  value: -1
+check_val_every_n_epoch:
+  desc: null
+  value: 100000000000000000000
+fast_dev_run:
+  desc: null
+  value: false
+accumulate_grad_batches:
+  desc: null
+  value: null
+max_epochs:
+  desc: null
+  value: -1
+min_epochs:
+  desc: null
+  value: null
+max_steps:
+  desc: null
+  value: -1
+min_steps:
+  desc: null
+  value: null
+max_time:
+  desc: null
+  value: null
+limit_train_batches:
+  desc: null
+  value: null
+limit_val_batches:
+  desc: null
+  value: null
+limit_test_batches:
+  desc: null
+  value: null
+limit_predict_batches:
+  desc: null
+  value: null
+val_check_interval:
+  desc: null
+  value: null
+log_every_n_steps:
+  desc: null
+  value: 100000000000000000000
+accelerator:
+  desc: null
+  value: gpu
+strategy:
+  desc: null
+  value: deepspeed_stage_2
+sync_batchnorm:
+  desc: null
+  value: false
+precision:
+  desc: null
+  value: bf16
+enable_model_summary:
+  desc: null
+  value: true
+num_sanity_val_steps:
+  desc: null
+  value: 0
+resume_from_checkpoint:
+  desc: null
+  value: null
+profiler:
+  desc: null
+  value: null
+benchmark:
+  desc: null
+  value: null
+reload_dataloaders_every_n_epochs:
+  desc: null
+  value: 0
+auto_lr_find:
+  desc: null
+  value: false
+replace_sampler_ddp:
+  desc: null
+  value: false
+detect_anomaly:
+  desc: null
+  value: false
+auto_scale_batch_size:
+  desc: null
+  value: false
+plugins:
+  desc: null
+  value: null
+amp_backend:
+  desc: null
+  value: null
+amp_level:
+  desc: null
+  value: null
+move_metrics_to_cpu:
+  desc: null
+  value: false
+multiple_trainloader_mode:
+  desc: null
+  value: max_size_cycle
+inference_mode:
+  desc: null
+  value: true
+my_timestamp:
+  desc: null
+  value: 2024-03-17-19-16-32
+betas:
+  desc: null
+  value:
+  - 0.9
+  - 0.99
+real_bsz:
+  desc: null
+  value: 72
+run_name:
+  desc: null
+  value: 65536 ctx4096 L32 D4096
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.12
+    cli_version: 0.16.3
+    framework: huggingface
+    huggingface_version: 4.37.2
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1710703206.866974
+    t:
+      1:
+      - 1
+      - 9
+      - 11
+      - 49
+      - 55
+      - 103
+      2:
+      - 1
+      - 9
+      - 11
+      - 49
+      - 55
+      - 103
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.10.12
+      5: 0.16.3
+      6: 4.37.2
+      8:
+      - 5
+      13: linux-x86_64

@@ -1,0 +1,28 @@
+INFO: GPU available: True (cuda), used: True
+INFO:lightning.pytorch.utilities.rank_zero:GPU available: True (cuda), used: True
+INFO: TPU available: False, using: 0 TPU cores
+INFO:lightning.pytorch.utilities.rank_zero:TPU available: False, using: 0 TPU cores
+INFO: IPU available: False, using: 0 IPUs
+INFO:lightning.pytorch.utilities.rank_zero:IPU available: False, using: 0 IPUs
+INFO: HPU available: False, using: 0 HPUs
+INFO:lightning.pytorch.utilities.rank_zero:HPU available: False, using: 0 HPUs
+Traceback (most recent call last):
+  File "/workspace/nathan/RWKV-LM/RWKV-v5/train.py", line 312, in <module>
+    data_loader = DataLoader(train_data, shuffle=True, pin_memory=True, batch_size=args.micro_bsz, num_workers=1, persistent_workers=False, drop_last=True)
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 349, in __init__
+    sampler = RandomSampler(dataset, generator=generator)  # type: ignore[arg-type]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/sampler.py", line 139, in __init__
+    if not isinstance(self.num_samples, int) or self.num_samples <= 0:
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/sampler.py", line 146, in num_samples
+    return len(self.data_source)
+TypeError: object of type 'MMapDataset' has no len()
+Traceback (most recent call last):
+  File "/workspace/nathan/RWKV-LM/RWKV-v5/train.py", line 312, in <module>
+    data_loader = DataLoader(train_data, shuffle=True, pin_memory=True, batch_size=args.micro_bsz, num_workers=1, persistent_workers=False, drop_last=True)
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 349, in __init__
+    sampler = RandomSampler(dataset, generator=generator)  # type: ignore[arg-type]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/sampler.py", line 139, in __init__
+    if not isinstance(self.num_samples, int) or self.num_samples <= 0:
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/sampler.py", line 146, in num_samples
+    return len(self.data_source)
+TypeError: object of type 'MMapDataset' has no len()

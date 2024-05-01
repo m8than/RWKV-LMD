@@ -1,0 +1,258 @@
+2024-04-28 23:27:33,861 INFO    StreamThr :598087 [internal.py:wandb_internal():86] W&B internal server running at pid: 598087, started at: 2024-04-28 23:27:33.859136
+2024-04-28 23:27:33,862 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status
+2024-04-28 23:27:33,864 INFO    WriterThread:598087 [datastore.py:open_for_write():87] open: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/run-meteva4v.wandb
+2024-04-28 23:27:33,867 DEBUG   SenderThread:598087 [sender.py:send():379] send: header
+2024-04-28 23:27:33,867 DEBUG   SenderThread:598087 [sender.py:send():379] send: run
+2024-04-28 23:27:34,324 INFO    SenderThread:598087 [dir_watcher.py:__init__():211] watching files in: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files
+2024-04-28 23:27:34,324 INFO    SenderThread:598087 [sender.py:_start_run_threads():1124] run started: meteva4v with start time 1714346853.858687
+2024-04-28 23:27:34,331 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: check_version
+2024-04-28 23:27:34,331 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: check_version
+2024-04-28 23:27:34,527 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: run_start
+2024-04-28 23:27:34,567 DEBUG   HandlerThread:598087 [system_info.py:__init__():26] System info init
+2024-04-28 23:27:34,567 DEBUG   HandlerThread:598087 [system_info.py:__init__():41] System info init done
+2024-04-28 23:27:34,568 INFO    HandlerThread:598087 [system_monitor.py:start():194] Starting system monitor
+2024-04-28 23:27:34,568 INFO    SystemMonitor:598087 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-28 23:27:34,568 INFO    HandlerThread:598087 [system_monitor.py:probe():214] Collecting system info
+2024-04-28 23:27:34,568 INFO    SystemMonitor:598087 [interfaces.py:start():190] Started cpu monitoring
+2024-04-28 23:27:34,569 INFO    SystemMonitor:598087 [interfaces.py:start():190] Started disk monitoring
+2024-04-28 23:27:34,570 INFO    SystemMonitor:598087 [interfaces.py:start():190] Started gpu monitoring
+2024-04-28 23:27:34,571 INFO    SystemMonitor:598087 [interfaces.py:start():190] Started memory monitoring
+2024-04-28 23:27:34,572 INFO    SystemMonitor:598087 [interfaces.py:start():190] Started network monitoring
+2024-04-28 23:27:34,622 DEBUG   HandlerThread:598087 [system_info.py:probe():150] Probing system
+2024-04-28 23:27:34,626 DEBUG   HandlerThread:598087 [system_info.py:_probe_git():135] Probing git
+2024-04-28 23:27:34,632 ERROR   HandlerThread:598087 [gitlib.py:root():92] git root error: Cmd('git') failed due to: exit code(128)
+  cmdline: git rev-parse --show-toplevel
+  stderr: 'fatal: detected dubious ownership in repository at '/workspace/nathan/RWKV-LM'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /workspace/nathan/RWKV-LM'
+2024-04-28 23:27:34,632 DEBUG   HandlerThread:598087 [system_info.py:_probe_git():143] Probing git done
+2024-04-28 23:27:34,632 DEBUG   HandlerThread:598087 [system_info.py:probe():198] Probing system done
+2024-04-28 23:27:34,632 DEBUG   HandlerThread:598087 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-166-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-04-28T23:27:34.622288', 'startedAt': '2024-04-28T23:27:33.833942', 'docker': None, 'cuda': None, 'args': ('--load_model', '', '--wandb', '70B-RUN', '--proj_dir', '/checkpoint/testload/L32-D4096-x060', '--my_testing', 'x060', '--ctx_len', '512', '--my_pile_stage', '3', '--epoch_count', '999999', '--epoch_begin', '0', '--data_file', '/checkpoint/moe-dataset/1.5a/dataset_chunk_0_text_document', '--my_exit_tokens', '132731667543', '--magic_prime', '259241513', '--num_nodes', '1', '--micro_bsz', '16', '--n_layer', '32', '--n_embd', '4096', '--pre_ffn', '0', '--head_qk', '0', '--lr_init', '1e-12', '--lr_final', '1e-12', '--warmup_steps', '10', '--beta1', '0.9', '--beta2', '0.99', '--adam_eps', '1e-8', '--my_pile_edecay', '0', '--data_type', 'binidx', '--vocab_size', '65536', '--weight_decay', '0.0001', '--epoch_save', '1', '--head_size_a', '64', '--accelerator', 'gpu', '--devices', '8', '--precision', 'bf16-mixed', '--strategy', 'deepspeed_stage_3', '--grad_cp', '1', '--ds_bucket_mb', '200'), 'state': 'running', 'program': '/workspace/nathan/RWKV-LM/RWKV-v5/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/BlinkDL/RWKV-LM.git', 'commit': None}, 'email': None, 'root': '/workspace/nathan/RWKV-LM/RWKV-v5', 'host': 'gpu-notebooks-qp9ft', 'username': 'root', 'executable': '/usr/bin/python', 'cpu_count': 80, 'cpu_count_logical': 160, 'cpu_freq': {'current': 2100.0, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 457.59750747680664, 'used': 49.56620788574219}}, 'gpu': 'NVIDIA H100 80GB HBM3', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}], 'memory': {'total': 1259.8572463989258}}
+2024-04-28 23:27:34,632 INFO    HandlerThread:598087 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-28 23:27:34,632 INFO    HandlerThread:598087 [system_monitor.py:probe():227] Publishing system info
+2024-04-28 23:27:34,637 INFO    HandlerThread:598087 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-28 23:27:34,639 DEBUG   SenderThread:598087 [sender.py:send():379] send: files
+2024-04-28 23:27:34,639 INFO    SenderThread:598087 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-28 23:27:34,712 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-28 23:27:34,712 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 23:27:34,712 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: python_packages
+2024-04-28 23:27:34,717 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 23:27:34,718 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 23:27:35,013 DEBUG   SenderThread:598087 [sender.py:send():379] send: telemetry
+2024-04-28 23:27:35,263 INFO    wandb-upload_0:598087 [upload_job.py:push():131] Uploaded file /tmp/tmpqr5_vpewwandb/urah4m9o-wandb-metadata.json
+2024-04-28 23:27:35,327 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/wandb-metadata.json
+2024-04-28 23:27:35,327 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/requirements.txt
+2024-04-28 23:27:35,327 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:27:37,332 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:27:39,017 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:27:43,345 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:27:44,751 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:27:45,352 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:27:47,358 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:27:49,364 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:27:49,713 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 23:27:49,713 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 23:27:49,713 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 23:27:49,904 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:27:51,369 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:27:53,375 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:27:55,096 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:27:55,380 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:27:57,387 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:27:59,392 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:00,216 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:28:01,398 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:03,404 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:04,815 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 23:28:04,815 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 23:28:04,944 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 23:28:05,234 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:28:05,410 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/config.yaml
+2024-04-28 23:28:05,411 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:07,417 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:09,423 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:10,467 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:28:11,428 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:13,434 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:15,439 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:15,523 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:28:17,445 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:19,451 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:19,814 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 23:28:19,814 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 23:28:19,815 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 23:28:20,525 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:28:21,457 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:23,463 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:25,469 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:25,663 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:28:27,476 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:29,481 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:31,448 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:28:31,486 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:33,492 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:34,573 DEBUG   SystemMonitor:598087 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-28 23:28:34,575 DEBUG   SenderThread:598087 [sender.py:send():379] send: stats
+2024-04-28 23:28:34,814 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 23:28:34,814 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 23:28:34,815 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 23:28:37,027 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:28:42,028 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:28:42,267 DEBUG   SenderThread:598087 [sender.py:send():379] send: telemetry
+2024-04-28 23:28:42,267 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 23:28:43,510 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:47,273 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:28:50,106 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 23:28:50,106 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 23:28:50,107 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 23:28:51,525 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:52,456 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:28:53,530 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:55,536 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:57,542 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:28:57,629 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:28:59,547 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:01,554 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:02,821 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:29:03,560 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:04,576 DEBUG   SenderThread:598087 [sender.py:send():379] send: stats
+2024-04-28 23:29:05,033 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 23:29:05,034 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 23:29:05,124 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 23:29:05,566 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:07,572 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:07,990 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:29:08,575 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/config.yaml
+2024-04-28 23:29:09,580 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:11,585 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:13,175 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:29:13,591 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:15,597 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:17,603 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:18,361 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:29:19,609 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:19,922 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 23:29:19,922 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 23:29:20,175 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 23:29:21,615 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:23,590 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:29:23,619 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:25,625 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:27,630 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:28,873 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:29:29,636 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:31,642 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:33,648 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:34,041 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:29:34,578 DEBUG   SenderThread:598087 [sender.py:send():379] send: stats
+2024-04-28 23:29:34,922 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 23:29:34,923 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 23:29:35,141 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 23:29:35,654 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:37,224 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-28 23:29:37,225 DEBUG   SenderThread:598087 [sender.py:send():379] send: history
+2024-04-28 23:29:37,225 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 23:29:37,230 INFO    SenderThread:598087 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 23:29:37,657 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/wandb-summary.json
+2024-04-28 23:29:39,231 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:29:39,663 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:44,913 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:29:45,675 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:47,682 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:49,688 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:49,923 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-28 23:29:49,923 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: stop_status
+2024-04-28 23:29:49,923 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:29:50,141 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-28 23:29:51,694 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:53,700 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:55,021 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:29:55,705 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:55,930 DEBUG   SenderThread:598087 [sender.py:send():379] send: exit
+2024-04-28 23:29:55,930 INFO    SenderThread:598087 [sender.py:send_exit():586] handling exit code: 255
+2024-04-28 23:29:55,930 INFO    SenderThread:598087 [sender.py:send_exit():588] handling runtime: 141
+2024-04-28 23:29:55,935 INFO    SenderThread:598087 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 23:29:55,935 INFO    SenderThread:598087 [sender.py:send_exit():594] send defer
+2024-04-28 23:29:55,936 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 23:29:55,936 INFO    HandlerThread:598087 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-28 23:29:55,936 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: defer
+2024-04-28 23:29:55,936 INFO    SenderThread:598087 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-28 23:29:55,936 INFO    SenderThread:598087 [sender.py:transition_state():614] send defer: 1
+2024-04-28 23:29:55,936 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 23:29:55,936 INFO    HandlerThread:598087 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-28 23:29:55,936 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: defer
+2024-04-28 23:29:55,936 INFO    SenderThread:598087 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-28 23:29:55,936 INFO    SenderThread:598087 [sender.py:transition_state():614] send defer: 2
+2024-04-28 23:29:55,936 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 23:29:55,936 INFO    HandlerThread:598087 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-28 23:29:55,936 INFO    HandlerThread:598087 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-28 23:29:55,937 DEBUG   SystemMonitor:598087 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-28 23:29:55,937 DEBUG   SystemMonitor:598087 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-28 23:29:55,939 INFO    HandlerThread:598087 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-28 23:29:55,939 INFO    HandlerThread:598087 [interfaces.py:finish():202] Joined disk monitor
+2024-04-28 23:29:56,707 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/wandb-summary.json
+2024-04-28 23:29:57,711 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:29:57,751 INFO    HandlerThread:598087 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-28 23:29:57,751 INFO    HandlerThread:598087 [interfaces.py:finish():202] Joined memory monitor
+2024-04-28 23:29:57,752 INFO    HandlerThread:598087 [interfaces.py:finish():202] Joined network monitor
+2024-04-28 23:29:57,752 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-28 23:29:57,752 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: defer
+2024-04-28 23:29:57,752 INFO    SenderThread:598087 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-28 23:29:57,752 INFO    SenderThread:598087 [sender.py:transition_state():614] send defer: 3
+2024-04-28 23:29:57,752 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 23:29:57,752 INFO    HandlerThread:598087 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-28 23:29:57,756 DEBUG   SenderThread:598087 [sender.py:send():379] send: stats
+2024-04-28 23:29:57,756 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: poll_exit
+2024-04-28 23:29:57,757 DEBUG   SenderThread:598087 [sender.py:send():379] send: history
+2024-04-28 23:29:57,757 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: summary_record
+2024-04-28 23:29:57,760 INFO    SenderThread:598087 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 23:29:57,761 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: defer
+2024-04-28 23:29:57,761 INFO    SenderThread:598087 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-28 23:29:57,761 INFO    SenderThread:598087 [sender.py:transition_state():614] send defer: 4
+2024-04-28 23:29:57,761 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 23:29:57,761 INFO    HandlerThread:598087 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-28 23:29:57,761 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: defer
+2024-04-28 23:29:57,761 INFO    SenderThread:598087 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-28 23:29:57,761 INFO    SenderThread:598087 [sender.py:transition_state():614] send defer: 5
+2024-04-28 23:29:57,761 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 23:29:57,761 INFO    HandlerThread:598087 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-28 23:29:57,762 DEBUG   SenderThread:598087 [sender.py:send():379] send: summary
+2024-04-28 23:29:57,766 INFO    SenderThread:598087 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-28 23:29:57,766 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: defer
+2024-04-28 23:29:57,766 INFO    SenderThread:598087 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-28 23:29:57,766 INFO    SenderThread:598087 [sender.py:transition_state():614] send defer: 6
+2024-04-28 23:29:57,766 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 23:29:57,766 INFO    HandlerThread:598087 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-28 23:29:57,767 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: defer
+2024-04-28 23:29:57,767 INFO    SenderThread:598087 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-28 23:29:57,767 INFO    SenderThread:598087 [sender.py:transition_state():614] send defer: 7
+2024-04-28 23:29:57,767 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: status_report
+2024-04-28 23:29:57,767 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: defer
+2024-04-28 23:29:57,767 INFO    HandlerThread:598087 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-28 23:29:57,767 DEBUG   SenderThread:598087 [sender.py:send_request():406] send_request: defer
+2024-04-28 23:29:57,767 INFO    SenderThread:598087 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-04-28 23:29:57,930 DEBUG   HandlerThread:598087 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-28 23:29:58,712 INFO    Thread-12 :598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/wandb-summary.json
+2024-04-28 23:29:59,018 WARNING StreamThr :598087 [internal.py:is_dead():414] Internal process exiting, parent pid 596328 disappeared
+2024-04-28 23:29:59,018 ERROR   StreamThr :598087 [internal.py:wandb_internal():152] Internal process shutdown.
+2024-04-28 23:29:59,931 INFO    HandlerThread:598087 [handler.py:finish():866] shutting down handler
+2024-04-28 23:29:59,931 INFO    WriterThread:598087 [datastore.py:close():296] close: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/run-meteva4v.wandb
+2024-04-28 23:30:01,437 INFO    SenderThread:598087 [sender.py:transition_state():614] send defer: 8
+2024-04-28 23:30:01,437 INFO    SenderThread:598087 [sender.py:finish():1546] shutting down sender
+2024-04-28 23:30:01,437 INFO    SenderThread:598087 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-28 23:30:01,715 INFO    SenderThread:598087 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:30:01,715 INFO    SenderThread:598087 [dir_watcher.py:finish():388] scan: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files
+2024-04-28 23:30:01,716 INFO    SenderThread:598087 [dir_watcher.py:finish():402] scan save: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log output.log
+2024-04-28 23:30:01,716 INFO    SenderThread:598087 [dir_watcher.py:finish():402] scan save: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/wandb-metadata.json wandb-metadata.json
+2024-04-28 23:30:01,716 INFO    SenderThread:598087 [dir_watcher.py:finish():402] scan save: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/requirements.txt requirements.txt
+2024-04-28 23:30:01,716 INFO    SenderThread:598087 [dir_watcher.py:finish():402] scan save: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/config.yaml config.yaml
+2024-04-28 23:30:01,716 INFO    SenderThread:598087 [dir_watcher.py:finish():402] scan save: /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/wandb-summary.json wandb-summary.json
+2024-04-28 23:30:01,716 INFO    SenderThread:598087 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-28 23:30:01,716 INFO    SenderThread:598087 [file_pusher.py:join():178] waiting for file pusher
+2024-04-28 23:30:02,462 INFO    wandb-upload_1:598087 [upload_job.py:push():131] Uploaded file /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/requirements.txt
+2024-04-28 23:30:02,525 INFO    wandb-upload_0:598087 [upload_job.py:push():131] Uploaded file /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/output.log
+2024-04-28 23:30:02,686 INFO    wandb-upload_3:598087 [upload_job.py:push():131] Uploaded file /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/wandb-summary.json
+2024-04-28 23:30:02,715 INFO    wandb-upload_2:598087 [upload_job.py:push():131] Uploaded file /workspace/nathan/RWKV-LM/RWKV-v5/wandb/run-20240428_232733-meteva4v/files/config.yaml
+2024-04-28 23:30:03,218 INFO    SenderThread:598087 [file_stream.py:finish():614] file stream finish called
+2024-04-28 23:30:03,700 INFO    SenderThread:598087 [file_stream.py:finish():618] file stream finish is done

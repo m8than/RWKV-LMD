@@ -1,0 +1,1 @@
+{"loss": NaN, "lr": 0.00011000000000000002, "wd": 0.1, "Gtokens": 0.0065536, "trainer/global_step": 10, "_timestamp": 1714482407.4851732, "_runtime": 282.21067214012146, "_step": 9, "kt/s": 226.3881166083667, "_wandb": {"runtime": 283}}

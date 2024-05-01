@@ -1,0 +1,394 @@
+2024-04-30 15:59:34,013 INFO    StreamThr :30448 [internal.py:wandb_internal():86] W&B internal server running at pid: 30448, started at: 2024-04-30 15:59:34.011587
+2024-04-30 15:59:34,015 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status
+2024-04-30 15:59:34,017 INFO    WriterThread:30448 [datastore.py:open_for_write():87] open: ./wandb/run-20240430_155933-l1zp8y0k/run-l1zp8y0k.wandb
+2024-04-30 15:59:34,021 DEBUG   SenderThread:30448 [sender.py:send():379] send: header
+2024-04-30 15:59:34,021 DEBUG   SenderThread:30448 [sender.py:send():379] send: run
+2024-04-30 15:59:34,028 INFO    SenderThread:30448 [sender.py:_setup_resume():749] checking resume status for None/70B-RUN-NEW/l1zp8y0k
+2024-04-30 15:59:34,639 INFO    SenderThread:30448 [dir_watcher.py:__init__():211] watching files in: ./wandb/run-20240430_155933-l1zp8y0k/files
+2024-04-30 15:59:34,640 INFO    SenderThread:30448 [sender.py:_start_run_threads():1124] run started: l1zp8y0k with start time 1714492774.011146
+2024-04-30 15:59:34,644 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: check_version
+2024-04-30 15:59:34,644 DEBUG   SenderThread:30448 [sender.py:send_request():406] send_request: check_version
+2024-04-30 15:59:34,846 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: run_start
+2024-04-30 15:59:34,915 DEBUG   HandlerThread:30448 [system_info.py:__init__():26] System info init
+2024-04-30 15:59:34,915 DEBUG   HandlerThread:30448 [system_info.py:__init__():41] System info init done
+2024-04-30 15:59:34,915 INFO    HandlerThread:30448 [system_monitor.py:start():194] Starting system monitor
+2024-04-30 15:59:34,915 INFO    SystemMonitor:30448 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-30 15:59:34,915 INFO    HandlerThread:30448 [system_monitor.py:probe():214] Collecting system info
+2024-04-30 15:59:34,916 INFO    SystemMonitor:30448 [interfaces.py:start():190] Started cpu monitoring
+2024-04-30 15:59:34,917 INFO    SystemMonitor:30448 [interfaces.py:start():190] Started disk monitoring
+2024-04-30 15:59:34,917 INFO    SystemMonitor:30448 [interfaces.py:start():190] Started gpu monitoring
+2024-04-30 15:59:34,920 INFO    SystemMonitor:30448 [interfaces.py:start():190] Started memory monitoring
+2024-04-30 15:59:34,921 INFO    SystemMonitor:30448 [interfaces.py:start():190] Started network monitoring
+2024-04-30 15:59:34,978 DEBUG   HandlerThread:30448 [system_info.py:probe():150] Probing system
+2024-04-30 15:59:34,983 DEBUG   HandlerThread:30448 [system_info.py:_probe_git():135] Probing git
+2024-04-30 15:59:34,989 ERROR   HandlerThread:30448 [gitlib.py:root():92] git root error: Cmd('git') failed due to: exit code(128)
+  cmdline: git rev-parse --show-toplevel
+  stderr: 'fatal: detected dubious ownership in repository at '/workspace/nathan/RWKV-LM'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /workspace/nathan/RWKV-LM'
+2024-04-30 15:59:34,989 DEBUG   HandlerThread:30448 [system_info.py:_probe_git():143] Probing git done
+2024-04-30 15:59:34,989 DEBUG   HandlerThread:30448 [system_info.py:probe():198] Probing system done
+2024-04-30 15:59:34,989 DEBUG   HandlerThread:30448 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-166-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-04-30T15:59:34.978551', 'startedAt': '2024-04-30T15:59:33.983868', 'docker': None, 'cuda': None, 'args': ('--load_model', '0', '--wandb', '70B-RUN-NEW', '--proj_dir', '/checkpoint/70B/L20-D8192-x060', '--my_testing', 'x060', '--ctx_len', '1024', '--epoch_count', '1', '--step_begin', '0', '--data_file', '/checkpoint/moe-dataset/1.5a/dataset_chunk_0_text_document', '--num_nodes', '4', '--micro_bsz', '8', '--n_layer', '20', '--n_embd', '8192', '--pre_ffn', '0', '--head_qk', '0', '--lr_init', '8e-5', '--lr_final', '5e-5', '--warmup_steps', '30', '--beta1', '0.9', '--beta2', '0.99', '--adam_eps', '1e-8', '--my_pile_edecay', '0', '--data_type', 'binidx', '--vocab_size', '65536', '--lr_step_period', '3500', '--log_freq', '500', '--weight_decay', '0.001', '--epoch_step_save', '1000', '--head_size_a', '64', '--accelerator', 'gpu', '--devices', '8', '--precision', 'bf16-mixed', '--strategy', 'deepspeed_stage_2', '--grad_cp', '1', '--ds_bucket_mb', '200'), 'state': 'running', 'program': '/workspace/nathan/RWKV-LM/RWKV-v5/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/BlinkDL/RWKV-LM.git', 'commit': None}, 'email': None, 'root': '/workspace/nathan/RWKV-LM/RWKV-v5', 'host': 'gpu-notebooks-4j2tm', 'username': 'root', 'executable': '/usr/bin/python', 'cpu_count': 80, 'cpu_count_logical': 160, 'cpu_freq': {'current': 2100.0, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}, {'current': 2100.0, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 457.59750747680664, 'used': 50.00522232055664}}, 'gpu': 'NVIDIA H100 80GB HBM3', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}], 'memory': {'total': 1259.8573112487793}}
+2024-04-30 15:59:34,989 INFO    HandlerThread:30448 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-30 15:59:34,989 INFO    HandlerThread:30448 [system_monitor.py:probe():227] Publishing system info
+2024-04-30 15:59:34,994 INFO    HandlerThread:30448 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-30 15:59:34,996 DEBUG   SenderThread:30448 [sender.py:send():379] send: files
+2024-04-30 15:59:34,996 INFO    SenderThread:30448 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-30 15:59:35,062 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-30 15:59:35,062 DEBUG   SenderThread:30448 [sender.py:send_request():406] send_request: python_packages
+2024-04-30 15:59:35,063 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 15:59:35,064 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 15:59:35,067 DEBUG   SenderThread:30448 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 15:59:35,356 DEBUG   SenderThread:30448 [sender.py:send():379] send: telemetry
+2024-04-30 15:59:35,356 DEBUG   SenderThread:30448 [sender.py:send():379] send: metric
+2024-04-30 15:59:35,356 DEBUG   SenderThread:30448 [sender.py:send():379] send: telemetry
+2024-04-30 15:59:35,356 DEBUG   SenderThread:30448 [sender.py:send():379] send: metric
+2024-04-30 15:59:35,356 WARNING SenderThread:30448 [sender.py:send_metric():1341] Seen metric with glob (shouldn't happen)
+2024-04-30 15:59:35,643 INFO    Thread-12 :30448 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240430_155933-l1zp8y0k/files/requirements.txt
+2024-04-30 15:59:35,643 INFO    Thread-12 :30448 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240430_155933-l1zp8y0k/files/wandb-metadata.json
+2024-04-30 15:59:35,643 INFO    Thread-12 :30448 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240430_155933-l1zp8y0k/files/output.log
+2024-04-30 15:59:35,719 INFO    wandb-upload_0:30448 [upload_job.py:push():131] Uploaded file /tmp/tmp231444puwandb/vgrlj5bu-wandb-metadata.json
+2024-04-30 15:59:37,648 INFO    Thread-12 :30448 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240430_155933-l1zp8y0k/files/output.log
+2024-04-30 15:59:39,360 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 15:59:44,361 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 15:59:49,362 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 15:59:50,062 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 15:59:50,063 DEBUG   SenderThread:30448 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 15:59:50,065 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 15:59:55,283 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:00:00,284 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:00:05,072 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:00:05,073 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:00:05,073 DEBUG   SenderThread:30448 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:00:05,322 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:00:05,701 INFO    Thread-12 :30448 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240430_155933-l1zp8y0k/files/config.yaml
+2024-04-30 16:00:05,701 INFO    Thread-12 :30448 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240430_155933-l1zp8y0k/files/output.log
+2024-04-30 16:00:10,498 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:00:16,439 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:00:17,722 INFO    Thread-12 :30448 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240430_155933-l1zp8y0k/files/output.log
+2024-04-30 16:00:20,066 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:00:20,067 DEBUG   SenderThread:30448 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:00:20,068 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:00:22,240 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:00:27,241 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:00:32,242 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:00:34,921 DEBUG   SystemMonitor:30448 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-30 16:00:34,923 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:00:35,066 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:00:35,067 DEBUG   SenderThread:30448 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:00:35,069 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:00:37,322 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:00:42,322 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:00:47,323 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:00:50,071 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:00:50,072 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:00:50,072 DEBUG   SenderThread:30448 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:00:53,306 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:00:58,307 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:01:03,308 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:01:04,928 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:01:05,069 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:01:05,069 DEBUG   SenderThread:30448 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:01:05,112 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:01:09,295 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:01:14,296 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:01:19,297 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:01:20,070 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:01:20,070 DEBUG   SenderThread:30448 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:01:20,071 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:01:25,261 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:01:28,353 DEBUG   SenderThread:30448 [sender.py:send():379] send: config
+2024-04-30 16:01:29,833 INFO    Thread-12 :30448 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240430_155933-l1zp8y0k/files/output.log
+2024-04-30 16:01:30,353 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:01:34,926 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:01:35,927 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:01:35,950 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:01:35,951 DEBUG   SenderThread:30448 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:01:35,992 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:01:39,852 INFO    Thread-12 :30448 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240430_155933-l1zp8y0k/files/output.log
+2024-04-30 16:01:41,684 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:01:42,857 INFO    Thread-12 :30448 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240430_155933-l1zp8y0k/files/config.yaml
+2024-04-30 16:01:46,876 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:01:50,947 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:01:50,948 DEBUG   SenderThread:30448 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:01:50,950 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:01:52,164 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:01:57,239 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:01:57,881 INFO    Thread-12 :30448 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240430_155933-l1zp8y0k/files/output.log
+2024-04-30 16:02:02,239 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:02:04,931 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:02:07,933 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:02:12,933 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:02:17,934 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:02:22,935 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:02:24,830 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-30 16:02:27,936 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:02:32,937 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:02:34,929 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:02:38,931 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:02:43,232 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-30 16:02:43,931 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:02:48,933 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:02:53,933 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:02:58,934 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:03:00,820 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:03:00,820 DEBUG   SenderThread:30448 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:03:01,061 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:03:01,062 DEBUG   SenderThread:30448 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:03:04,248 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:03:04,931 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:03:09,932 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:03:14,933 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:03:16,061 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:03:16,062 DEBUG   SenderThread:30448 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:03:20,261 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:03:25,262 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:03:30,263 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:03:31,061 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:03:31,062 DEBUG   SenderThread:30448 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:03:34,932 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:03:35,933 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:03:40,933 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:03:46,061 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:03:46,062 DEBUG   SenderThread:30448 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:03:46,274 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:03:51,275 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:03:56,276 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:04:01,062 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-30 16:04:01,063 DEBUG   SenderThread:30448 [sender.py:send_request():406] send_request: stop_status
+2024-04-30 16:04:02,214 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:04:04,933 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:04:07,935 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:04:12,936 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:04:17,936 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:04:22,937 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:04:27,938 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:04:32,939 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:04:34,938 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:04:37,939 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:04:42,940 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:04:47,941 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:04:52,942 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:04:57,943 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:05:02,944 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:05:04,936 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:05:08,938 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:05:13,938 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:05:18,939 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:05:23,940 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:05:28,941 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:05:33,942 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:05:34,939 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:05:39,941 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:05:44,942 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:05:49,943 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:05:54,944 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:05:59,944 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:06:04,939 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:06:05,940 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:06:10,941 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:06:15,942 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:06:20,942 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:06:25,943 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:06:30,944 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:06:34,940 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:06:36,941 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:06:41,942 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:06:46,943 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:06:51,943 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:06:56,944 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:07:01,945 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:07:04,945 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:07:06,946 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:07:11,947 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:07:16,948 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:07:21,949 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:07:26,949 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:07:31,950 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:07:34,943 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:07:37,944 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:07:42,945 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:07:47,946 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:07:52,947 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:07:57,948 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:08:02,948 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:08:04,945 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:08:08,947 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:08:13,948 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:08:18,949 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:08:23,950 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:08:28,951 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:08:33,952 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:08:34,946 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:08:39,947 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:08:44,948 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:08:49,949 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:08:54,950 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:08:59,950 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:09:04,947 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:09:05,948 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:09:10,949 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:09:15,950 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:09:20,950 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:09:25,951 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:09:30,952 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:09:34,952 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:09:35,953 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:09:40,954 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:09:45,955 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:09:50,956 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:09:55,957 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:10:00,958 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:10:04,950 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:10:06,952 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:10:11,953 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:10:16,954 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:10:21,954 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:10:26,955 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:10:31,956 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:10:34,951 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:10:37,954 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:10:42,955 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:10:47,956 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:10:52,957 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:10:57,958 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:11:02,959 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:11:04,953 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:11:08,954 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:11:13,955 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:11:18,956 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:11:23,957 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:11:28,957 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:11:33,959 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:11:34,954 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:11:35,099 ERROR   FileStreamThread:30448 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/nathanwilce/70B-RUN-NEW/l1zp8y0k/file_stream
+NoneType: None
+2024-04-30 16:11:39,956 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:11:44,957 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:11:49,958 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:11:54,958 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:11:59,959 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:12:04,960 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:12:04,960 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:12:05,153 ERROR   FileStreamThread:30448 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/nathanwilce/70B-RUN-NEW/l1zp8y0k/file_stream
+NoneType: None
+2024-04-30 16:12:09,961 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:12:14,962 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:12:19,963 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:12:24,964 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:12:29,965 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:12:34,957 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:12:35,958 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:12:40,959 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:12:45,960 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:12:50,961 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:12:55,962 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:13:00,962 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:13:04,958 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:13:05,134 ERROR   FileStreamThread:30448 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/nathanwilce/70B-RUN-NEW/l1zp8y0k/file_stream
+NoneType: None
+2024-04-30 16:13:06,960 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:13:11,961 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:13:16,961 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:13:21,962 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:13:26,963 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:13:31,964 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:13:34,960 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:13:35,162 ERROR   FileStreamThread:30448 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/nathanwilce/70B-RUN-NEW/l1zp8y0k/file_stream
+NoneType: None
+2024-04-30 16:13:37,961 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:13:42,962 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:13:47,963 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:13:52,964 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:13:57,965 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:14:02,966 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:14:04,961 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:14:05,114 ERROR   FileStreamThread:30448 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/nathanwilce/70B-RUN-NEW/l1zp8y0k/file_stream
+NoneType: None
+2024-04-30 16:14:08,962 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:14:13,963 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:14:18,964 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:14:23,965 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:14:28,966 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:14:33,967 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:14:34,966 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:14:35,116 ERROR   FileStreamThread:30448 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/nathanwilce/70B-RUN-NEW/l1zp8y0k/file_stream
+NoneType: None
+2024-04-30 16:14:38,968 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:14:43,969 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:14:48,970 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:14:53,971 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:14:58,971 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:15:03,972 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:15:04,964 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:15:09,965 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:15:14,966 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:15:19,967 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:15:24,968 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:15:29,969 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:15:34,967 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:15:35,114 ERROR   FileStreamThread:30448 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/nathanwilce/70B-RUN-NEW/l1zp8y0k/file_stream
+NoneType: None
+2024-04-30 16:15:35,968 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:15:40,969 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:15:45,970 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:15:50,971 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:15:55,971 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:16:00,972 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:16:04,967 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:16:05,112 ERROR   FileStreamThread:30448 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/nathanwilce/70B-RUN-NEW/l1zp8y0k/file_stream
+NoneType: None
+2024-04-30 16:16:06,968 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:16:11,969 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:16:16,970 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:16:21,970 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:16:26,971 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:16:31,972 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:16:34,968 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:16:35,112 ERROR   FileStreamThread:30448 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/nathanwilce/70B-RUN-NEW/l1zp8y0k/file_stream
+NoneType: None
+2024-04-30 16:16:37,969 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:16:42,970 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:16:47,971 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:16:52,972 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:16:57,973 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:17:02,973 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:17:04,972 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:17:05,116 ERROR   FileStreamThread:30448 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/nathanwilce/70B-RUN-NEW/l1zp8y0k/file_stream
+NoneType: None
+2024-04-30 16:17:08,973 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:17:13,974 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:17:18,975 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:17:23,976 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:17:28,977 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:17:33,978 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:17:34,971 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:17:39,972 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:17:44,973 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:17:49,974 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:17:54,975 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:17:59,975 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:18:04,972 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:18:05,115 ERROR   FileStreamThread:30448 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/nathanwilce/70B-RUN-NEW/l1zp8y0k/file_stream
+NoneType: None
+2024-04-30 16:18:05,973 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:18:10,974 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:18:15,974 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:18:20,975 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:18:25,976 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:18:30,977 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:18:34,973 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:18:35,116 ERROR   FileStreamThread:30448 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/nathanwilce/70B-RUN-NEW/l1zp8y0k/file_stream
+NoneType: None
+2024-04-30 16:18:36,974 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:18:41,975 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:18:46,976 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:18:51,977 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:18:56,978 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:19:01,978 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:19:04,974 DEBUG   SenderThread:30448 [sender.py:send():379] send: stats
+2024-04-30 16:19:05,125 ERROR   FileStreamThread:30448 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/nathanwilce/70B-RUN-NEW/l1zp8y0k/file_stream
+NoneType: None
+2024-04-30 16:19:07,976 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
+2024-04-30 16:19:12,977 DEBUG   HandlerThread:30448 [handler.py:handle_request():146] handle_request: status_report
