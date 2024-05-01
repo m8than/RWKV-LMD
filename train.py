@@ -118,6 +118,7 @@ if __name__ == "__main__":
     args.max_epochs = args.epoch_count  # continue forever
     args.betas = (args.beta1, args.beta2)
     args.real_bsz = int(args.num_nodes) * int(args.devices) * args.micro_bsz
+    args.is_resuming = False
     os.environ["RWKV_MY_TESTING"] = args.my_testing
     os.environ["RWKV_CTXLEN"] = str(args.ctx_len)
     os.environ["RWKV_HEAD_SIZE_A"] = str(args.head_size_a)
@@ -168,9 +169,9 @@ if __name__ == "__main__":
     if args.lr_final == 0 or args.lr_init == 0:
         rank_zero_info("\n\nNote: lr_final = 0 or lr_init = 0. Using linear LR schedule instead.\n\n")
 
-    assert args.precision in ["fp32", "tf32", "fp16", "bf16", "bf16-mixed"]
+    assert args.precision in ["fp32", "tf32", "fp16", "bf16", "bf16-mixed", "bf16-true"]
     os.environ["RWKV_FLOAT_MODE"] = args.precision
-    if args.precision == "bf16-mixed" or args.precision == "bf16":
+    if args.precision == "bf16-mixed" or args.precision == "bf16" or args.precision == "bf16-true":
         os.environ["RWKV_FLOAT_MODE"] = "bf16"
     if args.precision == "fp32":
         for i in range(10):
@@ -195,8 +196,6 @@ if __name__ == "__main__":
         args.precision = 32
     elif args.precision == "fp16":
         args.precision = 16
-    else:
-        args.precision = "bf16-mixed"
 
     ########################################################################################################
 
@@ -241,6 +240,7 @@ if __name__ == "__main__":
             else:
                 args.actual_model_path = f"{args.proj_dir}/rwkv-{max_p}.pth"
                 args.start_step = max_p
+                args.is_resuming = True
 
     
     rank_zero_info(f"########## Storing location of {args.actual_model_path}... ##########")
