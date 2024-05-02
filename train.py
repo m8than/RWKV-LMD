@@ -247,10 +247,6 @@ if __name__ == "__main__":
 
     
     rank_zero_info(f"########## Storing location of {args.actual_model_path}... ##########")
-    # max_p should be the starting step.
-
-    train_data = MMapDataset(args)
-    args.vocab_size = 65536
 
 
     logger = None
@@ -303,6 +299,11 @@ if __name__ == "__main__":
     )
     
     args.trainer = trainer
+    
+    # max_p should be the starting step.
+
+    train_data = MMapDataset(args)
+    args.vocab_size = 65536
     #print(trainer.callbacks)
 
         
