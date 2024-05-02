@@ -76,10 +76,19 @@ class train_callback(pl.Callback):
         real_step = trainer.global_step
         lr_period = self.args.lr_step_period if self.args.lr_step_period != -1 else args.steps_per_epoch
 
+
+        if hasattr(args, "this_run_steps"):
+            args.this_run_steps += 1
+        else:
+            args.this_run_steps = 0
+
         # LR schedule
         if args.lr_final == args.lr_init:
             # If lr_final == lr_init, use lr_init as the learning rate
             lr = args.lr_init
+        elif real_step >= lr_period + args.warmup_steps and \
+            args.this_run_steps > args.warmup_steps:
+            lr = args.lr_final
         else:
             if lr_period == -1:
                 # If lr_period is -1, treat the whole training as one learning rate period
