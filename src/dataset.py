@@ -32,8 +32,6 @@ class MMapDataset(Dataset):
     def __getitem__(self, idx):
         if self.args.random_data:
             i = np.random.randint(0, self.data_size - (self.ctx_len+1))
-            print(i)
-            print(self.args.trainer.global_rank)
             data_chunk = self.data.get(idx=0, offset=i, length=self.ctx_len + 1).astype(int)
         else:
             data_chunk = self.data.get(idx=0, offset=idx * self.ctx_len, length=self.ctx_len + 1).astype(int)
