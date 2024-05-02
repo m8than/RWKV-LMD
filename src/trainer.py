@@ -86,6 +86,10 @@ class train_callback(pl.Callback):
         if args.lr_final == args.lr_init or real_step == 0:
             lr = args.lr_init
         else:  # exp decay
+            decay_step = real_step
+            decay_total = args.epoch_count * args.steps_per_epoch
+            progress = (decay_step - w_step + 1) / (decay_total - w_step)
+            progress = min(1, max(0, progress))
             lr = args.lr_init * math.exp(math.log(args.lr_final / args.lr_init) * pow(progress, 1))
         # if trainer.is_global_zero:
         #     print(trainer.global_step, decay_step, decay_total, w_step, progress, lr)
@@ -93,12 +97,12 @@ class train_callback(pl.Callback):
         real_tokens = real_step * args.ctx_len * args.real_bsz
         warmup_tokens = w_step * args.ctx_len * args.real_bsz
         epoch_tokens = args.steps_per_epoch * args.ctx_len
-        lr_period_tokens = args.lr_step_period if args.lr_step_period != -1 else args.steps_per_epoch
+        lr_period_tokens = args.lr_step_period if args.lr_step_period != -1 else args.epoch_count * args.steps_per_epoch
         progress = (real_tokens - warmup_tokens) / (abs(lr_period_tokens) - warmup_tokens)
         progress = max(0, min(1, progress))
         lr_final_factor = args.lr_final / args.lr_init                
         lr_mult = (0.5 + lr_final_factor / 2) + (0.5 - lr_final_factor / 2) * math.cos(math.pi * progress)
-
+        lr = args.lr_init * lr_mult
 
         if args.weight_decay_final > 0:
             wd_now = args.weight_decay * math.exp(math.log(args.weight_decay_final / args.weight_decay) * progress)
