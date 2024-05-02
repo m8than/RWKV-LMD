@@ -21,24 +21,21 @@ class MMapDataset(Dataset):
         self.ctx_len = args.ctx_len
         self.args.dataset_len = self.count
 
-        # for random sampling
-        global_rank = self.args.trainer.global_rank
-        current_time = int(time.time() * 1000)
-        # Combine the global rank and current time using bitwise XOR
-        seed_value = global_rank ^ current_time
-        
-        # Ensure the seed value is within the valid range
-        seed_value = seed_value % (2**32)
-        np.random.seed(seed_value)
-
     def __len__(self):
         return self.count
-         
+
+    def unique_seed(self, idx):
+        # Seed using the index, current time in milliseconds, and global rank
+        milliseconds = int(round(time.time() * 1000))
+        seed = (idx + milliseconds + self.args.trainer.global_rank) % 2**32
+        return seed
+        
     def __getitem__(self, idx):
         if self.args.random_data:
+            seed = self.unique_seed(idx)
+            np.random.seed(seed)
             i = np.random.randint(0, self.data_size - (self.ctx_len+1))
-            print(i)
-            print(self.args.trainer.global_rank)
+            print(self.args.trainer.global_rank, i)
             data_chunk = self.data.get(idx=0, offset=i, length=self.ctx_len + 1).astype(int)
         else:
             data_chunk = self.data.get(idx=0, offset=idx * self.ctx_len, length=self.ctx_len + 1).astype(int)
