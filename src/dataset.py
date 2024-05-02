@@ -9,6 +9,7 @@ from torch.utils.data import Dataset
 from pytorch_lightning.utilities import rank_zero_info
 from .binidx import MMapIndexedDataset
 from .utils import MaybeIsPrime
+import time
 
 # Temporary fix dataset resuming by randomising dataset
 class MMapDataset(Dataset):
