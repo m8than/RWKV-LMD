@@ -12,6 +12,7 @@ from collections import OrderedDict
 import torch.distributed as dist
 from deepspeed.utils import safe_get_full_fp32_param
 import glob
+import math
 
 def get_state_dict(module, return_params):
     # Dictionary to store parameters, initialized to None
@@ -53,7 +54,6 @@ class train_callback(pl.Callback):
         self.args = args
 
     def on_train_start(self, trainer, pl_module):
-        pl_module.load_weights()
         self.trainer = self.args.trainer
         
         total_devices = self.args.devices * self.args.num_nodes
@@ -75,45 +75,30 @@ class train_callback(pl.Callback):
         #     torch.cuda.empty_cache()
         real_step = trainer.global_step
         lr_period = self.args.lr_step_period if self.args.lr_step_period != -1 else args.steps_per_epoch
-
-
+        
         if hasattr(args, "this_run_steps"):
             args.this_run_steps += 1
         else:
             args.this_run_steps = 0
 
         # LR schedule
-        if args.lr_final == args.lr_init:
-            # If lr_final == lr_init, use lr_init as the learning rate
+        w_step = args.warmup_steps
+        if args.lr_final == args.lr_init or real_step == 0:
             lr = args.lr_init
-        elif real_step >= lr_period + args.warmup_steps and \
-            args.this_run_steps > args.warmup_steps:
-            lr = args.lr_final
-        else:
-            if lr_period == -1:
-                # If lr_period is -1, treat the whole training as one learning rate period
-                step_in_period = real_step
-                total_steps = args.total_steps
-            else:
-                # Calculate the current step within the learning rate period
-                step_in_period = real_step % lr_period
-                total_steps = lr_period
+        else:  # exp decay
+            lr = args.lr_init * math.exp(math.log(args.lr_final / args.lr_init) * pow(progress, 1))
+        # if trainer.is_global_zero:
+        #     print(trainer.global_step, decay_step, decay_total, w_step, progress, lr)
         
-            if args.is_resuming or step_in_period < args.warmup_steps:
-                # Warmup phase
-                w_step = min(step_in_period, args.warmup_steps)
-                if w_step < args.warmup_steps:
-                    lr = args.lr_init * (0.2 + 0.8 * w_step / args.warmup_steps)
-                else:
-                    lr = args.lr_init
-                args.is_resuming = False
-            else:
-                # Cosine annealing phase
-                decay_step = step_in_period - args.warmup_steps
-                decay_total = total_steps - args.warmup_steps
-                progress = decay_step / max(1, decay_total)
-                progress = max(0, min(1, progress))
-                lr = args.lr_final + 0.5 * (args.lr_init - args.lr_final) * (1 + math.cos(math.pi * progress))
+        real_tokens = real_step * args.ctx_len * args.real_bsz
+        warmup_tokens = w_step * args.ctx_len * args.real_bsz
+        epoch_tokens = args.steps_per_epoch * args.ctx_len
+        lr_period_tokens = args.lr_step_period if args.lr_step_period != -1 else args.steps_per_epoch
+        progress = (real_tokens - warmup_tokens) / (abs(lr_period_tokens) - warmup_tokens)
+        progress = max(0, min(1, progress))
+        lr_final_factor = args.lr_final / args.lr_init                
+        lr_mult = (0.5 + lr_final_factor / 2) + (0.5 - lr_final_factor / 2) * math.cos(math.pi * progress)
+
 
         if args.weight_decay_final > 0:
             wd_now = args.weight_decay * math.exp(math.log(args.weight_decay_final / args.weight_decay) * progress)
