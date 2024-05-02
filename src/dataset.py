@@ -22,9 +22,14 @@ class MMapDataset(Dataset):
 
     def __len__(self):
         return self.count
-         
+
     def __getitem__(self, idx):
-        data_chunk = self.data.get(idx=0, offset=idx * self.ctx_len, length=self.ctx_len + 1).astype(int)
+        if self.args.random_data:
+            i = np.random.randint(0, self.data_size - (self.ctx_len+1))
+            data_chunk = self.data.get(idx=0, offset=i, length=self.ctx_len + 1).astype(int)
+        else:
+            data_chunk = self.data.get(idx=0, offset=idx * self.ctx_len, length=self.ctx_len + 1).astype(int)
+            
         x = torch.tensor(data_chunk[:-1], dtype=torch.long)
         y = torch.tensor(data_chunk[1:], dtype=torch.long)
         return x, y
