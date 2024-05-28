@@ -54,20 +54,26 @@ class train_callback(pl.Callback):
         self.args = args
 
     def on_train_start(self, trainer, pl_module):
+        pl_module.load_weights()
         self.trainer = self.args.trainer
         
         total_devices = self.args.devices * self.args.num_nodes
         # self.args.dataset_len = document count
         #self.args.steps_per_epoch = self.args.dataset_len // (self.args.real_bsz)
         self.args.steps_per_epoch = trainer.estimated_stepping_batches
+        
         if self.args.start_step > 0:
-            global_step = self.args.start_step % self.args.steps_per_epoch
-            epoch = self.args.start_step // self.args.steps_per_epoch
-            docs_run = (global_step) * self.args.real_bsz
+            self.args.skip_step = True
+        #    global_step = self.args.start_step % self.args.steps_per_epoch
+        #    epoch = self.args.start_step // self.args.steps_per_epoch
+        #    docs_run = (global_step) * self.args.real_bsz
             
-            self.set_current_epoch(epoch) # This is being loaded from the model
-            self.set_total_batch_idx(docs_run)
-            self.set_global_step(global_step) 
+        #    self.set_current_epoch(epoch) # This is being loaded from the model
+        #    self.set_total_batch_idx(docs_run)
+        #    self.set_global_step(global_step)
+            print(f"Performing totally awesome resume workaround (skipping {self.args.start_step-1} steps)")
+        else:
+            self.args.skip_step = False 
 
     def on_train_batch_start(self, trainer, pl_module, batch, batch_idx):
         args = self.args
@@ -129,6 +135,12 @@ class train_callback(pl.Callback):
         args = self.args
         token_per_step = args.ctx_len * args.real_bsz
         real_step = trainer.global_step
+
+        if self.args.skip_step:
+            if real_step >= self.args.start_step - 1:
+                self.args.skip_step = False
+            return
+        
         if trainer.is_global_zero:  # logging
             t_now = time.time_ns()
             kt_s = 0

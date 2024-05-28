@@ -1230,6 +1230,9 @@ class RWKV(pl.LightningModule):
         #        self.load_weights()
         #        self.loadedweights = True
         #self.onestep = True
+
+        if self.args.skip_step:
+            return torch.tensor([0.0], requires_grad=True)
             
         args = self.args
         if args.my_qa_mask != 1:
